@@ -1,0 +1,13 @@
+---
+title: "Return Focus to Triggering Element Once a Modal is Closed"
+description: "Dealing with focus in a React application"
+pubDate: "Mar 8 2023"
+heroImage: "https://picsum.photos/720/360"
+published: false
+---
+
+How to return focus to a modal trigger once that modal gets closed.
+
+1. Put the id of that element (or some identifying attribute) in local storage when the element is clicked
+2. Use modal as necessary
+3. When the close button of the modal is closed, use local storage to identify the triggering element and use `.focus()` to give it focus, close the modal, and then remove that id from local storage

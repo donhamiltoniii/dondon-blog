@@ -1,0 +1,59 @@
+---
+title: "How to Structure a React Project"
+description: "How to organize React components and projects"
+pubDate: "Mar 8 2023"
+heroImage: "https://picsum.photos/720/360"
+published: true
+---
+
+One of the biggest problems we face as developers is project or directory structure. It's important to have a set structure for your projects so that as they grow, your code is well organized and easy to navigate. I recently found a way to organize React projects that I personally believe is so good that I want to share it.
+
+_Disclaimer: This sort of organization can be used in pretty much any project with minor changes based on the project._
+
+Here is the [repo](https://github.com/donhamiltoniii/how-to-structure-react-apps) if you want to explore everything.
+
+## Components
+
+Starting at the component level, what I like to do is continue to use principles of OOP in all of my JS/TS applications. But This doesn't mean we have to use Classes, Methods, and Properties. If you would like to do that and create instances in a more traditional way, that's fine. But I think that it ignores all of the great things that we get from modern JS/TS. We can still follow SOLID principles without Classes.
+
+```bash
+component
+  |-- component.tsx
+  |-- hooks.ts
+  |-- index.ts
+  |-- styles.css
+  |-- test.tsx
+  |-- utils.ts
+```
+
+What do each of these files do?
+
+### `component.tsx`
+
+Houses everything that is going to be rendered on screen by React. This file should contain as little logic as possible. If you can eliminate it entirely, all the better. Obviously that's not always popular but it should be the goal to keep the component as close to just markup as possible.
+
+### `hooks.ts`
+
+For any hooks in the component that are only used in this component. Any hooks that are shared with other components should be pulled up higher into a hooks directory at the root directory or `src` depending on how your project is structured.
+
+### `index.ts`
+
+Is solely our public interface for our component. Anything meant to be exported from this component gets exported from here. For example:
+
+```typescript
+export * from "./component";
+```
+
+Those sorts of exports are all that we include here
+
+### `styles.css`
+
+Should be fairly self explanitory. This is where we keep styles related to our component. This can also be a JS/TS file if you're using styled components or SASS or anything else so long as it's related to styling.
+
+### `test.tsx`
+
+Is where we house the unit tests for our component.
+
+### `utils.ts`
+
+Should contain utility functions related specifically to this component. Similar to the hooks file, anything that would be shared between components

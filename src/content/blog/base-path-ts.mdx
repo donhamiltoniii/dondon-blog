@@ -1,0 +1,75 @@
+---
+title: "Base Path in TypeScript"
+description: "How to update the base path in TS to reference files more easily"
+pubDate: "Mar 4 2023"
+heroImage: "https://picsum.photos/720/360"
+published: true
+---
+
+Whenever working in TypeScript, we deal with importing and exporting modules in our project. This quick post is just a reminder/tutorial for how to set up a base path so that we may reference these modules in a more organized fashion.
+
+Let's begin by creating a new project. We could just create a basic TypeScript app but let's create something a little more practical. We'll be creating a simple NextJS app that uses TypeScript. This is a pretty popular stack these days since it provides a full stack environment with the (current) most popular view library.
+
+To start, let's navigate to a directory to make our project and run the following command.
+
+```zsh
+npx create-next-app base-path-example --ts
+```
+
+This will build out a new Next app called `base-path-example` with a directory structure that looks like this:
+
+![Base Path Example](/assets/images/base-path-directory-structure.png)
+
+Inside of this project, we're going to include a deeply nested path by adding a few directories inside of pages.
+
+![Base Path Pages](/assets/images/base-path-pages-directories.png)
+
+This is going to illustrate what happens when we have to bring in a component from way higher up in the directory tree. Here's what our deeply nested page looks like:
+
+```tsx
+import { Counter } from "../../../../components/counter";
+
+export default function CounterPage() {
+  return (
+    <div>
+      <Counter />
+    </div>
+  );
+}
+```
+
+Notice that we're bringing in this `Counter` component from the `components` directory which is four levels up. While this certainly works, it's a little difficult to read and in an app with dozens, or even hundreds of pages, these `../` pieces get annoying to deal with.
+
+To solve this issue, we can make a quick and easy update to our `tsconfig.json` file which will simplify our imports throughout our entire app. Inside of `tsconfig.json`, add the following:
+
+```json
+// tsconfig.json
+
+"compilerOptions": {
+  // ...
+  "baseUrl": ".",
+  "paths": {
+      "@/*": ["./src/*"]
+  }
+}
+```
+
+This gives us a shorthand to reference the `src` directory. So now on any of our imports, we can just start with `@`. Now we can revisit that deeply nested page and make the following change:
+
+```tsx
+import { Counter } from "@/components/counter";
+
+export default function CounterPage() {
+  return (
+    <div>
+      <Counter />
+    </div>
+  );
+}
+```
+
+Now we can reference all directories and files relative to the `src` directory! This avoids all of the backtracking with `../`! As small of a change as this may be, it will save TONS of time with imports and help your code look a lot cleaner in the process.
+
+## SIDE NOTE FOR FULL-STACK/API PROJECTS
+
+If you are building something with `ts-node` or `nodemon`, you also need to follow [this section](https://typestrong.org/ts-node/docs/paths/) of the `ts-node` docs.

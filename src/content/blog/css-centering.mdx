@@ -1,0 +1,145 @@
+---
+title: "CSS Centering"
+description: "How to handle centering in CSS"
+pubDate: "Mar 4 2023"
+heroImage: "https://picsum.photos/720/360"
+published: true
+---
+
+Today we're going to be looking at the different ways in which you can center content in CSS. We're gonna go through a bit of a history lesson as well to illustrate just how amazing modern tools are in comparison to the shit we used to have to write as developers to achieve the same goal. We are going to be looking at examples of centering both horizontally and vertically but all of these examples can be used to accomplish each task individually.
+
+\* _Only the SCSS related to positioning is included. You will see more in the CodePen._
+
+<iframe
+  height="300"
+  style="width: 100%;"
+  scrolling="no"
+  title="Centering Content in CSS"
+  src="https://codepen.io/donhamiltoniii/embed/bGpxQKd?default-tab=html%2Cresult"
+  frameborder="no"
+  loading="lazy"
+  allowtransparency="true"
+  allowfullscreen="true"
+>
+  See the Pen
+  <a href="https://codepen.io/donhamiltoniii/pen/bGpxQKd">
+    Centering Content in CSS
+  </a>
+  by Don Hamilton III (
+  <a href="https://codepen.io/donhamiltoniii">@donhamiltoniii</a>) on
+  <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+### Centering using `display: table`
+
+Let's take a look at the code:
+
+HTML:
+
+```html
+<table class="table-centering">
+  <tr class="table-centering__row">
+    <td class="table-centering__content">:( why?</td>
+  </tr>
+</table>
+```
+
+SCSS:
+
+```scss
+.table-centering {
+  &__row {
+    text-align: center;
+    vertical-align: center;
+  }
+}
+```
+
+As we can see, this achieves what we want. But this is clunky and it violates a few golden rules. First of all, this isn't tabular data so our markup (HTML) isn't semantic. It's also violating separation of concerns as we're using our content layer to handle styling. In older web infrastructure, this method of styling isn't uncommon to see. Though it is _INCREDIBLY_ frowned upon. So, moving on to better options.
+
+### Centering using `transform`
+
+Now we'll explore a better (still not best) option. This one came about once we got the `transform` property available in browsers (2009ish). This is definitely a better way to achieve our centered goal than the previous as it allows us to semantically markup our content as well as abide by separation of concerns by keeping the positioning solely to the style (SCSS) layer. Let's take a look at the code and then go over the pros and cons:
+
+HTML:
+
+```html
+<section class="transform-centering">
+  <p class="transform-centering__content">:| slightly less why?</p>
+</section>
+```
+
+SASS:
+
+```scss
+.transform-centering {
+  position: relative;
+
+  &__content {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+```
+
+The first notable difference here is the markup. We only have a containing element and a contained element. Honestly, this is all we should have since we're centering one thing inside of something else. Second, it's semantic. We have a `section`, which is properly descriptive of what it is/does and the content is enclosed in a `p` tag which also accurtately describes what we're dealing with. These might seem like trivial details, but I assure you, for many reasons, they are not. This will be beneficial to other developers looking at your code and it will be much more descriptive for screen readers and robots (read Google bots) crawling your page to index it inside of their search algorithms.
+
+Next, let's examine the styling. There are a few more lines of code here to achieve our goal, but what is better about this solution is that everything about the positioning is encapsulated in the style layer.
+
+What I personally dislike (you should too) about this method is that it forces us to alter the `position` attribute of both of these elements. While this isn't strictly taboo, it can cause unforeseen consequences with other style rules. It is general best practice to avoid manipulating position, **BUT**, this does work. The quick explanation is that we are pushing the paragraph 50% the width and height of the container. The problem is we are pushing relative to the top left corner of the contained element. So then we are manipulating the contained element to move half of its own width and height up and to the left respectively. In so doing, we center the paragraph in the section.
+
+### Centering using `flex`
+
+Finally, we arrive at **THE** definitive answer for centering in modern web development. The answer is for sure using Flexbox. We need look no further than the code to understand why:
+
+HTML:
+
+```html
+<section class="flexbox-centering">
+  <p class="flexbox-centering__content">:) very much zero why?</p>
+</section>
+```
+
+SCSS:
+
+```scss
+.flexbox-centering {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+```
+
+So this technique combines all of the good parts of the previous examples while omitting all of the bad parts. First, our markup is succinct and semantic. Next, our styling is encapsulated and only needs 3 lines of code to work.
+
+This is partially why flexbox exists. It's all about positioning and ordering elements without having to worry about the content layer. This is exactly how we want our code to work. That is textbook definition of proper separation of concerns.
+
+### **BONUS** Centering using `grid`
+
+It is possible to center content inside of grid containers as well. Though, I would argue that you should use `flex` by default, sometimes that adds superfluous code which should **ALWAYS** be avoided if possible. So let's take a look at how we can achieve our goal in grid.
+
+HTML:
+
+```html
+<section class="grid-centering">
+  <p class="grid-centering__content">:) very much zero why? #2</p>
+</section>
+```
+
+SCSS:
+
+```scss
+.grid-centering {
+  align-content: center;
+  display: grid;
+  justify-items: center;
+}
+```
+
+Not much more to review here aside from the fact that we're using a different display value. The only notable difference here is the usage of `align-content` and `justify-items` as opposed to their Flexbox counterparts.
+
+### Conclusion
+
+We've gone through a bit of a history lesson as far as how we deal with layout and positioning in our web sites/applications. The first two are here for historical reference only. Going forward, we should all be using Flexbox and Grid whenever we're dealing with layout and positioning.

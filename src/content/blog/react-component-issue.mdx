@@ -1,0 +1,45 @@
+---
+title: "React 18 Third Party Component Rendering Issue"
+description: "Quick solve to an issue in React 18"
+pubDate: "Mar 8 2023"
+heroImage: "https://picsum.photos/720/360"
+published: true
+---
+
+If you ever run into a build error with any package that looks like this:
+
+```bash
+12:06:28 PM: $ yarn build
+12:06:28 PM: yarn run v1.22.10
+12:06:28 PM: $ next build
+12:06:28 PM: info  - Checking validity of types...
+12:06:32 PM: Failed to compile.
+12:06:32 PM:
+12:06:32 PM: ./pages/_app.tsx:6:11
+12:06:32 PM: Type error: 'Component' cannot be used as a JSX component.
+12:06:32 PM:   Its element type 'ReactElement<any, any> | Component<{}, any, any> | null' is not a valid JSX element.
+12:06:32 PM:     Type 'Component<{}, any, any>' is not assignable to type 'Element | ElementClass | null'.
+12:06:32 PM:       Type 'Component<{}, any, any>' is not assignable to type 'ElementClass'.
+12:06:32 PM:         The types returned by 'render()' are incompatible between these types.
+12:06:32 PM:           Type 'React.ReactNode' is not assignable to type 'import("/opt/build/repo/node_modules/@types/react-syntax-highlighter/node_modules/@types/react/index").ReactNode'.
+12:06:32 PM:             Type '{}' is not assignable to type 'ReactNode'.
+12:06:32 PM:   4 |
+12:06:32 PM:   5 | export default function MyApp({ Component, pageProps }: AppProps) {
+12:06:32 PM: > 6 |   return <Component {...pageProps} />;
+12:06:32 PM:     |           ^
+12:06:32 PM:   7 | }
+12:06:32 PM:   8 |
+12:06:32 PM: error Command failed with exit code 1. (https://ntl.fyi/exit-code-1)
+12:06:32 PM: info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+```
+
+The current fix is to add the following to your `package.json`
+
+```jsonc
+}
+  // ...
+  "resolutions": {
+    "@types/react": "17.0.40"
+  }
+}
+```

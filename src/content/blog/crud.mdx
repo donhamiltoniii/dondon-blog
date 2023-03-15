@@ -1,0 +1,84 @@
+---
+title: "CRUD"
+description: "The basics of CRUD operations"
+pubDate: "Mar 4 2023"
+heroImage: "https://picsum.photos/720/360"
+published: false
+---
+
+What is CRUD? CRUD is an acronym that stands for Create, Read, Update, and Delete. These are the main operations in any application. Let's explore why they're so important by making a simple example application.
+
+## App Setup
+
+First, navigate to a directory where you want to make a new project and run the following commands:
+
+```bash
+mkdir grocery-list
+cd grocery-list
+npm init -y
+npm i -D typescript ts-node @types/node prisma
+```
+
+Next, let's setup TypeScript:
+
+```bash
+npx tsc --init
+```
+
+After that, the fun part, setting up our database:
+
+```bash
+npx prisma init --datasource-provider sqlite
+```
+
+There it is! Open this in VS Code:
+
+```bash
+code .
+```
+
+And let's get going!
+
+## Setting up Model
+
+The first thing to do when working with data is to Model it. So let's set up our first schema. Open the `prisma/schema.prisma` file and add the following:
+
+```prisma
+model GroceryItem {
+  id       Int    @id @default(autoincrement())
+  name     String
+  quantity Int
+}
+```
+
+## Setting up DB
+
+The next thing to do is set up our DB in Prisma. Run this command once the model is set up sand **SAVED**. Then run the following:
+
+```bash
+npx prisma migrate dev --name init
+```
+
+After you run this command, you'll notice that there is a `dev.db` file. This is where our database lives since we are using SQLite. SQLite is a really cool DB solution and I encourage you to read more about it [here](https://www.sqlite.org/index.html).
+
+Before we get started, let's seed some data. Prisma comes with a really cool and useful tool called Prisma Studio. Run the following command from your command line once you've completed all of the previous steps:
+
+```bash
+npx prisma studio
+```
+
+Your default browser will open an instance of Prisma Studio where you can visualize the data inside of your database. You can also create new rows using the GUI provided by Prisma Studio. So add a couple grocery items in here so we have some data to work with.
+
+## Project Files
+
+We'll start by making the entry file. So in the root of the project make a directory named `src` and inside of it, make a file named `index.ts`. Inside of `index.ts`, write the following code:
+
+```ts
+console.log("hello world!");
+```
+
+And then open the `package.json` file and inside of the scripts section, add the following:
+
+```json
+"dev": "ts-node src/index.ts"
+```

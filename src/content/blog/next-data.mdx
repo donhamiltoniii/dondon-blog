@@ -1,0 +1,59 @@
+---
+title: "Accessing Next Data in Browser"
+description: "Understanding data in a NEXT application"
+pubDate: "Mar 8 2023"
+heroImage: "https://picsum.photos/720/360"
+published: true
+---
+
+Today's is just a quick post of a discovery from a colleague. On the project that I'm currently assigned to, we are using NextJS to build some pretty amazing tech. One thing that we are constantly running up against is checking the data that we are receiving from one of the handful of APIs from which we are sourcing.
+
+Usually this involves all sorts of looking around inside of the network tab or console logging or all kinds of other work-around, hacky shit to see wtf we're getting. Which is both just bad form and, in most cases, ineffective.
+
+Until this wonderful, beautiful, simple, little one line of code came into all of our lives.
+
+```js
+JSON.parse(document.getElementById("__NEXT_DATA__"));
+```
+
+It turns out that next provides you the data that is being provided as props to the page in a serialized JSON object. Just another reason to love tf out of this framework. Here's an example payload that I get from my recipe site:
+
+```json
+{
+  "props": {
+    "pageProps": {
+      "recipes": [
+        {
+          "title": "Bacon Wrapped Jalapeño Poppers",
+          "prepTime": "15 minutes",
+          "cookTime": "15 minutes",
+          "servings": 8,
+          "imgUrl": "/img/jalapeno-poppers.jpg",
+          "description": "Jalapeños stuffed with cheese and wrapped with bacon.",
+          "notes": "Mad easy. Mad delicious. Perfect side dish.",
+          "tags": [
+            "keto",
+            "jalapeño",
+            "cheese",
+            "cream cheese",
+            "bacon",
+            "appetizer",
+            "side dish"
+          ],
+          "content": "\n### Ingredients\n\n- 8 Jalapeños, hollowed\n- 8oz Cream Cheese\n- 8oz shredded cheese of your choice\n- 8 slices bacon\n\n### Instructions\n\n1. Cut a \"T\" into one side of your Jalapeños and scoop out the seeds.\n1. In a bowl, mix cream cheese and shredded cheese until throughly mixed.\n1. Preheat air frier for 10 minutes at 400°\n1. Stuff each pepper with cheese mixture and wrap with one slice of bacon. Wrap the ends of the bacon underneath so they stay together.\n1. Cook for 15 minutes at 350°\n1. Eat them all in one sitting.\n",
+          "slug": "bacon-wrapped-jalapeño-poppers"
+        }
+      ]
+    },
+    "__N_SSG": true
+  },
+  "page": "/",
+  "query": {},
+  "buildId": "development",
+  "isFallback": false,
+  "gsp": true,
+  "scriptLoader": []
+}
+```
+
+I truncated the recipe list for readability but you get the idea. Look at how easy and pretty that is! Keep this in mind whenever you're dealing with Next data. This is a game changer folx.
