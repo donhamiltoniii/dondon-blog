@@ -83,6 +83,7 @@
             // Properties
             this.fetching = false;
             this.form = this.querySelector("form");
+            this.firstNameInput = this.querySelector('[name="first-name"]');
             this.output = this.querySelector("output");
             this.pokemonOutput = this.querySelector(".pokemon");
 
@@ -104,6 +105,9 @@
 
               // Print name on screen
               this.output.textContent = `You entered: ${firstName}`;
+
+              // Clear input
+              this.firstNameInput.value = "";
             }
 
             if (event.type === "click") {
