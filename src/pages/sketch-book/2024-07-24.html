@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2024-07-24</title>
+    <style>
+      :root {
+        --red: rgb(255, 73, 73);
+        --white: #fff;
+      }
+
+      a {
+        color: var(--red);
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      body {
+        background-color: var(--white);
+        font-family: sans-serif;
+        line-height: 1.618;
+      }
+
+      output {
+        display: block;
+        margin: 1rem 0;
+      }
+
+      /* Classes */
+      .container {
+        margin: 0 auto;
+        max-width: 40rem;
+        width: 85%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dis work?</h1>
+      <p>
+        The point of this is just to play around with web components. I've been
+        watching a bunch of
+        <a href="https://www.youtube.com/@gomakethings">
+          Chris Ferdinandis stuff
+        </a>
+        lately and it's really cool. I'm a big fan of what he advocates for
+        which is a simpler, more functional web. This will also be something
+        that I advocate for as a Tech Educator. So either go look at
+        <a href="https://github.com/donhamiltoniii/dondon-blog">the repo</a>
+        or just dig into the dev tools and look at the markup for a look-see at
+        what's going on. Here I'm just playing with events and seeing what dumb
+        shit I can do. Enter whatever you want and get it spit out on the page.
+        Also, look at a random pokemon.
+      </p>
+      <!-- From Brooklyn Nine Nine -->
+      <triple-cross></triple-cross>
+    </div>
+    <script>
+      customElements.define(
+        "triple-cross",
+        class extends HTMLElement {
+          // Initialize Component
+          constructor() {
+            // Initialize Parent Component
+            super();
+
+            // Bootstrap Template
+            this.innerHTML = `
+                <h2>A cooper is not a hooper!</h2>
+                <form>
+                    <label>First Name: <input name="first-name" type="text" /></label>
+                    <button>Submit</button>
+                </form>
+                <output></output>
+                <button pokemon-button>Get me a Pokeman!</button>
+                <div class="pokemon"></div>
+            `;
+
+            // Properties
+            this.fetching = false;
+            this.form = this.querySelector("form");
+            this.output = this.querySelector("output");
+            this.pokemonOutput = this.querySelector(".pokemon");
+
+            // Add form submit handler
+            this.addEventListener("submit", this);
+            this.addEventListener("click", this);
+          }
+
+          //   Handle all events
+          async handleEvent(event) {
+            if (event.type === "submit") {
+              event.preventDefault();
+
+              // Get form data
+              const data = new FormData(event.target);
+
+              // Establish properties
+              const firstName = data.get("first-name");
+
+              // Print name on screen
+              this.output.textContent = `You entered: ${firstName}`;
+            }
+
+            if (event.type === "click") {
+              const btn = event.target.getAttribute("pokemon-button");
+              if (btn !== "") {
+                return;
+              }
+              await this.fetchRandomPokemon();
+            }
+          }
+
+          //   Fetch a random pokemon
+          async fetchRandomPokemon() {
+            // Set loading state
+            this.pokemonOutput.textContent = "Fetching...";
+
+            const url = `https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0`;
+
+            // Initial Fetch to get all available pokemon
+            const response = await fetch(url);
+            const pokemon = await response.json();
+            const numberOfPokemon = pokemon.count;
+            const randomPokemonIndex = Math.floor(
+              Math.random() * numberOfPokemon
+            );
+
+            // Second fetch to get details of selected pokemon
+            const randomPokemonResponse = await fetch(
+              pokemon.results[randomPokemonIndex].url
+            );
+            const randomPokemon = await randomPokemonResponse.json();
+
+            // Log pokemon data so I can see what I'm consuming
+            console.log({ randomPokemon });
+
+            // Populate pokemon template
+            this.pokemonOutput.innerHTML = `
+            <h2>${randomPokemon.name}</h2>
+            <img src="${randomPokemon.sprites.front_default}" />
+            `;
+          }
+        }
+      );
+    </script>
+  </body>
+</html>
