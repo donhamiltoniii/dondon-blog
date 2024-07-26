@@ -13,7 +13,6 @@ export async function get(context) {
       .filter((post) => post.data.published)
       .map((post) => ({
         ...post.data,
-        content: post.body,
         link: `/blog/${post.slug}/`,
       })),
   });
