@@ -3,16 +3,20 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
+    "astro": "astro",
     "build": "astro build",
+    "dev": "astro dev",
+    "plop": "plop",
     "preview": "astro preview",
-    "astro": "astro"
+    "start": "astro dev"
   },
   "dependencies": {
-    "astro": "^2.0.17",
     "@astrojs/mdx": "^0.17.2",
     "@astrojs/rss": "^2.1.1",
-    "@astrojs/sitemap": "^1.1.0"
+    "@astrojs/sitemap": "^1.1.0",
+    "astro": "^2.0.17"
+  },
+  "devDependencies": {
+    "plop": "^4.0.1"
   }
 }
