@@ -26,7 +26,7 @@ export default function (plop) {
     actions: [
       {
         type: "add",
-        path: "src/content/blog/{{kebabCase title}}.js",
+        path: "src/content/blog/{{kebabCase title}}.mdx",
         templateFile: "src/plop-templates/new-blog-post.hbs",
       },
     ],

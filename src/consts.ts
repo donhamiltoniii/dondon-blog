@@ -1,2 +1,3 @@
-export const SITE_TITLE = "DONDON";
-export const SITE_DESCRIPTION = "All about DONDON";
+export const SITE_TITLE = "DONDON Develops";
+export const SITE_DESCRIPTION =
+  "Thoughts, walkthroughs, and explanations of concepts related to software development.";

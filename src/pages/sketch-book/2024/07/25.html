@@ -7,13 +7,15 @@
     <style></style>
   </head>
   <body>
+    <a href="/">Home</a>
     <main>
-      <custom-modal></custom-modal>
+      <working-modal></working-modal>
+      <broken-modal></broken-modal>
     </main>
   </body>
   <script>
     customElements.define(
-      "custom-modal",
+      "broken-modal",
       class extends HTMLElement {
         // Initialize
         constructor() {
@@ -22,9 +24,46 @@
 
           // Template
           this.innerHTML = `
-            <button open-modal-button>Open</button>
+            <button open-modal-button>Open My Broken Ass</button>
             <dialog>
                 <button close-modal-button>Close</button>
+                <p>I am mad broken. Notice how I do not center myself nicely on the page or have a pretty backdrop to make you focus on my informative content...</p>
+            </dialog>
+          `;
+
+          // Properties
+          this.closeButton = this.querySelector("[close-modal-button]");
+          this.dialog = this.querySelector("dialog");
+          this.openButton = this.querySelector("[open-modal-button]");
+
+          // Attach Event Listener
+          this.addEventListener("click", this);
+        }
+
+        handleEvent() {
+          if (event.target === this.openButton) {
+            this.dialog.show();
+          }
+          if (event.target === this.closeButton) {
+            this.dialog.close();
+          }
+        }
+      }
+    );
+    customElements.define(
+      "working-modal",
+      class extends HTMLElement {
+        // Initialize
+        constructor() {
+          // Initialize parent
+          super();
+
+          // Template
+          this.innerHTML = `
+            <button open-modal-button>Open My Working Ass</button>
+            <dialog>
+                <button close-modal-button>Close</button>
+                <p>I work exactly as intended</p>
             </dialog>
           `;
 
