@@ -13,15 +13,15 @@ Don't factor your code too early! There are plenty of organizational patterns th
 - `utils` - every project
 - `routes`/`views` - web anything
 
-These will _probably_ exist in all of your applications/projects/bullshit. Dont be afraid of using them. But let your applicaiton be abstract in the beginning. Don't rush to set a structure for how things should be organized, what should constitues a module, what should be a class (or shouldn't), making hooks, making utilities, etc. Just write the code, make the application work, WRITE THE FUCKING TESTS (re-read that 1000x and then slam your head into a wall. Get it tattooed on your body, paint it on the walls. Write tests for the love of whatever is important to you.), write documentation, know what it all does.
+These will _probably_ exist in all of your applications/projects/whatever. Dont be afraid of using them. But let your applicaiton be abstract in the beginning. Don't rush to set a structure for how things should be organized, what should constitues a module, what should be a class (or shouldn't), making hooks, making utilities, etc. Just write the code, make the application work, WRITE THE TESTS (re-read that 1000x, get it tattooed on your body, paint it on the walls. Please. Write. Tests.), write documentation, know what it all does.
 
 **🚨🚨🚨 BEFORE YOU COMMIT YOUR CODE!, REFACTOR!!! 🚨🚨🚨**
 
-Or, when you do it the first time, factor. This is why testing is sooooo fucking important. If you have tests in place for your application, you know that your code functions. If you break tests, you fucked up. That's ok. You should fuck up. That means you're making progress. Just make sure you don't leave anything fucked up.
+Or, when you do it the first time, factor. This is why testing is sooooo important. If you have tests in place for your application, you know that your code functions. If you break tests, you messed up. That's ok. You should mess up. That means you're making progress. Just make sure you don't leave anything messed up.
 
 This is the stage in the development process where you make sure things are organized properly. This is the part where you focus on **CODE READABILITY**.
 
-Split logic out into the tiniest possible pieces. Make new functions/methods, refactor your tests, split things into utilities. But only in a way that makes sense. And let your code tell you what makes sense. Things to consider:
+Split logic out into the tiniest possible pieces. Make new functions/methods, organize modules differently, split things into utilities. But only in a way that makes sense. And let your code tell you what makes sense. Things to consider:
 
 1. WTF is this code doing? - Can you answer that quickly? Can you make a TikTok that would allow someone to confidently implement your function?
 2. Is this repetative? - Is this logic (Or similar logic) happening anywhere else? If so, combine it. Pull it into a function. Move that function up the directory tree wherever it makes sense.
@@ -71,8 +71,8 @@ describe("camelToSnakeCase", () => {
 
 describe("capitalize", () => {
   test("should capitalize given string", () => {
-    const testString = "fart";
-    const expected = expect("FART");
+    const testString = "example";
+    const expected = expect("EXAMPLE");
     const result = capitalize(testString);
 
     expected.toBe(result);
@@ -81,3 +81,5 @@ describe("capitalize", () => {
 ```
 
 While this refactoring essentially happens at the same time (or should), usually the work to the code is done, the initial test fails, the tests are updated to reflect the change to the code.
+
+Refactoring is such an important step in the development of a code base. Mostly because tech debt has a strange way of going unpaid. There are so many minor things that we convince ourselves as devs that we will come back to, or someone will, to "clean up" or "clarify". But that rarely happens. The reality of writing code, especially new code, is that you have more context right now than anyone else, including yourself in a month, is ever going to have again. You know exactly what problem you're trying to solve and why you're doing it the way that you are. So it is your responsibility to try to capture that as much as possible for people in the future, including you. So don't let deadlines get in the way of doing the right thing. Take the extra hour or 4 or 8 to make sure this step happens. Because if you're in an environment that tracks tech debt, great. But the harsh reality is that those tickets will probably get stale before they get played. So do the work now.
