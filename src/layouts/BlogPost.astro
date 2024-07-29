@@ -14,21 +14,25 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
   <head>
     <BaseHead title={title} description={description} />
     <style>
+      hr {
+        border-top: 1px solid #ddd;
+        margin: 1rem 0;
+      }
+      img {
+        aspect-ratio: 2;
+        width: 100%;
+      }
       .container {
         margin: 0 auto;
         max-width: 65ch;
         width: 90%;
       }
+      .last-updated-on {
+        font-style: italic;
+      }
       .title {
         font-size: 2em;
         margin: 0.25em 0 0;
-      }
-      hr {
-        border-top: 1px solid #ddd;
-        margin: 1rem 0;
-      }
-      .last-updated-on {
-        font-style: italic;
       }
     </style>
   </head>
