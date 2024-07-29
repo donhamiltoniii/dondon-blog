@@ -1,12 +1,41 @@
 ---
-import Layout from "../../layouts/BlogPost.astro";
+import Layout from "../../layouts/PageLayout.astro";
+
+import { readdir } from "node:fs/promises";
+import { join } from "node:path";
+
+const walk = async (dirPath) =>
+  Promise.all(
+    await readdir(dirPath, { withFileTypes: true }).then((entries) =>
+      entries.map((entry) => {
+        const childPath = join(dirPath, entry.name);
+        return entry.isDirectory() ? walk(childPath) : childPath;
+      })
+    )
+  );
+
+type Sketch = {
+  href: string;
+  title: string;
+};
+
+const response = await walk("src/pages/sketch-book");
+
+const sketches: Sketch[] = response[0][0].map((file: string) => {
+  const fileWithoutExtension = file.split(".")[0];
+  const [_src, _pages, sketchBook, year, month, day] =
+    fileWithoutExtension.split("/");
+
+  return {
+    href: `${sketchBook}/${year}/${month}/${day}`,
+    title: `${year}-${month}-${day}`,
+  };
+});
 ---
 
 <Layout
   title="Sketch Book"
   description="A place for code experiments"
-  pubDate={new Date()}
-  updatedDate={new Date()}
   heroImage="https://picsum.photos/720/360"
 >
   <h2>This is just a place where I play around with web based code</h2>
@@ -15,11 +44,12 @@ import Layout from "../../layouts/BlogPost.astro";
     probably not.
   </p>
   <ol>
-    <li>
-      <a href="/sketch-book/2024/07/24">2024-07-24</a>
-    </li>
-    <li>
-      <a href="/sketch-book/2024/07/25">2024-07-25</a>
-    </li>
+    {
+      sketches.map((sketch) => (
+        <li>
+          <a href={sketch.href}>{sketch.title}</a>
+        </li>
+      ))
+    }
   </ol>
 </Layout>
