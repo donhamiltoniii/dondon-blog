@@ -1,0 +1,78 @@
+---
+title: "Learning in Public: Implementing Signals"
+description: Following an article that explains how to implement signals, hopefully successfully, and then giving feedback about the result.
+createDate: 3 Aug 2024
+lastUpdate: 3 Aug 2024
+heroImage: "https://picsum.photos/720/360"
+published: true
+---
+
+In this post, I'll be going through [this article](https://www.freecodecamp.org/news/learn-javascript-reactivity-build-signals-from-scratch/) to understand creating signals.
+
+What I build will live [in this repository](https://github.com/donhamiltoniii/creating-signals-from-scratch). Feel free to check it out if you would like!
+
+## Findings
+
+Signals are really cool and are going to be a big part of the web moving forward I think. This sort of pub/sub architecture has always been a big part of the web. So it's increasingly important to be familiar with it. So let's dive into some of what I found interesting and applicable on a broader scale as well as some things that I will do differently in the future.
+
+## The `Signal` Class
+
+```tsx
+class Signal {
+  constructor(value) {
+    this.value = value;
+    this.subscribers = [];
+  }
+
+  getValue() {
+    return this.value;
+  }
+
+  setValue(newValue) {
+    this.value = newValue;
+    this.emit();
+  }
+
+  emit() {
+    this.subscribers.forEach((subscriber) => subscriber(this.value));
+  }
+
+  subscribe(callback) {
+    this.subscribers.push(callback);
+  }
+}
+```
+
+Encapsulating this logic into it's own class is a great idea. The real meat of what's happening here though is in that `subscribers` property.
+
+## `createSignal`
+
+```tsx
+export const createSignal = (value) => {
+  const signal = new Signal(value);
+
+  return [
+    function value() {
+      if (effectCallback) {
+        signal.subscribe(effectCallback);
+      }
+      return signal.getValue();
+    },
+    function setValue(newVal) {
+      signal.setValue(newVal);
+    },
+  ];
+};
+```
+
+## `createEffect`
+
+```tsx
+export const createEffect = (callback) => {
+  effectCallback = callback;
+  callback();
+  effectCallback = null;
+};
+```
+
+I am starting a series on building a reactive frontend framework similar to React and probably based more heavily on Chris Ferdinandi's [Reef](https://reefjs.com/) than I want it to be. But that is the matrerial through which I am going to be learning. So that's wont to happen.
