@@ -3,8 +3,11 @@ import Layout from "../../layouts/PageLayout.astro";
 
 import { readdir } from "node:fs/promises";
 import { join } from "node:path";
+import { RANDOM_IMAGE } from "../../consts";
 
-const walk = async (dirPath) =>
+type WalkFn = (dirPath: string) => Promise<[] | unknown[] | string[]>;
+
+const walk: WalkFn = async (dirPath: string) =>
   Promise.all(
     await readdir(dirPath, { withFileTypes: true }).then((entries) =>
       entries.map((entry) => {
@@ -19,7 +22,7 @@ type Sketch = {
   title: string;
 };
 
-const response = await walk("src/pages/sketch-book");
+const response: [] | unknown[] | string[] = await walk("src/pages/sketch-book");
 
 const sketches: Sketch[] = response[0][0].map((file: string) => {
   const fileWithoutExtension = file.split(".")[0];
@@ -36,7 +39,7 @@ const sketches: Sketch[] = response[0][0].map((file: string) => {
 <Layout
   title="Sketch Book"
   description="A place for code experiments"
-  heroImage="https://picsum.photos/720/360"
+  heroImage={RANDOM_IMAGE}
 >
   <h2>This is just a place where I play around with web based code</h2>
   <p>

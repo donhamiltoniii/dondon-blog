@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
 import Layout from "../../layouts/PageLayout.astro";
-import { SITE_DESCRIPTION, SITE_TITLE } from "../../consts";
+import { RANDOM_IMAGE, SITE_DESCRIPTION, SITE_TITLE } from "../../consts";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => a.data.createDate.valueOf() - b.data.createDate.valueOf()
@@ -12,7 +12,7 @@ const posts = (await getCollection("blog")).sort(
 <Layout
   title={SITE_TITLE}
   description={SITE_DESCRIPTION}
-  heroImage="https://picsum.photos/720/360"
+  heroImage={RANDOM_IMAGE}
 >
   <main>
     <section>

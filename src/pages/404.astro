@@ -1,12 +1,9 @@
 ---
+import { RANDOM_IMAGE } from "../consts";
 import Layout from "../layouts/PageLayout.astro";
 ---
 
-<Layout
-  title="404"
-  description="Error"
-  heroImage="https://picsum.photos/720/360"
->
+<Layout title="404" description="Error" heroImage={RANDOM_IMAGE}>
   <p>
     Uh oh... This isn't a thing. Go back <a href="/">Home</a> and try again?
   </p>
