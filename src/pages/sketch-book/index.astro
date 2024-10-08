@@ -24,16 +24,21 @@ type Sketch = {
 
 const response: [] | unknown[] | string[] = await walk("src/pages/sketch-book");
 
-const sketches: Sketch[] = response[0][0].map((file: string) => {
-  const fileWithoutExtension = file.split(".")[0];
-  const [_src, _pages, sketchBook, year, month, day] =
-    fileWithoutExtension.split("/");
+const sketches: Sketch[] =
+  Array.isArray(response) &&
+  response[0] !== undefined &&
+  Array.isArray(response[0])
+    ? response[0][0].map((file: string) => {
+        const fileWithoutExtension = file.split(".")[0];
+        const [_src, _pages, sketchBook, year, month, day] =
+          fileWithoutExtension.split("/");
 
-  return {
-    href: `${sketchBook}/${year}/${month}/${day}`,
-    title: `${year}-${month}-${day}`,
-  };
-});
+        return {
+          href: `${sketchBook}/${year}/${month}/${day}`,
+          title: `${year}-${month}-${day}`,
+        };
+      })
+    : [];
 ---
 
 <Layout
@@ -43,8 +48,9 @@ const sketches: Sketch[] = response[0][0].map((file: string) => {
 >
   <h2>This is just a place where I play around with web based code</h2>
   <p>
-    Following is what I hope will be a complete list of the things I do. But
-    probably not.
+    Following is a collection of html, css, and/or js stuff that I'm curious
+    about or feeling creative about. No rhyme or reason. Just random experiments
+    and visual candy.
   </p>
   <ol>
     {
