@@ -15,7 +15,8 @@
     "@astrojs/rss": "^2.1.1",
     "@astrojs/sitemap": "^1.1.0",
     "astro": "^2.0.17",
-    "he": "^1.2.0"
+    "he": "^1.2.0",
+    "node": "^23.5.0"
   },
   "devDependencies": {
     "@types/he": "^1.2.3",
