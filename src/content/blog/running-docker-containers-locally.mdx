@@ -4,7 +4,7 @@ description: A working document with instructions and tips for how to setup a lo
 pubDate: 1 Jan 2025
 lastUpdate: 1 Jan 2025
 heroImage: "https://picsum.photos/720/360"
-published: false
+published: true
 ---
 
 In an effort to learn more about Linux for the purposes of running a homelab and self hosting applications built by me as well as others, I am going through [this wonderful course on Udemy](https://www.udemy.com/course/linux-administration-build-hands-on-linux-projects/). In an effort to better remember everything I learned, I'm documenting some of the processes that I learned to implement a custom [Astro](https://astro.build/) application.
@@ -204,10 +204,94 @@ http {
 }
 ```
 
-## Dev environment vs prod environment
+With these files added, we have all pieces in place to build our application for production deployment. At this point it would be a good idea to make sure that we can see a functional version of our application. The following steps will make that happen.
+
+### Build Docker Image
+
+In order to run our application, we'll need a Docker image. One simple command will provide that for us from the existing application code. Run the following to generate the Docker image.
+
+```bash
+docker build . -t application-name:latest
+```
+
+In the previous command, replace `application-name` with whatever you want to call your application. This is how you will reference it to run it in Docker. If you plan to push this image up to [DockerHub](https://hub.docker.com/) you should amend the previous command slightly.
+
+```bash
+docker build . -t dockerhub-username/application-name:latest
+```
+
+In this case, substitute `dockerhub-username` with your actual DockerHub username. If you just plan to run your application in this singular location, you can forgo that extended name. If you decide later that you want to push your image to DockerHub, you can always build a new image with a new tag.
+
+If you want to copy-pasta the exact command, use the following:
+
+```bash
+docker build . -t astro-blog-example:latest
+```
+
+### Run Docker Image
+
+With our new Docker image built, let's run it and make sure that it works.
+
+```bash
+docker container run -d -p port-on-server:port-exposed-from-image tag-name
+```
+
+Replace these values with values that actually make sense for your specific application:
+
+- `port-on-server`: The port number that you this application will be accessible from on your actual server.
+- `port-exposed-from-image`: The port exposed in the Dockerfile. In this example, `8080`.
+- `tag-name`: Whatever you named your application in the previous step.
+
+Again, if you want to copy-pasta directly, use the following command:
+
+```bash
+docker container run -d -p 80:8080 astro-blog-example:latest
+```
+
+That command will run an instance of our application on port 80 of our server. Run the following command to confirm that this new instance is running without error:
+
+```bash
+docker container ls -a
+```
+
+You should see an output similar to the following:
+
+```bash
+CONTAINER ID   IMAGE                       COMMAND                  CREATED         STATUS         PORTS                                   NAMES
+20ad93fe6224   astro-blog-example:latest   "/docker-entrypoint.…"   6 seconds ago   Up 6 seconds   0.0.0.0:80->8080/tcp, :::80->8080/tcp   pedantic_clarke
+```
+
+So long as your output looks similar to that, your application should be running. You should be able to go to your favorite browser on your dev machine, type the ip address of your server, and see the landing page of your application running! Congrats!
+
+## Dev vs Prod
+
+Now that we know that our application is capable of getting all the way to our production environment, we can start making it our own! It's a real challenge to develop in this environment though. Now there are certainly ways that we could develop this application here on the server, but it's not the best idea. Mixing your production environment and development environment can get messy really quickly as you can make changes to one that may affect the other.
+
+For this reason, the net step is to use git to commit all of the existing changes (at this point just the initialization of the app), connect to a remote repository on GitHub, and push. For that, I will assume that you are familiar with this process and have a GitHub account.
 
 ## Make updates to Astro app
 
+With your application pushed to GitHub, you can now pull the repository down to any machine on which you would like to develop. Astro provides a rich developer experience out of the box but I encourage you to explore and see what you can make!
+
 ## Push to GitHub
 
-## Build prod app and deploy
+Once you have your application in a state that you feel comfortable with and are ready to deploy, push this new version of your code up to GitHub from your dev environment.
+
+## Deploy!
+
+The final step is to deploy again! You can repeat this process ad infinitum. Any time you make a new version of your application, go to your server environment, pull the version you wish to deploy, rebuild your docker image (or build with a new version tag), stop your previous example, and run the new one!
+
+At this point, you have a running application! Congratulations! You have deployed an application in your local network completely from scratch! This is a huge accomplishment. But this can also be just another starting point if you'd like. There are plenty of improvements that can be made to this process.
+
+## Challenges
+
+If you want to take this a step further, here are a couple of suggestions:
+
+- Look into setting up a CI/CD pipeline with something like Jenkins or Github Actions. This will eliminate the need for you to manually pull new versions of your app and make new deploys in Docker.
+- Use Docker Compose to make more complex deploys. For example you could run another container alongside this application with a database so that you can manage persistent data in your application.
+- Add authentication so that your application can support multiple users.
+- Use a service like DuckDNS or some other DNS provider to get a static IP, or some other similar solution, and expose your application to the public internet.
+
+## Conclusion
+
+Hopefully this walkthrough has been beneficial and you have a running application somewhere other than your development machine. This is a huge step toward understanding full-stack development. The process and environment that you've just put in place exists as the foundation for many web applications. Granted, most processes are more complex than this. But the general principles remain the same. Continue to make changes and test the limits of Docker to see all of possibilities that exist!
