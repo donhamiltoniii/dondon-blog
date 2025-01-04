@@ -154,7 +154,7 @@ Once you have your project setup, push it up to git so that you can pull it down
 
 One of the reasons we are using the astro-paper theme is that we get a static build from it. This is helpful for the actual deployment process because it makes it easier to stand up a proper web server like [NGINX](https://www.f5.com/go/product/welcome-to-nginx) to serve our app. This isn't a necessity, but it is recommended. First, let's create a Dockerfile so that we can build an image of our application to soon run it in our docker instance. At the root of your project, create a new file called `Dockerfile` and paste the following values:
 
-```dockerfile
+```go
 FROM node:lts AS build
 WORKDIR /app
 COPY package*.json ./
