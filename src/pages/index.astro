@@ -1,11 +1,17 @@
 ---
+import PostsList from "../components/PostsList.astro";
 import { RANDOM_IMAGE } from "../consts";
 import PageLayout from "../layouts/PageLayout.astro";
+import { getPosts } from "../utils/get-posts";
+
+const posts = await getPosts({ numberOfPosts: 3 });
 ---
 
 <PageLayout description="Where you land" heroImage={RANDOM_IMAGE} title="Home">
   <p>
-    Hi, I'm DONDON. This is very much a work in progress. Just like me. Enjoy
-    the stuff I have here. Or don't. That's fine too.
+    What's up? I'm Don Hamilton aka Dondon. This is where I put stuff that I
+    think and/or made. I appreciate you taking a look!
   </p>
+  <h2>Recent Posts</h2>
+  <PostsList posts={posts} />
 </PageLayout>

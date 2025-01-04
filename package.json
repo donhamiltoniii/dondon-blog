@@ -8,7 +8,10 @@
     "dev": "astro dev",
     "plop": "plop",
     "preview": "astro preview",
-    "start": "astro dev"
+    "start": "astro dev",
+    "prepare": "husky",
+    "lint:staged": "lint-staged",
+    "test": ""
   },
   "dependencies": {
     "@astrojs/mdx": "^0.17.2",
@@ -19,7 +22,13 @@
     "node": "^23.5.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
     "@types/he": "^1.2.3",
+    "@types/jest": "^29.5.14",
+    "gray-matter": "^4.0.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.3.0",
     "plop": "^4.0.1"
   }
 }
