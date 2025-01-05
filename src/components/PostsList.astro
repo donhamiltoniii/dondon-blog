@@ -11,9 +11,9 @@ const { posts } = Astro.props;
 <ul>
   {
     posts
-      .filter((post: { data: { published: any } }) => post.data.published)
+      .filter((post) => post.data.published)
       .map(
-        (post: { data: { pubDate: unknown; title: unknown }; slug: any }) => (
+        (post) => (
           <li>
             <FormattedDate date={post.data.pubDate} />
             <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
