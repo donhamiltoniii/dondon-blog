@@ -1,14 +1,19 @@
 import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import MarkdownIt from "markdown-it";
+import sanitize from "sanitize-html";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../constants";
+
+const parser = new MarkdownIt();
 
 export async function GET(context) {
   const posts = await getCollection("blog");
   const items = posts
     .filter((post) => post.data.published)
     .map((post) => ({
-      ...post.data,
       link: `/blog/${post.slug}/`,
+      content: sanitize(parser.render(post.body)),
+      ...post.data,
     }));
 
   return rss({

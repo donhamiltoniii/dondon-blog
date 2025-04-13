@@ -23,7 +23,9 @@
     "astro": "^5.1.2",
     "dayjs": "^1.11.13",
     "he": "^1.2.0",
+    "markdown-it": "^14.1.0",
     "node": "^23.5.0",
+    "sanitize-html": "^2.15.0",
     "vitest": "2.1.6"
   },
   "devDependencies": {
