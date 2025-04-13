@@ -3,7 +3,7 @@ import Layout from "../../layouts/PageLayout.astro";
 
 import { readdir } from "node:fs/promises";
 import { join } from "node:path";
-import { RANDOM_IMAGE } from "../../consts";
+import { RANDOM_IMAGE } from "../../constants";
 
 type WalkFn = (dirPath: string) => Promise<[] | unknown[] | string[]>;
 
