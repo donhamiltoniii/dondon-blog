@@ -1,4 +1,4 @@
-export const SITE_TITLE = "DONDON Develops";
+export const SITE_TITLE = "Dondon Developments";
 export const SITE_DESCRIPTION =
-  "Thoughts, walkthroughs, and explanations of concepts related to software development.";
-export const RANDOM_IMAGE = "https://picsum.photos/720/360";
+  "A digital garden space for me to share writing, photos, musings, tutorial, and educational materials";
+export const RANDOM_IMAGE_URL = "https://picsum.photos/720/360";

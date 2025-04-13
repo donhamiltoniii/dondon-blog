@@ -1,0 +1,57 @@
+---
+interface Props {
+  githubUrl?: string;
+  codepenUrl?: string;
+}
+
+const { 
+  githubUrl = "https://github.com/donhamiltoniii", 
+  codepenUrl = "https://codepen.io/donhamiltoniii" 
+} = Astro.props;
+---
+
+<nav class="social-nav">
+  <ul>
+    <li><a 
+      href={githubUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="GitHub Profile"
+    >
+      <span class="fa-icon"><i class="fab fa-github"></i></span>
+    </a></li>
+    <li><a 
+      href={codepenUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="CodePen Profile"
+    >
+      <span class="fa-icon"><i class="fab fa-codepen"></i></span>
+    </a></li>
+  </ul>
+</nav>
+
+<style>
+    .social-nav {
+        color: inherit;
+        display: flex;
+        justify-content: center;
+        
+        ul {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                color: inherit;
+
+                a {
+                    color: inherit;
+                    margin: 0;
+                }
+            }
+        }
+    }
+</style>

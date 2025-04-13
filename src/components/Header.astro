@@ -1,17 +1,25 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
+<<<<<<< Updated upstream
 import { SITE_TITLE } from "../consts";
+=======
+import { SITE_TITLE } from "../constants";
+import SocialNavigation from "./SocialNavigation.astro";
+>>>>>>> Stashed changes
 ---
 
 <header>
   <h2>
     {SITE_TITLE}
   </h2>
-  <nav>
-    <HeaderLink href="/">Home</HeaderLink>
-    <HeaderLink href="/blog">Blog</HeaderLink>
-    <HeaderLink href="/about">About</HeaderLink>
-    <HeaderLink href="/rss.xml">RSS</HeaderLink>
+  <nav class="header-nav">
+    <section>
+      <HeaderLink href="/">Home</HeaderLink>
+      <HeaderLink href="/blog">Blog</HeaderLink>
+      <HeaderLink href="/about">About</HeaderLink>
+      <HeaderLink href="/rss.xml">RSS</HeaderLink>
+    </section>
+    <SocialNavigation />
   </nav>
 </header>
 <style>
@@ -20,5 +28,11 @@ import { SITE_TITLE } from "../consts";
   }
   h2 {
     margin: 0.5em 0;
+  }
+
+  .header-nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
   }
 </style>

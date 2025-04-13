@@ -1,11 +1,16 @@
 ---
+<<<<<<< Updated upstream
 import { SITE_TITLE } from "../consts";
+=======
+import { SITE_TITLE } from "../constants";
+import SocialNavigation from "./SocialNavigation.astro";
+>>>>>>> Stashed changes
 const today = new Date();
 ---
 
 <footer>
-  &copy; {today.getFullYear()}
-  {SITE_TITLE}. All rights reserved.
+  <SocialNavigation />
+  <small>&copy; {today.getFullYear()}{SITE_TITLE}. All rights reserved.</small>
 </footer>
 <style>
   footer {

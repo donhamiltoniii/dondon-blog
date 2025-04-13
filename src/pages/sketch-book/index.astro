@@ -3,7 +3,11 @@ import Layout from "../../layouts/PageLayout.astro";
 
 import { readdir } from "node:fs/promises";
 import { join } from "node:path";
+<<<<<<< Updated upstream
 import { RANDOM_IMAGE } from "../../consts";
+=======
+import { RANDOM_IMAGE_URL } from "../../constants";
+>>>>>>> Stashed changes
 
 type WalkFn = (dirPath: string) => Promise<[] | unknown[] | string[]>;
 
@@ -44,7 +48,7 @@ const sketches: Sketch[] =
 <Layout
   title="Sketch Book"
   description="A place for code experiments"
-  heroImage={RANDOM_IMAGE}
+  heroImage={RANDOM_IMAGE_URL}
 >
   <h2>This is just a place where I play around with web based code</h2>
   <p>
