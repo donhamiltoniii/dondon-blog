@@ -1,11 +1,12 @@
 ---
 import { SITE_TITLE } from "../constants";
+import SocialNavigation from "./SocialNavigation.astro";
 const today = new Date();
 ---
 
 <footer>
-  &copy; {today.getFullYear()}
-  {SITE_TITLE}. All rights reserved.
+  <SocialNavigation />
+  <small>&copy; {today.getFullYear()}{SITE_TITLE}. All rights reserved.</small>
 </footer>
 <style>
   footer {
