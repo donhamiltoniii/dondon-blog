@@ -5,12 +5,7 @@ import Layout from "../../layouts/PageLayout.astro";
 import { getPosts } from "../../utils/get-posts";
 
 const posts = await getPosts({ numberOfPosts: "all" });
-console.log('dhiii:blogPage:server')
 ---
-
-<script>
-  console.log('dhiii:blogPage:client')
-</script>
 
 <Layout
   title={SITE_TITLE}

@@ -1,24 +1,91 @@
 ---
 import FormattedDate from "./FormattedDate.astro";
 import type { CollectionEntry } from "astro:content";
+
 interface Props {
   posts: CollectionEntry<"blog">[];
 }
 
+// Define types for our grouped posts
+interface PostGroup {
+  year: number;
+  month: string;
+  posts: CollectionEntry<"blog">[];
+}
+
+interface GroupedPosts {
+  [key: string]: PostGroup;
+}
+
 const { posts } = Astro.props;
+
+// Filter published posts
+const publishedPosts = posts.filter((post) => post.data.published);
+
+// Group posts by month and year
+const groupedPosts: GroupedPosts = publishedPosts.reduce(
+  (groups: GroupedPosts, post) => {
+    const date = new Date(post.data.pubDate);
+    const monthYear = `${date.getFullYear()}-${date.getMonth()}`;
+
+    if (!groups[monthYear]) {
+      groups[monthYear] = {
+        year: date.getFullYear(),
+        month: date.toLocaleString("default", { month: "long" }),
+        posts: [],
+      };
+    }
+
+    groups[monthYear].posts.push(post);
+    return groups;
+  },
+  {}
+);
+
+// Convert to array and sort by date (newest first)
+const sortedGroups: PostGroup[] = Object.values(groupedPosts).sort(
+  (a: PostGroup, b: PostGroup) => {
+    // Sort by year descending
+    if (a.year !== b.year) return b.year - a.year;
+    // Then by month descending
+    return (
+      new Date(0, Number(new Date(0, 0, 1).getMonth() + b.month)).getMonth() -
+      new Date(0, Number(new Date(0, 0, 1).getMonth() + a.month)).getMonth()
+    );
+  }
+);
 ---
 
-<ul>
+<div class="blog-posts-by-date">
   {
-    posts
-      .filter((post) => post.data.published)
-      .map(
-        (post) => (
-          <li>
-            <FormattedDate date={post.data.pubDate} />
-            <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
-          </li>
-        )
-      )
+    sortedGroups.map((group) => (
+      <section class="month-section">
+        <h2 class="month-heading">
+          {group.month} {group.year}
+        </h2>
+        <ul>
+          {group.posts.map((post) => (
+            <li>
+              <FormattedDate date={post.data.pubDate} />
+              <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
   }
-</ul>
+</div>
+
+<style>
+  .month-section {
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: auto 1fr;
+      }
+    }
+  }
+</style>
