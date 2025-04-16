@@ -1,0 +1,46 @@
+---
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+import {
+  RANDOM_IMAGE_URL,
+  SITE_DESCRIPTION,
+  SITE_TITLE,
+} from "../../constants";
+import Layout from "../../layouts/PageLayout.astro";
+
+const albums = await getCollection("albums");
+---
+
+<Layout
+  title={SITE_TITLE}
+  description={SITE_DESCRIPTION}
+  heroImage={RANDOM_IMAGE_URL}
+>
+  <h1>Gallery</h1>
+  <section class="gallery-grid">
+    {
+      albums.map((item) => (
+        <a href={`/gallery/${item.id}`}>
+          <Image
+            src={item.data.cover}
+            alt={item.data.title}
+            format="avif"
+            width={720}
+            quality="mid"
+            inferSize
+          />
+          <div>
+            <strong>{item.data.title}</strong>
+          </div>
+        </a>
+      ))
+    }
+  </section>
+</Layout>
+
+<style>
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+</style>
