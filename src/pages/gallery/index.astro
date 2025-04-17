@@ -1,21 +1,13 @@
 ---
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
-import {
-  RANDOM_IMAGE_URL,
-  SITE_DESCRIPTION,
-  SITE_TITLE,
-} from "../../constants";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../../constants";
 import Layout from "../../layouts/PageLayout.astro";
 
 const albums = await getCollection("albums");
 ---
 
-<Layout
-  title={SITE_TITLE}
-  description={SITE_DESCRIPTION}
-  heroImage={RANDOM_IMAGE_URL}
->
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
   <h1>Gallery</h1>
   <section class="gallery-grid">
     {

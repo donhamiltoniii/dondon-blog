@@ -1,17 +1,11 @@
 ---
-import PostsList from "../components/PostsList.astro";
-import { RANDOM_IMAGE_URL } from "../constants";
 import PageLayout from "../layouts/PageLayout.astro";
 import { getPosts } from "../utils/get-posts";
 
 const posts = await getPosts({ numberOfPosts: 3 });
 ---
 
-<PageLayout
-  description="Where you land"
-  heroImage={RANDOM_IMAGE_URL}
-  title="Home"
->
+<PageLayout description="Where you land" title="Home">
   <header>
     <h1>Hello, I'm Don Hamilton</h1>
     <p><em>But you can call me Dondon</em></p>

@@ -42,18 +42,6 @@ const { description, heroImage, title } = Astro.props;
     <div class="container">
       <Header title={title} />
       <main>
-        {
-          heroImage && (
-            <>
-              <img width={720} height={360} src={heroImage} alt="" />
-              <small>
-                hero image photos are from{" "}
-                <a href="https://picsum.photos">Picsum</a>
-              </small>
-              <br />
-            </>
-          )
-        }
         <slot />
       </main>
       <Footer />
