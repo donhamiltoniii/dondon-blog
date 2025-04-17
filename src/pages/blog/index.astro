@@ -8,9 +8,5 @@ const posts = await getPosts({ numberOfPosts: "all" });
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
-  <main>
-    <section>
-      <PostsList posts={posts} />
-    </section>
-  </main>
+  <PostsList posts={posts} />
 </Layout>
