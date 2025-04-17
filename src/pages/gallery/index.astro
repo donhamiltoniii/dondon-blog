@@ -41,6 +41,9 @@ const albums = await getCollection("albums");
 <style>
   .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+    @media (min-width: 500px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 </style>
