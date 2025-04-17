@@ -8,29 +8,147 @@ import SocialNavigation from "./SocialNavigation.astro";
   <h2>
     {SITE_TITLE}
   </h2>
-  <nav class="header-nav">
-    <section>
-      <HeaderLink href="/">Home</HeaderLink>
-      <HeaderLink href="/blog">Blog</HeaderLink>
-      <HeaderLink href="/gallery">Gallery</HeaderLink>
-      <HeaderLink href="/about">About</HeaderLink>
-      <HeaderLink href="/now">Now</HeaderLink>
-      <HeaderLink href="/rss.xml">RSS</HeaderLink>
+  <nav class="navigation">
+    <button class="navigation__button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <section class="navigation__items">
+      <section class="navigation__header-links">
+        <HeaderLink href="/">Home</HeaderLink>
+        <HeaderLink href="/blog">Blog</HeaderLink>
+        <HeaderLink href="/gallery">Gallery</HeaderLink>
+        <HeaderLink href="/about">About</HeaderLink>
+        <HeaderLink href="/now">Now</HeaderLink>
+        <HeaderLink href="/rss.xml">RSS</HeaderLink>
+      </section>
+      <SocialNavigation />
     </section>
-    <SocialNavigation />
   </nav>
 </header>
+
 <style>
   header {
     margin: 0em 0 2em;
   }
   h2 {
     margin: 0.5em 0;
+    text-align: center;
   }
 
-  .header-nav {
+  .navigation {
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    .navigation__button {
+      align-items: center;
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 0.125rem;
+
+      span {
+        background-color: black;
+        height: 0.125rem;
+        width: 1rem;
+      }
+    }
+
+    .navigation__items {
+      display: none;
+    }
+
+    .navigation__items--open {
+      align-items: center;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: space-around;
+      left: 0;
+      position: fixed;
+      text-align: center;
+      top: 0;
+      width: 100vw;
+      z-index: 1;
+
+      .navigation__header-links {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
   }
 </style>
+
+<script>
+  const navigationButton = document.querySelector(".navigation__button");
+  const navigationItems = document.querySelector(".navigation__items");
+
+  var keys: Record<number, number> = { 37: 1, 38: 1, 39: 1, 40: 1 };
+
+  function preventDefault(e: Event) {
+    e.preventDefault();
+  }
+
+  function preventDefaultForScrollKeys(e: Event) {
+    if (keys[e.keyCode]) {
+      preventDefault(e);
+      return false;
+    }
+  }
+
+  // modern Chrome requires { passive: false } when adding event
+  var supportsPassive = false;
+  try {
+    window.addEventListener(
+      "test",
+      null,
+      Object.defineProperty({}, "passive", {
+        get: function () {
+          supportsPassive = true;
+        },
+      })
+    );
+  } catch (e) {}
+
+  var wheelOpt = supportsPassive ? { passive: false } : false;
+  var wheelEvent =
+    "onwheel" in document.createElement("div") ? "wheel" : "mousewheel";
+
+  // call this to Disable
+  function disableScroll() {
+    window.addEventListener("DOMMouseScroll", preventDefault, false); // older FF
+    window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+    window.addEventListener("touchmove", preventDefault, wheelOpt); // mobile
+    window.addEventListener("keydown", preventDefaultForScrollKeys, false);
+  }
+
+  // call this to Enable
+  function enableScroll() {
+    window.removeEventListener("DOMMouseScroll", preventDefault, false);
+    window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
+    window.removeEventListener("touchmove", preventDefault, wheelOpt);
+    window.removeEventListener("keydown", preventDefaultForScrollKeys, false);
+  }
+
+  const toggleNavigationItemsOpen = () => {
+    navigationItems?.classList.toggle("navigation__items--open");
+  };
+
+  navigationButton?.addEventListener("click", () => {
+    toggleNavigationItemsOpen();
+    disableScroll();
+  });
+
+  navigationItems?.addEventListener("click", (event) => {
+    if ((event.target as HTMLAnchorElement)?.tagName === "A") {
+      return;
+    }
+    enableScroll();
+    toggleNavigationItemsOpen();
+  });
+</script>
