@@ -1,8 +1,5 @@
 ---
 import PageLayout from "../layouts/PageLayout.astro";
-import { getPosts } from "../utils/get-posts";
-
-const posts = await getPosts({ numberOfPosts: 3 });
 ---
 
 <PageLayout description="Where you land" title="Home">
@@ -14,9 +11,9 @@ const posts = await getPosts({ numberOfPosts: 3 });
   <section>
     <h2>Welcome to my digital garden 🌱</h2>
     <p>
-      This is my space to grow and share ideas about tech concepts, programming,
-      coding, and anything else that makes sense to share about me. Think of it
-      as part side project showcase, learning in public journal, regular
+      This is my space to grow and share the things I am passionate about. Ideas
+      about tech concepts, programming, coding, recipes, photos, etc. Think of
+      it as part side project showcase, learning in public journal, regular
       journal, and collection of various educational materials. Also, hopefully
       some photos every now and again.
     </p>
@@ -26,17 +23,23 @@ const posts = await getPosts({ numberOfPosts: 3 });
     <h2>What I'm about</h2>
     <p>
       I'm passionate about building <s>useful</s> things with code and writing about
-      it. My current interests include:
+      it. I also want to use this space to empower more people to use tech to their
+      advantage instead of feeding content to big tech outlets. It is my goal to
+      share my interests in tech with as many people as possible to give others the
+      power to curate their own personal space online without having to support big
+      tech institutions. The tools I use for this are:
     </p>
     <ul>
       <li>
-        <strong>Web Development</strong>: TypeScript, React, HTML, CSS,
-        JavaScript
+        <strong>Web Development</strong>: TypeScript, HTML, CSS, JavaScript
+        (including various frontend frameworks and libraries)
       </li>
-      <li><strong>Infrastructure</strong>: Linux, Docker, Kubernetes</li>
       <li>
-        <strong>Workflow</strong>: Vim (because life's too short for slow
-        editing)
+        <strong>Infrastructure</strong>: Linux, Docker, Kubernetes, FluxCD,
+        ArgoCD
+      </li>
+      <li>
+        <strong>Workflow</strong>: Vim and, increasingly, Neovim
       </li>
     </ul>
   </section>
@@ -51,12 +54,20 @@ const posts = await getPosts({ numberOfPosts: 3 });
     <p>Wander around and you might discover:</p>
     <ul>
       <li>
-        <strong>Tutorials</strong> on setting up self-hosted services and building
-        software
+        <strong>Tutorials</strong> on setting up self-hosted services, building software,
+        and other tech educational content
       </li>
       <li>
         <strong>Notes</strong> on programming concepts I'm learning or random shit
         I'm interested in at the moment
+      </li>
+      <li>
+        <strong>Recipes</strong> I've collected and enjoy making (because developers
+        need to eat too)
+      </li>
+      <li>
+        <strong>Photo Gallery</strong> with albums of images from my adventures and
+        daily life
       </li>
       <li>
         <strong>Guides</strong> for clarifying concepts that were/are hard for me
@@ -72,8 +83,8 @@ const posts = await getPosts({ numberOfPosts: 3 });
     <p>
       I believe the best learning happens through sharing and conversation. Feel
       free to reach out if something here sparks your interest, you have
-      questions about a tutorial, or you just want to geek out about Vim
-      keybindings.
+      questions about a tutorial, want to share your favorite recipe, or you
+      just want to geek out about Vim keybindings.
     </p>
     <p>
       <em>This garden is always growing—check back often to see what's new!</em>
