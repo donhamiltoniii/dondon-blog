@@ -56,10 +56,20 @@ import SocialNavigation from "./SocialNavigation.astro";
         height: 0.125rem;
         width: 1rem;
       }
+
+      @media (min-width: 620px) {
+        display: none;
+      }
     }
 
     .navigation__items {
       display: none;
+
+      @media (min-width: 620px) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
     }
 
     .navigation__items--open {
