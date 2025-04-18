@@ -1,0 +1,21 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  recipes: CollectionEntry<"recipes">[];
+}
+
+const { recipes } = Astro.props;
+---
+
+<div class="blog-posts-by-date">
+  <ul>
+    {
+      recipes.map((recipe) => (
+        <li>
+          <a href={`/recipes/${recipe.slug}`}>{recipe.data.title}</a>
+        </li>
+      ))
+    }
+  </ul>
+</div>

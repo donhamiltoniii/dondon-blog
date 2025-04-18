@@ -1,0 +1,23 @@
+---
+import RecipesList from "../../../components/RecipesList.astro";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../../../constants";
+import Layout from "../../../layouts/PageLayout.astro";
+import { getRecipes } from "../../../utils/get-recipes";
+
+const recipes = await getRecipes();
+const tags = [...new Set(recipes.flatMap((recipe) => recipe.data.tags).sort())];
+---
+
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <h1>Recipe Tags</h1>
+  <p>Tags! Click for recipes.</p>
+  <ul>
+    {
+      tags.map((tag) => (
+        <li>
+          <a href={`/recipes/tags/${tag}`}>{tag}</a>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>

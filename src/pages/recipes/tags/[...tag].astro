@@ -1,0 +1,57 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import Layout from "../../../layouts/PageLayout.astro";
+import RecipesList from "../../../components/RecipesList.astro";
+
+// Get the tag from URL params with proper typing
+const { tag } = Astro.params as { tag: string };
+
+// Define the Recipe type explicitly
+type Recipe = CollectionEntry<"recipes">;
+
+// First, generate all possible tag paths
+export async function getStaticPaths() {
+  const recipes = await getCollection("recipes");
+
+  // Get unique tags
+  const allTags = [...new Set(recipes.flatMap((recipe) => recipe.data.tags))];
+
+  return allTags.map((tag) => ({
+    params: { tag },
+    props: { tag },
+  }));
+}
+
+// Get the tag as a prop, with proper typing
+const { tag: tagProp } = Astro.props;
+
+// Get recipes filtered by tag
+const recipes = await getCollection("recipes");
+const recipesByTag = recipes.filter((recipe) => recipe.data.tags.includes(tag));
+---
+
+<Layout title={tag} description={`Recipes with the tag: ${tag}`}>
+  <div class="tag-page">
+    <h1>Recipes tagged with "{tag}"</h1>
+
+    {
+      recipesByTag.length > 0 ? (
+        <RecipesList recipes={recipesByTag} />
+      ) : (
+        <p>No recipes found with this tag.</p>
+      )
+    }
+
+    <a href="/recipes/tags">View all tags</a>
+  </div>
+</Layout>
+
+<style>
+  .tag-page {
+    padding: 2rem 0;
+  }
+
+  .tag-page h1 {
+    margin-bottom: 2rem;
+  }
+</style>
