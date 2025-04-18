@@ -4,9 +4,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../../constants";
 import Layout from "../../layouts/PageLayout.astro";
 import { getRecipes } from "../../utils/get-recipes";
 
-const recipes = (await getRecipes()).filter((recipe) =>
-  Boolean(recipe.data.imgUrl)
-);
+const recipes = await getRecipes();
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
