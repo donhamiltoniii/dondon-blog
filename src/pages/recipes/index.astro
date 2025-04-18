@@ -1,0 +1,21 @@
+---
+import RecipesList from "../../components/RecipesList.astro";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../../constants";
+import Layout from "../../layouts/PageLayout.astro";
+import { getRecipes } from "../../utils/get-recipes";
+
+const recipes = (await getRecipes()).filter((recipe) =>
+  Boolean(recipe.data.imgUrl)
+);
+---
+
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <h1>Recipes</h1>
+  <p>
+    This is a collection of recipes that I used to host on a separate site.
+    Since this is part of stuff that I create, I'm including it here now. It
+    mostly exists here so that I can find something to eat when I don't know
+    what to cook for dinner. But maybe this will inspire your next meal!
+  </p>
+  <RecipesList recipes={recipes} />
+</Layout>

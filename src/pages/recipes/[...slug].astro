@@ -1,0 +1,85 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import Layout from "../../layouts/PageLayout.astro";
+import RecipesList from "../../components/RecipesList.astro";
+
+export async function getStaticPaths() {
+  const recipes = await getCollection("recipes");
+  return recipes.map((recipe: { slug: any }) => ({
+    params: { slug: recipe.slug },
+    props: recipe,
+  }));
+}
+type Props = CollectionEntry<"recipes">;
+
+const recipe = Astro.props;
+const { Content } = await recipe.render();
+---
+
+<Layout title={recipe.data.title} description={recipe.data.description}>
+  <header>
+    {
+      recipe.data.imgUrl ? (
+        <img
+          alt={recipe.data.title}
+          src={recipe.data.imgUrl}
+          style={{ width: "100%" }}
+        />
+      ) : null
+    }
+    <div>
+      <h2>
+        {recipe.data.title}
+      </h2>
+      <section>
+        <small>
+          Prep time: {recipe.data.prepTime}
+        </small>
+        <br />
+        <small>
+          Cook time: {recipe.data.cookTime}
+        </small>
+      </section>
+      <small>
+        Servings: {recipe.data.servings}
+      </small>
+      <blockquote>
+        {recipe.data.description}
+      </blockquote>
+      {
+        recipe.data.notes && (
+          <p>
+            <strong>NOTES: </strong>
+            {recipe.data.notes}
+          </p>
+        )
+      }
+    </div>
+  </header>
+  <Content />
+  <footer>
+    <h4>Tags</h4>
+    <ul>
+      {
+        recipe.data.tags.map((tag: string) => (
+          <li>
+            <a href={`/recipes/tags/${tag}`}>{tag}</a>
+          </li>
+        ))
+      }
+    </ul>
+    <a href="/recipes/">Go back →</a>
+  </footer>
+</Layout>
+
+<style>
+  blockquote {
+    border: 0;
+    border-left: 0.125rem solid black;
+    margin: 1rem 0;
+  }
+
+  img {
+    margin-top: 1rem;
+  }
+</style>
