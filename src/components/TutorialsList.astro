@@ -1,0 +1,27 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  tutorials: CollectionEntry<"tutorials">[];
+}
+
+const { tutorials } = Astro.props;
+---
+
+<div class="blog-posts-by-date">
+  {
+    tutorials.length > 0 ? (
+      <ul>
+        {tutorials.map((tutorial) => (
+          <li>
+            <a href={`/tutorials/${tutorial.slug}`}>{tutorial.data.title}</a>
+          </li>
+        ))}
+      </ul>
+    ) : (
+      <p>
+        <strong>There are no tutorials... Something has gone wrong...</strong>
+      </p>
+    )
+  }
+</div>
