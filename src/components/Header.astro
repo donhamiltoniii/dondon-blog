@@ -146,20 +146,23 @@ import SocialNavigation from "./SocialNavigation.astro";
     window.removeEventListener("keydown", preventDefaultForScrollKeys, false);
   }
 
-  const toggleNavigationItemsOpen = () => {
+  const toggleNavigationItems = () => {
     navigationItems?.classList.toggle("navigation__items--open");
   };
 
-  navigationButton?.addEventListener("click", () => {
-    toggleNavigationItemsOpen();
+  navigationButton?.addEventListener("click", (event) => {
+    console.log("nav button", { event });
+    toggleNavigationItems();
     disableScroll();
   });
 
   navigationItems?.addEventListener("click", (event) => {
-    if ((event.target as HTMLAnchorElement)?.tagName === "A") {
+    const targetEl = event.target as HTMLAnchorElement;
+    console.log("nav items", { event });
+    if (targetEl?.tagName === "A" || targetEl?.tagName === "I") {
       return;
     }
     enableScroll();
-    toggleNavigationItemsOpen();
+    toggleNavigationItems();
   });
 </script>
