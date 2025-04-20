@@ -158,8 +158,8 @@ import SocialNavigation from "./SocialNavigation.astro";
 
   navigationItems?.addEventListener("click", (event) => {
     const targetEl = event.target as HTMLAnchorElement;
-    console.log("nav items", { event });
-    if (targetEl?.tagName === "A" || targetEl?.tagName === "I") {
+    console.log("nav items", { event, width: window.innerWidth });
+    if (targetEl?.tagName === "A" || window.innerWidth >= 620) {
       return;
     }
     enableScroll();
