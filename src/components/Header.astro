@@ -2,6 +2,16 @@
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../constants";
 import SocialNavigation from "./SocialNavigation.astro";
+
+const navItems = [
+  "home",
+  "code",
+  "notes",
+  "gallery",
+  "recipes",
+  "about",
+  "rss",
+];
 ---
 
 <header>
@@ -16,14 +26,17 @@ import SocialNavigation from "./SocialNavigation.astro";
     </button>
     <section class="navigation__items">
       <section class="navigation__header-links">
-        <HeaderLink href="/">home</HeaderLink>
-        <HeaderLink href="/code">code</HeaderLink>
-        <HeaderLink href="/notes">notes</HeaderLink>
-        <HeaderLink href="/gallery">gallery</HeaderLink>
-        <HeaderLink href="/recipes">recipes</HeaderLink>
-        <HeaderLink href="/about">about</HeaderLink>
-        <HeaderLink href="/now">now</HeaderLink>
-        <HeaderLink href="/rss.xml">rss</HeaderLink>
+        {
+          navItems
+            .sort()
+            .map((ni) => (
+              <HeaderLink
+                href={`/${ni === "home" ? "" : ni === "rss" ? "rss.xml" : ni}`}
+              >
+                {ni}
+              </HeaderLink>
+            ))
+        }
       </section>
       <SocialNavigation />
     </section>
@@ -122,7 +135,7 @@ import SocialNavigation from "./SocialNavigation.astro";
         get: function () {
           supportsPassive = true;
         },
-      })
+      }),
     );
   } catch (e) {}
 
