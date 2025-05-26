@@ -41,7 +41,6 @@ const images = await getAlbumImages(album.id);
           <Image
             src={image}
             alt={`Image from ${album.data.title} album`}
-            format="avif"
             quality={50}
             loading="lazy"
           />
