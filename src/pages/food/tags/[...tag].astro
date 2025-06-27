@@ -1,20 +1,19 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
-import Layout from "../../../layouts/PageLayout.astro";
+import Layout from "../../../layouts/DefaultPageLayout.astro";
 import RecipesList from "../../../components/RecipesList.astro";
+import type { FoodAsset } from "../../../types";
+import {
+  getFoodAssets,
+  getFoodAssetsByTag,
+} from "../../../utils/get-food-assets";
 
-// Get the tag from URL params with proper typing
 const { tag } = Astro.params as { tag: string };
 
-// Define the Recipe type explicitly
-type Recipe = CollectionEntry<"recipes">;
-
-// First, generate all possible tag paths
 export async function getStaticPaths() {
-  const recipes = await getCollection("recipes");
+  const foodAssets = await getFoodAssets();
 
-  // Get unique tags
-  const allTags = [...new Set(recipes.flatMap((recipe) => recipe.data.tags))];
+  const allTags = [...new Set(foodAssets.flatMap((fa) => fa.data.tags))];
 
   return allTags.map((tag) => ({
     params: { tag },
@@ -22,12 +21,7 @@ export async function getStaticPaths() {
   }));
 }
 
-// Get the tag as a prop, with proper typing
-const { tag: tagProp } = Astro.props;
-
-// Get recipes filtered by tag
-const recipes = await getCollection("recipes");
-const recipesByTag = recipes.filter((recipe) => recipe.data.tags.includes(tag));
+const recipesByTag = await getFoodAssetsByTag(tag);
 ---
 
 <Layout title={tag} description={`Recipes with the tag: ${tag}`}>
@@ -42,7 +36,7 @@ const recipesByTag = recipes.filter((recipe) => recipe.data.tags.includes(tag));
       )
     }
 
-    <a href="/recipes/tags">View all tags</a>
+    <a href="/food/tags">View all tags</a>
   </div>
 </Layout>
 

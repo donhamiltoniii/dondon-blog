@@ -1,12 +1,12 @@
 ---
-import PostsList from "../../components/PostsList.astro";
+import ArticleAssetsList from "../../components/ArticleAssetsList.astro";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../../constants";
-import Layout from "../../layouts/PageLayout.astro";
-import { getPosts } from "../../utils/get-posts";
+import Layout from "../../layouts/DefaultPageLayout.astro";
+import { getCodeAssets } from "../../utils/get-code-assets";
 
-const posts = await getPosts({ numberOfPosts: "all" });
+const codeAssets = await getCodeAssets({ numberOfAssets: "all" });
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
-  <PostsList posts={posts} />
+  <ArticleAssetsList assets={codeAssets} />
 </Layout>

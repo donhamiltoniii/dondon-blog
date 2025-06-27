@@ -1,0 +1,28 @@
+---
+import CategorySection from "../../components/CategorySection.astro";
+import NotesList from "../../components/NotesList.astro";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../../constants";
+import Layout from "../../layouts/PageLayout.astro";
+import {
+  getSectionNotes,
+  organizedNotes,
+  type CategoryData,
+} from "../../utils/get-notes";
+
+const projectNotes = await getSectionNotes("projects");
+const areaNotes = await getSectionNotes("areas");
+const resourceNotes = await getSectionNotes("resources");
+const archiveNotes = await getSectionNotes("archives");
+---
+
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <h1>Notes</h1>
+  <h2>Projects</h2>
+  <NotesList notes={projectNotes} />
+  <h2>Areas</h2>
+  <NotesList notes={areaNotes} />
+  <h2>Resources</h2>
+  <NotesList notes={resourceNotes} />
+  <h2>Archives</h2>
+  <NotesList notes={archiveNotes} />
+</Layout>

@@ -4,19 +4,20 @@ import { SITE_TITLE } from "../constants";
 import SocialNavigation from "./SocialNavigation.astro";
 
 const navItems = [
-  "home",
+  // "home",
   "code",
-  "notes",
-  "gallery",
-  "recipes",
-  "about",
+  // "notes",
+  "photos",
+  "food",
+  "now",
+  // "about",
   "rss",
 ];
 ---
 
 <header>
   <h2>
-    {SITE_TITLE}
+    <a href="/">{SITE_TITLE}</a>
   </h2>
   <nav class="navigation">
     <button class="navigation__button">
@@ -49,6 +50,11 @@ const navItems = [
   h2 {
     margin: 0.5em 0;
     text-align: center;
+
+    a {
+      cursor: pointer;
+      text-decoration: none;
+    }
   }
 
   .navigation {
