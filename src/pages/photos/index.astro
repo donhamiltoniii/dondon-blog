@@ -1,28 +1,27 @@
 ---
 import { Image } from "astro:assets";
-import { getCollection } from "astro:content";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../../constants";
-import Layout from "../../layouts/PageLayout.astro";
+import Layout from "../../layouts/DefaultPageLayout.astro";
+import { getPhotoAssets } from "../../utils/get-photo-assets";
 
-const albums = await getCollection("albums");
+const photoAssets = await getPhotoAssets();
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
   <h1>Gallery</h1>
-  <section class="gallery-grid">
+  <section class="photo-grid">
     {
-      albums.map((item) => (
-        <a href={`/gallery/${item.id}`}>
+      photoAssets.map((pa) => (
+        <a href={`/photos/${pa.id}`}>
           <Image
-            src={item.data.cover}
-            alt={item.data.title}
+            src={pa.data.cover}
+            alt={pa.data.title}
             format="avif"
             width={720}
             quality="mid"
-            inferSize
           />
           <div>
-            <strong>{item.data.title}</strong>
+            <strong>{pa.data.title}</strong>
           </div>
         </a>
       ))
@@ -31,7 +30,7 @@ const albums = await getCollection("albums");
 </Layout>
 
 <style>
-  .gallery-grid {
+  .photo-grid {
     display: grid;
 
     @media (min-width: 500px) {

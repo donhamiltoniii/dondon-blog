@@ -1,0 +1,31 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getTitleFromSlug } from "../lib/getTitleFromSlug";
+import { kebabToTitle } from "../lib/kebabToTitle";
+
+interface Props {
+  notes: CollectionEntry<"notes">[];
+}
+
+const { notes } = Astro.props;
+---
+
+<div class="blog-posts-by-date">
+  {
+    notes.length > 0 ? (
+      <ul>
+        {notes.map((note) => (
+          <li>
+            <a href={`/notes/${note.slug}`}>
+              {kebabToTitle(getTitleFromSlug(note.slug))}
+            </a>
+          </li>
+        ))}
+      </ul>
+    ) : (
+      <p>
+        <strong>There are no notes... Something has gone wrong...</strong>
+      </p>
+    )
+  }
+</div>

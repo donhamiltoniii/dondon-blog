@@ -1,25 +1,27 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
-import BlogPost from "../../layouts/BlogPost.astro";
+import ArticleAssetLayout from "../../layouts/ArticleAssetLayout.astro";
+import type { CodeAsset } from "../../types";
+import { getAllCodeAssets } from "../../utils/get-code-assets";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog");
-  return posts.map((post: { slug: any }) => ({
-    params: { slug: post.slug },
-    props: post,
+  const codeAssets = await getAllCodeAssets();
+  return codeAssets.map((ca: { slug: any }) => ({
+    params: { slug: ca.slug },
+    props: ca,
   }));
 }
-type Props = CollectionEntry<"blog">;
 
-const post = Astro.props;
-const { Content, remarkPluginFrontmatter } = await post.render();
+type Props = CodeAsset;
 
-post.data = {
-  ...post.data,
+const codeAsset = Astro.props;
+const { Content, remarkPluginFrontmatter } = await codeAsset.render();
+
+codeAsset.data = {
+  ...codeAsset.data,
   lastUpdate: new Date(remarkPluginFrontmatter.lastUpdate),
 };
 ---
 
-<BlogPost {...post.data}>
+<ArticleAssetLayout {...codeAsset.data}>
   <Content />
-</BlogPost>
+</ArticleAssetLayout>

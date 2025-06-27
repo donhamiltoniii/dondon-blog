@@ -1,10 +1,10 @@
 ---
 import RecipesList from "../../../components/RecipesList.astro";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../../../constants";
-import Layout from "../../../layouts/PageLayout.astro";
-import { getRecipes } from "../../../utils/get-recipes";
+import Layout from "../../../layouts/DefaultPageLayout.astro";
+import { getFoodAssets } from "../../../utils/get-food-assets";
 
-const recipes = await getRecipes();
+const recipes = await getFoodAssets();
 const tags = [...new Set(recipes.flatMap((recipe) => recipe.data.tags).sort())];
 ---
 
@@ -15,7 +15,7 @@ const tags = [...new Set(recipes.flatMap((recipe) => recipe.data.tags).sort())];
     {
       tags.map((tag) => (
         <li>
-          <a href={`/recipes/tags/${tag}`}>{tag}</a>
+          <a href={`/food/tags/${tag}`}>{tag}</a>
         </li>
       ))
     }

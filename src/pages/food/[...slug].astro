@@ -1,16 +1,16 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
-import Layout from "../../layouts/PageLayout.astro";
-import RecipesList from "../../components/RecipesList.astro";
+import Layout from "../../layouts/DefaultPageLayout.astro";
+import type { FoodAsset } from "../../types";
+import { getFoodAssets } from "../../utils/get-food-assets";
 
 export async function getStaticPaths() {
-  const recipes = await getCollection("recipes");
+  const recipes = await getFoodAssets();
   return recipes.map((recipe: { slug: any }) => ({
     params: { slug: recipe.slug },
     props: recipe,
   }));
 }
-type Props = CollectionEntry<"recipes">;
+type Props = FoodAsset;
 
 const recipe = Astro.props;
 const { Content } = await recipe.render();
@@ -63,12 +63,12 @@ const { Content } = await recipe.render();
       {
         recipe.data.tags.map((tag: string) => (
           <li>
-            <a href={`/recipes/tags/${tag}`}>{tag}</a>
+            <a href={`/food/tags/${tag}`}>{tag}</a>
           </li>
         ))
       }
     </ul>
-    <a href="/recipes/">Go back →</a>
+    <a href="/food/">&larr; Go back</a>
   </footer>
 </Layout>
 

@@ -1,16 +1,6 @@
 import { defineCollection, z } from "astro:content";
 
-const albums = defineCollection({
-  type: "data",
-  schema: ({ image }) =>
-    z.object({
-      title: z.string(),
-      description: z.string().optional(),
-      cover: image(),
-    }),
-});
-
-const blog = defineCollection({
+const code = defineCollection({
   // Type-check frontmatter using a schema
   schema: z.object({
     title: z.string(),
@@ -29,7 +19,7 @@ const blog = defineCollection({
   }),
 });
 
-const recipes = defineCollection({
+const food = defineCollection({
   schema: z.object({
     title: z.string(),
     prepTime: z.string(),
@@ -44,23 +34,18 @@ const recipes = defineCollection({
   }),
 });
 
-const tutorials = defineCollection({
-  // Type-check frontmatter using a schema
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    // Transform string to Date object
-    pubDate: z
-      .string()
-      .or(z.date())
-      .transform((val) => new Date(val)),
-    lastUpdate: z
-      .string()
-      .optional()
-      .transform((str) => (str ? new Date(str) : undefined)),
-    heroImage: z.string().optional(),
-    published: z.boolean().optional(),
-  }),
+const notes = defineCollection({
+  schema: z.object({}),
 });
 
-export const collections = { albums, blog, recipes, tutorials };
+const photos = defineCollection({
+  type: "data",
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string().optional(),
+      cover: image(),
+    }),
+});
+
+export const collections = { code, food, notes, photos };

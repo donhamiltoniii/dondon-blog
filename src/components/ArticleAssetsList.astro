@@ -1,50 +1,51 @@
 ---
+import type { ArticleAssets } from "../types";
 import FormattedDate from "./FormattedDate.astro";
 import type { CollectionEntry } from "astro:content";
 
 interface Props {
-  posts: CollectionEntry<"blog">[];
+  assets: ArticleAssets;
 }
 
 // Define types for our grouped posts
-interface PostGroup {
+interface ArticleAssetGroup {
   year: number;
   month: string;
-  posts: CollectionEntry<"blog">[];
+  assets: ArticleAssets;
 }
 
-interface GroupedPosts {
-  [key: string]: PostGroup;
+interface GroupedAssets {
+  [key: string]: ArticleAssetGroup;
 }
 
-const { posts } = Astro.props;
+const { assets } = Astro.props;
 
 // Filter published posts
-const publishedPosts = posts.filter((post) => post.data.published);
+const publishedPosts = assets.filter((a) => a.data.published);
 
 // Group posts by month and year
-const groupedPosts: GroupedPosts = publishedPosts.reduce(
-  (groups: GroupedPosts, post) => {
-    const date = new Date(post.data.pubDate);
+const GroupedAssets: GroupedAssets = publishedPosts.reduce(
+  (groups: GroupedAssets, asset) => {
+    const date = new Date(asset.data.pubDate);
     const monthYear = `${date.getFullYear()}-${date.getMonth()}`;
 
     if (!groups[monthYear]) {
       groups[monthYear] = {
         year: date.getFullYear(),
         month: date.toLocaleString("default", { month: "long" }),
-        posts: [],
+        assets: [],
       };
     }
 
-    groups[monthYear].posts.push(post);
+    groups[monthYear].assets.push(asset);
     return groups;
   },
-  {}
+  {},
 );
 
 // Convert to array and sort by date (newest first)
-const sortedGroups: PostGroup[] = Object.values(groupedPosts).sort(
-  (a: PostGroup, b: PostGroup) => {
+const sortedGroups: ArticleAssetGroup[] = Object.values(GroupedAssets).sort(
+  (a: ArticleAssetGroup, b: ArticleAssetGroup) => {
     // Sort by year descending
     if (a.year !== b.year) return b.year - a.year;
     // Then by month descending
@@ -52,11 +53,11 @@ const sortedGroups: PostGroup[] = Object.values(groupedPosts).sort(
       new Date(0, Number(new Date(0, 0, 1).getMonth() + b.month)).getMonth() -
       new Date(0, Number(new Date(0, 0, 1).getMonth() + a.month)).getMonth()
     );
-  }
+  },
 );
 ---
 
-<div class="blog-posts-by-date">
+<div class="code-assets-by-date">
   {
     sortedGroups.map((group) => (
       <section class="month-section">
@@ -64,10 +65,10 @@ const sortedGroups: PostGroup[] = Object.values(groupedPosts).sort(
           {group.month} {group.year}
         </h2>
         <ul>
-          {group.posts.map((post) => (
+          {group.assets.map((a) => (
             <li>
-              <FormattedDate date={post.data.pubDate} />
-              <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
+              <FormattedDate date={a.data.pubDate} />
+              <a href={`/code/${a.slug}/`}>{a.data.title}</a>
             </li>
           ))}
         </ul>

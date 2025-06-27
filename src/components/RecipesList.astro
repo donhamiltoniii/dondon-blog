@@ -1,8 +1,8 @@
 ---
-import type { CollectionEntry } from "astro:content";
+import type { FoodAssets } from "../types";
 
 interface Props {
-  recipes: CollectionEntry<"recipes">[];
+  recipes: FoodAssets;
 }
 
 const { recipes } = Astro.props;
@@ -13,7 +13,7 @@ const { recipes } = Astro.props;
     {
       recipes.map((recipe) => (
         <li>
-          <a href={`/recipes/${recipe.slug}`}>{recipe.data.title}</a>
+          <a href={`/food/${recipe.slug}`}>{recipe.data.title}</a>
         </li>
       ))
     }

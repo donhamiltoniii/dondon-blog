@@ -1,20 +1,22 @@
 ---
 import { Image } from "astro:assets";
-import { getCollection } from "astro:content";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../../constants";
-import Layout from "../../layouts/PageLayout.astro";
-import { getAlbumImages } from "../../utils/get-album-images";
+import Layout from "../../layouts/DefaultPageLayout.astro";
+import {
+  getImagesForPhotoAsset,
+  getPhotoAssets,
+} from "../../utils/get-photo-assets";
 
 export async function getStaticPaths() {
-  const albums = await getCollection("albums");
+  const photoAssets = await getPhotoAssets();
 
-  const paths = Object.values(albums).map((album) => {
+  const paths = Object.values(photoAssets).map((p) => {
     return {
       params: {
-        id: album.id,
+        id: p.id,
       },
       props: {
-        album,
+        photoAsset: p,
       },
     };
   });
@@ -22,17 +24,17 @@ export async function getStaticPaths() {
   return paths;
 }
 
-const { album } = Astro.props;
-const images = await getAlbumImages(album.id);
+const { photoAsset } = Astro.props;
+const images = await getImagesForPhotoAsset(photoAsset.id);
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
   <section>
     <h1>
-      {album.data.title}
+      {photoAsset.data.title}
     </h1>
     <p>
-      {album.data.description}
+      {photoAsset.data.description}
     </p>
 
     <div>
@@ -40,7 +42,7 @@ const images = await getAlbumImages(album.id);
         images.map((image) => (
           <Image
             src={image}
-            alt={`Image from ${album.data.title} album`}
+            alt={`Image from ${photoAsset.data.title} album`}
             quality={50}
             loading="lazy"
           />
@@ -49,7 +51,7 @@ const images = await getAlbumImages(album.id);
     </div>
 
     <p>
-      <a href="/gallery/">Go back →</a>
+      <a href="/photos/">&larr; Go back</a>
     </p>
   </section>
 </Layout>
