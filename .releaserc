@@ -10,7 +10,7 @@
       "prerelease": true
     }
   ],
-  "repositoryUrl": "https://github.com/yourusername/your-repo.git",
+  "repositoryUrl": "https://github.com/donhamiltoniii/your-repo.git",
   "plugins": [
     [
       "@semantic-release/commit-analyzer",
