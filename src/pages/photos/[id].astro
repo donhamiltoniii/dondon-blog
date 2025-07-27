@@ -33,20 +33,34 @@ const images = await getImagesForPhotoAsset(photoAsset.id);
     <h1>
       {photoAsset.data.title}
     </h1>
+
+    <p>
+      <a href="/photos/">&larr; Go back</a>
+    </p>
+
     <p>
       {photoAsset.data.description}
     </p>
 
     <div>
       {
-        images.map((image) => (
-          <Image
-            src={image}
-            alt={`Image from ${photoAsset.data.title} album`}
-            quality={50}
-            loading="lazy"
-          />
-        ))
+        images.length > 0 ? (
+          images
+            .filter((image) => {
+              const imageSrcArr = image.src.split("/");
+              return !imageSrcArr[imageSrcArr.length - 1].includes("cover");
+            })
+            .map((image) => (
+              <Image
+                src={image}
+                alt={`Image from ${photoAsset.data.title} album`}
+                quality={50}
+                loading="lazy"
+              />
+            ))
+        ) : (
+          <p>No images to display</p>
+        )
       }
     </div>
 

@@ -11,20 +11,26 @@ const photoAssets = await getPhotoAssets();
   <h1>Gallery</h1>
   <section class="photo-grid">
     {
-      photoAssets.map((pa) => (
-        <a href={`/photos/${pa.id}`}>
-          <Image
-            src={pa.data.cover}
-            alt={pa.data.title}
-            format="avif"
-            width={720}
-            quality="mid"
-          />
-          <div>
-            <strong>{pa.data.title}</strong>
-          </div>
-        </a>
-      ))
+      photoAssets
+        .sort((a, b) => {
+          if (a.data.created > b.data.created) return -1;
+          if (a.data.created < b.data.created) return 1;
+          return 0;
+        })
+        .map((pa) => (
+          <a href={`/photos/${pa.id}`}>
+            <Image
+              src={pa.data.cover}
+              alt={pa.data.title}
+              format="avif"
+              width={720}
+              quality="mid"
+            />
+            <div>
+              <strong>{pa.data.title}</strong>
+            </div>
+          </a>
+        ))
     }
   </section>
 </Layout>
@@ -32,6 +38,7 @@ const photoAssets = await getPhotoAssets();
 <style>
   .photo-grid {
     display: grid;
+    gap: 1rem;
 
     @media (min-width: 500px) {
       grid-template-columns: repeat(2, 1fr);
