@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.1.0...v2.1.1) (2025-07-27)
+
+
+### Bug Fixes
+
+* update release config ([6f3ee0b](https://github.com/donhamiltoniii/dondon-blog/commit/6f3ee0b9a0dd3b22d800e3d7c0b2534200e15bfa))
+
 # [2.1.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.0.2...v2.1.0) (2025-07-27)
 
 

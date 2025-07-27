@@ -1,7 +1,7 @@
 {
   "name": "dondon-blog",
   "type": "module",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Personal blog built with Astro",
   "scripts": {
     "astro": "astro",
