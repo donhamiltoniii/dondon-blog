@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.1.1...v2.2.0) (2025-07-27)
+
+
+### Features
+
+* add photo dump 2025-06-30 ([5691b97](https://github.com/donhamiltoniii/dondon-blog/commit/5691b977ce160f46626ea1f3fa7688bb016f2ab5))
+
 ## [2.1.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.1.0...v2.1.1) (2025-07-27)
 
 
