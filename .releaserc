@@ -66,7 +66,14 @@
     [
       "@semantic-release/github",
       {
-        "successComment": "🎉 This ${issue.pull_request ? 'PR is included' : 'issue has been resolved'} in version [${nextRelease.version}](${releases.filter(release => !!release.gitTag)[0].gitTag}) :tada:",
+        "releasedLabels": ["released"],
+        "addReleases": "top",
+        "draftRelease": false,
+        "prerelease": false,
+        "draft": false,
+        "releaseNameTemplate": "Release v${nextRelease.version}",
+        "releaseBodyTemplate": "## What's New\n\n${nextRelease.notes}\n\n---\n\n**Full Changelog**: https://github.com/yourusername/dondon-blog/compare/${lastRelease.gitTag}...v${nextRelease.version}",
+        "successComment": "🎉 This ${issue.pull_request ? 'PR is included' : 'issue has been resolved'} in version [v${nextRelease.version}](${releases.filter(release => !!release.gitTag)[0].gitTag}) :tada:",
         "failTitle": "😞 Release failed",
         "failComment": "The release from branch `${branch.name}` had failed due to the following errors:\n- ${errors.map(err => err.message).join('\\n- ')}"
       }
