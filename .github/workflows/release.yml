@@ -1,0 +1,93 @@
+name: Release and Version Bump
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    
+    permissions:
+      contents: write      # to be able to publish a GitHub release
+      issues: write        # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+      id-token: write      # to enable use of OIDC for npm provenance
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        # Fetch full history for semantic-release
+        fetch-depth: 0
+        # Use a PAT to allow pushing back to the repo
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22'  # Latest LTS version (22.14.0)
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run tests (optional)
+      run: npm test
+      continue-on-error: true
+
+    - name: Build site
+      run: npm run build
+
+    - name: Semantic Release
+      uses: cycjimmy/semantic-release-action@v4
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }} # Only if publishing to npm
+      with:
+        semantic_version: 24.2.7
+        extra_plugins: |
+          @semantic-release/changelog@6.0.3
+          @semantic-release/git@10.0.1
+
+  # Alternative: Manual version bumping with latest actions
+  manual-bump:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, '[bump]')
+    
+    permissions:
+      contents: write
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22'
+
+    - name: Configure Git
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+
+    - name: Bump version
+      run: |
+        # Determine bump type from commit message
+        if [[ "${{ github.event.head_commit.message }}" == *"[bump major]"* ]]; then
+          npm version major
+        elif [[ "${{ github.event.head_commit.message }}" == *"[bump minor]"* ]]; then
+          npm version minor
+        else
+          npm version patch
+        fi
+
+    - name: Push changes
+      run: |
+        git push origin main --follow-tags

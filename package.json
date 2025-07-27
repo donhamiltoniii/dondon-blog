@@ -1,7 +1,8 @@
 {
   "name": "dondon-blog",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
+  "description": "Personal blog built with Astro",
   "scripts": {
     "astro": "astro",
     "build": "astro build",
@@ -9,8 +10,16 @@
     "plop": "plop",
     "preview": "astro preview",
     "start": "astro dev",
-    "test": "vitest"
+    "test": "vitest",
+    "semantic-release": "semantic-release"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/donhamiltoniii/dondon-blog.git"
+  },
+  "keywords": ["blog", "astro", "personal", "website"],
+  "author": "Don Hamilton III",
+  "license": "MIT",
   "dependencies": {
     "@astrojs/mdx": "^4.3.0",
     "@astrojs/rss": "^4.0.11",
@@ -31,6 +40,11 @@
   "devDependencies": {
     "@types/he": "^1.2.3",
     "gray-matter": "^4.0.3",
-    "plop": "^4.0.1"
+    "plop": "^4.0.1",
+    "semantic-release": "^24.2.7",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.3",
+    "@semantic-release/npm": "^12.0.2"
   }
 }
