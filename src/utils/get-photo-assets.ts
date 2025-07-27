@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 export async function getImagesForPhotoAsset(assetId: string) {
   // 1. List all album files from collections path
   let images = import.meta.glob<{ default: ImageMetadata }>(
-    "/src/content/photos/**/*.{jpeg,jpg}"
+    "/src/content/photos/**/*.{jpeg,jpg,webp}"
   );
 
   // 2. Filter images by albumId

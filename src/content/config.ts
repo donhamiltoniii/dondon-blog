@@ -42,9 +42,10 @@ const photos = defineCollection({
   type: "data",
   schema: ({ image }) =>
     z.object({
-      title: z.string(),
-      description: z.string().optional(),
       cover: image(),
+      created: z.date(),
+      description: z.string().optional(),
+      title: z.string(),
     }),
 });
 
