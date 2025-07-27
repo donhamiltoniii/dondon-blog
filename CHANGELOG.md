@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.0.2...v2.1.0) (2025-07-27)
+
+
+### Features
+
+* add banana bread and update template ([b4b2d70](https://github.com/donhamiltoniii/dondon-blog/commit/b4b2d70cbb7cb5479860974ec77b7ed1d700f73e))
+
 ## [2.0.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.0.1...v2.0.2) (2025-07-27)
 
 
