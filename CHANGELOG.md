@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.12.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.11.0...v2.12.0) (2025-07-28)
+
+
+### Features
+
+* finalize automated Docker build pipeline ([eeece12](https://github.com/donhamiltoniii/dondon-blog/commit/eeece12886634f98f160190be77ef6454bf3b22c))
+
 # [2.11.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.10.1...v2.11.0) (2025-07-28)
 
 
