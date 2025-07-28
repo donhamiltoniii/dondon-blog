@@ -8,7 +8,7 @@
 
 Gallery content is mapped as follows:
 
-```
+```bash
 src
 |- content/
 |——— albums/
@@ -22,6 +22,8 @@ src
 |——————— photo2.jpg
 |——— config.ts
 ```
-# Test release trigger
+
+## Test release trigger
+
 Docker automated builds are now working! 🐳
 🎉 Docker automated builds are now fully working!
