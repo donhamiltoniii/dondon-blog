@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.10.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.10.0...v2.10.1) (2025-07-28)
+
+
+### Bug Fixes
+
+* change tag pattern from double to single quotes ([985272e](https://github.com/donhamiltoniii/dondon-blog/commit/985272e5ee330b2254a68aefd6ad19146c073ae5))
+
 # [2.10.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.9.0...v2.10.0) (2025-07-28)
 
 
