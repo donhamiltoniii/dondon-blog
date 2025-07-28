@@ -24,3 +24,4 @@ src
 ```
 # Test release trigger
 Docker automated builds are now working! 🐳
+🎉 Docker automated builds are now fully working!
