@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.4.0...v2.4.1) (2025-07-28)
+
+
+### Bug Fixes
+
+* update build issues in workflow action ([4748e23](https://github.com/donhamiltoniii/dondon-blog/commit/4748e237deb970af753bf30260ffa1b70fb46f4a))
+
 # [2.4.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.3.0...v2.4.0) (2025-07-28)
 
 
