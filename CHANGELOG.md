@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.15.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.14.0...v2.15.0) (2025-07-28)
+
+
+### Features
+
+* combine release and docker build into single workflow ([5fb3b2b](https://github.com/donhamiltoniii/dondon-blog/commit/5fb3b2b0aeb4bb07cc661cf3028afd63b1e0dabd))
+* combine release and docker image workflow ([03c7078](https://github.com/donhamiltoniii/dondon-blog/commit/03c7078cdfe9badf9ef57dbe8d9fb4e8ac8d50d6))
+
 # [2.14.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.13.0...v2.14.0) (2025-07-28)
 
 
