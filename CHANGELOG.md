@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.6.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.5.0...v2.6.0) (2025-07-28)
+
+
+### Bug Fixes
+
+* update date format in code assets ([4be8817](https://github.com/donhamiltoniii/dondon-blog/commit/4be88179e978837bfd891c995dfcee9cc6bb26ad))
+* update semantic release config ([caceae0](https://github.com/donhamiltoniii/dondon-blog/commit/caceae03f110033e7106efa5c045a74d4f6b2c93))
+
+
+### Features
+
+* add test article to trigger workflow ([3ee92a9](https://github.com/donhamiltoniii/dondon-blog/commit/3ee92a9080ffa2193490e9d423c0150cd50b288f))
+
 ## [99.99.100](https://github.com/donhamiltoniii/dondon-blog/compare/v99.99.99...v99.99.100) (2025-07-28)
 
 
