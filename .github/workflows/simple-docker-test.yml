@@ -1,6 +1,8 @@
 name: Simple Docker Test
 
 on:
+  release:
+    types: [published]
   push:
     tags:
       - "v*"
@@ -22,6 +24,7 @@ jobs:
           echo "Registry: ${{ env.REGISTRY }}"
           echo "Image: ${{ env.IMAGE_NAME }}"
           echo "Tag: ${{ github.ref_name }}"
+          echo "Event: ${{ github.event_name }}"
 
       - name: Test Docker build (no push)
         run: |
