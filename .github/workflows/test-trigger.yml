@@ -1,0 +1,20 @@
+name: Test Trigger
+
+on:
+  push:
+    tags:
+      - "test-*"
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test
+        run: |
+          echo "Trigger test worked!"
+          echo "Event: ${{ github.event_name }}"
+          echo "Ref: ${{ github.ref }}"
+          echo "Tag: ${{ github.ref_name }}"
