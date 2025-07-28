@@ -23,3 +23,4 @@ src
 |——— config.ts
 ```
 # Test release trigger
+Docker automated builds are now working! 🐳
