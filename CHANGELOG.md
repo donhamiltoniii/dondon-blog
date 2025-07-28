@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.14.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.13.0...v2.14.0) (2025-07-28)
+
+
+### Features
+
+* add chicken and rice bowls ([590657a](https://github.com/donhamiltoniii/dondon-blog/commit/590657a71605d52b890950468fe673020ab7365c))
+
 # [2.13.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.12.0...v2.13.0) (2025-07-28)
 
 
