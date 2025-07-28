@@ -60,7 +60,7 @@
       "@semantic-release/git",
       {
         "assets": ["package.json", "package-lock.json", "CHANGELOG.md"],
-        "message": "chore(release): v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        "message": "chore(release): v${nextRelease.version}\n\n${nextRelease.notes}"
       }
     ],
     [
@@ -72,7 +72,7 @@
         "prerelease": false,
         "draft": false,
         "releaseNameTemplate": "Release v${nextRelease.version}",
-        "releaseBodyTemplate": "## What's New\n\n${nextRelease.notes}\n\n---\n\n**Full Changelog**: https://github.com/yourusername/dondon-blog/compare/${lastRelease.gitTag}...v${nextRelease.version}",
+        "releaseBodyTemplate": "## What's New\n\n${nextRelease.notes}\n\n---\n\n**Full Changelog**: https://github.com/donhamiltoniii/dondon-blog/compare/${lastRelease.gitTag}...v${nextRelease.version}",
         "successComment": "🎉 This ${issue.pull_request ? 'PR is included' : 'issue has been resolved'} in version [v${nextRelease.version}](${releases.filter(release => !!release.gitTag)[0].gitTag}) :tada:",
         "failTitle": "😞 Release failed",
         "failComment": "The release from branch `${branch.name}` had failed due to the following errors:\n- ${errors.map(err => err.message).join('\\n- ')}"
