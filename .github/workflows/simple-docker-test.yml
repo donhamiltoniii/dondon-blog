@@ -1,0 +1,29 @@
+name: Simple Docker Test
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+env:
+  REGISTRY: registry.thedondon.org
+  IMAGE_NAME: dondon-developments
+
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Echo environment
+        run: |
+          echo "Registry: ${{ env.REGISTRY }}"
+          echo "Image: ${{ env.IMAGE_NAME }}"
+          echo "Tag: ${{ github.ref_name }}"
+
+      - name: Test Docker build (no push)
+        run: |
+          echo "Would build Docker image here"
+          echo "This is just a test - no actual build"
