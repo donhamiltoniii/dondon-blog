@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.11.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.10.1...v2.11.0) (2025-07-28)
+
+
+### Bug Fixes
+
+* remove problematic SHA tag that creates invalid docker tags ([fb1e054](https://github.com/donhamiltoniii/dondon-blog/commit/fb1e0540f911efad58cf76c5c1a3bce6c08f18a3))
+
+
+### Features
+
+* add automated Docker builds on version releases ([0b54bc7](https://github.com/donhamiltoniii/dondon-blog/commit/0b54bc7c635def4fb9328abff14b800cd4bdcf63))
+
 ## [2.10.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.10.0...v2.10.1) (2025-07-28)
 
 
