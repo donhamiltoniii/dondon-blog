@@ -5,7 +5,7 @@ on:
     types: [published] # Triggers when GitHub release is published
   push:
     tags:
-      - "v*" # Keep tag trigger as backup
+      - 'v*' # Keep tag trigger as backup
   workflow_dispatch: # Allows manual triggering
 
 env:
