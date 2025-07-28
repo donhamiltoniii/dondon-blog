@@ -22,3 +22,4 @@ src
 |——————— photo2.jpg
 |——— config.ts
 ```
+# Test release trigger
