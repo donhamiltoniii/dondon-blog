@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.7.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.7.0...v2.7.1) (2025-07-28)
+
+
+### Bug Fixes
+
+* update workflow config to trigger on release ([98eed23](https://github.com/donhamiltoniii/dondon-blog/commit/98eed23fa1f7b433607630c5d144c75199284dff))
+
 # [2.7.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.6.0...v2.7.0) (2025-07-28)
 
 
