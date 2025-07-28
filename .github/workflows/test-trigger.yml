@@ -3,7 +3,7 @@ name: Test Trigger
 on:
   push:
     tags:
-      - "test-*"
+      - "v*"
   release:
     types: [published]
   workflow_dispatch:
