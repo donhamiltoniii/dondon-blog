@@ -1,14 +1,16 @@
 name: Build and Push Docker Image
 
 on:
+  release:
+    types: [published] # Triggers when GitHub release is published
   push:
     tags:
-      - "v*" # Triggers when semantic-release or manual bump creates tags
+      - "v*" # Keep tag trigger as backup
   workflow_dispatch: # Allows manual triggering
 
 env:
   REGISTRY: registry.thedondon.org
-  IMAGE_NAME: dondon-developments
+  IMAGE_NAME: dondon-developments # Change this to your desired image name
 
 jobs:
   build-and-push:
