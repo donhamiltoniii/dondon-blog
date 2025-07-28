@@ -62,7 +62,7 @@ jobs:
   build-docker:
     runs-on: ubuntu-latest
     needs: release
-    if: github.ref == 'refs/heads/main' && (contains(github.event.head_commit.message, 'feat:') || contains(github.event.head_commit.message, 'fix:'))
+    if: github.ref == 'refs/heads/main' && (contains(github.event.head_commit.message, 'feat:') || contains(github.event.head_commit.message, 'fix:') || needs.release.outputs.new-release-published == 'true')
     permissions:
       contents: read
     steps:
@@ -79,6 +79,23 @@ jobs:
           username: ${{ secrets.REGISTRY_USERNAME }}
           password: ${{ secrets.REGISTRY_PASSWORD }}
 
+      - name: Get version from package.json or latest tag
+        id: version
+        run: |
+          if [ "${{ needs.release.outputs.new-release-published }}" == "true" ]; then
+            # Use the version from semantic-release
+            VERSION="${{ needs.release.outputs.new-release-version }}"
+          else
+            # Get version from package.json or latest git tag
+            if [ -f package.json ]; then
+              VERSION=$(node -p "require('./package.json').version")
+            else
+              VERSION=$(git describe --tags --abbrev=0 2>/dev/null | sed 's/v//' || echo "0.0.1")
+            fi
+          fi
+          echo "version=${VERSION}" >> $GITHUB_OUTPUT
+          echo "📦 Using version: ${VERSION}"
+
       - name: Extract metadata
         id: meta
         uses: docker/metadata-action@v5
@@ -86,8 +103,8 @@ jobs:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
             type=raw,value=latest
-            type=raw,value=v${{ needs.release.outputs.new-release-version }},enable=${{ needs.release.outputs.new-release-published == 'true' }}
-            type=sha,prefix={{date 'YYYYMMDD-HHmmss'}}-
+            type=raw,value=v${{ steps.version.outputs.version }}
+            type=raw,value=${{ steps.version.outputs.version }}
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
@@ -99,6 +116,13 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
+
+      - name: Output final tags
+        run: |
+          echo "🐳 Docker image built and pushed with tags:"
+          echo "  - ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest"
+          echo "  - ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:v${{ steps.version.outputs.version }}"
+          echo "  - ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.version.outputs.version }}"
 
   # Keep your manual version bump as backup
   manual-bump:
