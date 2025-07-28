@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [99.100.0](https://github.com/donhamiltoniii/dondon-blog/compare/v99.99.96...v99.100.0) (2025-07-28)
+
+
+### Features
+
+* add simplified docker test workflow ([c6119d0](https://github.com/donhamiltoniii/dondon-blog/commit/c6119d031a3cba42654d9e637be5a4672c94666d))
+
 # [2.9.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.8.1...v2.9.0) (2025-07-28)
 
 
