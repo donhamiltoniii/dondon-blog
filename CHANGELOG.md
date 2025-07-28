@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.3.0...v2.4.0) (2025-07-28)
+
+
+### Features
+
+* add docker image build step ([9e6040f](https://github.com/donhamiltoniii/dondon-blog/commit/9e6040fb616062997e7d9b8b97c6620263c1d406))
+
 # [2.3.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.2.0...v2.3.0) (2025-07-27)
 
 
