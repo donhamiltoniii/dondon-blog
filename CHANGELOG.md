@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.17.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.16.0...v2.17.0) (2025-07-28)
+
+
+### Features
+
+* add picadillo with sweet plantains ([839e9ae](https://github.com/donhamiltoniii/dondon-blog/commit/839e9aef078f6faeb0d2d6e582ee8685f86b114a))
+
 # [2.16.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.15.1...v2.16.0) (2025-07-28)
 
 
