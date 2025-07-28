@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.15.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.15.0...v2.15.1) (2025-07-28)
+
+
+### Bug Fixes
+
+* make docker build run on every feat/fix commit ([938a2b1](https://github.com/donhamiltoniii/dondon-blog/commit/938a2b16e2361e53e2bf62f44c59028e5474a511))
+
 # [2.15.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.14.0...v2.15.0) (2025-07-28)
 
 
