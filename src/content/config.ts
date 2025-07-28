@@ -7,11 +7,11 @@ const code = defineCollection({
     description: z.string(),
     // Transform string to Date object
     pubDate: z
-      .string()
+      .date()
       .or(z.date())
       .transform((val) => new Date(val)),
     lastUpdate: z
-      .string()
+      .date()
       .optional()
       .transform((str) => (str ? new Date(str) : undefined)),
     heroImage: z.string().optional(),
