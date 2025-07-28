@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.9.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.8.1...v2.9.0) (2025-07-28)
+
+
+### Features
+
+* add test trigger workflow ([9a854d6](https://github.com/donhamiltoniii/dondon-blog/commit/9a854d6ef0c46ddee2bca33ca590b0ae4cd0672d))
+
 ## [2.8.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.8.0...v2.8.1) (2025-07-28)
 
 
