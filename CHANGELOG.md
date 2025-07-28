@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.10.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.9.0...v2.10.0) (2025-07-28)
+
+
+### Bug Fixes
+
+* test v* pattern in test workflow ([fdd8c15](https://github.com/donhamiltoniii/dondon-blog/commit/fdd8c1570466ef1aae23c2a9608168815d4cce44))
+
+
+### Features
+
+* add simplified docker test workflow ([c6119d0](https://github.com/donhamiltoniii/dondon-blog/commit/c6119d031a3cba42654d9e637be5a4672c94666d))
+
 # [99.100.0](https://github.com/donhamiltoniii/dondon-blog/compare/v99.99.96...v99.100.0) (2025-07-28)
 
 
