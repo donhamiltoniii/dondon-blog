@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [99.99.100](https://github.com/donhamiltoniii/dondon-blog/compare/v99.99.99...v99.99.100) (2025-07-28)
+
+
+### Bug Fixes
+
+* update semantic release config ([caceae0](https://github.com/donhamiltoniii/dondon-blog/commit/caceae03f110033e7106efa5c045a74d4f6b2c93))
+
 # [2.5.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.4.1...v2.5.0) (2025-07-28)
 
 
