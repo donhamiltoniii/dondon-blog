@@ -4,7 +4,7 @@ const code = defineCollection({
   // Type-check frontmatter using a schema
   schema: z.object({
     title: z.string(),
-    description: z.string(),
+    description: z.string().optional(),
     // Transform string to Date object
     pubDate: z
       .date()
@@ -34,10 +34,6 @@ const food = defineCollection({
   }),
 });
 
-const notes = defineCollection({
-  schema: z.object({}),
-});
-
 const photos = defineCollection({
   type: "data",
   schema: ({ image }) =>
@@ -49,4 +45,18 @@ const photos = defineCollection({
     }),
 });
 
-export const collections = { code, food, notes, photos };
+const seeds = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    pubDate: z
+      .date()
+      .or(z.date())
+      .transform((val) => new Date(val)),
+    lastUpdate: z
+      .date()
+      .optional()
+      .transform((str) => (str ? new Date(str) : undefined)),
+  }),
+})
+
+export const collections = { code, food, photos, seeds };

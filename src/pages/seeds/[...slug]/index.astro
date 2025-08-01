@@ -1,0 +1,29 @@
+---
+import ArticleAssetLayout from "../../../layouts/ArticleAssetLayout.astro";
+import { getTitleFromSlug } from "../../../lib/getTitleFromSlug";
+import { kebabToTitle } from "../../../lib/kebabToTitle";
+import { getSeeds, type Seed } from "../../../utils/get-seeds";
+
+export async function getStaticPaths() {
+  const seeds = await getSeeds();
+  return seeds.map((seed: Seed) => {
+    const slugArr = seed.slug.split("/");
+    const paraSection = slugArr.unshift();
+    const slug = slugArr.join("/");
+
+    return {
+      params: { paraSection, slug },
+      props: { seed },
+    };
+  });
+}
+
+type Props = { seed: Seed };
+
+const { seed } = Astro.props;
+const { Content } = await seed.render();
+---
+
+<ArticleAssetLayout {...seed.data}>
+  <Content />
+</ArticleAssetLayout>

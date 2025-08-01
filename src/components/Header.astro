@@ -10,7 +10,7 @@ const navItems = [
   "photos",
   "food",
   "now",
-  // "about",
+  "seeds",
   "rss",
 ];
 ---
@@ -170,14 +170,12 @@ const navItems = [
   };
 
   navigationButton?.addEventListener("click", (event) => {
-    console.log("nav button", { event });
     toggleNavigationItems();
     disableScroll();
   });
 
   navigationItems?.addEventListener("click", (event) => {
     const targetEl = event.target as HTMLAnchorElement;
-    console.log("nav items", { event, width: window.innerWidth });
     if (targetEl?.tagName === "A" || window.innerWidth >= 620) {
       return;
     }

@@ -1,0 +1,13 @@
+---
+import ArticleAssetsList from "../../components/ArticleAssetsList.astro";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../../constants";
+import Layout from "../../layouts/DefaultPageLayout.astro";
+import { getAllSeedAssets } from "../../utils/get-seed-assets";
+
+const seedAssets = await getAllSeedAssets();
+---
+
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <h1>Seeds</h1>
+  <ArticleAssetsList assets={seedAssets} slugPrefix="seeds" />
+</Layout>

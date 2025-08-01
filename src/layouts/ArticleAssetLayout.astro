@@ -8,12 +8,16 @@ import type { ArticleAssetData } from "../types";
 
 type Props = ArticleAssetData;
 
-const { title, description, pubDate, lastUpdate } = Astro.props;
+const props = Astro.props;
+const hasDescription = "description" in props && props.description;
 ---
 
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} />
+    <BaseHead
+      title={props.title}
+      description={hasDescription ? props.description! : ""}
+    />
     <style>
       hr {
         border-top: 1px solid #ddd;
@@ -22,6 +26,9 @@ const { title, description, pubDate, lastUpdate } = Astro.props;
       img {
         aspect-ratio: 2;
         width: 100%;
+      }
+      main {
+        height: auto;
       }
       .container {
         margin: 0 auto;
@@ -43,16 +50,16 @@ const { title, description, pubDate, lastUpdate } = Astro.props;
       <Header />
       <main>
         <article>
-          <h1 class="title">{title}</h1>
-          <FormattedDate date={pubDate} />
+          <h1 class="title">{props.title}</h1>
+          <FormattedDate date={props.pubDate} />
           {
-            lastUpdate && (
+            props.lastUpdate && (
               <div class="last-updated-on">
-                Last updated on <FormattedDate date={lastUpdate} />
+                Last updated on <FormattedDate date={props.lastUpdate} />
               </div>
             )
           }
-          <p>{decodeHtml(description)}</p>
+          {hasDescription && <p>{decodeHtml(props.description!)}</p>}
           <hr />
           <slot />
         </article>
