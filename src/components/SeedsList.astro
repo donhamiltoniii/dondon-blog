@@ -4,27 +4,27 @@ import { getTitleFromSlug } from "../lib/getTitleFromSlug";
 import { kebabToTitle } from "../lib/kebabToTitle";
 
 interface Props {
-  notes: CollectionEntry<"notes">[];
+  seeds: CollectionEntry<"seeds">[];
 }
 
-const { notes } = Astro.props;
+const { seeds } = Astro.props;
 ---
 
 <div class="blog-posts-by-date">
   {
-    notes.length > 0 ? (
+    seeds.length > 0 ? (
       <ul>
-        {notes.map((note) => (
+        {seeds.map((seed) => (
           <li>
-            <a href={`/notes/${note.slug}`}>
-              {kebabToTitle(getTitleFromSlug(note.slug))}
+            <a href={`/seeds/${seed.slug}`}>
+              {kebabToTitle(getTitleFromSlug(seed.slug))}
             </a>
           </li>
         ))}
       </ul>
     ) : (
       <p>
-        <strong>There are no notes... Something has gone wrong...</strong>
+        <strong>There are no seeds... Something has gone wrong...</strong>
       </p>
     )
   }

@@ -1,10 +1,10 @@
 ---
 import type { ArticleAssets } from "../types";
 import FormattedDate from "./FormattedDate.astro";
-import type { CollectionEntry } from "astro:content";
 
 interface Props {
   assets: ArticleAssets;
+  slugPrefix?: string;
 }
 
 // Define types for our grouped posts
@@ -18,10 +18,17 @@ interface GroupedAssets {
   [key: string]: ArticleAssetGroup;
 }
 
-const { assets } = Astro.props;
+const { assets, slugPrefix = "code" } = Astro.props;
 
 // Filter published posts
-const publishedPosts = assets.filter((a) => a.data.published);
+const publishedPosts = assets.filter((a) => {
+  // If there isn't a "published" property, all assets are to be published
+  if (!("published" in a.data)) {
+    return true;
+  }
+
+  return a.data.published;
+});
 
 // Group posts by month and year
 const GroupedAssets: GroupedAssets = publishedPosts.reduce(
@@ -68,7 +75,7 @@ const sortedGroups: ArticleAssetGroup[] = Object.values(GroupedAssets).sort(
           {group.assets.map((a) => (
             <li>
               <FormattedDate date={a.data.pubDate} />
-              <a href={`/code/${a.slug}/`}>{a.data.title}</a>
+              <a href={`/${slugPrefix}/${a.slug}/`}>{a.data.title}</a>
             </li>
           ))}
         </ul>

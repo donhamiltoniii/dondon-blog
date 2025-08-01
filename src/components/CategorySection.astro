@@ -1,7 +1,7 @@
 ---
 import { getTitleFromSlug } from "../lib/getTitleFromSlug";
 import { kebabToTitle } from "../lib/kebabToTitle";
-import type { CategoryData, Note } from "../utils/get-notes";
+import type { CategoryData, Note } from "../utils/get-seeds";
 
 const { name, data, level = 0 } = Astro.props;
 const categoryIsNotRoot = name !== "_root";
@@ -24,13 +24,13 @@ const title = getTitleFromSlug(name);
                 ))}
             </div>
         ) : (
-            "Thise section has no notes. Something has gone wrong..."
+            "This section has no notes. Something has gone wrong..."
         )
     }
 
     {
-        Object.entries(data.subcategories).map(
-            ([subName, subData]: [string, CategoryData]) => (
+        Object.entries(data.subcategories as [string, CategoryData]).map(
+            ([subName, subData]: [string, string | CategoryData]) => (
                 <Astro.self name={subName} data={subData} level={level + 1} />
             ),
         )
