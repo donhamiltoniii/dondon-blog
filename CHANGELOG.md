@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.19.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.18.0...v2.19.0) (2025-08-01)
+
+
+### Features
+
+* add seeds section and content ([a7732f0](https://github.com/donhamiltoniii/dondon-blog/commit/a7732f04ea22d3e837accf2c7d584a6c2ef17445))
+
 # [2.18.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.17.0...v2.18.0) (2025-07-28)
 
 
