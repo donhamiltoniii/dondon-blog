@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.21.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.20.0...v2.21.0) (2025-08-06)
+
+
+### Features
+
+* add seed: Dad Thoughtz ([eb22249](https://github.com/donhamiltoniii/dondon-blog/commit/eb22249ebb8b746c141a26f16ca8a9601edbadf3))
+
 # [2.20.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.19.0...v2.20.0) (2025-08-02)
 
 
