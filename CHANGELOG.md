@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.23.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.22.0...v2.23.0) (2025-08-16)
+
+
+### Features
+
+* add meal prep artifact ([bef9292](https://github.com/donhamiltoniii/dondon-blog/commit/bef92924f8c4ffff0986c7426663ed9f56c25e8b))
+
 # [2.22.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.21.0...v2.22.0) (2025-08-14)
 
 
