@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.25.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.24.0...v2.25.0) (2025-08-19)
+
+
+### Features
+
+* add approach to new topics seed ([a1ad24e](https://github.com/donhamiltoniii/dondon-blog/commit/a1ad24e5678c67ad035667daff7f1839b89a447e))
+* add new seed ([aed0ef3](https://github.com/donhamiltoniii/dondon-blog/commit/aed0ef34edba622f3909943059afd55440b30d4c))
+
 # [2.24.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.23.0...v2.24.0) (2025-08-16)
 
 
