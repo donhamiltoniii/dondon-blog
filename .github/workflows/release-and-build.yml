@@ -47,60 +47,9 @@ jobs:
       - name: Build site
         run: npm run build
 
-      - name: Create semantic-release config
+      - name: Install semantic-release plugins
         run: |
-          cat > .releaserc.json << 'EOF'
-          {
-            "branches": ["main"],
-            "plugins": [
-              [
-                "@semantic-release/commit-analyzer",
-                {
-                  "preset": "conventionalcommits",
-                  "releaseRules": [
-                    {"type": "feat", "release": "minor"},
-                    {"type": "fix", "release": "minor"},
-                    {"type": "content", "release": "patch"},
-                    {"type": "docs", "release": "patch"},
-                    {"type": "style", "release": "patch"},
-                    {"type": "refactor", "release": "patch"},
-                    {"type": "perf", "release": "patch"},
-                    {"type": "test", "release": "patch"},
-                    {"type": "build", "release": "patch"},
-                    {"type": "ci", "release": "patch"},
-                    {"type": "chore", "release": "patch"},
-                    {"type": "revert", "release": "patch"}
-                  ]
-                }
-              ],
-              [
-                "@semantic-release/release-notes-generator",
-                {
-                  "preset": "conventionalcommits",
-                  "presetConfig": {
-                    "types": [
-                      {"type": "feat", "section": "🚀 Features"},
-                      {"type": "fix", "section": "🐛 Bug Fixes"},
-                      {"type": "content", "section": "📝 Content Updates"},
-                      {"type": "docs", "section": "📚 Documentation"},
-                      {"type": "style", "section": "💄 Styling"},
-                      {"type": "refactor", "section": "♻️ Code Refactoring"},
-                      {"type": "perf", "section": "⚡ Performance Improvements"},
-                      {"type": "test", "section": "✅ Tests"},
-                      {"type": "build", "section": "🛠️ Build System"},
-                      {"type": "ci", "section": "👷 CI"},
-                      {"type": "chore", "section": "🔧 Maintenance"}
-                    ]
-                  }
-                }
-              ],
-              "@semantic-release/changelog",
-              "@semantic-release/npm",
-              "@semantic-release/git",
-              "@semantic-release/github"
-            ]
-          }
-          EOF
+          npm install --save-dev @semantic-release/changelog@6.0.3 @semantic-release/git@10.0.1 @semantic-release/github conventional-changelog-conventionalcommits
 
       - name: Semantic Release
         id: semantic-release
@@ -113,6 +62,8 @@ jobs:
           extra_plugins: |
             @semantic-release/changelog@6.0.3
             @semantic-release/git@10.0.1
+            @semantic-release/github
+            conventional-changelog-conventionalcommits
 
   build-docker:
     runs-on: ubuntu-latest
