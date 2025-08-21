@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.26.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.25.0...v2.26.0) (2025-08-21)
+
+
+### Features
+
+* update overnight oats recipe ([9486740](https://github.com/donhamiltoniii/dondon-blog/commit/94867405da3acdd8987e2bd1d5519da2e951b278))
+
 # [2.25.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.24.0...v2.25.0) (2025-08-19)
 
 
