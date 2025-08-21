@@ -1,3 +1,10 @@
+## [2.26.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.26.0...v2.26.1) (2025-08-21)
+
+### 👷 CI
+
+* update gha workflow and externalize release config ([4a821e8](https://github.com/donhamiltoniii/dondon-blog/commit/4a821e8fbafffd010c63a13e20a65dba0f3c8d18))
+* update gha workflow for release ([3854e5b](https://github.com/donhamiltoniii/dondon-blog/commit/3854e5b90a844bbf1faea85628e13bdf2e115aaf))
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
