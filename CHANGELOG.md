@@ -1,3 +1,9 @@
+## [2.27.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.27.0...v2.27.1) (2025-08-22)
+
+### 📝 Content Updates
+
+* add AI tools seed ([6fc5872](https://github.com/donhamiltoniii/dondon-blog/commit/6fc5872b75cc891f0650ddc4b7d6791d39eceace))
+
 ## [2.27.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.26.1...v2.27.0) (2025-08-22)
 
 ### 🚀 Features
