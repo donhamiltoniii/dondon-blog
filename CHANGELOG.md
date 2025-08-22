@@ -1,3 +1,9 @@
+## [2.28.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.27.1...v2.28.0) (2025-08-22)
+
+### 🚀 Features
+
+* add cultivated thoughtz section ([76d7cd8](https://github.com/donhamiltoniii/dondon-blog/commit/76d7cd8998c5f30c778a8d8183bc7e5168352201))
+
 ## [2.27.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.27.0...v2.27.1) (2025-08-22)
 
 ### 📝 Content Updates
