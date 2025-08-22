@@ -1,5 +1,4 @@
 ---
-import ArticleAssetsList from "../../components/ArticleAssetsList.astro";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../../constants";
 import Layout from "../../layouts/DefaultPageLayout.astro";
 import { getAllSeedAssets } from "../../utils/get-seed-assets";
@@ -7,7 +6,39 @@ import { getAllSeedAssets } from "../../utils/get-seed-assets";
 const seedAssets = await getAllSeedAssets();
 ---
 
+<style>
+  .card {
+    align-items: center;
+    background: var(--link-color);
+    border-radius: 0.25rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    text-decoration: none;
+
+    h2 {
+      color: inherit;
+      text-align: center;
+    }
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+</style>
+
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
   <h1>Seeds</h1>
-  <ArticleAssetsList assets={seedAssets} slugPrefix="seeds" />
+  <section class:list={["cards"]}>
+    {
+      seedAssets.map((s) => (
+        <a class:list={["card"]} href={`/seeds/${s.slug}`}>
+          <h2>{s.data.title}</h2>
+        </a>
+      ))
+    }
+  </section>
 </Layout>

@@ -7,6 +7,10 @@
   --link-color: rgb(20, 160, 80);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Verdana, sans-serif;
   margin: auto;
