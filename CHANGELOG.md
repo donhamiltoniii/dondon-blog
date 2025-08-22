@@ -1,3 +1,9 @@
+## [2.28.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.28.0...v2.28.1) (2025-08-22)
+
+### 📝 Content Updates
+
+* update ai tools seed ([015f4be](https://github.com/donhamiltoniii/dondon-blog/commit/015f4be78a83c3966a6b2dbee4aa61289a30c4a8))
+
 ## [2.28.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.27.1...v2.28.0) (2025-08-22)
 
 ### 🚀 Features
