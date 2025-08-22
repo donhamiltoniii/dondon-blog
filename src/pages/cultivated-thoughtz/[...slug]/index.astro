@@ -1,0 +1,27 @@
+---
+import ArticleAssetLayout from "../../../layouts/ArticleAssetLayout.astro";
+import type { CodeAsset } from "../../../types";
+import { getAllCultivatedThoughtz } from "../../../utils/get-cultivated-thoughtz";
+
+export async function getStaticPaths() {
+    const cultivatedThoughtz = await getAllCultivatedThoughtz();
+    return cultivatedThoughtz.map((ct: { slug: any }) => ({
+        params: { slug: ct.slug },
+        props: ct,
+    }));
+}
+
+type Props = CodeAsset;
+
+const cultivatedThought = Astro.props;
+const { Content, remarkPluginFrontmatter } = await cultivatedThought.render();
+
+cultivatedThought.data = {
+    ...cultivatedThought.data,
+    lastUpdate: new Date(remarkPluginFrontmatter.lastUpdate),
+};
+---
+
+<ArticleAssetLayout {...cultivatedThought.data}>
+    <Content />
+</ArticleAssetLayout>

@@ -1,0 +1,15 @@
+---
+import ArticleAssetsList from "../../components/ArticleAssetsList.astro";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../../constants";
+import Layout from "../../layouts/DefaultPageLayout.astro";
+import { getAllCultivatedThoughtz } from "../../utils/get-cultivated-thoughtz";
+
+const cultivatedThoughtz = await getAllCultivatedThoughtz();
+---
+
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+    <ArticleAssetsList
+        assets={cultivatedThoughtz}
+        slugPrefix="cultivated-thoughtz"
+    />
+</Layout>

@@ -19,6 +19,20 @@ const code = defineCollection({
   }),
 });
 
+const cultivatedThoughtz = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    pubDate: z
+      .date()
+      .or(z.date())
+      .transform((val) => new Date(val)),
+    lastUpdate: z
+      .date()
+      .optional()
+      .transform((str) => (str ? new Date(str) : undefined)),
+  }),
+})
+
 const food = defineCollection({
   schema: z.object({
     title: z.string(),
@@ -59,4 +73,4 @@ const seeds = defineCollection({
   }),
 })
 
-export const collections = { code, food, photos, seeds };
+export const collections = { code, cultivatedThoughtz, food, photos, seeds };

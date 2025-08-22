@@ -6,7 +6,7 @@ import SocialNavigation from "./SocialNavigation.astro";
 const navItems = [
   // "home",
   "code",
-  // "notes",
+  "cultivated thoughtz",
   "photos",
   "food",
   "now",
@@ -32,7 +32,7 @@ const navItems = [
             .sort()
             .map((ni) => (
               <HeaderLink
-                href={`/${ni === "home" ? "" : ni === "rss" ? "rss.xml" : ni}`}
+                href={`/${ni === "home" ? "" : ni === "rss" ? "rss.xml" : ni.replaceAll(" ", "-")}`}
               >
                 {ni}
               </HeaderLink>
