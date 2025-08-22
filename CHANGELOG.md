@@ -1,3 +1,9 @@
+## [2.27.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.26.1...v2.27.0) (2025-08-22)
+
+### 🚀 Features
+
+* update seeds page layout ([223cfe5](https://github.com/donhamiltoniii/dondon-blog/commit/223cfe5d2a392a8ead358c941a5bd26195895b57))
+
 ## [2.26.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.26.0...v2.26.1) (2025-08-21)
 
 ### 👷 CI
