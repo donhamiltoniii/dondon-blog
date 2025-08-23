@@ -1,3 +1,9 @@
+## [2.29.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.29.0...v2.29.1) (2025-08-23)
+
+### 📝 Content Updates
+
+* update lastUpdate frontmatter ([a44a987](https://github.com/donhamiltoniii/dondon-blog/commit/a44a987cb4123b38797c86919ee62b575e527da7))
+
 ## [2.29.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.28.1...v2.29.0) (2025-08-23)
 
 ### 🚀 Features
