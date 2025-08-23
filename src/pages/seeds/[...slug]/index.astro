@@ -1,7 +1,5 @@
 ---
-import ArticleAssetLayout from "../../../layouts/ArticleAssetLayout.astro";
-import { getTitleFromSlug } from "../../../lib/getTitleFromSlug";
-import { kebabToTitle } from "../../../lib/kebabToTitle";
+import Layout from "../../../layouts/SeedLayout.astro";
 import { getSeeds, type Seed } from "../../../utils/get-seeds";
 
 export async function getStaticPaths() {
@@ -24,6 +22,6 @@ const { seed } = Astro.props;
 const { Content } = await seed.render();
 ---
 
-<ArticleAssetLayout {...seed.data}>
+<Layout {...seed.data}>
   <Content />
-</ArticleAssetLayout>
+</Layout>

@@ -14,4 +14,5 @@ export type FoodAsset = CollectionEntry<"food">
 export type FoodAssets = FoodAsset[]
 
 export type SeedAsset = CollectionEntry<"seeds">
+export type SeedAssetData = SeedAsset["data"]
 export type SeedAssets = SeedAsset[]
