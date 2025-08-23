@@ -1,3 +1,9 @@
+## [2.29.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.28.1...v2.29.0) (2025-08-23)
+
+### 🚀 Features
+
+* add SeedLayout ([2236f1d](https://github.com/donhamiltoniii/dondon-blog/commit/2236f1d900459ec030cd3dd29b88ad18913d45f3))
+
 ## [2.28.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.28.0...v2.28.1) (2025-08-22)
 
 ### 📝 Content Updates
