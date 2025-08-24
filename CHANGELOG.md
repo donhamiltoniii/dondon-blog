@@ -1,3 +1,9 @@
+## [2.29.3](https://github.com/donhamiltoniii/dondon-blog/compare/v2.29.2...v2.29.3) (2025-08-24)
+
+### 📝 Content Updates
+
+* add nutrition info to breastfeeding meal prep ([8be8b6d](https://github.com/donhamiltoniii/dondon-blog/commit/8be8b6d14cb0c58511a5812d4db9578a3e39d880))
+
 ## [2.29.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.29.1...v2.29.2) (2025-08-24)
 
 ### 📝 Content Updates
