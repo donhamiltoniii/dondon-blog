@@ -1,3 +1,9 @@
+## [2.29.4](https://github.com/donhamiltoniii/dondon-blog/compare/v2.29.3...v2.29.4) (2025-08-24)
+
+### 📝 Content Updates
+
+* remove extra title ([198e624](https://github.com/donhamiltoniii/dondon-blog/commit/198e624cc5ae99bdd78177179ee306dc5e8130a8))
+
 ## [2.29.3](https://github.com/donhamiltoniii/dondon-blog/compare/v2.29.2...v2.29.3) (2025-08-24)
 
 ### 📝 Content Updates
