@@ -1,3 +1,10 @@
+## [2.29.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.29.1...v2.29.2) (2025-08-24)
+
+### 📝 Content Updates
+
+* add meal prep for breast feeding moms ([5f83e85](https://github.com/donhamiltoniii/dondon-blog/commit/5f83e85f085044d689216ece4163d1156d3bedc6))
+* fix typo in frontmatter ([ff6036a](https://github.com/donhamiltoniii/dondon-blog/commit/ff6036afa62bfe9191f861349b18be9e864fb23d))
+
 ## [2.29.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.29.0...v2.29.1) (2025-08-23)
 
 ### 📝 Content Updates
