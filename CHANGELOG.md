@@ -1,3 +1,13 @@
+## [2.30.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.29.4...v2.30.0) (2025-08-29)
+
+### 🚀 Features
+
+* update RSS page to include new written sections ([6664ca5](https://github.com/donhamiltoniii/dondon-blog/commit/6664ca56c047b029b2199e342d2be34286b87ae6))
+
+### 📝 Content Updates
+
+* add seed for thought work organization ([070f6e8](https://github.com/donhamiltoniii/dondon-blog/commit/070f6e8917ec3e20c2b01d50e908619c0e8d602f))
+
 ## [2.29.4](https://github.com/donhamiltoniii/dondon-blog/compare/v2.29.3...v2.29.4) (2025-08-24)
 
 ### 📝 Content Updates
