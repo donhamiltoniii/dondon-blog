@@ -1,3 +1,13 @@
+## [2.31.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.30.0...v2.31.0) (2025-08-29)
+
+### 🚀 Features
+
+* update rss feed to be desc instead of asc ([3a10c99](https://github.com/donhamiltoniii/dondon-blog/commit/3a10c99d04c64596bd911f3750afa0ee3256aef1))
+
+### 📝 Content Updates
+
+* fix typo in Thought Work Org seed ([2625f13](https://github.com/donhamiltoniii/dondon-blog/commit/2625f13e322d7094edb23516d5acd8aaf0e0fc83))
+
 ## [2.30.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.29.4...v2.30.0) (2025-08-29)
 
 ### 🚀 Features
