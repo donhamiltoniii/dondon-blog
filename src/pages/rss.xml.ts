@@ -28,19 +28,31 @@ export async function GET(context: { site: any; }) {
   const seeds = await getAllSeedAssets()
   const seedsFilteredArr = seeds
     .map(s => ({
-      link: `/cultivated-thoughtz/${s.slug}/`,
+      link: `/seeds/${s.slug}/`,
       content: sanitize(parser.render(s.body)),
       ...s.data,
     }))
 
   const items = [...codeAssetsFilteredArr, ...cultivatedThoughtzFilteredArr, ...seedsFilteredArr].sort((a, b) => {
-    if (a.pubDate > b.pubDate) {
+    // Logic is for descending order - newest posts first
+    if ((a.lastUpdate && b.lastUpdate && a.lastUpdate > b.lastUpdate)) {
+      return -1
+    }
+
+    if ((a.lastUpdate && b.lastUpdate && a.lastUpdate < b.lastUpdate)) {
       return 1
     }
 
-    if (a.pubDate < b.pubDate) {
+    // If for some reason there aren't lastUpdate values
+    if (a.pubDate > b.pubDate) {
       return -1
     }
+
+    if (a.pubDate < b.pubDate) {
+      return 1
+    }
+
+    // If dates are equal
     return 0
   });
 
