@@ -1,3 +1,9 @@
+## [2.32.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.31.0...v2.32.0) (2025-08-30)
+
+### 🚀 Features
+
+* add meal prep basics page ([77ba3d9](https://github.com/donhamiltoniii/dondon-blog/commit/77ba3d9d0d7cf15df883d1a99c66cfdbcbb4d526))
+
 ## [2.31.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.30.0...v2.31.0) (2025-08-29)
 
 ### 🚀 Features
