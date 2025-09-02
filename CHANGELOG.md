@@ -1,3 +1,9 @@
+## [2.34.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.33.0...v2.34.0) (2025-09-02)
+
+### 🚀 Features
+
+* add broccoli cheddar pizza ([a3f308a](https://github.com/donhamiltoniii/dondon-blog/commit/a3f308ab6f2030604e1057834f73a92d2e13f871))
+
 ## [2.33.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.32.0...v2.33.0) (2025-09-02)
 
 ### 🚀 Features
