@@ -1,3 +1,9 @@
+## [2.33.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.32.0...v2.33.0) (2025-09-02)
+
+### 🚀 Features
+
+* move 'mdx' files to 'md' ([d45e180](https://github.com/donhamiltoniii/dondon-blog/commit/d45e18004af6827b51da43d8793be4c7d8a6d330))
+
 ## [2.32.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.31.0...v2.32.0) (2025-08-30)
 
 ### 🚀 Features
