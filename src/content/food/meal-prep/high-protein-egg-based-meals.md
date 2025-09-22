@@ -1,6 +1,13 @@
 ---
-
-## title: High Protein Egg Meal Prep Recipes prepTime: 10-20 minutes cookTime: 20-45 minutes servings: 6-8 servings per recipe servingSize: Varies by recipe imgUrl: description: Five high-protein egg-heavy meal prep recipes with 40+ grams of protein per serving, perfect for using up eggs while meeting fiber goals. notes: All recipes avoid beans, alliums, and cruciferous vegetables as requested. tags: \[high-protein, meal-prep, eggs, fiber, batch-cooking\]
+title: High Protein Egg Meal Prep Recipes
+prepTime: 10-20 minutes
+cookTime: 20-45 minutes
+servings: 6-8 servings per recipe
+servingSize: Varies by recipe
+imgUrl:
+description: Five high-protein egg-heavy meal prep recipes with 40+ grams of protein per serving, perfect for using up eggs while meeting fiber goals.
+notes: All recipes avoid beans, alliums, and cruciferous vegetables as requested.
+tags: [high-protein, meal-prep, eggs, fiber, batch-cooking]
 
 ## Spinach and Mushroom Egg Bake
 
