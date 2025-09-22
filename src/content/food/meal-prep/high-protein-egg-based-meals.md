@@ -8,6 +8,7 @@ imgUrl:
 description: Five high-protein egg-heavy meal prep recipes with 40+ grams of protein per serving, perfect for using up eggs while meeting fiber goals.
 notes: All recipes avoid beans, alliums, and cruciferous vegetables as requested.
 tags: [high-protein, meal-prep, eggs, fiber, batch-cooking]
+---
 
 ## Spinach and Mushroom Egg Bake
 
