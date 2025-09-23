@@ -1,3 +1,9 @@
+## [2.34.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.34.1...v2.34.2) (2025-09-23)
+
+### ♻️ Code Refactoring
+
+* make sortByTitle util ([588d641](https://github.com/donhamiltoniii/dondon-blog/commit/588d6414cbd8a932a9bfa4ae55e5a4a6bb961080))
+
 ## [2.34.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.34.0...v2.34.1) (2025-09-22)
 
 ### 📝 Content Updates
