@@ -1,0 +1,20 @@
+---
+import InternalFoodNav from "../../../components/InternalFoodNav.astro";
+import RecipesList from "../../../components/RecipesList.astro";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../../../constants";
+import Layout from "../../../layouts/DefaultPageLayout.astro";
+import { getMealPrepFoodAssets } from "../../../utils/get-food-assets";
+
+const mealPrepFoodAssets = await getMealPrepFoodAssets();
+---
+
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+    <InternalFoodNav />
+    <h1>Meal Prep</h1>
+    <p>
+        These meals are specifically meant for meal prepping. This is helpful if
+        you need to have food ready to just throw in the microwave and quickly
+        heat up.
+    </p>
+    <RecipesList recipes={mealPrepFoodAssets} />
+</Layout>

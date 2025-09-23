@@ -1,4 +1,5 @@
 ---
+import InternalFoodNav from "../../components/InternalFoodNav.astro";
 import RecipesList from "../../components/RecipesList.astro";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../../constants";
 import Layout from "../../layouts/DefaultPageLayout.astro";
@@ -8,6 +9,7 @@ const foodAssets = await getFoodAssets();
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <InternalFoodNav />
   <h1>Recipes</h1>
   <nav>
     <a href="/food/meal-prep-basics">Meal Prep Basics</a>

@@ -4,8 +4,19 @@ import { sortByTitle } from "./sort-by-title";
 
 type GetRecipes = () => Promise<FoodAssets>;
 
-export const getFoodAssets: GetRecipes = async () =>
-  (await getCollection("food")).sort(sortByTitle);
+export const getFoodAssets: GetRecipes = async () => {
+  const foodAssets = (await getCollection("food")).sort(sortByTitle);
+
+  return foodAssets
+}
+
+export const getMealPrepFoodAssets: GetRecipes = async () => {
+  const foodAssets = (await getCollection("food")).sort(sortByTitle);
+
+  const mealPrepFoodAssets = foodAssets.filter(fa => fa.filePath?.includes('meal-prep'))
+
+  return mealPrepFoodAssets
+}
 
 export async function getFoodAssetsByTag(tag: string) {
   const foodAssets = await getFoodAssets()

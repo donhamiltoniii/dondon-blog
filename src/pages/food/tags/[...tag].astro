@@ -7,6 +7,7 @@ import {
   getFoodAssets,
   getFoodAssetsByTag,
 } from "../../../utils/get-food-assets";
+import InternalFoodNav from "../../../components/InternalFoodNav.astro";
 
 const { tag } = Astro.params as { tag: string };
 
@@ -25,6 +26,7 @@ const recipesByTag = await getFoodAssetsByTag(tag);
 ---
 
 <Layout title={tag} description={`Recipes with the tag: ${tag}`}>
+  <InternalFoodNav />
   <div class="tag-page">
     <h1>Recipes tagged with "{tag}"</h1>
 
