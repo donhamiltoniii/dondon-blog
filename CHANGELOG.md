@@ -1,3 +1,14 @@
+## [2.35.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.34.2...v2.35.0) (2025-09-23)
+
+### 🚀 Features
+
+* add meal prep page ([8475c13](https://github.com/donhamiltoniii/dondon-blog/commit/8475c133d9688a17399e6599c2bda92f274c56cd))
+
+### 🐛 Bug Fixes
+
+* remove unnecessary console log ([9c4d7f5](https://github.com/donhamiltoniii/dondon-blog/commit/9c4d7f57f55bbf79da6097d4305a4dcc06dae22d))
+* update breaking imports ([f9dfdcc](https://github.com/donhamiltoniii/dondon-blog/commit/f9dfdcc5752a93a7849be04f68760b6fe9e039ff))
+
 ## [2.34.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.34.1...v2.34.2) (2025-09-23)
 
 ### ♻️ Code Refactoring
