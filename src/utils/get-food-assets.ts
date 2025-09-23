@@ -1,19 +1,11 @@
 import { type CollectionEntry, getCollection } from "astro:content";
+import type { FoodAsset, FoodAssets } from "../types";
+import { sortByTitle } from "./sort-by-title";
 
-type GetRecipes = () => Promise<CollectionEntry<"food">[]>;
+type GetRecipes = () => Promise<FoodAssets>;
 
 export const getFoodAssets: GetRecipes = async () =>
-  (await getCollection("food")).sort((a, b) => {
-    if (a.data.title > b.data.title) {
-      return 1;
-    }
-
-    if (a.data.title < b.data.title) {
-      return -1;
-    }
-
-    return 0;
-  });
+  (await getCollection("food")).sort(sortByTitle);
 
 export async function getFoodAssetsByTag(tag: string) {
   const foodAssets = await getFoodAssets()
