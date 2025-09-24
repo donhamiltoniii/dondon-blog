@@ -1,3 +1,28 @@
+## [2.35.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.34.2...v2.35.0) (2025-09-23)
+
+### 🚀 Features
+
+* add meal prep page ([8475c13](https://github.com/donhamiltoniii/dondon-blog/commit/8475c133d9688a17399e6599c2bda92f274c56cd))
+
+### 🐛 Bug Fixes
+
+* remove unnecessary console log ([9c4d7f5](https://github.com/donhamiltoniii/dondon-blog/commit/9c4d7f57f55bbf79da6097d4305a4dcc06dae22d))
+* update breaking imports ([f9dfdcc](https://github.com/donhamiltoniii/dondon-blog/commit/f9dfdcc5752a93a7849be04f68760b6fe9e039ff))
+
+## [2.34.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.34.1...v2.34.2) (2025-09-23)
+
+### ♻️ Code Refactoring
+
+* make sortByTitle util ([588d641](https://github.com/donhamiltoniii/dondon-blog/commit/588d6414cbd8a932a9bfa4ae55e5a4a6bb961080))
+
+## [2.34.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.34.0...v2.34.1) (2025-09-22)
+
+### 📝 Content Updates
+
+* add egg based high protein meal prep ([b79cc7e](https://github.com/donhamiltoniii/dondon-blog/commit/b79cc7ec3126f0bfd86040513f64e25090f0ec25))
+* fix frontmatter typo ([fc9c663](https://github.com/donhamiltoniii/dondon-blog/commit/fc9c6638d51bc75d413630ad7ee84cfb15214227))
+* update high-protein egg meal prep ([9025a63](https://github.com/donhamiltoniii/dondon-blog/commit/9025a638f05ed47b96e4236ffd2e310d46a4465d))
+
 ## [2.34.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.33.0...v2.34.0) (2025-09-02)
 
 ### 🚀 Features
