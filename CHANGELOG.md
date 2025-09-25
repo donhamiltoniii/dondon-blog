@@ -1,3 +1,9 @@
+## [2.37.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.37.0...v2.37.1) (2025-09-25)
+
+### 🔧 Maintenance
+
+* optimize image build process in Dockerfile ([af4cf24](https://github.com/donhamiltoniii/dondon-blog/commit/af4cf2497655735a6404bef7449bbb7bea0331db))
+
 ## [2.37.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.36.0...v2.37.0) (2025-09-25)
 
 ### 🚀 Features
