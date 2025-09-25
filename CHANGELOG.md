@@ -1,3 +1,11 @@
+## [2.38.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.37.1...v2.38.0) (2025-09-25)
+
+### 🚀 Features
+
+* add profile photo ([f086762](https://github.com/donhamiltoniii/dondon-blog/commit/f086762c7fda173ba7cb1f1ae3804aa7cdb06ae5))
+* add profile photo ([3896591](https://github.com/donhamiltoniii/dondon-blog/commit/38965911a30695260d48c17aae94bbb719b9b330))
+* add resume link ([7b26096](https://github.com/donhamiltoniii/dondon-blog/commit/7b26096274690c3e0efdce56cf868c7e1280c7d6))
+
 ## [2.37.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.37.0...v2.37.1) (2025-09-25)
 
 ### 🔧 Maintenance
