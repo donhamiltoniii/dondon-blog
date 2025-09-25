@@ -1,0 +1,25 @@
+---
+const { imgWidth } = Astro.props;
+---
+
+<div style={`--imgWidth: ${imgWidth}`}>
+    <img
+        src="/assets/images/profile-photo.jpg"
+        alt="portrait of Don Hamilton III"
+    />
+</div>
+
+<style>
+    div {
+        aspect-ratio: 1;
+        border-radius: 50%;
+        height: var(--imgWidth, 3rem);
+        object-fit: cover;
+        overflow: hidden;
+        width: var(--imgWidth, 3rem);
+    }
+
+    img {
+        margin-top: calc(var(--imgWidth, 3rem) * -0.04);
+    }
+</style>
