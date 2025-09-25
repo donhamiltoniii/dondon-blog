@@ -1,3 +1,9 @@
+## [2.37.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.36.0...v2.37.0) (2025-09-25)
+
+### 🚀 Features
+
+* add resume link ([1b8b03a](https://github.com/donhamiltoniii/dondon-blog/commit/1b8b03ac6318714dcf58665e4a63cdcf6924e2b2))
+
 ## [2.36.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.35.0...v2.36.0) (2025-09-24)
 
 ### 🚀 Features
