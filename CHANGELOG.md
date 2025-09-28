@@ -1,3 +1,9 @@
+## [2.39.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.38.0...v2.39.0) (2025-09-28)
+
+### 🚀 Features
+
+* add separators to eg based meal prep ([ddf759b](https://github.com/donhamiltoniii/dondon-blog/commit/ddf759b2a067e08cd3a8f3a8dd33b5ddfb5c3b00))
+
 ## [2.38.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.37.1...v2.38.0) (2025-09-25)
 
 ### 🚀 Features
