@@ -56,6 +56,8 @@ A hearty egg bake packed with spinach, mushrooms, and oats for fiber. Perfect fo
 
 420 calories, 42g protein, 24g fat, 12g carbs, 8g fiber, 4g sugar
 
+---
+
 ## Sweet Potato and Egg Scramble Bowls
 
 Prep Time: 20 minutes | Cook Time: 30 minutes | Servings: 6 | Serving Size: 1 bowl
@@ -101,6 +103,8 @@ Protein-packed scrambled eggs served over quinoa with roasted sweet potatoes, Gr
 #### Per Serving
 
 400 calories, 40g protein, 20g fat, 30g carbs, 9g fiber, 6g sugar
+
+---
 
 ## Zucchini and Carrot Egg Muffins
 
@@ -150,6 +154,8 @@ Portable egg muffins loaded with vegetables and cheese. Perfect for grab-and-go 
 
 430 calories, 43g protein, 27g fat, 8g carbs, 7g fiber, 5g sugar
 
+---
+
 ## Pumpkin Protein Egg Casserole
 
 Prep Time: 10 minutes | Cook Time: 45 minutes | Servings: 8 | Serving Size: 1/8 of casserole
@@ -197,6 +203,8 @@ A warming fall-inspired casserole with pumpkin, eggs, and steel-cut oats. Perfec
 #### Per Serving
 
 410 calories, 41g protein, 22g fat, 20g carbs, 10g fiber, 4g sugar
+
+---
 
 ## Turkey and Egg Power Bowls
 
