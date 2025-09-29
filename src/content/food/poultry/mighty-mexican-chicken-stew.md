@@ -4,7 +4,7 @@ prepTime: 15 minutes
 cookTime: 45 minutes
 servings: 4
 imgUrl:
-description: "A nice stew! Say it in Carl Weathers voice or I'll kill you"
+description: \"A nice stew!\" - Carl Weathers
 notes:
 tags: [chicken, stew, dinner, main]
 ---

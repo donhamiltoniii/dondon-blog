@@ -4,8 +4,8 @@ prepTime: 15 minutes
 cookTime: 50 minutes
 servings: 2
 imgUrl: /img/carbonara.jpg
-description: Quick and easy on the go snack
-tags: [spaghetti squash, bacon, garlic, egg, parmesan, cheese, parsley]
+description: This delicious little meal is one that you made for your wife the first time you cooked for her and she still requests. Make it for her anytime you see this
+tags: [spaghetti squash, bacon, garlic, egg, parmesan, cheese, parsley, connor favorite]
 ---
 
 ### Ingredients
