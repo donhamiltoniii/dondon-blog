@@ -1,3 +1,9 @@
+## [2.39.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.39.1...v2.39.2) (2025-09-30)
+
+### 📝 Content Updates
+
+* fix typo in recipe ([66e2373](https://github.com/donhamiltoniii/dondon-blog/commit/66e2373771d0ff43445bb5792adaa2b9ba8c0c27))
+
 ## [2.39.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.39.0...v2.39.1) (2025-09-29)
 
 ### 📝 Content Updates
