@@ -4,7 +4,7 @@ prepTime: 15 minutes
 cookTime: 12 minutes
 servings: 4
 imgUrl: /img/tuscan-chicken-drumsticks-with-spinach.jpg
-description: Creamy chicken drumsticks with spinach and sundried tomatos
+description: Creamy chicken drumsticks with spinach and sun-dried tomatoes
 tags: [chicken, spinach, garlic, heavy cream, sun-dried tomato]
 ---
 
