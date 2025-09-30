@@ -3,9 +3,13 @@ import InternalFoodNav from "../../components/InternalFoodNav.astro";
 import RecipesList from "../../components/RecipesList.astro";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../../constants";
 import Layout from "../../layouts/DefaultPageLayout.astro";
-import { getFoodAssets } from "../../utils/get-food-assets";
+import {
+  getFoodAssets,
+  getFoodAssetsByCategory,
+} from "../../utils/get-food-assets";
 
 const foodAssets = await getFoodAssets();
+const foodAssetRecord = await getFoodAssetsByCategory();
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
@@ -20,5 +24,5 @@ const foodAssets = await getFoodAssets();
     mostly exists here so that I can find something to eat when I don't know
     what to cook for dinner. But maybe this will inspire your next meal!
   </p>
-  <RecipesList recipes={foodAssets} />
+  <RecipesList recipes={foodAssetRecord} />
 </Layout>

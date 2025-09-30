@@ -1,21 +1,38 @@
 ---
-import type { FoodAssets } from "../types";
+import type { FoodAsset, FoodAssetCategoryMap, FoodAssets } from "../types";
 
 interface Props {
-  recipes: FoodAssets;
+  recipes: FoodAssets | FoodAssetCategoryMap;
 }
 
 const { recipes } = Astro.props;
 ---
 
 <div class="blog-posts-by-date">
-  <ul>
-    {
-      recipes.map((recipe) => (
-        <li>
-          <a href={`/food/${recipe.slug}`}>{recipe.data.title}</a>
-        </li>
-      ))
-    }
-  </ul>
+  {
+    !Array.isArray(recipes) ? (
+      Object.entries(recipes).map(([category, recipeList]) => {
+        return (
+          <section>
+            <h2>{category}</h2>
+            <ul>
+              {recipeList.map((recipe: FoodAsset) => (
+                <li>
+                  <a href={`/food/${recipe.slug}`}>{recipe.data.title}</a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        );
+      })
+    ) : (
+      <ul>
+        {recipes.map((recipe) => (
+          <li>
+            <a href={`/food/${recipe.slug}`}>{recipe.data.title}</a>
+          </li>
+        ))}
+      </ul>
+    )
+  }
 </div>

@@ -12,12 +12,13 @@ export type CultivatedThoughtz = CultivatedThought[]
 
 export type FoodAsset = CollectionEntry<"food">
 export type FoodAssets = FoodAsset[]
+export type FoodAssetCategoryMap = Record<string, FoodAssets>
 
 export type SeedAsset = CollectionEntry<"seeds">
 export type SeedAssetData = SeedAsset["data"]
 export type SeedAssets = SeedAsset[]
 
-export interface DataItemWithTitle{
+export interface DataItemWithTitle {
     data: {
         title: string
     }
