@@ -1,3 +1,9 @@
+## [2.40.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.40.0...v2.40.1) (2025-09-30)
+
+### ♻️ Code Refactoring
+
+* make new components to reflect new organization ([2172638](https://github.com/donhamiltoniii/dondon-blog/commit/2172638e27ec1d9e3002f03bf115d7c598c0f278))
+
 ## [2.40.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.39.2...v2.40.0) (2025-09-30)
 
 ### 🚀 Features
