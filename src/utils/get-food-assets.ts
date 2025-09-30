@@ -35,8 +35,6 @@ export async function getFoodAssetsByCategory(): Promise<FoodAssetCategoryMap> {
     return record
   }, {} as FoodAssetCategoryMap)
 
-  console.log(foodAssetRecord)
-
   return foodAssetRecord
 }
 

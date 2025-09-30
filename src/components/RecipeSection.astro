@@ -1,0 +1,32 @@
+---
+import type { FoodAssets } from "../types";
+import RecipeList from "./RecipeList.astro";
+
+interface Props {
+    category: string;
+    recipeList: FoodAssets;
+}
+
+const { category, recipeList } = Astro.props;
+---
+
+<section>
+    <h2>
+        {
+            category
+                .split("-")
+                .map((word) => {
+                    return word
+                        .split("")
+                        .map((letter, i) =>
+                            i === 0
+                                ? letter.toUpperCase()
+                                : letter.toLowerCase(),
+                        )
+                        .join("");
+                })
+                .join(" ")
+        }
+    </h2>
+    <RecipeList recipeList={recipeList} />
+</section>
