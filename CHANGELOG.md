@@ -1,3 +1,9 @@
+## [2.40.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.39.2...v2.40.0) (2025-09-30)
+
+### 🚀 Features
+
+* organize food page by category ([23fe975](https://github.com/donhamiltoniii/dondon-blog/commit/23fe9754a9b2a394d8edf18fce92835d86c4a82c))
+
 ## [2.39.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.39.1...v2.39.2) (2025-09-30)
 
 ### 📝 Content Updates
