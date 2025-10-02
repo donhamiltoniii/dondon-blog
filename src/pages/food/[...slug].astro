@@ -2,7 +2,7 @@
 import InternalFoodNav from "../../components/InternalFoodNav.astro";
 import Layout from "../../layouts/DefaultPageLayout.astro";
 import type { FoodAsset } from "../../types";
-import { getFoodAssets } from "../../utils/get-food-assets";
+import { getFoodAssets } from "../../utils/food";
 
 export async function getStaticPaths() {
   const recipes = await getFoodAssets();

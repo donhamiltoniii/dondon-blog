@@ -9,9 +9,11 @@
     "dev": "astro dev",
     "plop": "plop",
     "preview": "astro preview",
+    "semantic-release": "semantic-release",
     "start": "astro dev",
     "test": "vitest",
-    "semantic-release": "semantic-release"
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run"
   },
   "repository": {
     "type": "git",
@@ -39,8 +41,7 @@
     "he": "^1.2.0",
     "markdown-it": "^14.1.0",
     "node": "^23.5.0",
-    "sanitize-html": "^2.15.0",
-    "vitest": "2.1.6"
+    "sanitize-html": "^2.15.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
@@ -50,9 +51,11 @@
     "@types/he": "^1.2.3",
     "@types/markdown-it": "^14.1.2",
     "@types/sanitize-html": "^2.16.0",
+    "@vitest/ui": "^3.2.4",
     "conventional-changelog-conventionalcommits": "^9.1.0",
     "gray-matter": "^4.0.3",
     "plop": "^4.0.1",
-    "semantic-release": "^24.2.7"
+    "semantic-release": "^24.2.7",
+    "vitest": "^3.2.4"
   }
 }

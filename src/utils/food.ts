@@ -1,6 +1,6 @@
 import { getCollection } from "astro:content";
 import type { FoodAssetCategoryMap, FoodAssets } from "../types";
-import { sortByTitle } from "./sort-by-title";
+import { sortByTitle } from "./sortByTitle";
 
 type GetRecipes = () => Promise<FoodAssets>;
 

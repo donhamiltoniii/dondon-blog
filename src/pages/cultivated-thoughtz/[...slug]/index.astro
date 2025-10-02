@@ -1,7 +1,7 @@
 ---
 import ArticleAssetLayout from "../../../layouts/ArticleAssetLayout.astro";
 import type { CodeAsset } from "../../../types";
-import { getAllCultivatedThoughtz } from "../../../utils/get-cultivated-thoughtz";
+import { getAllCultivatedThoughtz } from "../../../utils/cultivatedThoughtz";
 
 export async function getStaticPaths() {
     const cultivatedThoughtz = await getAllCultivatedThoughtz();

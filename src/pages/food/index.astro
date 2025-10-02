@@ -3,10 +3,7 @@ import InternalFoodNav from "../../components/InternalFoodNav.astro";
 import RecipesList from "../../components/RecipesList.astro";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../../constants";
 import Layout from "../../layouts/DefaultPageLayout.astro";
-import {
-  getFoodAssets,
-  getFoodAssetsByCategory,
-} from "../../utils/get-food-assets";
+import { getFoodAssets, getFoodAssetsByCategory } from "../../utils/food";
 
 const foodAssets = await getFoodAssets();
 const foodAssetRecord = await getFoodAssetsByCategory();

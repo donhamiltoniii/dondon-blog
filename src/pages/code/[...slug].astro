@@ -1,7 +1,7 @@
 ---
 import ArticleAssetLayout from "../../layouts/ArticleAssetLayout.astro";
 import type { CodeAsset } from "../../types";
-import { getAllCodeAssets } from "../../utils/get-code-assets";
+import { getAllCodeAssets } from "../../utils/code";
 
 export async function getStaticPaths() {
   const codeAssets = await getAllCodeAssets();

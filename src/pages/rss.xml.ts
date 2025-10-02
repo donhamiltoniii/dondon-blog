@@ -2,9 +2,9 @@ import rss from "@astrojs/rss";
 import MarkdownIt from "markdown-it";
 import sanitize from "sanitize-html";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../constants";
-import { getAllCodeAssets } from "../utils/get-code-assets";
-import { getAllCultivatedThoughtz } from "../utils/get-cultivated-thoughtz";
-import { getAllSeedAssets } from "../utils/get-seed-assets";
+import { getAllCodeAssets } from "../utils/code";
+import { getAllCultivatedThoughtz } from "../utils/cultivatedThoughtz";
+import { getAllSeedAssets } from "../utils/seeds";
 
 const parser = new MarkdownIt();
 

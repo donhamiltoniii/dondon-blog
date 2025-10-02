@@ -1,6 +1,6 @@
 ---
 import Layout from "../../../layouts/SeedLayout.astro";
-import { getSeeds, type Seed } from "../../../utils/get-seeds";
+import { getSeeds, type Seed } from "../../../utils/seeds";
 
 export async function getStaticPaths() {
   const seeds = await getSeeds();

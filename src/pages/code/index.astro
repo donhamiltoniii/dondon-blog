@@ -2,7 +2,7 @@
 import ArticleAssetsList from "../../components/ArticleAssetsList.astro";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../../constants";
 import Layout from "../../layouts/DefaultPageLayout.astro";
-import { getCodeAssets } from "../../utils/get-code-assets";
+import { getCodeAssets } from "../../utils/code";
 
 const codeAssets = await getCodeAssets({ numberOfAssets: "all" });
 ---

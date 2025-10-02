@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../../constants";
 import Layout from "../../layouts/DefaultPageLayout.astro";
-import { getPhotoAssets } from "../../utils/get-photo-assets";
+import { getPhotoAssets } from "../../utils/photos";
 
 const photoAssets = await getPhotoAssets();
 ---
