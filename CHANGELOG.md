@@ -1,3 +1,17 @@
+## [2.41.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.40.2...v2.41.0) (2025-10-02)
+
+### 🐛 Bug Fixes
+
+* update function name in page file to match ([392d2a0](https://github.com/donhamiltoniii/dondon-blog/commit/392d2a0c85325daf63ebdf186dceaa9e1fd98fa1))
+
+### 👷 CI
+
+* update gha workflow to run tests before build ([6a78c7c](https://github.com/donhamiltoniii/dondon-blog/commit/6a78c7cb6b81bb0ee358b2bc1c5e040510830151))
+
+### 🔧 Maintenance
+
+* update util file names and add tests ([6fd0ceb](https://github.com/donhamiltoniii/dondon-blog/commit/6fd0ceb9ff49d5b8b08072e9b844768545dbd411))
+
 ## [2.40.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.40.1...v2.40.2) (2025-10-02)
 
 ### ♻️ Code Refactoring
