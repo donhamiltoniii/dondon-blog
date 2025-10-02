@@ -42,3 +42,24 @@ export async function getFoodAssetsByTag(tag: string) {
   const foodAssets = await getFoodAssets()
   return foodAssets.filter(fa => fa.data.tags.includes(tag))
 }
+
+export type RecipeSectionEntry = [string, FoodAssets];
+
+function recipeSectionEntrySort(a: RecipeSectionEntry, b: RecipeSectionEntry) {
+  if (a[0] > b[0]) {
+    return 1;
+  }
+
+  if (a[0] < b[0]) {
+    return -1;
+  }
+
+  return 0;
+}
+
+export function getSortedRecipeSectionEntries(
+  recipes: FoodAssets | FoodAssetCategoryMap
+) {
+  return Object.entries(recipes)
+    .sort(recipeSectionEntrySort)
+}

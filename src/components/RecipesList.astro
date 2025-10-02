@@ -1,5 +1,9 @@
 ---
 import type { FoodAssetCategoryMap, FoodAssets } from "../types";
+import {
+  getSortedRecipeSectionEntries,
+  type RecipeSectionEntry,
+} from "../utils/get-food-assets";
 import RecipeList from "./RecipeList.astro";
 import RecipeSection from "./RecipeSection.astro";
 
@@ -13,9 +17,11 @@ const { recipes } = Astro.props;
 <div class="recipes">
   {
     !Array.isArray(recipes) ? (
-      Object.entries(recipes).map(([category, recipeList]) => {
-        return <RecipeSection category={category} recipeList={recipeList} />;
-      })
+      getSortedRecipeSectionEntries(recipes).map(
+        ([category, recipesList]: RecipeSectionEntry) => (
+          <RecipeSection category={category} recipeList={recipesList} />
+        ),
+      )
     ) : (
       <RecipeList recipeList={recipes} />
     )
