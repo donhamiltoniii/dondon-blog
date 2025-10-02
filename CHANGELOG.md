@@ -1,3 +1,9 @@
+## [2.40.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.40.1...v2.40.2) (2025-10-02)
+
+### ♻️ Code Refactoring
+
+* move logic from component to util ([3c9d2ec](https://github.com/donhamiltoniii/dondon-blog/commit/3c9d2ecfe81197e6155dd705d23059191ee17553))
+
 ## [2.40.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.40.0...v2.40.1) (2025-09-30)
 
 ### ♻️ Code Refactoring
