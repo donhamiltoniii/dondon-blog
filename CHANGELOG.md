@@ -2,7 +2,7 @@
 
 ### 👷 CI
 
-* update workflow to use ghcr ([80b566b](https://github.com/donhamiltoniii/dondon-blog/commit/80b566be47836e9af2ee43d5baef13f84310df71))
+- update workflow to use ghcr ([80b566b](https://github.com/donhamiltoniii/dondon-blog/commit/80b566be47836e9af2ee43d5baef13f84310df71))
 
 ## [2.41.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.41.0...v2.41.1) (2025-10-03)
 
