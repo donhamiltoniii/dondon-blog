@@ -1,3 +1,13 @@
+## [2.42.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.41.2...v2.42.0) (2025-10-03)
+
+### 🚀 Features
+
+* update now page so build runs ([e065427](https://github.com/donhamiltoniii/dondon-blog/commit/e06542738f246b82dedef0e57055cb678099e678))
+
+### 🔧 Maintenance
+
+* add eslint and prettier and update gha job ([56cc684](https://github.com/donhamiltoniii/dondon-blog/commit/56cc6849259ae89a911250226a215a7567c10def))
+
 ## [2.41.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.41.1...v2.41.2) (2025-10-03)
 
 ### 👷 CI
