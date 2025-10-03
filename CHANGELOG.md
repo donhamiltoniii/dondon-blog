@@ -1,3 +1,11 @@
+## [2.41.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.41.0...v2.41.1) (2025-10-03)
+
+### 📝 Content Updates
+
+* add turkey bologese with ricotta meal prep ([71c0fd3](https://github.com/donhamiltoniii/dondon-blog/commit/71c0fd359effb1b676b93853a333ed89774d3353))
+* fix frontmatter for baked oats recipe ([f4a26a6](https://github.com/donhamiltoniii/dondon-blog/commit/f4a26a67df6ac4c383e24557b8b0387f74f48e0c))
+* update baked oats recipe ([6828a8e](https://github.com/donhamiltoniii/dondon-blog/commit/6828a8ee3b8b3d8162e14bd036ec60570af98624))
+
 ## [2.41.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.40.2...v2.41.0) (2025-10-02)
 
 ### 🐛 Bug Fixes
