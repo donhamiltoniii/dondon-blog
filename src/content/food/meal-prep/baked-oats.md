@@ -1,9 +1,14 @@
-# High Protein Baked Oats
-
-**Prep Time:** 10 minutes  
-**Cook Time:** 30 minutes  
-**Servings:** 6  
-**Storage:** Refrigerate up to 5 days, reheat in microwave for 30-45 seconds
+---
+title: High Protein Baked Oats
+prepTime: 10 minutes
+cookTime: 30 minutes
+servings: 6
+servingSize: 1/6 pan
+imgUrl:
+description: Refrigerate up to 5 days, reheat in microwave for 30-45 seconds
+notes:
+tags: [meal prep, high-protein, high-fiber, breakfast, main]
+---
 
 ## Base Ingredients
 
