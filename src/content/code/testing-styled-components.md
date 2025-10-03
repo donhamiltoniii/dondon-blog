@@ -1,9 +1,9 @@
 ---
-title: "Unit Testing Styled Components"
-description: "An interesting issue that popped up while unit testing styled components"
+title: 'Unit Testing Styled Components'
+description: 'An interesting issue that popped up while unit testing styled components'
 pubDate: 2024-07-26
 lastUpdate: 2024-07-26
-heroImage: "https://picsum.photos/720/360"
+heroImage: 'https://picsum.photos/720/360'
 published: false
 ---
 

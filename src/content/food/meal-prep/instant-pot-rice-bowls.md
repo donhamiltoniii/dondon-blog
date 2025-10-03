@@ -4,8 +4,7 @@ prepTime: various
 cookTime: various
 servings: various
 description: High-protein basmati rice bowl meal prep recipes made in the Instant Pot.
-tags:
-  [high-protein, high-fiber, meal prep, instant pot, breakfast, lunch, dinner]
+tags: [high-protein, high-fiber, meal prep, instant pot, breakfast, lunch, dinner]
 ---
 
 ## Recipe 1: Turkey & Basmati Rice Power Bowl

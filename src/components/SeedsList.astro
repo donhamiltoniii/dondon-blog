@@ -1,10 +1,10 @@
 ---
-import type { CollectionEntry } from "astro:content";
-import { getTitleFromSlug } from "../lib/getTitleFromSlug";
-import { kebabToTitle } from "../lib/kebabToTitle";
+import type { CollectionEntry } from 'astro:content';
+import { getTitleFromSlug } from '../lib/getTitleFromSlug';
+import { kebabToTitle } from '../lib/kebabToTitle';
 
 interface Props {
-  seeds: CollectionEntry<"seeds">[];
+  seeds: CollectionEntry<'seeds'>[];
 }
 
 const { seeds } = Astro.props;
@@ -14,11 +14,9 @@ const { seeds } = Astro.props;
   {
     seeds.length > 0 ? (
       <ul>
-        {seeds.map((seed) => (
+        {seeds.map(seed => (
           <li>
-            <a href={`/seeds/${seed.slug}`}>
-              {kebabToTitle(getTitleFromSlug(seed.slug))}
-            </a>
+            <a href={`/seeds/${seed.slug}`}>{kebabToTitle(getTitleFromSlug(seed.slug))}</a>
           </li>
         ))}
       </ul>

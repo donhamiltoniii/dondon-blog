@@ -1,8 +1,8 @@
 ---
-import InternalFoodNav from "../../components/InternalFoodNav.astro";
-import Layout from "../../layouts/DefaultPageLayout.astro";
-import type { FoodAsset } from "../../types";
-import { getFoodAssets } from "../../utils/food";
+import InternalFoodNav from '../../components/InternalFoodNav.astro';
+import Layout from '../../layouts/DefaultPageLayout.astro';
+import type { FoodAsset } from '../../types';
+import { getFoodAssets } from '../../utils/food';
 
 export async function getStaticPaths() {
   const recipes = await getFoodAssets();
@@ -22,11 +22,7 @@ const { Content } = await recipe.render();
   <header>
     {
       recipe.data.imgUrl ? (
-        <img
-          alt={recipe.data.title}
-          src={recipe.data.imgUrl}
-          style={{ width: "100%" }}
-        />
+        <img alt={recipe.data.title} src={recipe.data.imgUrl} style={{ width: '100%' }} />
       ) : null
     }
     <div>

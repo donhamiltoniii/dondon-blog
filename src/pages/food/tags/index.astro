@@ -1,11 +1,11 @@
 ---
-import InternalFoodNav from "../../../components/InternalFoodNav.astro";
-import { SITE_DESCRIPTION, SITE_TITLE } from "../../../constants";
-import Layout from "../../../layouts/DefaultPageLayout.astro";
-import { getFoodAssets } from "../../../utils/food";
+import InternalFoodNav from '../../../components/InternalFoodNav.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../../constants';
+import Layout from '../../../layouts/DefaultPageLayout.astro';
+import { getFoodAssets } from '../../../utils/food';
 
 const recipes = await getFoodAssets();
-const tags = [...new Set(recipes.flatMap((recipe) => recipe.data.tags).sort())];
+const tags = [...new Set(recipes.flatMap(recipe => recipe.data.tags).sort())];
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
@@ -14,7 +14,7 @@ const tags = [...new Set(recipes.flatMap((recipe) => recipe.data.tags).sort())];
   <p>Tags! Click for recipes.</p>
   <ul>
     {
-      tags.map((tag) => (
+      tags.map(tag => (
         <li>
           <a href={`/food/tags/${tag}`}>{tag}</a>
         </li>

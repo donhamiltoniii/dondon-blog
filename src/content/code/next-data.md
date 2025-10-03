@@ -1,9 +1,9 @@
 ---
-title: "Accessing Next Data in Browser"
-description: "Understanding data in a NEXT application"
+title: 'Accessing Next Data in Browser'
+description: 'Understanding data in a NEXT application'
 pubDate: 2023-03-08
 lastUpdate: 2023-03-08
-heroImage: "https://picsum.photos/720/360"
+heroImage: 'https://picsum.photos/720/360'
 published: true
 ---
 
@@ -14,7 +14,7 @@ Usually this involves all sorts of looking around inside of the network tab or c
 Until this wonderful, beautiful, simple, little one line of code came into all of our lives.
 
 ```js
-JSON.parse(document.getElementById("__NEXT_DATA__"));
+JSON.parse(document.getElementById('__NEXT_DATA__'));
 ```
 
 It turns out that next provides you the data that is being provided as props to the page in a serialized JSON object. Just another reason to love tf out of this framework. Here's an example payload that I get from my recipe site:
@@ -32,15 +32,7 @@ It turns out that next provides you the data that is being provided as props to 
           "imgUrl": "/img/jalapeno-poppers.jpg",
           "description": "Jalapeños stuffed with cheese and wrapped with bacon.",
           "notes": "Mad easy. Mad delicious. Perfect side dish.",
-          "tags": [
-            "keto",
-            "jalapeño",
-            "cheese",
-            "cream cheese",
-            "bacon",
-            "appetizer",
-            "side dish"
-          ],
+          "tags": ["keto", "jalapeño", "cheese", "cream cheese", "bacon", "appetizer", "side dish"],
           "content": "\n### Ingredients\n\n- 8 Jalapeños, hollowed\n- 8oz Cream Cheese\n- 8oz shredded cheese of your choice\n- 8 slices bacon\n\n### Instructions\n\n1. Cut a \"T\" into one side of your Jalapeños and scoop out the seeds.\n1. In a bowl, mix cream cheese and shredded cheese until throughly mixed.\n1. Preheat air frier for 10 minutes at 400°\n1. Stuff each pepper with cheese mixture and wrap with one slice of bacon. Wrap the ends of the bacon underneath so they stay together.\n1. Cook for 15 minutes at 350°\n1. Eat them all in one sitting.\n",
           "slug": "bacon-wrapped-jalapeño-poppers"
         }

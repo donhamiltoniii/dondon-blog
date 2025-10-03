@@ -1,9 +1,9 @@
 ---
-title: "Base Path in TypeScript"
-description: "How to update the base path in TS to reference files more easily"
+title: 'Base Path in TypeScript'
+description: 'How to update the base path in TS to reference files more easily'
 pubDate: 2023-03-04
 lastUpdate: 2023-03-04
-heroImage: "https://picsum.photos/720/360"
+heroImage: 'https://picsum.photos/720/360'
 published: true
 ---
 
@@ -28,7 +28,7 @@ Inside of this project, we're going to include a deeply nested path by adding a 
 This is going to illustrate what happens when we have to bring in a component from way higher up in the directory tree. Here's what our deeply nested page looks like:
 
 ```tsx
-import { Counter } from "../../../../components/counter";
+import { Counter } from '../../../../components/counter';
 
 export default function CounterPage() {
   return (
@@ -58,7 +58,7 @@ To solve this issue, we can make a quick and easy update to our `tsconfig.json` 
 This gives us a shorthand to reference the `src` directory. So now on any of our imports, we can just start with `@`. Now we can revisit that deeply nested page and make the following change:
 
 ```tsx
-import { Counter } from "@/components/counter";
+import { Counter } from '@/components/counter';
 
 export default function CounterPage() {
   return (

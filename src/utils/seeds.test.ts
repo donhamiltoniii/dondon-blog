@@ -12,18 +12,16 @@ describe('seed assets utilities', () => {
     vi.clearAllMocks();
   });
 
-  const createMockSeed = (
-    id: string,
-    pubDate: Date
-  ): CollectionEntry<'seeds'> => ({
-    id,
-    collection: 'seeds',
-    data: {
-      title: `Seed ${id}`,
-      pubDate,
-    },
-    slug: id,
-  } as CollectionEntry<'seeds'>);
+  const createMockSeed = (id: string, pubDate: Date): CollectionEntry<'seeds'> =>
+    ({
+      id,
+      collection: 'seeds',
+      data: {
+        title: `Seed ${id}`,
+        pubDate,
+      },
+      slug: id,
+    }) as CollectionEntry<'seeds'>;
 
   describe('getSeedAssets', () => {
     it('should return all seeds sorted by pubDate (newest first) when numberOfAssets is "all"', async () => {
@@ -173,9 +171,9 @@ describe('seed assets utilities', () => {
 
       const { getSeedAssets } = await import('./seeds');
 
-      await expect(
-        getSeedAssets({ numberOfAssets: 'all' })
-      ).rejects.toThrow('Collection not found');
+      await expect(getSeedAssets({ numberOfAssets: 'all' })).rejects.toThrow(
+        'Collection not found'
+      );
     });
   });
 

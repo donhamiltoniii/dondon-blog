@@ -14,11 +14,9 @@ export function decodeHtml(str: string): string {
   if (!str) {
     return str;
   }
-
   try {
     return unescape(str);
-  } catch (error) {
-    console.error('Error decoding HTML:', error);
+  } catch {
     return str;
   }
 }

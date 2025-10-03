@@ -1,9 +1,9 @@
 ---
-title: "React 18 Third Party Component Rendering Issue"
-description: "Quick solve to an issue in React 18"
+title: 'React 18 Third Party Component Rendering Issue'
+description: 'Quick solve to an issue in React 18'
 pubDate: 2023-03-08
 lastUpdate: 2023-03-08
-heroImage: "https://picsum.photos/720/360"
+heroImage: 'https://picsum.photos/720/360'
 published: true
 ---
 

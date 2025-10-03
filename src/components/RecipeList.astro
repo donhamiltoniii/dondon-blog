@@ -1,19 +1,19 @@
 ---
-import type { FoodAsset, FoodAssets } from "../types";
+import type { FoodAsset, FoodAssets } from '../types';
 
 interface Props {
-    recipeList: FoodAssets;
+  recipeList: FoodAssets;
 }
 
 const { recipeList } = Astro.props;
 ---
 
 <ul>
-    {
-        recipeList.map((recipe: FoodAsset) => (
-            <li>
-                <a href={`/food/${recipe.slug}`}>{recipe.data.title}</a>
-            </li>
-        ))
-    }
+  {
+    recipeList.map((recipe: FoodAsset) => (
+      <li>
+        <a href={`/food/${recipe.slug}`}>{recipe.data.title}</a>
+      </li>
+    ))
+  }
 </ul>

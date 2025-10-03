@@ -74,23 +74,19 @@ describe('decodeHtml', () => {
     });
 
     it('should decode multiple entities in one string', () => {
-      expect(decodeHtml('&lt;p&gt;Hello &amp; goodbye&lt;/p&gt;'))
-        .toBe('<p>Hello & goodbye</p>');
+      expect(decodeHtml('&lt;p&gt;Hello &amp; goodbye&lt;/p&gt;')).toBe('<p>Hello & goodbye</p>');
     });
 
     it('should decode mixed content', () => {
-      expect(decodeHtml('Price: &pound;10 &amp; &euro;12'))
-        .toBe('Price: £10 & €12');
+      expect(decodeHtml('Price: &pound;10 &amp; &euro;12')).toBe('Price: £10 & €12');
     });
 
     it('should decode attributes with quotes', () => {
-      expect(decodeHtml('&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;'))
-        .toBe('<a href="#">Link</a>');
+      expect(decodeHtml('&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;')).toBe('<a href="#">Link</a>');
     });
 
     it('should decode special characters in sentences', () => {
-      expect(decodeHtml('Tom &amp; Jerry&#39;s adventures'))
-        .toBe("Tom & Jerry's adventures");
+      expect(decodeHtml('Tom &amp; Jerry&#39;s adventures')).toBe("Tom & Jerry's adventures");
     });
   });
 
@@ -136,23 +132,23 @@ describe('decodeHtml', () => {
     });
 
     it('should decode blog post titles', () => {
-      expect(decodeHtml('5 Tips &amp; Tricks for Better Code'))
-        .toBe('5 Tips & Tricks for Better Code');
+      expect(decodeHtml('5 Tips &amp; Tricks for Better Code')).toBe(
+        '5 Tips & Tricks for Better Code'
+      );
     });
 
     it('should decode recipe titles', () => {
-      expect(decodeHtml('Mac &amp; Cheese &#8211; Comfort Food'))
-        .toBe('Mac & Cheese – Comfort Food');
+      expect(decodeHtml('Mac &amp; Cheese &#8211; Comfort Food')).toBe(
+        'Mac & Cheese – Comfort Food'
+      );
     });
 
     it('should decode HTML escaped JSON', () => {
-      expect(decodeHtml('{&quot;name&quot;: &quot;John&quot;}'))
-        .toBe('{"name": "John"}');
+      expect(decodeHtml('{&quot;name&quot;: &quot;John&quot;}')).toBe('{"name": "John"}');
     });
 
     it('should decode user-generated content', () => {
-      expect(decodeHtml('I love coding! &lt;3'))
-        .toBe('I love coding! <3');
+      expect(decodeHtml('I love coding! &lt;3')).toBe('I love coding! <3');
     });
   });
 

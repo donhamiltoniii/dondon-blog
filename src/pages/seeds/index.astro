@@ -1,7 +1,7 @@
 ---
-import { SITE_DESCRIPTION, SITE_TITLE } from "../../constants";
-import Layout from "../../layouts/DefaultPageLayout.astro";
-import { getAllSeedAssets } from "../../utils/seeds";
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../constants';
+import Layout from '../../layouts/DefaultPageLayout.astro';
+import { getAllSeedAssets } from '../../utils/seeds';
 
 const seedAssets = await getAllSeedAssets();
 ---
@@ -32,10 +32,10 @@ const seedAssets = await getAllSeedAssets();
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
   <h1>Seeds</h1>
-  <section class:list={["cards"]}>
+  <section class:list={['cards']}>
     {
-      seedAssets.map((s) => (
-        <a class:list={["card"]} href={`/seeds/${s.slug}`}>
+      seedAssets.map(s => (
+        <a class:list={['card']} href={`/seeds/${s.slug}`}>
           <h2>{s.data.title}</h2>
         </a>
       ))

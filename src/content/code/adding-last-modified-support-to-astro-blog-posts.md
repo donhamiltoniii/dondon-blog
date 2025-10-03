@@ -3,7 +3,7 @@ title: Adding Last Modified Support to Astro Blog Posts
 description: A quick account of implementing a programmatic solution to modifying dates in blog posts
 pubDate: 2025-01-05
 lastUpdate: 2025-01-05
-heroImage: "https://picsum.photos/720/360"
+heroImage: 'https://picsum.photos/720/360'
 published: true
 ---
 

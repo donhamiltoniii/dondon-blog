@@ -7,13 +7,13 @@
  * getTitleFromSlug("my-post") // returns "my-post"
  */
 export function getTitleFromSlug(slug: string): string {
-    if (!slug || slug.trim() === '') {
-        return '';
-    }
+  if (!slug || slug.trim() === '') {
+    return '';
+  }
 
-    // Remove trailing slashes and get the last segment
-    const cleanedSlug = slug.trim().replace(/\/+$/, '');
-    const segments = cleanedSlug.split('/');
+  // Remove trailing slashes and get the last segment
+  const cleanedSlug = slug.trim().replace(/\/+$/, '');
+  const segments = cleanedSlug.split('/');
 
-    return segments.at(-1) || '';
+  return segments.at(-1) || '';
 }

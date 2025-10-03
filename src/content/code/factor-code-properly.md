@@ -1,9 +1,9 @@
 ---
-title: "Proper (Re)Factoring"
-description: "How to think about refactoring"
+title: 'Proper (Re)Factoring'
+description: 'How to think about refactoring'
 pubDate: 2023-03-08
 lastUpdate: 2023-03-08
-heroImage: "https://picsum.photos/720/360"
+heroImage: 'https://picsum.photos/720/360'
 published: true
 ---
 
@@ -32,14 +32,14 @@ Split logic out into the tiniest possible pieces. Make new functions/methods, or
 ```ts
 // Code
 function camelCaseToCapitalSnakeCase(str: string): string {
-  return str.replace(/[A-Z]/g, (letter) => `_${letter}`).toUpperCase();
+  return str.replace(/[A-Z]/g, letter => `_${letter}`).toUpperCase();
 }
 
 // Test
-describe("camelCaseToCapitalSnakeCase", () => {
-  test("should convert string to capital snake case", () => {
-    const testString = "hereIsMyCamelCaseString";
-    const expected = expect("HERE_IS_MY_CAMEL_CASE_STRING");
+describe('camelCaseToCapitalSnakeCase', () => {
+  test('should convert string to capital snake case', () => {
+    const testString = 'hereIsMyCamelCaseString';
+    const expected = expect('HERE_IS_MY_CAMEL_CASE_STRING');
     const result = camelCaseToCapitalSnakeCase(testString);
 
     expected.toBe(result);
@@ -52,7 +52,7 @@ describe("camelCaseToCapitalSnakeCase", () => {
 ```ts
 // Code
 function camelToSnakeCase(str: string): string {
-  return str.replace(/[A-Z]/g, (letter) => `_${letter}`);
+  return str.replace(/[A-Z]/g, letter => `_${letter}`);
 }
 
 function capitalize(str: string): string {
@@ -60,20 +60,20 @@ function capitalize(str: string): string {
 }
 
 // Test
-describe("camelToSnakeCase", () => {
-  test("should convert camel to snake case", () => {
-    const testString = "hereIsMyCamelCaseString";
-    const expected = expect("here_is_my_camel_case_string");
+describe('camelToSnakeCase', () => {
+  test('should convert camel to snake case', () => {
+    const testString = 'hereIsMyCamelCaseString';
+    const expected = expect('here_is_my_camel_case_string');
     const result = camelToSnakeCase(testString);
 
     expected.toBe(result);
   });
 });
 
-describe("capitalize", () => {
-  test("should capitalize given string", () => {
-    const testString = "example";
-    const expected = expect("EXAMPLE");
+describe('capitalize', () => {
+  test('should capitalize given string', () => {
+    const testString = 'example';
+    const expected = expect('EXAMPLE');
     const result = capitalize(testString);
 
     expected.toBe(result);

@@ -6,16 +6,7 @@ servings: 4
 imgUrl:
 description: A simple, healthy sheet pan dinner featuring tender turkey meatballs alongside caramelized sweet potatoes and crispy Brussels sprouts. Perfect for meal prep or a quick weeknight dinner.
 notes: The meatballs can be formed ahead of time and refrigerated for up to 24 hours before cooking. For a complete meal, serve with a simple side salad or crusty bread.
-tags:
-  [
-    sheet pan,
-    turkey,
-    sweet potato,
-    brussels sprouts,
-    healthy,
-    dinner,
-    meal prep,
-  ]
+tags: [sheet pan, turkey, sweet potato, brussels sprouts, healthy, dinner, meal prep]
 ---
 
 ### Ingredients

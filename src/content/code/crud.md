@@ -1,9 +1,9 @@
 ---
-title: "CRUD"
-description: "The basics of CRUD operations"
+title: 'CRUD'
+description: 'The basics of CRUD operations'
 pubDate: 2023-03-04
 lastUpdate: 2023-03-04
-heroImage: "https://picsum.photos/720/360"
+heroImage: 'https://picsum.photos/720/360'
 published: false
 ---
 
@@ -75,7 +75,7 @@ Your default browser will open an instance of Prisma Studio where you can visual
 We'll start by making the entry file. So in the root of the project make a directory named `src` and inside of it, make a file named `index.ts`. Inside of `index.ts`, write the following code:
 
 ```ts
-console.log("hello world!");
+console.log('hello world!');
 ```
 
 And then open the `package.json` file and inside of the scripts section, add the following:

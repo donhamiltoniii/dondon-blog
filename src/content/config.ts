@@ -1,4 +1,4 @@
-import { defineCollection, z } from "astro:content";
+import { defineCollection, z } from 'astro:content';
 
 const code = defineCollection({
   // Type-check frontmatter using a schema
@@ -9,11 +9,11 @@ const code = defineCollection({
     pubDate: z
       .date()
       .or(z.date())
-      .transform((val) => new Date(val)),
+      .transform(val => new Date(val)),
     lastUpdate: z
       .date()
       .optional()
-      .transform((str) => (str ? new Date(str) : undefined)),
+      .transform(str => (str ? new Date(str) : undefined)),
     heroImage: z.string().optional(),
     published: z.boolean().optional(),
   }),
@@ -25,13 +25,13 @@ const cultivatedThoughtz = defineCollection({
     pubDate: z
       .date()
       .or(z.date())
-      .transform((val) => new Date(val)),
+      .transform(val => new Date(val)),
     lastUpdate: z
       .date()
       .optional()
-      .transform((str) => (str ? new Date(str) : undefined)),
+      .transform(str => (str ? new Date(str) : undefined)),
   }),
-})
+});
 
 const food = defineCollection({
   schema: z.object({
@@ -49,7 +49,7 @@ const food = defineCollection({
 });
 
 const photos = defineCollection({
-  type: "data",
+  type: 'data',
   schema: ({ image }) =>
     z.object({
       cover: image(),
@@ -65,12 +65,12 @@ const seeds = defineCollection({
     pubDate: z
       .date()
       .or(z.date())
-      .transform((val) => new Date(val)),
+      .transform(val => new Date(val)),
     lastUpdate: z
       .date()
       .optional()
-      .transform((str) => (str ? new Date(str) : undefined)),
+      .transform(str => (str ? new Date(str) : undefined)),
   }),
-})
+});
 
 export const collections = { code, cultivatedThoughtz, food, photos, seeds };

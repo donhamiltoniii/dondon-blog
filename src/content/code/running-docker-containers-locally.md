@@ -3,7 +3,7 @@ title: Running Docker Containers Locally
 description: A working document with instructions and tips for how to setup a local Ubuntu server with Docker installed and run your own applications
 pubDate: 2025-01-01
 lastUpdate: 2025-01-01
-heroImage: "https://picsum.photos/720/360"
+heroImage: 'https://picsum.photos/720/360'
 published: true
 ---
 

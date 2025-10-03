@@ -1,8 +1,8 @@
-import { getCollection } from "astro:content";
-import type { CultivatedThoughtz } from "../types";
+import { getCollection } from 'astro:content';
+import type { CultivatedThoughtz } from '../types';
 
 type Options = {
-    numberOfThoughts: number | "all";
+  numberOfThoughts: number | 'all';
 };
 
 /**
@@ -12,18 +12,16 @@ type Options = {
  * @returns Promise resolving to filtered and sorted cultivated thoughts
  */
 export async function getCultivatedThoughtz({
-    numberOfThoughts,
+  numberOfThoughts,
 }: Options): Promise<CultivatedThoughtz> {
-    const thoughts = await getCollection("cultivatedThoughtz");
-    const sorted = thoughts.sort(
-        (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-    );
+  const thoughts = await getCollection('cultivatedThoughtz');
+  const sorted = thoughts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-    if (numberOfThoughts === "all") {
-        return sorted;
-    }
+  if (numberOfThoughts === 'all') {
+    return sorted;
+  }
 
-    return sorted.slice(0, numberOfThoughts);
+  return sorted.slice(0, numberOfThoughts);
 }
 
 /**
@@ -31,5 +29,5 @@ export async function getCultivatedThoughtz({
  * @returns Promise resolving to all cultivated thoughts
  */
 export async function getAllCultivatedThoughtz(): Promise<CultivatedThoughtz> {
-    return await getCultivatedThoughtz({ numberOfThoughts: "all" });
+  return await getCultivatedThoughtz({ numberOfThoughts: 'all' });
 }

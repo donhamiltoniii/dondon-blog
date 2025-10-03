@@ -1,13 +1,13 @@
 ---
-import { Image } from "astro:assets";
-import { SITE_DESCRIPTION, SITE_TITLE } from "../../constants";
-import Layout from "../../layouts/DefaultPageLayout.astro";
-import { getImagesForPhotoAsset, getPhotoAssets } from "../../utils/photos";
+import { Image } from 'astro:assets';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../constants';
+import Layout from '../../layouts/DefaultPageLayout.astro';
+import { getImagesForPhotoAsset, getPhotoAssets } from '../../utils/photos';
 
 export async function getStaticPaths() {
   const photoAssets = await getPhotoAssets();
 
-  const paths = Object.values(photoAssets).map((p) => {
+  const paths = Object.values(photoAssets).map(p => {
     return {
       params: {
         id: p.id,
@@ -43,11 +43,11 @@ const images = await getImagesForPhotoAsset(photoAsset.id);
       {
         images.length > 0 ? (
           images
-            .filter((image) => {
-              const imageSrcArr = image.src.split("/");
-              return !imageSrcArr[imageSrcArr.length - 1].includes("cover");
+            .filter(image => {
+              const imageSrcArr = image.src.split('/');
+              return !imageSrcArr[imageSrcArr.length - 1].includes('cover');
             })
-            .map((image) => (
+            .map(image => (
               <Image
                 src={image}
                 alt={`Image from ${photoAsset.data.title} album`}

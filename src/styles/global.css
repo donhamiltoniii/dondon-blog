@@ -73,7 +73,7 @@ pre {
   padding: 1rem;
 }
 
-pre>code {
+pre > code {
   all: unset;
 }
 

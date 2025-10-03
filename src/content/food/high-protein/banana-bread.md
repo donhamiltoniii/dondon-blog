@@ -11,6 +11,7 @@ tags: [high-protein, healthy-baking, banana-bread, breakfast, snack]
 ---
 
 ### Ingredients
+
 - 3 large very ripe bananas, mashed (about 1½ cups)
 - ½ cup plain Greek yogurt
 - 2 large eggs
@@ -26,6 +27,7 @@ tags: [high-protein, healthy-baking, banana-bread, breakfast, snack]
 - ⅓ cup chopped walnuts (optional)
 
 ### Instructions
+
 1. Preheat oven to 350°F (175°C). Grease a 9x5 inch loaf pan or line with parchment paper.
 
 2. In a large bowl, mash bananas until mostly smooth with some small chunks remaining.
@@ -45,16 +47,19 @@ tags: [high-protein, healthy-baking, banana-bread, breakfast, snack]
 9. Cool in pan for 10 minutes, then turn out onto a wire rack to cool completely before slicing.
 
 ### Macros
+
 #### Whole Dish
-| Field | Amount |
-| - | - |
-| **Calories** | 1,620 |
-| **Protein** | 84g |
-| **Fat** | 32g |
-| **Carbs** | 248g |
-| **Fiber** | 28g |
-| **Sugar** | 168g |
-| **Volume** | 1,200g |
+
+| Field        | Amount |
+| ------------ | ------ |
+| **Calories** | 1,620  |
+| **Protein**  | 84g    |
+| **Fat**      | 32g    |
+| **Carbs**    | 248g   |
+| **Fiber**    | 28g    |
+| **Sugar**    | 168g   |
+| **Volume**   | 1,200g |
 
 #### Per Serving
-*135 calories, 7g protein, 3g fat, 21g carbs, 2g fiber, 14g sugar*
+
+_135 calories, 7g protein, 3g fat, 21g carbs, 2g fiber, 14g sugar_

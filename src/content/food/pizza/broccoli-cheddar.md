@@ -13,6 +13,7 @@ tags: [pizza, homemade, broccoli, cheddar, white sauce, vegetarian]
 ### Ingredients
 
 **For the Pizza Dough:**
+
 - 3 cups all-purpose flour
 - 1 packet (2¼ tsp) active dry yeast
 - 1 tsp salt
@@ -21,6 +22,7 @@ tags: [pizza, homemade, broccoli, cheddar, white sauce, vegetarian]
 - 2 tbsp olive oil
 
 **For the Garlic White Sauce:**
+
 - 2 tbsp butter
 - 2-3 cloves garlic, minced
 - 2 tbsp all-purpose flour
@@ -30,6 +32,7 @@ tags: [pizza, homemade, broccoli, cheddar, white sauce, vegetarian]
 - Pinch of nutmeg
 
 **For the Toppings:**
+
 - 2 cups fresh broccoli florets
 - 1½ cups sharp cheddar cheese, shredded
 - ½ cup mozzarella cheese, shredded
@@ -40,12 +43,14 @@ tags: [pizza, homemade, broccoli, cheddar, white sauce, vegetarian]
 ### Instructions
 
 **Make the Pizza Dough:**
+
 1. **Activate yeast:** Mix warm water, sugar, and yeast in a small bowl. Let sit 5-10 minutes until foamy.
 2. **Form dough:** In a large bowl, combine flour and salt. Create a well in center and add foamy yeast mixture and olive oil. Mix until shaggy dough forms.
 3. **Knead:** Turn onto floured surface and knead 8-10 minutes until smooth and elastic.
 4. **First rise:** Place in oiled bowl, cover with damp towel, and rise in warm spot 1-2 hours until doubled.
 
 **Prepare the White Sauce:**
+
 1. Melt butter in small saucepan over medium heat.
 2. Add minced garlic and cook 30 seconds until fragrant.
 3. Whisk in flour and cook 1 minute.
@@ -53,11 +58,13 @@ tags: [pizza, homemade, broccoli, cheddar, white sauce, vegetarian]
 5. Stir in Parmesan, salt, pepper, and nutmeg. Set aside to cool slightly.
 
 **Prepare the Toppings:**
+
 1. Steam or blanch broccoli florets 2-3 minutes until bright green and slightly tender.
 2. Drain well and pat completely dry with paper towels.
 3. Mix minced garlic with olive oil in small bowl.
 
 **Assemble and Bake:**
+
 1. **Preheat oven** to 475°F (245°C).
 2. **Roll dough:** Punch down risen dough and roll out on floured surface to fit your pizza pan or baking sheet.
 3. **Add base:** Brush dough with garlic oil, then spread white sauce evenly, leaving a 1-inch border for crust.
@@ -68,6 +75,7 @@ tags: [pizza, homemade, broccoli, cheddar, white sauce, vegetarian]
 ### Macros
 
 #### Whole Dish
+
 | Field        | Amount |
 | ------------ | ------ |
 | **Calories** | 2,840  |
@@ -79,4 +87,5 @@ tags: [pizza, homemade, broccoli, cheddar, white sauce, vegetarian]
 | **Volume**   | 1,200g |
 
 #### Per Serving
-*473 calories, 19g protein, 18g fat, 59g carbs, 3g fiber, 4g sugar*
+
+_473 calories, 19g protein, 18g fat, 59g carbs, 3g fiber, 4g sugar_

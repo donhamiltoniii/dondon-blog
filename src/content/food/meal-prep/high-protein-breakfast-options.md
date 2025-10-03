@@ -4,14 +4,15 @@ prepTime: various
 cookTime: various
 servings: various
 description: High-protein basmati rice bowl meal prep recipes made in the Instant Pot.
-tags:
-  [high-protein, high-fiber, meal prep, instant pot, breakfast]
+tags: [high-protein, high-fiber, meal prep, instant pot, breakfast]
 ---
 
 ## 1. Instant Pot Steel Cut Oats with Protein Boost
-*~38g protein, ~12g fiber per serving | Makes 6 servings*
+
+_~38g protein, ~12g fiber per serving | Makes 6 servings_
 
 **Ingredients:**
+
 - 1.5 cups steel cut oats
 - 4 cups water
 - 1 cup unsweetened soy milk
@@ -25,6 +26,7 @@ tags:
 - Pinch of salt
 
 **Instant Pot Instructions:**
+
 1. Add oats, water, and salt to Instant Pot
 2. Pressure cook HIGH 4 minutes, natural release 10 minutes
 3. Stir in soy milk and vanilla extract
@@ -35,9 +37,11 @@ tags:
 ---
 
 ## 2. Instant Pot Egg Bite Meal Prep (Makes 18 bites = 6 servings of 3 each)
-*~40g protein, ~11g fiber per 3-bite serving*
+
+_~40g protein, ~11g fiber per 3-bite serving_
 
 **Ingredients:**
+
 - 12 large eggs
 - 1.5 cups cottage cheese (4% fat)
 - 1 cup shredded cheese
@@ -50,6 +54,7 @@ tags:
 - 1 cup water (for Instant Pot)
 
 **Instructions:**
+
 1. Blend eggs, cottage cheese, and seasonings until smooth
 2. Mix in vegetables, beans, hemp hearts, and flaxseed
 3. Grease silicone egg bite molds or muffin cups
@@ -64,9 +69,11 @@ tags:
 ---
 
 ## 3. Instant Pot Lentil & Quinoa Breakfast Bowl Base
-*~36g protein, ~14g fiber per serving | Makes 6 servings*
+
+_~36g protein, ~14g fiber per serving | Makes 6 servings_
 
 **Ingredients:**
+
 - 1 cup dried red lentils
 - 1 cup quinoa, rinsed
 - 3 cups vegetable broth
@@ -81,6 +88,7 @@ tags:
 - Spices: turmeric, cumin, garlic powder
 
 **Instant Pot Instructions:**
+
 1. Add lentils, quinoa, broth, water, and spices to Instant Pot
 2. Pressure cook HIGH 12 minutes, natural release 10 minutes
 3. Fluff with fork and let cool
@@ -92,9 +100,11 @@ tags:
 ---
 
 ## 4. Mega Protein Overnight Oats (6-Day Batch)
-*~39g protein, ~13g fiber per serving*
+
+_~39g protein, ~13g fiber per serving_
 
 **Ingredients:**
+
 - 3 cups old-fashioned oats
 - 6 servings protein powder (vanilla or chocolate)
 - 6 cups milk
@@ -107,6 +117,7 @@ tags:
 - 2 tbsp vanilla extract
 
 **Instructions:**
+
 1. Use hand-mixer to blend all ingredients expect oats and hemp hearts if using
 2. Portion out oats into containers (1/2cup each)
 3. Evenly distribute liquid mixture into each container
@@ -116,9 +127,11 @@ tags:
 ---
 
 ## 5. Instant Pot Breakfast Burrito Filling (Makes 6 burritos)
-*~41g protein, ~15g fiber per burrito*
+
+_~41g protein, ~15g fiber per burrito_
 
 **Burrito Filling:**
+
 - 12 large eggs
 - 1.5 cups cooked black beans
 - 1.5 cups cooked pinto beans
@@ -129,6 +142,7 @@ tags:
 - 2 tbsp olive oil
 
 **Assembly (per burrito):**
+
 - 1 large high-fiber tortilla
 - 1/6 of egg mixture
 - 1/4 cup Greek yogurt
@@ -136,6 +150,7 @@ tags:
 - 1/4 avocado (add fresh)
 
 **Instant Pot Instructions:**
+
 1. Sauté onions and peppers in Instant Pot using sauté function
 2. Add beans, beat eggs and pour over mixture
 3. Stir constantly for 2-3 minutes until eggs are scrambled
@@ -148,9 +163,11 @@ tags:
 ---
 
 ## 6. High-Protein Chia Pudding (6-Serving Batch)
-*~37g protein, ~12g fiber per serving*
+
+_~37g protein, ~12g fiber per serving_
 
 **Ingredients:**
+
 - 1.5 cups chia seeds
 - 6 cups unsweetened soy milk
 - 6 scoops vanilla protein powder
@@ -162,6 +179,7 @@ tags:
 - 3 tbsp maple syrup (optional)
 
 **Instructions:**
+
 1. Whisk protein powder with soy milk until completely smooth
 2. Add chia seeds and maple syrup, whisk well
 3. Let sit 5 minutes, whisk again to prevent clumping
@@ -175,19 +193,23 @@ tags:
 ## Instant Pot Bonus Tips:
 
 **Perfect Hard-Boiled Eggs (for meal prep):**
+
 - Place 12 eggs on trivet with 1 cup water
 - Pressure cook HIGH 5 minutes, quick release
 - Ice bath immediately, store peeled in refrigerator
 
 **Steel Cut Oats Base Recipe:**
+
 - Cook large batches and freeze portions
 - Reheat with liquid and customize toppings
 
 **Bean Cooking:**
+
 - Cook dried beans in bulk: 1 cup dried = 3 cups cooked
 - Freeze in 1.5-cup portions for easy meal prep
 
 ## Storage & Reheating:
+
 - **Overnight oats & chia puddings:** Ready to eat cold
 - **Egg bites:** Microwave 30-45 seconds
 - **Breakfast bowls:** Microwave 1-2 minutes, add fresh toppings

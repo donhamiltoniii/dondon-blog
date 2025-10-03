@@ -11,6 +11,7 @@ tags: [turkey, pasta, italian, meal-prep, high-protein, high-fiber]
 ---
 
 ### Ingredients
+
 - 2 lbs ground turkey (93/7 lean)
 - 1 lb protein pasta (Banza chickpea or Barilla Protein+)
 - 1.5 cups diced carrots
@@ -26,6 +27,7 @@ tags: [turkey, pasta, italian, meal-prep, high-protein, high-fiber]
 - Fresh parsley and grated parmesan (for serving)
 
 ### Instructions
+
 1. Heat olive oil in a large pot over medium-high heat. Add diced carrots and sauté for 5-6 minutes until softening.
 
 2. Add ground turkey, breaking it up with a wooden spoon. Brown well, allowing it to develop color for deeper flavor (8-10 minutes).
@@ -43,7 +45,9 @@ tags: [turkey, pasta, italian, meal-prep, high-protein, high-fiber]
 8. **Meal prep tip:** Store bolognese sauce and pasta separately in containers. Reheat and add fresh ricotta when serving for best results.
 
 ### Macros
+
 #### Whole Dish
+
 | Field        | Amount |
 | ------------ | ------ |
 | **Calories** | 3480   |
@@ -55,4 +59,5 @@ tags: [turkey, pasta, italian, meal-prep, high-protein, high-fiber]
 | **Volume**   | 3600g  |
 
 #### Per Serving
-*580 calories, 50g protein, 16g fat, 55g carbs, 12g fiber, 6g sugar*
+
+_580 calories, 50g protein, 16g fat, 55g carbs, 12g fiber, 6g sugar_

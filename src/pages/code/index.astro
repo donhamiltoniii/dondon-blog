@@ -1,10 +1,10 @@
 ---
-import ArticleAssetsList from "../../components/ArticleAssetsList.astro";
-import { SITE_DESCRIPTION, SITE_TITLE } from "../../constants";
-import Layout from "../../layouts/DefaultPageLayout.astro";
-import { getCodeAssets } from "../../utils/code";
+import ArticleAssetsList from '../../components/ArticleAssetsList.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../constants';
+import Layout from '../../layouts/DefaultPageLayout.astro';
+import { getCodeAssets } from '../../utils/code';
 
-const codeAssets = await getCodeAssets({ numberOfAssets: "all" });
+const codeAssets = await getCodeAssets({ numberOfAssets: 'all' });
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>

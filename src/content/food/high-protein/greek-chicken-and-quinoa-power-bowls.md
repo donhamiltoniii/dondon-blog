@@ -7,8 +7,7 @@ servingSize: 1 bowl
 imgUrl:
 description: High-protein, high-fiber meal prep bowls featuring seasoned chicken breast, fluffy quinoa, roasted vegetables, and black beans with Mediterranean flavors
 notes: Stores well in the fridge for 4-5 days. Can substitute vegetables based on preference. Add Greek yogurt when serving for extra protein and creaminess.
-tags:
-  [meal prep, high protein, high fiber, Mediterranean, chicken, quinoa, healthy]
+tags: [meal prep, high protein, high fiber, Mediterranean, chicken, quinoa, healthy]
 ---
 
 ### Ingredients

@@ -1,9 +1,9 @@
 ---
-title: "How to Structure a React Project"
-description: "How to organize React components and projects"
+title: 'How to Structure a React Project'
+description: 'How to organize React components and projects'
 pubDate: 2023-03-08
 lastUpdate: 2023-03-08
-heroImage: "https://picsum.photos/720/360"
+heroImage: 'https://picsum.photos/720/360'
 published: true
 ---
 
@@ -42,7 +42,7 @@ For any hooks in the component that are only used in this component. Any hooks t
 Is solely our public interface for our component. Anything meant to be exported from this component gets exported from here. For example:
 
 ```typescript
-export * from "./component";
+export * from './component';
 ```
 
 Those sorts of exports are all that we include here

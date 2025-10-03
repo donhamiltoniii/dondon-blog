@@ -1,6 +1,6 @@
 ---
-import type { ArticleAssets } from "../types";
-import FormattedDate from "./FormattedDate.astro";
+import type { ArticleAssets } from '../types';
+import FormattedDate from './FormattedDate.astro';
 
 interface Props {
   assets: ArticleAssets;
@@ -18,12 +18,12 @@ interface GroupedAssets {
   [key: string]: ArticleAssetGroup;
 }
 
-const { assets, slugPrefix = "code" } = Astro.props;
+const { assets, slugPrefix = 'code' } = Astro.props;
 
 // Filter published posts
-const publishedPosts = assets.filter((a) => {
+const publishedPosts = assets.filter(a => {
   // If there isn't a "published" property, all assets are to be published
-  if (!("published" in a.data)) {
+  if (!('published' in a.data)) {
     return true;
   }
 
@@ -31,27 +31,24 @@ const publishedPosts = assets.filter((a) => {
 });
 
 // Group posts by month and year
-const GroupedAssets: GroupedAssets = publishedPosts.reduce(
-  (groups: GroupedAssets, asset) => {
-    const date = new Date(asset.data.pubDate);
-    const monthYear = `${date.getFullYear()}-${date.getMonth()}`;
+const groupedAssets: GroupedAssets = publishedPosts.reduce((groups: GroupedAssets, asset) => {
+  const date = new Date(asset.data.pubDate);
+  const monthYear = `${date.getFullYear()}-${date.getMonth()}`;
 
-    if (!groups[monthYear]) {
-      groups[monthYear] = {
-        year: date.getFullYear(),
-        month: date.toLocaleString("default", { month: "long" }),
-        assets: [],
-      };
-    }
+  if (!groups[monthYear]) {
+    groups[monthYear] = {
+      year: date.getFullYear(),
+      month: date.toLocaleString('default', { month: 'long' }),
+      assets: [],
+    };
+  }
 
-    groups[monthYear].assets.push(asset);
-    return groups;
-  },
-  {},
-);
+  groups[monthYear].assets.push(asset);
+  return groups;
+}, {});
 
 // Convert to array and sort by date (newest first)
-const sortedGroups: ArticleAssetGroup[] = Object.values(GroupedAssets).sort(
+const sortedGroups: ArticleAssetGroup[] = Object.values(groupedAssets).sort(
   (a: ArticleAssetGroup, b: ArticleAssetGroup) => {
     // Sort by year descending
     if (a.year !== b.year) return b.year - a.year;
@@ -60,19 +57,19 @@ const sortedGroups: ArticleAssetGroup[] = Object.values(GroupedAssets).sort(
       new Date(0, Number(new Date(0, 0, 1).getMonth() + b.month)).getMonth() -
       new Date(0, Number(new Date(0, 0, 1).getMonth() + a.month)).getMonth()
     );
-  },
+  }
 );
 ---
 
 <div class="code-assets-by-date">
   {
-    sortedGroups.map((group) => (
+    sortedGroups.map(group => (
       <section class="month-section">
         <h2 class="month-heading">
           {group.month} {group.year}
         </h2>
         <ul>
-          {group.assets.map((a) => (
+          {group.assets.map(a => (
             <li>
               <FormattedDate date={a.data.pubDate} />
               <a href={`/${slugPrefix}/${a.slug}/`}>{a.data.title}</a>

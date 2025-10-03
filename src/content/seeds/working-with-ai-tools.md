@@ -89,11 +89,11 @@ spec:
             - containerPort: 80
           resources:
             requests:
-              memory: "64Mi"
-              cpu: "100m"
+              memory: '64Mi'
+              cpu: '100m'
             limits:
-              memory: "128Mi"
-              cpu: "200m"
+              memory: '128Mi'
+              cpu: '200m'
           livenessProbe:
             httpGet:
               path: /
@@ -117,7 +117,7 @@ metadata:
   name: project-acorn-ingress
   namespace: project-acorn
   annotations:
-    kubernetes.io/ingress.class: "traefik"
+    kubernetes.io/ingress.class: 'traefik'
 spec:
   rules:
     - host: project-acorn.local
@@ -197,14 +197,14 @@ spec:
         - name: website
           resources:
             requests:
-              memory: "32Mi"
-              cpu: "50m"
+              memory: '32Mi'
+              cpu: '50m'
             limits:
-              memory: "64Mi"
-              cpu: "100m"
+              memory: '64Mi'
+              cpu: '100m'
           env:
             - name: ENVIRONMENT
-              value: "development"
+              value: 'development'
 ```
 
 **overlays/dev/ingress-patch.yaml**
@@ -274,14 +274,14 @@ spec:
         - name: website
           resources:
             requests:
-              memory: "128Mi"
-              cpu: "200m"
+              memory: '128Mi'
+              cpu: '200m'
             limits:
-              memory: "256Mi"
-              cpu: "500m"
+              memory: '256Mi'
+              cpu: '500m'
           env:
             - name: ENVIRONMENT
-              value: "production"
+              value: 'production'
 ```
 
 **overlays/prod/ingress-patch.yaml**

@@ -1,11 +1,9 @@
-import { getCollection } from "astro:content";
-import type { CodeAssets } from "../types";
+import { getCollection } from 'astro:content';
+import type { CodeAssets } from '../types';
 
 type Options = {
-  numberOfAssets: number | "all";
+  numberOfAssets: number | 'all';
 };
-
-type GetCodeAssets = (options: Options) => Promise<CodeAssets>;
 
 /**
  * Fetches code assets sorted by publication date (newest first)
@@ -13,13 +11,11 @@ type GetCodeAssets = (options: Options) => Promise<CodeAssets>;
  * @param options.numberOfAssets - Number of assets to return, or "all" for all assets
  * @returns Promise resolving to filtered and sorted code assets
  */
-export const getCodeAssets: GetCodeAssets = async ({ numberOfAssets }) => {
-  const codeAssets = await getCollection("code");
-  const sorted = codeAssets.sort(
-    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-  );
+export const getCodeAssets = async ({ numberOfAssets }: Options): Promise<CodeAssets> => {
+  const codeAssets = await getCollection('code');
+  const sorted = codeAssets.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-  if (numberOfAssets === "all") {
+  if (numberOfAssets === 'all') {
     return sorted;
   }
 
@@ -31,5 +27,5 @@ export const getCodeAssets: GetCodeAssets = async ({ numberOfAssets }) => {
  * @returns Promise resolving to all code assets
  */
 export async function getAllCodeAssets(): Promise<CodeAssets> {
-  return await getCodeAssets({ numberOfAssets: "all" });
+  return await getCodeAssets({ numberOfAssets: 'all' });
 }

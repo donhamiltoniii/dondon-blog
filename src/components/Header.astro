@@ -1,17 +1,17 @@
 ---
-import HeaderLink from "./HeaderLink.astro";
-import { SITE_TITLE } from "../constants";
-import SocialNavigation from "./SocialNavigation.astro";
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../constants';
+import SocialNavigation from './SocialNavigation.astro';
 
 const navItems = [
   // "home",
-  "code",
-  "cultivated thoughtz",
-  "photos",
-  "food",
-  "now",
-  "seeds",
-  "rss",
+  'code',
+  'cultivated thoughtz',
+  'photos',
+  'food',
+  'now',
+  'seeds',
+  'rss',
 ];
 ---
 
@@ -30,9 +30,9 @@ const navItems = [
         {
           navItems
             .sort()
-            .map((ni) => (
+            .map(ni => (
               <HeaderLink
-                href={`/${ni === "home" ? "" : ni === "rss" ? "rss.xml" : ni.replaceAll(" ", "-")}`}
+                href={`/${ni === 'home' ? '' : ni === 'rss' ? 'rss.xml' : ni.replaceAll(' ', '-')}`}
               >
                 {ni}
               </HeaderLink>
@@ -45,12 +45,9 @@ const navItems = [
 </header>
 
 <style>
-  header {
-  }
   h2 {
     margin: 0.5em 0;
     text-align: center;
-
     a {
       cursor: pointer;
       text-decoration: none;
@@ -61,6 +58,7 @@ const navItems = [
     align-items: center;
     display: flex;
     justify-content: center;
+
     .navigation__button {
       align-items: center;
       background-color: transparent;
@@ -115,68 +113,73 @@ const navItems = [
 </style>
 
 <script>
-  const navigationButton = document.querySelector(".navigation__button");
-  const navigationItems = document.querySelector(".navigation__items");
+  const navigationButton = document.querySelector('.navigation__button');
+  const navigationItems = document.querySelector('.navigation__items');
 
-  var keys: Record<number, number> = { 37: 1, 38: 1, 39: 1, 40: 1 };
+  const keys: Record<string, number> = {
+    ArrowLeft: 1,
+    ArrowUp: 1,
+    ArrowRight: 1,
+    ArrowDown: 1,
+  };
 
-  function preventDefault(e: Event) {
+  function preventDefault(e: Event): void {
     e.preventDefault();
   }
 
-  function preventDefaultForScrollKeys(e: Event) {
-    if (keys[e.keyCode]) {
+  function preventDefaultForScrollKeys(e: KeyboardEvent): boolean | undefined {
+    if (keys[e.key]) {
       preventDefault(e);
       return false;
     }
   }
 
-  // modern Chrome requires { passive: false } when adding event
-  var supportsPassive = false;
+  // Modern Chrome requires { passive: false } when adding event
+  let supportsPassive = false;
   try {
-    window.addEventListener(
-      "test",
-      null,
-      Object.defineProperty({}, "passive", {
-        get: function () {
-          supportsPassive = true;
-        },
-      }),
-    );
-  } catch (e) {}
-
-  var wheelOpt = supportsPassive ? { passive: false } : false;
-  var wheelEvent =
-    "onwheel" in document.createElement("div") ? "wheel" : "mousewheel";
-
-  // call this to Disable
-  function disableScroll() {
-    window.addEventListener("DOMMouseScroll", preventDefault, false); // older FF
-    window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-    window.addEventListener("touchmove", preventDefault, wheelOpt); // mobile
-    window.addEventListener("keydown", preventDefaultForScrollKeys, false);
+    const testListener = (): void => {};
+    const options = Object.defineProperty({}, 'passive', {
+      get: function (): boolean {
+        supportsPassive = true;
+        return false;
+      },
+    });
+    window.addEventListener('test', testListener, options);
+    window.removeEventListener('test', testListener);
+  } catch (e: unknown) {
+    // eslint-disable-next-line no-console
+    console.error('Error checking passive support:', e);
   }
 
-  // call this to Enable
-  function enableScroll() {
-    window.removeEventListener("DOMMouseScroll", preventDefault, false);
-    window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
-    window.removeEventListener("touchmove", preventDefault, wheelOpt);
-    window.removeEventListener("keydown", preventDefaultForScrollKeys, false);
+  const wheelOpt = supportsPassive ? { passive: false } : false;
+  const wheelEvent: string = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+  function disableScroll(): void {
+    window.addEventListener('DOMMouseScroll', preventDefault, false);
+    window.addEventListener(wheelEvent, preventDefault, wheelOpt);
+    window.addEventListener('touchmove', preventDefault, wheelOpt);
+    window.addEventListener('keydown', preventDefaultForScrollKeys, false);
   }
 
-  const toggleNavigationItems = () => {
-    navigationItems?.classList.toggle("navigation__items--open");
+  function enableScroll(): void {
+    window.removeEventListener('DOMMouseScroll', preventDefault, false);
+    window.removeEventListener(wheelEvent, preventDefault);
+    window.removeEventListener('touchmove', preventDefault);
+    window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+  }
+
+  const toggleNavigationItems = (): void => {
+    navigationItems?.classList.toggle('navigation__items--open');
   };
 
-  navigationButton?.addEventListener("click", (event) => {
+  navigationButton?.addEventListener('click', () => {
     toggleNavigationItems();
     disableScroll();
   });
 
-  navigationItems?.addEventListener("click", (event) => {
+  navigationItems?.addEventListener('click', (event: MouseEvent) => {
     const targetEl = event.target as HTMLAnchorElement;
-    if (targetEl?.tagName === "A" || window.innerWidth >= 620) {
+    if (targetEl?.tagName === 'A' || window.innerWidth >= 620) {
       return;
     }
     enableScroll();

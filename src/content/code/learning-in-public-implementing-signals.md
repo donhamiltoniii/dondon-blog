@@ -1,9 +1,9 @@
 ---
-title: "Learning in Public: Implementing Signals"
+title: 'Learning in Public: Implementing Signals'
 description: Following an article that explains how to implement signals, hopefully successfully, and then giving feedback about the result.
 pubDate: 2024-08-03
 lastUpdate: 2024-08-03
-heroImage: "https://picsum.photos/720/360"
+heroImage: 'https://picsum.photos/720/360'
 published: true
 ---
 
@@ -34,7 +34,7 @@ class Signal {
   }
 
   emit() {
-    this.subscribers.forEach((subscriber) => subscriber(this.value));
+    this.subscribers.forEach(subscriber => subscriber(this.value));
   }
 
   subscribe(callback) {
@@ -48,7 +48,7 @@ Encapsulating this logic into it's own class is a great idea. The real meat of w
 ## `createSignal`
 
 ```tsx
-export const createSignal = (value) => {
+export const createSignal = value => {
   const signal = new Signal(value);
 
   return [
@@ -68,7 +68,7 @@ export const createSignal = (value) => {
 ## `createEffect`
 
 ```tsx
-export const createEffect = (callback) => {
+export const createEffect = callback => {
   effectCallback = callback;
   callback();
   effectCallback = null;

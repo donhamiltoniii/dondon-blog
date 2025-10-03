@@ -5,17 +5,7 @@ cookTime: 30 minutes
 servings: 6
 imgUrl:
 description: It’s so easy to make your own nutritious and macro-friendly version of takeout fried rice. You’ll love this combination of savory, sweet, and spicy flavors.
-tags:
-  [
-    shrimp,
-    cauliflower,
-    scallions,
-    jalapeño,
-    garlic,
-    pineapple,
-    soy sauce,
-    fish sauce,
-  ]
+tags: [shrimp, cauliflower, scallions, jalapeño, garlic, pineapple, soy sauce, fish sauce]
 ---
 
 ### Ingredients

@@ -5,17 +5,7 @@ cookTime: 25 minutes
 servings: 1 casserole
 imgUrl:
 description: Chicken parm. But in casserole form and without bread in it. Perfect
-tags:
-  [
-    keto,
-    chicken,
-    tomato sauce,
-    parmesan,
-    mozzarella,
-    pork rinds,
-    basil,
-    main dish,
-  ]
+tags: [keto, chicken, tomato sauce, parmesan, mozzarella, pork rinds, basil, main dish]
 ---
 
 ### Ingredients

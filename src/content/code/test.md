@@ -1,9 +1,9 @@
 ---
-title: "Test"
-description: "Why make a server-based app in 2023?"
+title: 'Test'
+description: 'Why make a server-based app in 2023?'
 pubDate: 2025-07-28
 lastUpdate: 2025-07-28
-heroImage: "https://picsum.photos/720/360"
+heroImage: 'https://picsum.photos/720/360'
 published: false
 ---
 

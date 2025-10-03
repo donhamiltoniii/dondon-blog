@@ -6,18 +6,7 @@ servings: 2
 imgUrl:
 description: This integrative meal framework is characterized by a high-protein, high-dietary-fiber profile suitable for individuals pursuing nutrient density, satiety, and metabolic support.
 notes:
-tags:
-  [
-    ground turkey,
-    lentils,
-    yogurt,
-    garlic,
-    lemon,
-    carrot,
-    cucumber,
-    salad,
-    dinner,
-  ]
+tags: [ground turkey, lentils, yogurt, garlic, lemon, carrot, cucumber, salad, dinner]
 ---
 
 ## Primary Entrée

@@ -5,17 +5,7 @@ cookTime: 20 minutes
 servings: 4
 imgUrl:
 description: Cheesy turkey and mushrooms
-tags:
-  [
-    turkey,
-    mushroom,
-    parmesan,
-    cheese,
-    spaghetti squash,
-    butter,
-    heavy cream,
-    mozzarella,
-  ]
+tags: [turkey, mushroom, parmesan, cheese, spaghetti squash, butter, heavy cream, mozzarella]
 ---
 
 ### Ingredients

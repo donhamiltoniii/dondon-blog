@@ -6,17 +6,7 @@ servings: 4
 imgUrl:
 description: This one is just the title big dog. It&#x27;s got a bunch of protein (expecially if you double the chicken) and a bunch of fiber. Go nuts.
 notes:
-tags:
-  [
-    chicken,
-    artichoke,
-    spinach,
-    cottage cheese,
-    high-protein,
-    casserole,
-    main,
-    dinner,
-  ]
+tags: [chicken, artichoke, spinach, cottage cheese, high-protein, casserole, main, dinner]
 ---
 
 ### Ingredients

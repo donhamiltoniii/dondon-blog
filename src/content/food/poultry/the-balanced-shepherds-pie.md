@@ -5,8 +5,7 @@ cookTime: 40 minutes
 servings: 4
 imgUrl:
 description: Shepherd's Pie, but from the pregnancy cookbook so it's super baby approved.
-tags:
-  [turkey, sweet potato, spinach, carrot, garlic, main dish, pregnancy friendly]
+tags: [turkey, sweet potato, spinach, carrot, garlic, main dish, pregnancy friendly]
 ---
 
 ### Ingredients

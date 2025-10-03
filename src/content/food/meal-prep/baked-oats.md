@@ -23,6 +23,7 @@ tags: [meal prep, high-protein, high-fiber, breakfast, main]
 ## Optional Add-Ins (Choose Your Own)
 
 **Fresh/Frozen Fruit:** 1-2 cups total
+
 - Bananas (mashed or sliced)
 - Blueberries
 - Strawberries (diced)
@@ -31,17 +32,20 @@ tags: [meal prep, high-protein, high-fiber, breakfast, main]
 - Mixed berries
 
 **Sweeteners:** 2-3 tbsp (optional)
+
 - Honey
 - Maple syrup
 - Stevia or monk fruit sweetener
 
 **Flavor Boosters:**
+
 - 1-2 tsp cinnamon
 - Lemon or orange zest
 - ½ tsp nutmeg
 - Coconut extract
 
 **Mix-Ins:** ¼ cup (optional)
+
 - Mini dark chocolate chips
 - Chopped nuts (walnuts, pecans, almonds)
 - Shredded unsweetened coconut
@@ -74,7 +78,7 @@ tags: [meal prep, high-protein, high-fiber, breakfast, main]
 - **Fat:** ~6g
 - **Fiber:** ~5g
 
-*Note: Nutrition will vary based on fruit and add-ins you choose. Fruit adds approximately 20-40 calories per serving depending on type and amount.*
+_Note: Nutrition will vary based on fruit and add-ins you choose. Fruit adds approximately 20-40 calories per serving depending on type and amount._
 
 ## Pro Tips
 

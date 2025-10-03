@@ -1,17 +1,17 @@
 ---
-import InternalFoodNav from "../../../components/InternalFoodNav.astro";
-import RecipesList from "../../../components/RecipesList.astro";
-import Layout from "../../../layouts/DefaultPageLayout.astro";
-import { getFoodAssets, getFoodAssetsByTag } from "../../../utils/food";
+import InternalFoodNav from '../../../components/InternalFoodNav.astro';
+import RecipesList from '../../../components/RecipesList.astro';
+import Layout from '../../../layouts/DefaultPageLayout.astro';
+import { getFoodAssets, getFoodAssetsByTag } from '../../../utils/food';
 
 const { tag } = Astro.params as { tag: string };
 
 export async function getStaticPaths() {
   const foodAssets = await getFoodAssets();
 
-  const allTags = [...new Set(foodAssets.flatMap((fa) => fa.data.tags))];
+  const allTags = [...new Set(foodAssets.flatMap(fa => fa.data.tags))];
 
-  return allTags.map((tag) => ({
+  return allTags.map(tag => ({
     params: { tag },
     props: { tag },
   }));

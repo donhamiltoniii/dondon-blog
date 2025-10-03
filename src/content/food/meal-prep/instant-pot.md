@@ -4,8 +4,7 @@ prepTime: various
 cookTime: various
 servings: various
 description: Meal prep recipes centered around the Instant Pot.
-tags:
-  [high-protein, high-fiber, meal prep, instant pot, breakfast, lunch, dinner]
+tags: [high-protein, high-fiber, meal prep, instant pot, breakfast, lunch, dinner]
 ---
 
 ## Recipe 1: Turkey & Lentil Power Bowl

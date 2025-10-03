@@ -1,13 +1,13 @@
 ---
-import Layout from "../../../layouts/SeedLayout.astro";
-import { getAllSeedAssets, type Seed } from "../../../utils/seeds";
+import Layout from '../../../layouts/SeedLayout.astro';
+import { getAllSeedAssets, type Seed } from '../../../utils/seeds';
 
 export async function getStaticPaths() {
   const seeds = await getAllSeedAssets();
   return seeds.map((seed: Seed) => {
-    const slugArr = seed.slug.split("/");
+    const slugArr = seed.slug.split('/');
     const paraSection = slugArr.unshift();
-    const slug = slugArr.join("/");
+    const slug = slugArr.join('/');
 
     return {
       params: { paraSection, slug },

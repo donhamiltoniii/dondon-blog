@@ -10,6 +10,7 @@ tags: [Mediterranean, vegetarian, gluten-free, breakfast, casserole, healthy]
 ---
 
 ### Ingredients
+
 - 2 tablespoons olive oil
 - 1 large red bell pepper, diced
 - 1 large yellow bell pepper, diced
@@ -28,6 +29,7 @@ tags: [Mediterranean, vegetarian, gluten-free, breakfast, casserole, healthy]
 - Crusty bread for serving (optional)
 
 ### Instructions
+
 1. Preheat oven to 375°F (190°C). Grease a 9x13 inch baking dish or large cast iron skillet.
 
 2. Heat olive oil in a large skillet over medium heat. Add diced bell peppers and onion, cooking for 8-10 minutes until softened and slightly caramelized.
@@ -49,15 +51,19 @@ tags: [Mediterranean, vegetarian, gluten-free, breakfast, casserole, healthy]
 10. Serve hot directly from the baking dish with crusty bread if desired.
 
 ### Macros
+
 #### Whole Dish
-| Field | Amount |
-| - | - |
-| **Calories** | 1110 |
-| **Protein** | 54g |
-| **Fat** | 78g |
-| **Carbs** | 60g |
-| **Fiber** | 18g |
-| **Sugar** | 42g |
-| **Volume** | 1200g |
+
+| Field        | Amount |
+| ------------ | ------ |
+| **Calories** | 1110   |
+| **Protein**  | 54g    |
+| **Fat**      | 78g    |
+| **Carbs**    | 60g    |
+| **Fiber**    | 18g    |
+| **Sugar**    | 42g    |
+| **Volume**   | 1200g  |
+
 #### Per 250g (~1c)
-*230 calories, 11g protein, 16g fat, 12g carbs, 4g fiber, 9g sugar*
+
+_230 calories, 11g protein, 16g fat, 12g carbs, 4g fiber, 9g sugar_

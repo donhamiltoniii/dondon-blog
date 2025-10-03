@@ -1,11 +1,10 @@
 ---
-import InternalFoodNav from "../../components/InternalFoodNav.astro";
-import RecipesList from "../../components/RecipesList.astro";
-import { SITE_DESCRIPTION, SITE_TITLE } from "../../constants";
-import Layout from "../../layouts/DefaultPageLayout.astro";
-import { getFoodAssets, getFoodAssetsByCategory } from "../../utils/food";
+import InternalFoodNav from '../../components/InternalFoodNav.astro';
+import RecipesList from '../../components/RecipesList.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../constants';
+import Layout from '../../layouts/DefaultPageLayout.astro';
+import { getFoodAssetsByCategory } from '../../utils/food';
 
-const foodAssets = await getFoodAssets();
 const foodAssetRecord = await getFoodAssetsByCategory();
 ---
 
@@ -16,10 +15,10 @@ const foodAssetRecord = await getFoodAssetsByCategory();
     <a href="/food/meal-prep-basics">Meal Prep Basics</a>
   </nav>
   <p>
-    This is a collection of recipes that I used to host on a separate site.
-    Since this is part of stuff that I create, I'm including it here now. It
-    mostly exists here so that I can find something to eat when I don't know
-    what to cook for dinner. But maybe this will inspire your next meal!
+    This is a collection of recipes that I used to host on a separate site. Since this is part of
+    stuff that I create, I'm including it here now. It mostly exists here so that I can find
+    something to eat when I don't know what to cook for dinner. But maybe this will inspire your
+    next meal!
   </p>
   <RecipesList recipes={foodAssetRecord} />
 </Layout>

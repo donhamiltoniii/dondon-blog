@@ -5,8 +5,7 @@ cookTime: 30 minutes
 servings: 1 loaf
 imgUrl:
 description: A loaf of meat. You don't need this description. You know where you're at. Now go make a lazy ass dinner.
-tags:
-  [chicken, tomato sauce, parmesan, mozzarella, pork rinds, basil, main dish]
+tags: [chicken, tomato sauce, parmesan, mozzarella, pork rinds, basil, main dish]
 ---
 
 ### Ingredients

@@ -7,7 +7,7 @@ description: Meal prep recipes with a focus on dietary needs for beastfeeding Mo
 tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 ---
 
-*Each recipe makes 6 servings with 40g+ protein and 10g+ fiber per serving*
+_Each recipe makes 6 servings with 40g+ protein and 10g+ fiber per serving_
 
 ## 1. Turkey and Quinoa Power Bowls
 
@@ -16,6 +16,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 **Servings:** 6
 
 ### Nutrition Per Serving:
+
 - **Calories:** 520
 - **Protein:** 44g
 - **Carbohydrates:** 38g
@@ -25,6 +26,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 - **Sodium:** 650mg
 
 ### Ingredients:
+
 - 2 lbs ground turkey (93% lean)
 - 3 cups cooked quinoa
 - 2 cups frozen corn
@@ -41,6 +43,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 - ½ cup pumpkin seeds
 
 ### Instructions:
+
 1. Cook quinoa according to package directions.
 2. Heat olive oil in a large skillet. Sauté bell peppers and zucchini until soft.
 3. Add ground turkey and spices, cook until turkey is browned and cooked through.
@@ -57,6 +60,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 **Servings:** 6
 
 ### Nutrition Per Serving:
+
 - **Calories:** 485
 - **Protein:** 42g
 - **Carbohydrates:** 45g
@@ -66,6 +70,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 - **Sodium:** 580mg
 
 ### Ingredients:
+
 - 2 lbs boneless chicken thighs, cubed
 - 2 cups cooked quinoa
 - 3 large sweet potatoes, cubed
@@ -82,6 +87,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 - Salt to taste
 
 ### Instructions:
+
 1. Cook quinoa according to package directions.
 2. Heat olive oil in a large pot. Brown chicken pieces on all sides.
 3. Add sweet potatoes and carrots, cook for 5 minutes.
@@ -100,6 +106,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 **Servings:** 6
 
 ### Nutrition Per Serving:
+
 - **Calories:** 535
 - **Protein:** 43g
 - **Carbohydrates:** 42g
@@ -109,6 +116,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 - **Sodium:** 720mg
 
 ### Ingredients:
+
 - 2 lbs lean beef stew meat, cubed
 - 1½ cups pearl barley
 - 1 can (28 oz) crushed tomatoes
@@ -125,6 +133,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 - Salt and pepper to taste
 
 ### Instructions:
+
 1. Cook pearl barley according to package directions.
 2. Heat olive oil in a large pot. Brown beef on all sides.
 3. Add bell peppers, carrots, and celery. Cook until softened.
@@ -142,6 +151,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 **Servings:** 6
 
 ### Nutrition Per Serving:
+
 - **Calories:** 550
 - **Protein:** 45g
 - **Carbohydrates:** 41g
@@ -151,6 +161,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 - **Sodium:** 490mg
 
 ### Ingredients:
+
 - 2.5 lbs chicken breast, cubed
 - 3 cups cooked brown rice
 - 3 cups green beans, trimmed
@@ -166,6 +177,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 - Salt and pepper to taste
 
 ### Instructions:
+
 1. Cook brown rice according to package directions.
 2. Season chicken with salt, pepper, basil, oregano, and cumin.
 3. Heat 2 tbsp olive oil in a large skillet, cook chicken until done.
@@ -183,6 +195,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 **Servings:** 6
 
 ### Nutrition Per Serving:
+
 - **Calories:** 465
 - **Protein:** 41g
 - **Carbohydrates:** 35g
@@ -192,7 +205,9 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 - **Sodium:** 640mg
 
 ### Ingredients:
+
 **For Meatballs:**
+
 - 2 lbs ground turkey
 - ½ cup whole wheat breadcrumbs
 - 1 egg
@@ -201,6 +216,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 - 1 tsp oregano
 
 **For Soup:**
+
 - 1 cup pearl barley
 - 6 cups chicken broth
 - 2 cups diced tomatoes
@@ -213,6 +229,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 - Salt and pepper to taste
 
 ### Instructions:
+
 1. Cook pearl barley according to package directions.
 2. Mix meatball ingredients, form into 24 balls.
 3. Brown meatballs in olive oil in a large pot.
@@ -232,6 +249,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 **Servings:** 6
 
 ### Nutrition Per Serving:
+
 - **Calories:** 580
 - **Protein:** 41g
 - **Carbohydrates:** 48g
@@ -241,6 +259,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 - **Sodium:** 750mg
 
 ### Ingredients:
+
 - 12 large eggs
 - 2 cups cooked quinoa
 - 2 cups shredded Mexican cheese blend
@@ -256,6 +275,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 - Salt and pepper to taste
 
 ### Instructions:
+
 1. Cook quinoa according to package directions.
 2. Heat olive oil in a large skillet. Sauté bell peppers until soft.
 3. Add cooked quinoa, cumin, chili powder, and paprika. Heat through.
@@ -274,6 +294,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 **Servings:** 6
 
 ### Nutrition Per Serving:
+
 - **Calories:** 525
 - **Protein:** 44g
 - **Carbohydrates:** 32g
@@ -283,6 +304,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 - **Sodium:** 560mg
 
 ### Ingredients:
+
 - 2.5 lbs ground chicken
 - 3 large sweet potatoes, cubed
 - 2 red bell peppers, diced
@@ -298,6 +320,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 - Salt and pepper to taste
 
 ### Instructions:
+
 1. Heat 2 tbsp olive oil in a large skillet. Add sweet potatoes and cook until tender.
 2. Remove sweet potatoes, add remaining oil.
 3. Cook ground chicken with spices until browned and cooked through.
@@ -315,6 +338,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 **Servings:** 6
 
 ### Nutrition Per Serving:
+
 - **Calories:** 510
 - **Protein:** 42g
 - **Carbohydrates:** 38g
@@ -324,6 +348,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 - **Sodium:** 620mg
 
 ### Ingredients:
+
 - 1.5 lbs lean ground beef (90% lean)
 - 2 cups cooked quinoa
 - 12 large bell peppers (2 per serving)
@@ -339,6 +364,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 - Salt and pepper to taste
 
 ### Instructions:
+
 1. Cook quinoa according to package directions.
 2. Cut tops off peppers and remove seeds and membranes.
 3. Heat olive oil in a large skillet. Brown ground beef with spices.
@@ -351,12 +377,14 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 ---
 
 ## Storage Tips:
+
 - Most meals keep 4-5 days in refrigerator
 - Freeze portions for up to 3 months
 - Reheat thoroughly before eating
 - Add fresh herbs or a squeeze of lemon when reheating to brighten flavors
 
 ## High-Fiber Ingredients Featured:
+
 - **Quinoa:** 5g fiber per cup cooked
 - **Brown rice:** 4g fiber per cup cooked
 - **Pearl barley:** 6g fiber per cup cooked
@@ -366,6 +394,7 @@ tags: [high-protein, high-fiber, meal prep, lunch, dinner]
 - **Spinach and vegetables:** 2-4g fiber per cup
 
 ## Breastfeeding-Friendly Notes:
+
 - All ingredients are gentle on digestion and safe for nursing mothers
 - Avoided beans, cruciferous vegetables, and alliums
 - High protein supports milk production

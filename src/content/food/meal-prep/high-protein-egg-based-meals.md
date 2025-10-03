@@ -43,7 +43,7 @@ A hearty egg bake packed with spinach, mushrooms, and oats for fiber. Perfect fo
 #### Whole Dish
 
 | Field    | Amount |
-|----------|--------|
+| -------- | ------ |
 | Calories | 2520   |
 | Protein  | 252g   |
 | Fat      | 144g   |
@@ -91,7 +91,7 @@ Protein-packed scrambled eggs served over quinoa with roasted sweet potatoes, Gr
 #### Whole Dish
 
 | Field    | Amount |
-|----------|--------|
+| -------- | ------ |
 | Calories | 2400   |
 | Protein  | 240g   |
 | Fat      | 120g   |
@@ -124,15 +124,15 @@ Portable egg muffins loaded with vegetables and cheese. Perfect for grab-and-go 
 
 ### Instructions
 
- 1. Preheat oven to 375°F and grease a 12-cup muffin tin.
- 2. Grate zucchini and squeeze out excess moisture using a clean kitchen towel.
- 3. Grate carrots.
- 4. In a large bowl, whisk eggs until well beaten.
- 5. Mix in softened cream cheese until smooth.
- 6. Add almond flour, grated vegetables, and shredded cheese.
- 7. Season with salt and pepper.
- 8. Divide mixture evenly among muffin cups.
- 9. Bake for 18-20 minutes until eggs are set and tops are lightly golden.
+1.  Preheat oven to 375°F and grease a 12-cup muffin tin.
+2.  Grate zucchini and squeeze out excess moisture using a clean kitchen towel.
+3.  Grate carrots.
+4.  In a large bowl, whisk eggs until well beaten.
+5.  Mix in softened cream cheese until smooth.
+6.  Add almond flour, grated vegetables, and shredded cheese.
+7.  Season with salt and pepper.
+8.  Divide mixture evenly among muffin cups.
+9.  Bake for 18-20 minutes until eggs are set and tops are lightly golden.
 10. Cool in pan for 5 minutes before removing.
 11. Store in refrigerator for up to 5 days or freeze for up to 3 months.
 
@@ -141,7 +141,7 @@ Portable egg muffins loaded with vegetables and cheese. Perfect for grab-and-go 
 #### Whole Dish
 
 | Field    | Amount |
-|----------|--------|
+| -------- | ------ |
 | Calories | 2580   |
 | Protein  | 258g   |
 | Fat      | 162g   |
@@ -175,15 +175,15 @@ A warming fall-inspired casserole with pumpkin, eggs, and steel-cut oats. Perfec
 
 ### Instructions
 
- 1. Preheat oven to 350°F and grease a large casserole dish (9x13 inch).
- 2. Cook steel-cut oats according to package directions and let cool slightly.
- 3. In a large bowl, whisk eggs until well beaten.
- 4. Mix in pumpkin puree, cottage cheese, cooked oats, cinnamon, nutmeg, and salt.
- 5. Stir in 3/4 cup of pumpkin seeds, reserving 1/4 cup for topping.
- 6. Pour mixture into prepared casserole dish.
- 7. Sprinkle remaining pumpkin seeds on top.
- 8. Bake for 45 minutes until eggs are set and top is lightly golden.
- 9. Cool completely before cutting into 8 portions.
+1.  Preheat oven to 350°F and grease a large casserole dish (9x13 inch).
+2.  Cook steel-cut oats according to package directions and let cool slightly.
+3.  In a large bowl, whisk eggs until well beaten.
+4.  Mix in pumpkin puree, cottage cheese, cooked oats, cinnamon, nutmeg, and salt.
+5.  Stir in 3/4 cup of pumpkin seeds, reserving 1/4 cup for topping.
+6.  Pour mixture into prepared casserole dish.
+7.  Sprinkle remaining pumpkin seeds on top.
+8.  Bake for 45 minutes until eggs are set and top is lightly golden.
+9.  Cool completely before cutting into 8 portions.
 10. Store in refrigerator for up to 5 days.
 
 ### Macros
@@ -191,7 +191,7 @@ A warming fall-inspired casserole with pumpkin, eggs, and steel-cut oats. Perfec
 #### Whole Dish
 
 | Field    | Amount |
-|----------|--------|
+| -------- | ------ |
 | Calories | 3280   |
 | Protein  | 328g   |
 | Fat      | 176g   |
@@ -226,15 +226,15 @@ Complete protein powerhouse with hard-boiled eggs, ground turkey, brown rice, an
 
 ### Instructions
 
- 1. Hard-boil eggs: place in boiling water for 10 minutes, then ice bath. Peel and chop.
- 2. Preheat oven to 425°F.
- 3. Toss cubed butternut squash with 1 tbsp olive oil, salt, and pepper.
- 4. Roast for 20-25 minutes until tender.
- 5. Cook brown rice according to package directions.
- 6. Brown ground turkey in remaining olive oil, season with salt and pepper.
- 7. Make tahini dressing by mixing tahini with lemon juice and a splash of water.
- 8. Divide rice among 6 meal prep containers.
- 9. Top each with cooked turkey, chopped hard-boiled eggs, roasted butternut squash, and pumpkin seeds.
+1.  Hard-boil eggs: place in boiling water for 10 minutes, then ice bath. Peel and chop.
+2.  Preheat oven to 425°F.
+3.  Toss cubed butternut squash with 1 tbsp olive oil, salt, and pepper.
+4.  Roast for 20-25 minutes until tender.
+5.  Cook brown rice according to package directions.
+6.  Brown ground turkey in remaining olive oil, season with salt and pepper.
+7.  Make tahini dressing by mixing tahini with lemon juice and a splash of water.
+8.  Divide rice among 6 meal prep containers.
+9.  Top each with cooked turkey, chopped hard-boiled eggs, roasted butternut squash, and pumpkin seeds.
 10. Drizzle with tahini dressing before serving.
 11. Store in refrigerator for up to 4 days.
 
@@ -243,7 +243,7 @@ Complete protein powerhouse with hard-boiled eggs, ground turkey, brown rice, an
 #### Whole Dish
 
 | Field    | Amount |
-|----------|--------|
+| -------- | ------ |
 | Calories | 2760   |
 | Protein  | 276g   |
 | Fat      | 132g   |
