@@ -1,3 +1,9 @@
+## [2.43.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.42.0...v2.43.0) (2025-10-18)
+
+### 🚀 Features
+
+* add ground turkey meal prep recipes ([99cb728](https://github.com/donhamiltoniii/dondon-blog/commit/99cb728c765bff4a1e5e2f872b0577ab4ca6349d))
+
 ## [2.42.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.41.2...v2.42.0) (2025-10-03)
 
 ### 🚀 Features
