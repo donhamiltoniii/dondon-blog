@@ -1,3 +1,10 @@
+## [2.43.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.0...v2.43.1) (2025-10-29)
+
+### 📝 Content Updates
+
+* add islands architecture article ([ddf445b](https://github.com/donhamiltoniii/dondon-blog/commit/ddf445b0b39767b3ddca36d49d10637b57a4491d))
+* move islands architecture to code ([741f64e](https://github.com/donhamiltoniii/dondon-blog/commit/741f64e6de401b89cfbb997526d6ba0324582be9))
+
 ## [2.43.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.42.0...v2.43.0) (2025-10-18)
 
 ### 🚀 Features
