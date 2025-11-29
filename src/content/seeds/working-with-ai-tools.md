@@ -1,7 +1,7 @@
 ---
 title: Working With AI Tools
-pubDate: 2025-08-22
-lastUpdate: 2025-08-23
+createdAt: 2025-08-22
+updatedAt: 2025-08-23
 ---
 
 I've recently been working a lot more with Claude Sonnet 4. I have a lot of conflicting feelings about AI. But I have been working with this tool in an effort to understand exactly what it does well and see if there is anything beneficial that I can incorporate into my workflow. It turns out, I have definitely found useful applications. I'm going to list anything I find useful here.

@@ -1,7 +1,7 @@
 ---
 title: TypeScript Patterns
-pubDate: 2025-10-31
-lastUpdate: 2025-10-31
+createdAt: 2025-10-31
+updatedAt: 2025-10-31
 ---
 
 I recently read a [very good article](https://nagibaba.medium.com/typescript-patterns-that-made-my-code-self-documenting-3c0fe8bcd002) discussing TypeScript Patterns that "self-document" your code. There is some really good stuff here and this is definitely something that I'll be digging deeper into. One of the concepts that really stood out is the idea of "branding" types in TS. This is not something that I have seen before but I think it is a really good idea. It doesn't do much for the code itself but it makes things more readable as far as intent for developers.

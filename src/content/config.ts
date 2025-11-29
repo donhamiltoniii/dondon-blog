@@ -6,11 +6,11 @@ const code = defineCollection({
     title: z.string(),
     description: z.string().optional(),
     // Transform string to Date object
-    pubDate: z
+    createdAt: z
       .date()
       .or(z.date())
       .transform(val => new Date(val)),
-    lastUpdate: z
+    updatedAt: z
       .date()
       .optional()
       .transform(str => (str ? new Date(str) : undefined)),
@@ -22,11 +22,11 @@ const code = defineCollection({
 const cultivatedThoughtz = defineCollection({
   schema: z.object({
     title: z.string(),
-    pubDate: z
+    createdAt: z
       .date()
       .or(z.date())
       .transform(val => new Date(val)),
-    lastUpdate: z
+    updatedAt: z
       .date()
       .optional()
       .transform(str => (str ? new Date(str) : undefined)),
@@ -62,11 +62,11 @@ const photos = defineCollection({
 const seeds = defineCollection({
   schema: z.object({
     title: z.string(),
-    pubDate: z
+    createdAt: z
       .date()
       .or(z.date())
       .transform(val => new Date(val)),
-    lastUpdate: z
+    updatedAt: z
       .date()
       .optional()
       .transform(str => (str ? new Date(str) : undefined)),

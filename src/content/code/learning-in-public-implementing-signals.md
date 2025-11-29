@@ -1,8 +1,8 @@
 ---
 title: 'Learning in Public: Implementing Signals'
 description: Following an article that explains how to implement signals, hopefully successfully, and then giving feedback about the result.
-pubDate: 2024-08-03
-lastUpdate: 2024-08-03
+createdAt: 2024-08-03
+updatedAt: 2024-08-03
 heroImage: 'https://picsum.photos/720/360'
 published: true
 ---

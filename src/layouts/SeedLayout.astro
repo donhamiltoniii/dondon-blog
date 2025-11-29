@@ -56,11 +56,11 @@ const props = Astro.props;
         <article>
           <h1 class="title">{props.title}</h1>
           <div class="flex-container">
-            <FormattedDate date={props.pubDate} />
+            <FormattedDate date={props.createdAt} />
             {
-              props.lastUpdate && (
+              props.updatedAt && (
                 <time class="last-updated-on">
-                  Last updated on <FormattedDate date={props.lastUpdate} />
+                  Last updated on <FormattedDate date={props.updatedAt} />
                 </time>
               )
             }

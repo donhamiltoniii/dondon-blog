@@ -39,17 +39,17 @@ export async function GET(context: APIContext) {
     ...seedsFilteredArr,
   ].sort((a, b) => {
     // Logic is for descending order - newest posts first
-    if (a.lastUpdate && b.lastUpdate && a.lastUpdate > b.lastUpdate) {
+    if (a.updatedAt && b.updatedAt && a.updatedAt > b.updatedAt) {
       return -1;
     }
-    if (a.lastUpdate && b.lastUpdate && a.lastUpdate < b.lastUpdate) {
+    if (a.updatedAt && b.updatedAt && a.updatedAt < b.updatedAt) {
       return 1;
     }
-    // If for some reason there aren't lastUpdate values
-    if (a.pubDate > b.pubDate) {
+    // If for some reason there aren't updatedAt values
+    if (a.createdAt > b.createdAt) {
       return -1;
     }
-    if (a.pubDate < b.pubDate) {
+    if (a.createdAt < b.createdAt) {
       return 1;
     }
     // If dates are equal

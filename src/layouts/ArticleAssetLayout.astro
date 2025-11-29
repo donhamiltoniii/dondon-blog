@@ -48,11 +48,11 @@ const hasDescription = 'description' in props && props.description;
       <main>
         <article>
           <h1 class="title">{props.title}</h1>
-          <FormattedDate date={props.pubDate} />
+          <FormattedDate date={props.createdAt} />
           {
-            props.lastUpdate && (
+            props.updatedAt && (
               <div class="last-updated-on">
-                Last updated on <FormattedDate date={props.lastUpdate} />
+                Last updated on <FormattedDate date={props.updatedAt} />
               </div>
             )
           }

@@ -2,24 +2,24 @@
 
 ### 📝 Content Updates
 
-* add islands architecture article ([ddf445b](https://github.com/donhamiltoniii/dondon-blog/commit/ddf445b0b39767b3ddca36d49d10637b57a4491d))
-* move islands architecture to code ([741f64e](https://github.com/donhamiltoniii/dondon-blog/commit/741f64e6de401b89cfbb997526d6ba0324582be9))
+- add islands architecture article ([ddf445b](https://github.com/donhamiltoniii/dondon-blog/commit/ddf445b0b39767b3ddca36d49d10637b57a4491d))
+- move islands architecture to code ([741f64e](https://github.com/donhamiltoniii/dondon-blog/commit/741f64e6de401b89cfbb997526d6ba0324582be9))
 
 ## [2.43.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.42.0...v2.43.0) (2025-10-18)
 
 ### 🚀 Features
 
-* add ground turkey meal prep recipes ([99cb728](https://github.com/donhamiltoniii/dondon-blog/commit/99cb728c765bff4a1e5e2f872b0577ab4ca6349d))
+- add ground turkey meal prep recipes ([99cb728](https://github.com/donhamiltoniii/dondon-blog/commit/99cb728c765bff4a1e5e2f872b0577ab4ca6349d))
 
 ## [2.42.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.41.2...v2.42.0) (2025-10-03)
 
 ### 🚀 Features
 
-* update now page so build runs ([e065427](https://github.com/donhamiltoniii/dondon-blog/commit/e06542738f246b82dedef0e57055cb678099e678))
+- update now page so build runs ([e065427](https://github.com/donhamiltoniii/dondon-blog/commit/e06542738f246b82dedef0e57055cb678099e678))
 
 ### 🔧 Maintenance
 
-* add eslint and prettier and update gha job ([56cc684](https://github.com/donhamiltoniii/dondon-blog/commit/56cc6849259ae89a911250226a215a7567c10def))
+- add eslint and prettier and update gha job ([56cc684](https://github.com/donhamiltoniii/dondon-blog/commit/56cc6849259ae89a911250226a215a7567c10def))
 
 ## [2.41.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.41.1...v2.41.2) (2025-10-03)
 
@@ -198,7 +198,7 @@
 
 ### 📝 Content Updates
 
-- update lastUpdate frontmatter ([a44a987](https://github.com/donhamiltoniii/dondon-blog/commit/a44a987cb4123b38797c86919ee62b575e527da7))
+- update updatedAt frontmatter ([a44a987](https://github.com/donhamiltoniii/dondon-blog/commit/a44a987cb4123b38797c86919ee62b575e527da7))
 
 ## [2.29.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.28.1...v2.29.0) (2025-08-23)
 

@@ -1,8 +1,8 @@
 ---
 title: Linux Directory Structure Reference Guide
 description: Simple reference guide for Linux directories and their use
-pubDate: 2025-08-14
-lastUpdate: 2025-08-14
+createdAt: 2025-08-14
+updatedAt: 2025-08-14
 heroImage: 'https://picsum.photos/720/360'
 published: true
 ---

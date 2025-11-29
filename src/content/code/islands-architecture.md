@@ -1,7 +1,7 @@
 ---
 title: Islands Architecture
-pubDate: 2025-10-28
-lastUpdate: 2025-10-28
+createdAt: 2025-10-28
+updatedAt: 2025-10-28
 ---
 
 ## Server vs Client render

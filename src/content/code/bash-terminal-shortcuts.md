@@ -1,8 +1,8 @@
 ---
 title: Bash Terminal Shortcuts
 description: This is a short list of helpful terminal keyboard shortcuts that I recently came across in a Udemy class I&#x27;m going through
-pubDate: 2024-12-22
-lastUpdate: 2024-12-22
+createdAt: 2024-12-22
+updatedAt: 2024-12-22
 heroImage: 'https://picsum.photos/720/360'
 published: true
 ---

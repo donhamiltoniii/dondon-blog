@@ -1,8 +1,8 @@
 ---
 title: 'VS Code Balance Out'
 description: "Reminding myself what balance out is in VS Code. I'm happy if this helps you too."
-pubDate: 2024-07-08
-lastUpdate: 2024-07-08
+createdAt: 2024-07-08
+updatedAt: 2024-07-08
 heroImage: 'https://picsum.photos/720/360'
 published: true
 ---

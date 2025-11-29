@@ -1,8 +1,8 @@
 ---
 title: 'CSS Centering'
 description: 'How to handle centering in CSS'
-pubDate: 2023-03-04
-lastUpdate: 2023-03-04
+createdAt: 2023-03-04
+updatedAt: 2023-03-04
 heroImage: 'https://picsum.photos/720/360'
 published: true
 ---

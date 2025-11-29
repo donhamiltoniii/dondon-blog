@@ -1,7 +1,7 @@
 ---
 title: Thought Work Organization Strategy
-pubDate: 2025-08-29
-lastUpdate: 2025-08-29
+createdAt: 2025-08-29
+updatedAt: 2025-08-29
 ---
 
 I have been feeling a lot more productive lately. I feel like that is thanks to nailing down a more structured approach to thinking externally. Both on paper and in digital spaces. I wanted to get a seed started for this because I think that it is going to continue to grow as it gets more use.

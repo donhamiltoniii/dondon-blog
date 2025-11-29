@@ -18,7 +18,7 @@ const { Content, remarkPluginFrontmatter } = await codeAsset.render();
 
 codeAsset.data = {
   ...codeAsset.data,
-  lastUpdate: new Date(remarkPluginFrontmatter.lastUpdate),
+  updatedAt: new Date(remarkPluginFrontmatter.updatedAt),
 };
 ---
 

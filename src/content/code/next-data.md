@@ -1,8 +1,8 @@
 ---
 title: 'Accessing Next Data in Browser'
 description: 'Understanding data in a NEXT application'
-pubDate: 2023-03-08
-lastUpdate: 2023-03-08
+createdAt: 2023-03-08
+updatedAt: 2023-03-08
 heroImage: 'https://picsum.photos/720/360'
 published: true
 ---
