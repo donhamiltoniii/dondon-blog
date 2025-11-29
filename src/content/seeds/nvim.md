@@ -1,7 +1,7 @@
 ---
 title: NeoVim Thoughtz
 createdAt: 2025-11-29
-lastUpdate: 2025-11-29
+updatedAt: 2025-11-29
 ---
 
 ## Inserting Characters with Visual Block
@@ -9,16 +9,16 @@ lastUpdate: 2025-11-29
 I recently wanted to prepended dashes to a couple of lines to turn this:
 
 ```
-Structure and Interpretation of Computer Programs by Gerald Jay Sussman 
-Computer Systems: A Programmer’s Perspective by Randal E. Bryant 
+Structure and Interpretation of Computer Programs by Gerald Jay Sussman
+Computer Systems: A Programmer’s Perspective by Randal E. Bryant
 Designing Data-Intensive Applications by Martin Kleppmann
 ```
 
 into this:
 
 ```
-- Structure and Interpretation of Computer Programs by Gerald Jay Sussman 
-- Computer Systems: A Programmer’s Perspective by Randal E. Bryant 
+- Structure and Interpretation of Computer Programs by Gerald Jay Sussman
+- Computer Systems: A Programmer’s Perspective by Randal E. Bryant
 - Designing Data-Intensive Applications by Martin Kleppmann
 ```
 
