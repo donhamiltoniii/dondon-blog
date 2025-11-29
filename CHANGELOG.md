@@ -1,3 +1,16 @@
+## [2.43.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.1...v2.43.2) (2025-11-29)
+
+### 📝 Content Updates
+
+* add nvim seed ([18f4f87](https://github.com/donhamiltoniii/dondon-blog/commit/18f4f87d8784b7ab81faac57e2cb92b72b12e6ec))
+* add seeds ([f83f681](https://github.com/donhamiltoniii/dondon-blog/commit/f83f68177209c37ffac9588f19864be6c6a46375))
+* add tmux, ts patterns seeds ([a566c16](https://github.com/donhamiltoniii/dondon-blog/commit/a566c16e038db9d7c8cb5438e9ce78f40786ee1b))
+
+### 🔧 Maintenance
+
+* replace content fields ([1b166eb](https://github.com/donhamiltoniii/dondon-blog/commit/1b166eb145972e636e395f42781a3eead16d350a))
+* update frontmatter to use createdAt ([b01114d](https://github.com/donhamiltoniii/dondon-blog/commit/b01114d7a410c81c2b94453ce0f864745399c3b2))
+
 ## [2.43.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.0...v2.43.1) (2025-10-29)
 
 ### 📝 Content Updates
