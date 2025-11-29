@@ -12,19 +12,19 @@ describe('seed assets utilities', () => {
     vi.clearAllMocks();
   });
 
-  const createMockSeed = (id: string, pubDate: Date): CollectionEntry<'seeds'> =>
+  const createMockSeed = (id: string, createdAt: Date): CollectionEntry<'seeds'> =>
     ({
       id,
       collection: 'seeds',
       data: {
         title: `Seed ${id}`,
-        pubDate,
+        createdAt,
       },
       slug: id,
     }) as CollectionEntry<'seeds'>;
 
   describe('getSeedAssets', () => {
-    it('should return all seeds sorted by pubDate (newest first) when numberOfAssets is "all"', async () => {
+    it('should return all seeds sorted by createdAt (newest first) when numberOfAssets is "all"', async () => {
       const mockSeeds = [
         createMockSeed('seed1', new Date('2024-01-01')),
         createMockSeed('seed2', new Date('2024-03-01')),
@@ -126,12 +126,12 @@ describe('seed assets utilities', () => {
       expect(result).toEqual([]);
     });
 
-    it('should handle seeds with same pubDate', async () => {
-      const samePubDate = new Date('2024-01-01');
+    it('should handle seeds with same createdAt', async () => {
+      const samecreatedAt = new Date('2024-01-01');
       const mockSeeds = [
-        createMockSeed('seed1', samePubDate),
-        createMockSeed('seed2', samePubDate),
-        createMockSeed('seed3', samePubDate),
+        createMockSeed('seed1', samecreatedAt),
+        createMockSeed('seed2', samecreatedAt),
+        createMockSeed('seed3', samecreatedAt),
       ];
 
       const { getCollection } = await import('astro:content');
@@ -178,7 +178,7 @@ describe('seed assets utilities', () => {
   });
 
   describe('getAllSeedAssets', () => {
-    it('should return all seeds sorted by pubDate', async () => {
+    it('should return all seeds sorted by createdAt', async () => {
       const mockSeeds = [
         createMockSeed('seed1', new Date('2024-01-01')),
         createMockSeed('seed2', new Date('2024-03-01')),

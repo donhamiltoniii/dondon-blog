@@ -15,7 +15,7 @@ export async function getCultivatedThoughtz({
   numberOfThoughts,
 }: Options): Promise<CultivatedThoughtz> {
   const thoughts = await getCollection('cultivatedThoughtz');
-  const sorted = thoughts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  const sorted = thoughts.sort((a, b) => b.data.createdAt.valueOf() - a.data.createdAt.valueOf());
 
   if (numberOfThoughts === 'all') {
     return sorted;

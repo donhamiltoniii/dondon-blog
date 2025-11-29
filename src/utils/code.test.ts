@@ -14,7 +14,7 @@ describe('code assets utilities', () => {
 
   const createMockCodeAsset = (
     id: string,
-    pubDate: Date,
+    createdAt: Date,
     title?: string
   ): CollectionEntry<'code'> =>
     ({
@@ -22,13 +22,13 @@ describe('code assets utilities', () => {
       collection: 'code',
       data: {
         title: title || `Code ${id}`,
-        pubDate,
+        createdAt,
       },
       slug: id,
     }) as CollectionEntry<'code'>;
 
   describe('getCodeAssets', () => {
-    it('should return all code assets sorted by pubDate (newest first) when numberOfAssets is "all"', async () => {
+    it('should return all code assets sorted by createdAt (newest first) when numberOfAssets is "all"', async () => {
       const mockAssets = [
         createMockCodeAsset('code1', new Date('2024-01-01')),
         createMockCodeAsset('code2', new Date('2024-03-01')),
@@ -132,12 +132,12 @@ describe('code assets utilities', () => {
       expect(result).toEqual([]);
     });
 
-    it('should handle code assets with same pubDate', async () => {
-      const samePubDate = new Date('2024-01-01');
+    it('should handle code assets with same createdAt', async () => {
+      const samecreatedAt = new Date('2024-01-01');
       const mockAssets = [
-        createMockCodeAsset('code1', samePubDate, 'Project A'),
-        createMockCodeAsset('code2', samePubDate, 'Project B'),
-        createMockCodeAsset('code3', samePubDate, 'Project C'),
+        createMockCodeAsset('code1', samecreatedAt, 'Project A'),
+        createMockCodeAsset('code2', samecreatedAt, 'Project B'),
+        createMockCodeAsset('code3', samecreatedAt, 'Project C'),
       ];
 
       const { getCollection } = await import('astro:content');
@@ -213,15 +213,15 @@ describe('code assets utilities', () => {
 
       const result = await getCodeAssets({ numberOfAssets: 'all' });
 
-      expect(result[0].data.pubDate.getUTCFullYear()).toBe(2024);
-      expect(result[1].data.pubDate.getUTCFullYear()).toBe(2023);
-      expect(result[1].data.pubDate.getUTCMonth()).toBe(11); // December
-      expect(result[2].data.pubDate.getUTCMonth()).toBe(5); // June
+      expect(result[0].data.createdAt.getUTCFullYear()).toBe(2024);
+      expect(result[1].data.createdAt.getUTCFullYear()).toBe(2023);
+      expect(result[1].data.createdAt.getUTCMonth()).toBe(11); // December
+      expect(result[2].data.createdAt.getUTCMonth()).toBe(5); // June
     });
   });
 
   describe('getAllCodeAssets', () => {
-    it('should return all code assets sorted by pubDate', async () => {
+    it('should return all code assets sorted by createdAt', async () => {
       const mockAssets = [
         createMockCodeAsset('code1', new Date('2024-01-01')),
         createMockCodeAsset('code2', new Date('2024-03-01')),

@@ -13,7 +13,7 @@ type Options = {
  */
 export const getCodeAssets = async ({ numberOfAssets }: Options): Promise<CodeAssets> => {
   const codeAssets = await getCollection('code');
-  const sorted = codeAssets.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  const sorted = codeAssets.sort((a, b) => b.data.createdAt.valueOf() - a.data.createdAt.valueOf());
 
   if (numberOfAssets === 'all') {
     return sorted;

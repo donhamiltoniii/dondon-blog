@@ -1,7 +1,7 @@
 ---
 title: Components, Data Layers, and the Adapter Pattern
-pubDate: 2025-11-29
-lastUpdate: 2025-11-29
+createdAt: 2025-11-29
+updatedAt: 2025-11-29
 ---
 
 ## Data Mutation

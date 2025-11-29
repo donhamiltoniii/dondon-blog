@@ -14,7 +14,7 @@ describe('cultivated thoughts utilities', () => {
 
   const createMockThought = (
     id: string,
-    pubDate: Date,
+    createdAt: Date,
     title?: string
   ): CollectionEntry<'cultivatedThoughtz'> =>
     ({
@@ -22,13 +22,13 @@ describe('cultivated thoughts utilities', () => {
       collection: 'cultivatedThoughtz',
       data: {
         title: title || `Thought ${id}`,
-        pubDate,
+        createdAt,
       },
       slug: id,
     }) as CollectionEntry<'cultivatedThoughtz'>;
 
   describe('getAllCultivatedThoughtz', () => {
-    it('should return all thoughts sorted by pubDate (newest first)', async () => {
+    it('should return all thoughts sorted by createdAt (newest first)', async () => {
       const mockThoughts = [
         createMockThought('thought1', new Date('2024-01-01')),
         createMockThought('thought2', new Date('2024-03-01')),
@@ -74,12 +74,12 @@ describe('cultivated thoughts utilities', () => {
       expect(result[0].data.title).toBe('Solo Thought');
     });
 
-    it('should handle thoughts with same pubDate', async () => {
-      const samePubDate = new Date('2024-01-01');
+    it('should handle thoughts with same createdAt', async () => {
+      const sameCreatedAt = new Date('2024-01-01');
       const mockThoughts = [
-        createMockThought('thought1', samePubDate, 'First'),
-        createMockThought('thought2', samePubDate, 'Second'),
-        createMockThought('thought3', samePubDate, 'Third'),
+        createMockThought('thought1', sameCreatedAt, 'First'),
+        createMockThought('thought2', sameCreatedAt, 'Second'),
+        createMockThought('thought3', sameCreatedAt, 'Third'),
       ];
 
       const { getCollection } = await import('astro:content');
@@ -91,7 +91,7 @@ describe('cultivated thoughts utilities', () => {
 
       // Should maintain stability in sort
       expect(result).toHaveLength(3);
-      expect(result.every(t => t.data.pubDate.getTime() === samePubDate.getTime())).toBe(true);
+      expect(result.every(t => t.data.createdAt.getTime() === sameCreatedAt.getTime())).toBe(true);
     });
 
     it('should correctly sort with millisecond precision', async () => {
@@ -197,9 +197,9 @@ describe('cultivated thoughts utilities', () => {
 
       const result = await getAllCultivatedThoughtz();
 
-      expect(result[0].data.pubDate.getUTCFullYear()).toBe(2024);
-      expect(result[1].data.pubDate.getUTCFullYear()).toBe(2023);
-      expect(result[2].data.pubDate.getUTCFullYear()).toBe(2022);
+      expect(result[0].data.createdAt.getUTCFullYear()).toBe(2024);
+      expect(result[1].data.createdAt.getUTCFullYear()).toBe(2023);
+      expect(result[2].data.createdAt.getUTCFullYear()).toBe(2022);
     });
   });
 });

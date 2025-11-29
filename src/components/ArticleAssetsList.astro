@@ -32,7 +32,7 @@ const publishedPosts = assets.filter(a => {
 
 // Group posts by month and year
 const groupedAssets: GroupedAssets = publishedPosts.reduce((groups: GroupedAssets, asset) => {
-  const date = new Date(asset.data.pubDate);
+  const date = new Date(asset.data.createdAt);
   const monthYear = `${date.getFullYear()}-${date.getMonth()}`;
 
   if (!groups[monthYear]) {
@@ -71,7 +71,7 @@ const sortedGroups: ArticleAssetGroup[] = Object.values(groupedAssets).sort(
         <ul>
           {group.assets.map(a => (
             <li>
-              <FormattedDate date={a.data.pubDate} />
+              <FormattedDate date={a.data.createdAt} />
               <a href={`/${slugPrefix}/${a.slug}/`}>{a.data.title}</a>
             </li>
           ))}

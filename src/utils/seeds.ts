@@ -13,7 +13,7 @@ type Options = {
  */
 export const getSeedAssets = async ({ numberOfAssets }: Options): Promise<SeedAssets> => {
   const seeds = await getCollection('seeds');
-  const sorted = seeds.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  const sorted = seeds.sort((a, b) => b.data.createdAt.valueOf() - a.data.createdAt.valueOf());
 
   if (numberOfAssets === 'all') {
     return sorted;
