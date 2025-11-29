@@ -1,3 +1,13 @@
+## [2.43.3](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.2...v2.43.3) (2025-11-29)
+
+### 🔧 Maintenance
+
+* **deps:** bump astro from 5.8.0 to 5.16.2 ([a3e1072](https://github.com/donhamiltoniii/dondon-blog/commit/a3e10728786231f9ae6554994f61ff898b235051))
+* **deps:** bump devalue from 5.1.1 to 5.5.0 ([0903c9f](https://github.com/donhamiltoniii/dondon-blog/commit/0903c9f11f0da039c6824e109520b717f91e9729))
+* **deps:** bump js-yaml ([0a68d79](https://github.com/donhamiltoniii/dondon-blog/commit/0a68d796f2372f5149b5b9a8047c28caac813247))
+* **deps:** bump tmp and inquirer ([c91c43a](https://github.com/donhamiltoniii/dondon-blog/commit/c91c43a113e629ecc9bc0f552a974e4bdafb5aa5))
+* **deps:** bump vite from 6.3.5 to 6.4.1 ([ef24dc8](https://github.com/donhamiltoniii/dondon-blog/commit/ef24dc8875d8ed11775f783564a3f9691a3a63fa))
+
 ## [2.43.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.1...v2.43.2) (2025-11-29)
 
 ### 📝 Content Updates
