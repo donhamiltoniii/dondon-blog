@@ -1,7 +1,7 @@
 ---
 title: Classic Seven Bean Salad
 prepTime: 20 minutes
-cookTime: 0
+cookTime: 0 minutes
 servings: 1 salad
 imgUrl:
 description: A bright, tangy, protein‑packed side perfect for potlucks, picnics, or BBQs. 
