@@ -1,3 +1,10 @@
+## [2.43.4](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.3...v2.43.4) (2025-12-09)
+
+### 📝 Content Updates
+
+* **food:** add seven beans salad ([bfa8e89](https://github.com/donhamiltoniii/dondon-blog/commit/bfa8e89dc41adf962bd7daeb3a9f257b219fb91f))
+* **food:** update frontmatter for seven bean salad ([d1e1441](https://github.com/donhamiltoniii/dondon-blog/commit/d1e1441646c7499d2606a0464ed3f477bb335909))
+
 ## [2.43.3](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.2...v2.43.3) (2025-11-29)
 
 ### 🔧 Maintenance
