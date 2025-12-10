@@ -1,3 +1,9 @@
+## [2.43.5](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.4...v2.43.5) (2025-12-10)
+
+### 📝 Content Updates
+
+* **food:** add bbq chicken loaded potatoes ([46def75](https://github.com/donhamiltoniii/dondon-blog/commit/46def754257393dbff25505772f2bdb63ca1b306))
+
 ## [2.43.4](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.3...v2.43.4) (2025-12-09)
 
 ### 📝 Content Updates
