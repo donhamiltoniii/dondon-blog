@@ -1,3 +1,10 @@
+## [2.43.6](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.5...v2.43.6) (2025-12-20)
+
+### 📝 Content Updates
+
+* **food:** swweet potato black bean quinoa salad ([c57284b](https://github.com/donhamiltoniii/dondon-blog/commit/c57284b8da62597fde6aebd77e4213e68282392e))
+* **food:** update typo ([ad14015](https://github.com/donhamiltoniii/dondon-blog/commit/ad140151589c28d76147d9395a505a47534b4a65))
+
 ## [2.43.5](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.4...v2.43.5) (2025-12-10)
 
 ### 📝 Content Updates
