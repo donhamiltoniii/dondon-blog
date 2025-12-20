@@ -6,12 +6,7 @@ servings: 8
 servingSize: ≈ ½ cup (≈ 250 g)
 imgUrl:
 description: A colorful, protein‑rich quinoa salad featuring roasted sweet potatoes, black beans, and a bright lime‑cumin dressing. Perfect for pot‑luck tables because it’s delicious warm, at room temperature, or chilled.
-notes:
-- Roast the sweet‑potatoes on a high‑heat sheet for caramelized edges.
-- Cook quinoa in broth for extra flavor, or use water for a neutral base.
-- Dress the salad while the quinoa is still warm so it absorbs the citrus‑cumin vinaigrette.
-- Add toasted pumpkin seeds or crumbled feta just before serving for extra texture.
-- The salad keeps well refrigerated for up to 4 days; flavors improve after a few hours.
+notes: "- Roast the sweet‑potatoes on a high‑heat sheet for caramelized edges.\n- Cook quinoa in broth for extra flavor, or use water for a neutral base.\n- Dress the salad while the quinoa is still warm so it absorbs the citrus‑cumin vinaigrette.\n- Add toasted pumpkin seeds or crumbled feta just before serving for extra texture.\n- The salad keeps well refrigerated for up to 4 days; flavors improve after a few hours."
 tags: [vegetarian, gluten‑free, potluck, salad, high‑protein]
 ---
 
