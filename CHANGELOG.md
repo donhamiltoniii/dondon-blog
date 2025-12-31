@@ -1,3 +1,9 @@
+## [2.43.8](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.7...v2.43.8) (2025-12-31)
+
+### 📝 Content Updates
+
+* remove ampersands from copy ([ed24d3f](https://github.com/donhamiltoniii/dondon-blog/commit/ed24d3f74a864fecc2b5375e78c9cf792e86eb85))
+
 ## [2.43.7](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.6...v2.43.7) (2025-12-31)
 
 ### 📝 Content Updates
