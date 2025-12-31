@@ -1,6 +1,6 @@
 ---
 title: Bash Terminal Shortcuts
-description: This is a short list of helpful terminal keyboard shortcuts that I recently came across in a Udemy class I&#x27;m going through
+description: This is a short list of helpful terminal keyboard shortcuts that I recently came across in a Udemy class I am going through
 createdAt: 2024-12-22
 updatedAt: 2024-12-22
 heroImage: 'https://picsum.photos/720/360'

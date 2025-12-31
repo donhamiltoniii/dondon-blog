@@ -22,7 +22,7 @@ tags: [BBQ, Chicken, Potatoes, Meal Prep, Comfort Food, main]
 - 1 tsp (2 g) Dried thyme
 - 6 garlic cloves, grated
 - ½ cup (125 g) favorite BBQ sauce
-- Salt & pepper, to taste
+- Salt and pepper, to taste
 
 #### Potatoes
 
@@ -33,7 +33,7 @@ tags: [BBQ, Chicken, Potatoes, Meal Prep, Comfort Food, main]
 - 2 tsp (8 g) Smoked paprika
 - 1 tsp (2 g) Dried oregano
 - 1 tsp (2 g) Dried thyme
-- Salt & pepper, to taste
+- Salt and pepper, to taste
 
 #### Toppings
 

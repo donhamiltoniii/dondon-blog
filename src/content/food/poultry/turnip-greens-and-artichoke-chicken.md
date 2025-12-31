@@ -1,5 +1,5 @@
 ---
-title: Turnip Greens & Artichoke Chicken
+title: Turnip Greens and Artichoke Chicken
 prepTime: 20 minutes
 cookTime: 20 minutes
 servings: 4

@@ -14,7 +14,7 @@ tags: [egg, mayonnaise, horseradish mustard, cayenne, appetizer]
 - 1⁄2 cup olive oil mayonnaise
 - 1 tbsp white vinegar
 - 1 tbsp horseradish mustard
-- S & P to taste
+- Salt and Pepper to taste
 - cayenne
 
 ### Instructions

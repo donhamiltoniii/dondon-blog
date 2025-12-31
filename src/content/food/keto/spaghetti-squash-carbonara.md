@@ -16,7 +16,7 @@ tags: [spaghetti squash, bacon, garlic, egg, parmesan, cheese, parsley, connor f
 - 2 eggs
 - ¼ cup grated Parmesan cheese
 - ¼ cup chopped parsley
-- S & P to taste
+- Salt and Pepper to taste
 
 ### Instructions
 

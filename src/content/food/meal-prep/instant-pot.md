@@ -7,7 +7,7 @@ description: Meal prep recipes centered around the Instant Pot.
 tags: [high-protein, high-fiber, meal prep, instant pot, breakfast, lunch, dinner]
 ---
 
-## Recipe 1: Turkey & Lentil Power Bowl
+## Recipe 1: Turkey and Lentil Power Bowl
 
 _Makes 6 servings | ~35g protein, 12g fiber per serving_
 
@@ -32,7 +32,7 @@ _Makes 6 servings | ~35g protein, 12g fiber per serving_
 
 ---
 
-## Recipe 2: Chicken & Bean Fiesta Bowl
+## Recipe 2: Chicken and Bean Fiesta Bowl
 
 _Makes 6 servings | ~40g protein, 15g fiber per serving_
 
@@ -58,7 +58,7 @@ _Makes 6 servings | ~40g protein, 15g fiber per serving_
 
 ---
 
-## Recipe 3: Turkey & Vegetable Protein Stew
+## Recipe 3: Turkey and Vegetable Protein Stew
 
 _Makes 5 servings | ~32g protein, 10g fiber per serving_
 
@@ -84,7 +84,7 @@ _Makes 5 servings | ~32g protein, 10g fiber per serving_
 
 ---
 
-## Recipe 4: High-Protein Chicken & Barley Bowl
+## Recipe 4: High-Protein Chicken and Barley Bowl
 
 _Makes 6 servings | ~38g protein, 8g fiber per serving_
 
@@ -132,10 +132,10 @@ _Makes 6 servings | ~38g protein, 8g fiber per serving_
 
 ### Weekly Rotation
 
-- Week 1: Turkey & Lentil Power Bowl
-- Week 2: Chicken & Bean Fiesta Bowl
-- Week 3: Turkey & Vegetable Protein Stew
-- Week 4: High-Protein Chicken & Barley Bowl
+- Week 1: Turkey and Lentil Power Bowl
+- Week 2: Chicken and Bean Fiesta Bowl
+- Week 3: Turkey and Vegetable Protein Stew
+- Week 4: High-Protein Chicken and Barley Bowl
 
 ---
 

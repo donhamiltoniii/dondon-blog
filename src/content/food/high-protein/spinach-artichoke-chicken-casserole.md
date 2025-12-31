@@ -4,7 +4,7 @@ prepTime: 10 minutes
 cookTime: 40 minutes
 servings: 4
 imgUrl:
-description: This one is just the title big dog. It&#x27;s got a bunch of protein (expecially if you double the chicken) and a bunch of fiber. Go nuts.
+description: This one is just the title big dog. It has got a bunch of protein (expecially if you double the chicken) and a bunch of fiber. Go nuts.
 notes:
 tags: [chicken, artichoke, spinach, cottage cheese, high-protein, casserole, main, dinner]
 ---
@@ -28,7 +28,7 @@ tags: [chicken, artichoke, spinach, cottage cheese, high-protein, casserole, mai
 ### Instructions
 
 1. Preheat oven to 350F.
-1. Optional but encouraged: If time allows, heavily season the cubed chicken breast with kosher salt and let it sit at room temperature for 20+ minutes, or while you prepare the remaining ingredients. This acts as a "dry brine" to yield moist & flavorful chicken!
+1. Optional but encouraged: If time allows, heavily season the cubed chicken breast with kosher salt and let it sit at room temperature for 20+ minutes, or while you prepare the remaining ingredients. This acts as a "dry brine" to yield moist and flavorful chicken!
 1. Place your artichoke hearts into a thin dish towel, cheesecloth or paper towel and squeeze out all the excess liquid. It's okay if the artichokes get a bit smushed in the process! Then, finely chop them up and set aside.
 1. Use the same dish towel to then squeeze out all the excess liquid from the thawed spinach. Don't skip this step!
 1. Bring a large pan to medium heat. Once hot, add the oil. Then, add the cubed chicken and spread it out in the pan so that there's no overlap. Season with black pepper. Cook for 2-3 minutes, then flip and continue cooking for 2-3 more minutes, until mostly done through. Remove chicken from the pan, draining off any excess grease/liquid, and set aside.

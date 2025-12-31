@@ -13,7 +13,7 @@ tags: [chicken, cabbage, meatballs]
 - 1 lb grass fed ground beef
 - 1 lb ground pork
 - 1 tbsp Italian seasoning
-- S&P to taste
+- Salt and Pepper to taste
 - 4 to 6 cups thickly chopped green cabbage
 - Cayenne pepper or red pepper flakes
 - 1 can full fat coconut milk
@@ -21,7 +21,7 @@ tags: [chicken, cabbage, meatballs]
 
 ### Instructions
 
-1. in a prep bowl, combine ground beef, pork, italian seasoning, and S&P until well incorporated.
+1. in a prep bowl, combine ground beef, pork, italian seasoning, and Salt and Pepper until well incorporated.
 2. Roll out ground meat into ~1.5" meatballs, sit aside on a baking sheet, should make about 14-18.
 3. Cut cabbage into quarters and remove core. Roughly chop each quarter into bite-size pieces.
 4. Place half of meatballs into bottom of pressure cooker, cover with half of cabbage.

@@ -14,7 +14,7 @@ tags: [shrimp, asparagus, main, dutch oven]
 - Olive oil - 3 tablespoons
 - Garlic (minced) - 5 cloves
 - Asparagus tips - 8 ounces
-- Shrimp (peeled & deveined) - 1 lb
+- Shrimp (peeled and deveined) - 1 lb
 - Fresh lemon juice - 1/4 cup
 - Salt (to taste)
 - Pepper (to taste)

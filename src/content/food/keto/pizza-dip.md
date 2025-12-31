@@ -18,7 +18,7 @@ tags: [cream cheese, greek yogurt, pizza, mozzarella, snack]
 - 1⁄2 teaspoon granulated garlic
 - 3⁄4 cup no-sugar-added pizza sauce
 - 1⁄2 cup shredded mozzarella cheese
-- S & P to taste
+- Salt and Pepper to taste
 
 ### Instructions
 

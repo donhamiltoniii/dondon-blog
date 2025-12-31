@@ -1,5 +1,5 @@
 ---
-title: Instant Pot Ground Turkey, Quinoa, Broccoli, Garbanzo & Spinach Power Bowl
+title: Instant Pot Ground Turkey, Quinoa, Broccoli, Garbanzo, and Spinach Power Bowl
 prepTime: 10 minutes
 cookTime: 25 minutes
 servings: 4
@@ -23,21 +23,18 @@ tags: [instant-pot, high-protein, high-fiber, healthy, meal-prep, gluten-free]
 - 1 tsp smoked paprika
 - ½ tsp cumin
 - 1 tbsp olive oil (optional)
-- Salt & pepper to taste
+- Salt and pepper to taste
 - Optional toppings: avocado, lemon juice, feta, hot sauce
 
 ### Instructions
 
 1. **Sauté Mode (optional):**  
-   Turn Instant Pot to Sauté. Add olive oil, then ground turkey. Cook until browned (~5 mins), breaking it up as it cooks. Add garlic, paprika, cumin, salt & pepper. Stir and cook another minute.
-
+   Turn Instant Pot to Sauté. Add olive oil, then ground turkey. Cook until browned (~5 mins), breaking it up as it cooks. Add garlic, paprika, cumin, salt and pepper. Stir and cook another minute.
 2. **Add Remaining Ingredients:**  
    Add quinoa, broth, zucchini, bell pepper, broccoli, spinach, and garbanzo beans. Stir to combine.
-
 3. **Pressure Cook:**  
    Close lid, set valve to Sealing. Cook on **High Pressure for 1 minute**. Allow a **10-minute natural release**, then quick release any remaining pressure.
-
-4. **Fluff & Serve:**  
+4. **Fluff and Serve:**  
    Fluff mixture with a fork, adjust seasoning if needed, and serve with optional toppings.
 
 ### Macros

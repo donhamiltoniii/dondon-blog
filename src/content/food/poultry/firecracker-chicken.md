@@ -4,7 +4,7 @@ prepTime: 20 minutes
 cookTime: 20 minutes
 servings: 6
 imgUrl:
-description: Ground chicken in sweet and spicy sauce. Make some veggies to go with it and you&#x27;re good to go.
+description: Ground chicken in sweet and spicy sauce. Make some veggies to go with it and you are good to go.
 notes:
 tags: [chicken, buffalo sauce, applesauce, ginger]
 ---

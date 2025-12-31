@@ -4,7 +4,7 @@ prepTime: 20 minutes
 cookTime: no
 servings: 6
 imgUrl:
-description: Simple salad to prep for the week and munch on when you&#x27;re hungry
+description: Simple salad to prep for the week and munch on when you are hungry
 notes:
 tags: [tomato, cucumber, red onion, olives, feta]
 ---

@@ -1,5 +1,5 @@
 ---
-title: Sausage, Spinach &amp; Tortellini Soup
+title: Sausage, Spinach, and Tortellini Soup
 prepTime: 30 minutes
 cookTime: 10 minutes
 servings: 6

@@ -4,7 +4,7 @@ prepTime: 10 minutes
 cookTime: 30 minutes
 servings: like a million
 imgUrl:
-description: This is the most simple dinner ever. It has 4 ingredients. The rice doesn&#x27;t lend this dish to being made with frequency. But it is really good.
+description: This is the most simple dinner ever. It has 4 ingredients. The rice does not lend this dish to being made with frequency. But it is really good.
 notes:
 tags: [ground turkey, rice, spinach]
 ---
@@ -18,7 +18,7 @@ tags: [ground turkey, rice, spinach]
 
 ### Instructions
 
-1. mix ground turkey in a bowl with all seasonings you want to use. I typically use s&p, garlic powder, onion powder, some pepper powder, oregano, and whatever else feels right
+1. mix ground turkey in a bowl with all seasonings you want to use. I typically use salt and pepper, garlic powder, onion powder, some pepper powder, oregano, and whatever else feels right
 1. turn instant pot on saute mode and put all ground turkey in to saute like a big ass 3lb burger. Get a sear on one side, flip it as best you can, and sear the other side. This is gonna get chopped up anyway so it's fine if it breaks. Just do your best.
 1. Once both sides are seared, break up the meat into chunks that make sense to you.
 1. Add rice to instant pot, stir everything together to combine, and then add the broth.

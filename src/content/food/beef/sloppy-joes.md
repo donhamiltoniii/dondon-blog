@@ -22,7 +22,7 @@ tags: [sloppy joes, ground beef, dinner, main]
 - 1 tbsp honey
 - 1 tsp yellow mustard or Dijon mustard
 - ½ tsp garlic powder
-- Salt & pepper, to taste
+- Salt and pepper, to taste
 - 4 buns of choice
 
 ### Instructions

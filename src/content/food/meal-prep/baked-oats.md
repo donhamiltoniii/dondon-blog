@@ -55,19 +55,12 @@ tags: [meal prep, high-protein, high-fiber, breakfast, main]
 ## Instructions
 
 1. **Prep:** Preheat oven to 350°F. Grease a 9x13 baking dish or line with parchment paper.
-
 2. **Mix Dry:** In a large bowl, combine oats, collagen peptides, baking powder, salt, and any dry spices.
-
 3. **Mix Wet:** In another bowl, whisk together eggs, almond milk, and vanilla extract. Add any sweeteners.
-
 4. **Combine:** Pour wet ingredients into dry ingredients and stir until just combined. Don't overmix.
-
 5. **Add Fruit:** Gently fold in your chosen fruit and any mix-ins (save some to sprinkle on top if desired).
-
 6. **Bake:** Pour mixture into prepared dish. Bake 25-30 minutes until center is set and edges are lightly golden. Test with a toothpick in the center.
-
-7. **Cool & Store:** Let cool completely, then cut into 6 portions. Store in airtight containers in the fridge.
-
+7. **Cool and Store:** Let cool completely, then cut into 6 portions. Store in airtight containers in the fridge.
 8. **Reheat:** Microwave individual portions for 30-45 seconds before eating.
 
 ## Nutrition Per Serving (Base Recipe, No Optional Add-Ins)

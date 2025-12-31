@@ -17,7 +17,7 @@ tags: [parmesan, cheddar, almond flour, egg, snack]
 - 1 large egg, lightly beaten
 - 1 teaspoon granulated garlic
 - 1⁄2 teaspoon dried rosemary
-- S & P to taste
+- Salt and Pepper to taste
 
 ### Instructions
 

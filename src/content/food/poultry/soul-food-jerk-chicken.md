@@ -4,7 +4,7 @@ prepTime: 15 minutes
 cookTime: 25 minutes
 servings: 4
 imgUrl:
-description: There&#x27;s nothing else to say after the title. Make it good or call it something else.
+description: There is nothing else to say after the title. Make it good or call it something else.
 notes:
 tags: [chicken, jerk, dinner, main]
 ---

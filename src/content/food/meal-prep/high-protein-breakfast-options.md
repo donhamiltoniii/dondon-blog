@@ -68,7 +68,7 @@ _~40g protein, ~11g fiber per 3-bite serving_
 
 ---
 
-## 3. Instant Pot Lentil & Quinoa Breakfast Bowl Base
+## 3. Instant Pot Lentil and Quinoa Breakfast Bowl Base
 
 _~36g protein, ~14g fiber per serving | Makes 6 servings_
 
@@ -190,7 +190,7 @@ _~37g protein, ~12g fiber per serving_
 
 ---
 
-## Instant Pot Bonus Tips:
+## Instant Pot Bonus Tips
 
 **Perfect Hard-Boiled Eggs (for meal prep):**
 
@@ -208,9 +208,9 @@ _~37g protein, ~12g fiber per serving_
 - Cook dried beans in bulk: 1 cup dried = 3 cups cooked
 - Freeze in 1.5-cup portions for easy meal prep
 
-## Storage & Reheating:
+## Storage and Reheating
 
-- **Overnight oats & chia puddings:** Ready to eat cold
+- **Overnight oats and chia puddings:** Ready to eat cold
 - **Egg bites:** Microwave 30-45 seconds
 - **Breakfast bowls:** Microwave 1-2 minutes, add fresh toppings
 - **Burritos:** Microwave from frozen 2-3 minutes

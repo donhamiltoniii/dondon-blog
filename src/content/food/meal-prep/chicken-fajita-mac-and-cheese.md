@@ -23,7 +23,7 @@ tags: [Chicken, Fajita, Mac and Cheese, Comfort Food]
 - 1 ½ tsp ground cumin
 - 1 Tbsp honey
 - 2 garlic cloves, minced
-- Salt & pepper, to taste
+- Salt and pepper, to taste
 
 #### Fajita Veg
 
@@ -35,16 +35,16 @@ tags: [Chicken, Fajita, Mac and Cheese, Comfort Food]
 - 1 ½ tsp oregano
 - 1 tsp ground cumin
 - 1 tsp garlic powder
-- Salt & pepper, to taste
+- Salt and pepper, to taste
 
-#### Creamy Mac & Cheese
+#### Creamy Mac and Cheese
 
 - 250 g dry macaroni or shells
 - 325 ml full‑fat or light milk (≈ 1 ½ cups)
 - 150 g light cream cheese
 - 130 g grated cheddar cheese
 - 1 Tbsp unsalted butter
-- Salt & pepper, to taste
+- Salt and pepper, to taste
 
 ### Instructions
 
@@ -56,7 +56,7 @@ tags: [Chicken, Fajita, Mac and Cheese, Comfort Food]
 
 4. **Combine** – Fold the remaining fajita vegetables into the mac‑and‑cheese mixture. Remove from heat.
 
-5. **Portion & serve** – Divide evenly into five containers. Garnish with fresh coriander or a squeeze of lime, if desired.
+5. **Portion and serve** – Divide evenly into five containers. Garnish with fresh coriander or a squeeze of lime, if desired.
 
 ### Macros
 

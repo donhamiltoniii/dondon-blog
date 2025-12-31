@@ -4,7 +4,7 @@ prepTime: 20 minutes
 cookTime: 10 minutes
 servings: 3
 imgUrl:
-description: A simple, versatile dish that you can pair with just about any other side for a dinner or just enjoy on it&#x27;s own
+description: A simple, versatile dish that you can pair with just about any other side for a dinner or just enjoy by itself
 notes:
 tags: [turkey, cauliflower, almonds, lemon, mint]
 ---

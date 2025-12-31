@@ -13,7 +13,7 @@ tags: [turkey, jalapeño, cream cheese, bacon, air fryer]
 - 8 medium jalapeño peppers, stemmed, halved, and seeded
 - 1 (8-ounce) package cream cheese, softened
 - 2 pounds ground turkey
-- S & P to taste
+- Salt and Pepper to taste
 - 8 slices thin-cut bacon
 
 ### Instructions

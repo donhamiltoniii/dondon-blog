@@ -28,7 +28,7 @@ tags: [beef, cream, mushroom, stroganoff, dinner, main]
 - 1 egg
 - 1 tbsp flour
 - oil for frying
-- s&p
+- salt and pepper
 
 ### Instructions
 
@@ -36,7 +36,7 @@ tags: [beef, cream, mushroom, stroganoff, dinner, main]
 1. add mushrooms and cook until softened
 1. in the same pan, sear the beef
 1. add broth, mustard, and sour cream, simmer for 10 minutes
-1. mix potates, egg, flour, s&p in a mixing bowl
+1. mix potates, egg, flour, salt and pepper in a mixing bowl
 1. heat oil in another pan and make some panqueques
 1. server stoganoff over delicious draniks
 1. also you can server this over rice or pasta or spaghooter squishes. Really any carb or carb substitute you want

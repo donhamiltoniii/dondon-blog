@@ -1,5 +1,5 @@
 ---
-title: Sweet Potato & Black‑Bean Quinoa Salad
+title: Sweet Potato and Black‑Bean Quinoa Salad
 prepTime: 15 min
 cookTime: 45 min
 servings: 8
@@ -14,7 +14,7 @@ tags: [vegetarian, gluten‑free, potluck, salad, high‑protein]
 
 - 1 ½ cups dry quinoa (any color) – rinsed
 - 2 large sweet potatoes (≈ 500 g), peeled and cut into ½‑inch cubes
-- 1 ½ cups cooked black beans (≈ 260 g, drained & rinsed)
+- 1 ½ cups cooked black beans (≈ 260 g, drained and rinsed)
 - ½ cup red onion, finely diced
 - ¼ cup fresh cilantro, roughly chopped (or parsley)
 - Juice of 2 limes (≈ 3 Tbsp)
@@ -31,7 +31,7 @@ tags: [vegetarian, gluten‑free, potluck, salad, high‑protein]
 1. **Pre‑heat oven** to 425 °F (220 °C).
 2. **Roast sweet potatoes:** Toss the cubed sweet potatoes with 1 Tbsp olive oil, a pinch of salt, and ½ tsp smoked paprika. Spread on a rimmed baking sheet and roast 20‑25 min, turning once, until golden and fork‑tender. Set aside to cool slightly.
 3. **Cook quinoa:** In a medium saucepan combine rinsed quinoa with 3 cups water (or low‑sodium broth). Bring to a boil, reduce to a simmer, cover, and cook 15 min until liquid is absorbed. Remove from heat, let sit 5 min, then fluff with a fork. Transfer to a large mixing bowl.
-4. **Make dressing:** Whisk together lime juice, remaining 2 Tbsp olive oil, cumin, chili powder (if using), agave/honey, and a pinch of salt & pepper. Adjust seasoning to taste.
+4. **Make dressing:** Whisk together lime juice, remaining 2 Tbsp olive oil, cumin, chili powder (if using), agave/honey, and a pinch of salt and pepper. Adjust seasoning to taste.
 5. **Combine salad:** Add roasted sweet potatoes, black beans, red onion, and cilantro to the bowl with quinoa. Pour the dressing over everything and toss gently until evenly coated.
 6. **Finish:** Season with additional salt, pepper, or lime juice if needed. If using, fold in toasted pumpkin seeds or sprinkle feta on top just before serving.
 7. **Serve:** The salad can be served warm, at room temperature, or chilled. Transfer to a serving platter or keep in a covered container for a pot‑luck.

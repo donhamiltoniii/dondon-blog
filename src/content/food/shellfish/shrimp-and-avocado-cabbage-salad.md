@@ -27,7 +27,7 @@ tags: [shrimp, avocado, cabbage, ghee, cherry tomato, feta, sriracha, main dish]
 - 1⁄4 cup apple cider vinegar
 - 1⁄4 cup full fat yogurt or mayo
 - Sriracha to taste
-- S&P to taste
+- salt and pepper to taste
 
 ### Instructions
 

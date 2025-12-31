@@ -1,5 +1,5 @@
 ---
-title: High-Protein Basmati Rice & Veggie Instant Pot Recipes
+title: High-Protein Basmati Rice and Veggie Instant Pot Recipes
 prepTime: various
 cookTime: various
 servings: various
@@ -7,7 +7,7 @@ description: High-protein basmati rice bowl meal prep recipes made in the Instan
 tags: [high-protein, high-fiber, meal prep, instant pot, breakfast, lunch, dinner]
 ---
 
-## Recipe 1: Turkey & Basmati Rice Power Bowl
+## Recipe 1: Turkey and Basmati Rice Power Bowl
 
 _Makes 5 servings | ~35g protein, 6g fiber per serving_
 
@@ -31,7 +31,7 @@ _Makes 5 servings | ~35g protein, 6g fiber per serving_
 
 ---
 
-## Recipe 2: Chicken & Basmati Rice Veggie Medley
+## Recipe 2: Chicken and Basmati Rice Veggie Medley
 
 _Makes 5 servings | ~38g protein, 5g fiber per serving_
 
@@ -59,7 +59,7 @@ _Makes 5 servings | ~38g protein, 5g fiber per serving_
 
 ---
 
-## Recipe 3: Turkey & Basmati Rice Harvest Bowl
+## Recipe 3: Turkey and Basmati Rice Harvest Bowl
 
 _Makes 5 servings | ~32g protein, 7g fiber per serving_
 
@@ -86,7 +86,7 @@ _Makes 5 servings | ~32g protein, 7g fiber per serving_
 
 ---
 
-## Recipe 4: Chicken & Basmati Rice Mediterranean Bowl
+## Recipe 4: Chicken and Basmati Rice Mediterranean Bowl
 
 _Makes 5 servings | ~36g protein, 5g fiber per serving_
 
@@ -114,7 +114,7 @@ _Makes 5 servings | ~36g protein, 5g fiber per serving_
 
 ---
 
-## Recipe 5: Ground Turkey & Basmati Breakfast Hash
+## Recipe 5: Ground Turkey and Basmati Breakfast Hash
 
 _Makes 4 servings | ~34g protein, 5g fiber per serving_
 
@@ -140,7 +140,7 @@ _Makes 4 servings | ~34g protein, 5g fiber per serving_
 
 ---
 
-## Recipe 6: Chicken & Basmati Protein Breakfast Bowl
+## Recipe 6: Chicken and Basmati Protein Breakfast Bowl
 
 _Makes 4 servings | ~31g protein, 4g fiber per serving_
 
@@ -225,11 +225,11 @@ _Makes 4 servings | ~31g protein, 4g fiber per serving_
 
 ### Weekly Rotation
 
-- Week 1: Turkey & Basmati Rice Power Bowl
-- Week 2: Chicken & Basmati Rice Veggie Medley
-- Week 3: Turkey & Basmati Rice Harvest Bowl
-- Week 4: Chicken & Basmati Rice Mediterranean Bowl
-- Breakfast options: Recipes 5 & 6
+- Week 1: Turkey and Basmati Rice Power Bowl
+- Week 2: Chicken and Basmati Rice Veggie Medley
+- Week 3: Turkey and Basmati Rice Harvest Bowl
+- Week 4: Chicken and Basmati Rice Mediterranean Bowl
+- Breakfast options: Recipes 5 and 6
 
 ### Cost per serving: $3-4 each (lunch/dinner), $2-3 each (breakfast)
 

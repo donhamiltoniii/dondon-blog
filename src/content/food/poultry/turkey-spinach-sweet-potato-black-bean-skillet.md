@@ -19,7 +19,7 @@ tags: [turkey, sweet potato, spinach, black beans, cheddar, dinner, main, lazy]
 
 ### Instructions
 
-1. Wash potates and cut into ~1-inch pieces. Toss in a little olive oil and season (s&p, garlic powder, onion powder, paprika, oregano)
+1. Wash potates and cut into ~1-inch pieces. Toss in a little olive oil and season (salt and pepper, garlic powder, onion powder, paprika, oregano)
 1. Once well coated, put patatas in the air fryer at 400°F for 17ish minutes.
 1. While the portainers cook, put a large pan on the stove at medium heat and then put the ground turkey in the same prep bowl that you used for the tubers and season (same spice mix).
 1. Once you have a well seasoned meatball, make a big hamburger out of it and place it in the heated skillet.

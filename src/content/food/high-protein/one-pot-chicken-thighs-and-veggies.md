@@ -1,5 +1,5 @@
 ---
-title: Simple One-Pot Chicken Thigh, Veggie & Garbanzo Skillet
+title: Simple One-Pot Chicken Thigh, Veggie, and Garbanzo Skillet
 prepTime: 5 minutes
 cookTime: 20 minutes
 servings: 2
@@ -18,7 +18,7 @@ tags: [high-protein, high-fiber, one-pot, chicken, beans, low-ingredient, quick]
 - 1 cup cherry tomatoes (or 1 regular tomato, chopped)
 - 1 can (15 oz) garbanzo beans, drained and rinsed
 - 2 handfuls spinach (or kale)
-- Salt & pepper to taste
+- Salt and pepper to taste
 - _(Optional: garlic powder, lemon juice)_
 
 ### Instructions

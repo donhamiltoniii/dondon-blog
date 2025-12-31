@@ -26,7 +26,7 @@ I was using Obsidian daily notes that required too much maintenance - I found my
 
 ### Obsidian (Digital Companion)
 
-- **Linking & Connections** - Connect ideas across time and topics
+- **Linking and Connections** - Connect ideas across time and topics
 - **Habit Tracking** - Digital excels at patterns and data
 - **Portable Reference** - Access knowledge from any device
 - **Knowledge Synthesis** - Distill and organize key insights
@@ -34,14 +34,14 @@ I was using Obsidian daily notes that required too much maintenance - I found my
 
 ## Daily Note Philosophy
 
-### What It's NOT:
+### What It's NOT
 
 - A comprehensive life management system
 - A replacement for journaling
 - Something that demands daily attention
 - A productivity guilt machine
 
-### What It IS:
+### What It IS
 
 - A 30-second habit tracker
 - A landing pad for digital thoughts when I'm already in Obsidian

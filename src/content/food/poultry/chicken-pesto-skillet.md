@@ -22,7 +22,7 @@ tags: [chicken, broccoli, cherry tomato]
 
 ### Instructions
 
-1. Slice chicken into 1-inch pieces and season with s&p and garlic powder.
+1. Slice chicken into 1-inch pieces and season with salt and pepper and garlic powder.
 1. Cook chicken in hot skillet with oil.
 1. Remove chicken and deglaze with chicken broth.
 1. Add broccoli and tomatoes to pan and place lid on top. Steam for 2 minutes or until broccoli is tender.

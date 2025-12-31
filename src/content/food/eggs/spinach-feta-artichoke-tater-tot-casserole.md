@@ -1,5 +1,5 @@
 ---
-title: Spinach, Feta &amp; Artichoke Tater Tot Casserole
+title: Spinach, Feta, and Artichoke Tater Tot Casserole
 prepTime: 10 minutes
 cookTime: 1 hour
 servings: 6
