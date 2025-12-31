@@ -1,3 +1,13 @@
+## [2.43.7](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.6...v2.43.7) (2025-12-31)
+
+### 📝 Content Updates
+
+* **food:** chicken fajita mac and cheese ([5807835](https://github.com/donhamiltoniii/dondon-blog/commit/5807835ad3db9e036763e988bc61acc717482051))
+
+### 🔧 Maintenance
+
+* update recipe plop template ([f11c218](https://github.com/donhamiltoniii/dondon-blog/commit/f11c218c710ec5fd0a8f695a73bc8bb01a6a46b3))
+
 ## [2.43.6](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.5...v2.43.6) (2025-12-20)
 
 ### 📝 Content Updates
