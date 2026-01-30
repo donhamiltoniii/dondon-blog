@@ -1,3 +1,10 @@
+## [2.43.9](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.8...v2.43.9) (2026-01-30)
+
+### 📝 Content Updates
+
+* **food:** fix typo ([ae27c75](https://github.com/donhamiltoniii/dondon-blog/commit/ae27c75a2e5f4a92628645c41d4237e6c01a2256))
+* **food:** meatloaf dinner meal prep ([5c72392](https://github.com/donhamiltoniii/dondon-blog/commit/5c7239241bac3c08901c2a04c6e5a160a5c9b5c2))
+
 ## [2.43.8](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.7...v2.43.8) (2025-12-31)
 
 ### 📝 Content Updates
