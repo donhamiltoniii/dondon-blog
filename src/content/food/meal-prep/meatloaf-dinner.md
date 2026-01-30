@@ -1,7 +1,7 @@
 ---
 title: High-Protein Turkey Meatloaf Meal Prep with Garlic Herb Red Mashed Potatoes and Roasted Rainbow Vegetables
 prepTime: 30 minutes
-ookTime: 60 minutes
+cookTime: 60 minutes
 servings: 7
 servingSize: 1 slice meatloaf, 3/4 cup mashed potatoes, 1 cup roasted vegetables
 imgUrl:
