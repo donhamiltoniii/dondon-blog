@@ -1,3 +1,9 @@
+## [2.43.10](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.9...v2.43.10) (2026-02-03)
+
+### 📝 Content Updates
+
+* **food:** chicken and potato meal prep ([79095ea](https://github.com/donhamiltoniii/dondon-blog/commit/79095ea8e6b60b93f72ba177b1b7a3cf74a85e20))
+
 ## [2.43.9](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.8...v2.43.9) (2026-01-30)
 
 ### 📝 Content Updates
