@@ -1,0 +1,39 @@
+---
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../constants';
+import Layout from '../../layouts/DefaultPageLayout.astro';
+
+const likedStuff = [
+  {
+    name: 'Misc',
+    stuff: [
+      {
+        desc: 'This was brought up on a podcast that I like (How Did This Get Made?) and I checked it out and it is awesome. It automates your ability to tell representatives to support or not support some legislation. I highly encourage you checking it out',
+        name: 'ResistBot',
+        url: 'https://resist.bot',
+      },
+    ],
+  },
+];
+---
+
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <h1>Stuff I Like</h1>
+  <p>
+    This pagewas born of a desire to showcase other sites like mine. But I feel like it's just a
+    good place to keep track of things that I enjoy that I would recommend in general.
+  </p>
+  {
+    likedStuff.map(({ name, stuff }) => (
+      <section>
+        <h2>{name}</h2>
+        <ul>
+          {stuff.map(thing => (
+            <li>
+              <a href={thing.url}>{thing.name}</a> - <em>{thing.desc}</em>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</Layout>
