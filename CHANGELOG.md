@@ -1,3 +1,10 @@
+## [2.43.11](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.10...v2.43.11) (2026-02-22)
+
+### 📝 Content Updates
+
+* **food:** add 2 recipes ([44e9070](https://github.com/donhamiltoniii/dondon-blog/commit/44e90702f631a333db9ae6ef44fd8e882796bdc3))
+* **seed:** add to dad thoughtz ([22a8360](https://github.com/donhamiltoniii/dondon-blog/commit/22a83609d283baea0b4f479afc60c322562ce688))
+
 ## [2.43.10](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.9...v2.43.10) (2026-02-03)
 
 ### 📝 Content Updates
