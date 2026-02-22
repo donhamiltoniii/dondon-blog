@@ -1,3 +1,9 @@
+## [2.44.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.11...v2.44.0) (2026-02-22)
+
+### 🚀 Features
+
+* **page:** add stuff I like page ([39c0696](https://github.com/donhamiltoniii/dondon-blog/commit/39c06967bd4068a238c693f774e71d28c32124c0))
+
 ## [2.43.11](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.10...v2.43.11) (2026-02-22)
 
 ### 📝 Content Updates
