@@ -1,3 +1,9 @@
+## [2.45.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.44.0...v2.45.0) (2026-02-22)
+
+### 🚀 Features
+
+* **stuffILike:** add sameoldstory.co ([1a80a3f](https://github.com/donhamiltoniii/dondon-blog/commit/1a80a3f58824189ba32735c8b3651cc48d58b7d8))
+
 ## [2.44.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.11...v2.44.0) (2026-02-22)
 
 ### 🚀 Features
