@@ -13,6 +13,16 @@ const likedStuff = [
       },
     ],
   },
+  {
+    name: 'Other Pages Like Mine',
+    stuff: [
+      {
+        desc: 'A blog I was introduced to by a friend that I found very interesting.',
+        name: 'Same Old Story',
+        url: 'https://sameoldstory.co',
+      },
+    ],
+  },
 ];
 ---
 
@@ -27,9 +37,9 @@ const likedStuff = [
       <section>
         <h2>{name}</h2>
         <ul>
-          {stuff.map(thing => (
+          {stuff.map(({ desc, name, url }) => (
             <li>
-              <a href={thing.url}>{thing.name}</a> - <em>{thing.desc}</em>
+              <a href={url}>{name}</a> - <em>{desc}</em>
             </li>
           ))}
         </ul>
