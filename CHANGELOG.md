@@ -1,3 +1,9 @@
+## [2.45.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.45.0...v2.45.1) (2026-02-23)
+
+### 📝 Content Updates
+
+* **food:** marry me chicken ([ef1e59b](https://github.com/donhamiltoniii/dondon-blog/commit/ef1e59bf5a21e3c890a2075c7dd453f41849b72a))
+
 ## [2.45.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.44.0...v2.45.0) (2026-02-22)
 
 ### 🚀 Features
