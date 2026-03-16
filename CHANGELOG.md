@@ -1,3 +1,9 @@
+## [2.46.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.45.1...v2.46.0) (2026-03-16)
+
+### 🚀 Features
+
+* **food:** add meal plan page ([6f9eb3d](https://github.com/donhamiltoniii/dondon-blog/commit/6f9eb3deefa7a3c950ab97042ed3dc230286fca3))
+
 ## [2.45.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.45.0...v2.45.1) (2026-02-23)
 
 ### 📝 Content Updates

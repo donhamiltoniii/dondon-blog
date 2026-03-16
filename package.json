@@ -1,7 +1,7 @@
 {
   "name": "dondon-blog",
   "type": "module",
-  "version": "2.45.1",
+  "version": "2.46.0",
   "description": "Personal blog built with Astro",
   "scripts": {
     "astro": "astro",
@@ -57,7 +57,7 @@
     "@typescript-eslint/eslint-plugin": "^8.45.0",
     "@typescript-eslint/parser": "^8.45.0",
     "@vitest/ui": "^3.2.4",
-    "conventional-changelog-conventionalcommits": "^9.1.0",
+    "conventional-changelog-conventionalcommits": "^9.3.0",
     "eslint": "^9.36.0",
     "eslint-plugin-astro": "^1.3.1",
     "gray-matter": "^4.0.3",
