@@ -1,0 +1,513 @@
+---
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../../constants';
+import Layout from '../../../layouts/DefaultPageLayout.astro';
+
+const meals = [
+  {
+    id: 'preworkout',
+    time: 'Pre-Workout',
+    name: 'Pre-Workout',
+    emoji: '💪',
+    items: [
+      {
+        name: 'Realsy PB-filled dates x2 (2 individually wrapped)',
+        calories: 120,
+        protein: 2,
+        fat: 4,
+        carbs: 26,
+      },
+    ],
+    note: "60 cal each, the nut butter is already stuffed inside — it's not a separate serving of PB on top. 120 cal total, mostly carbs from the date with a little fat from the PB filling. Perfect pre-workout: quick carbs without much fat to slow digestion.",
+  },
+  {
+    id: 'morning',
+    time: 'Morning',
+    name: 'Protein Shakes x3',
+    emoji: '🥤',
+    items: [
+      { name: 'Protein shakes x3 (~540g total)', calories: 540, protein: 90, fat: 0, carbs: 0 },
+    ],
+    note: "90g protein before you've eaten anything solid. This is your foundation — but notice it contributes 0 carbs. That's the main reason carbs run short every day.",
+  },
+  {
+    id: 'worksnack',
+    time: 'At Work',
+    name: 'Work Snack',
+    emoji: '🧀',
+    items: [
+      { name: 'String cheese x1 (28g)', calories: 80, protein: 7, fat: 5, carbs: 1 },
+      { name: 'Babybel Original (20g)', calories: 70, protein: 4, fat: 5, carbs: 0 },
+    ],
+    note: '150 cal, 11g protein, 10g fat, essentially zero carbs. Solid work snack — portable, no prep, keeps hunger in check. Both are just cheese so macros are nearly identical.',
+  },
+  {
+    id: 'postwork',
+    time: 'Post-Work',
+    name: 'Eggs at Home',
+    emoji: '🍳',
+    items: [
+      { name: 'Whole eggs x4 (200g)', calories: 280, protein: 24, fat: 20, carbs: 2 },
+      { name: 'Egg whites (240g / ~1 cup)', calories: 125, protein: 26, fat: 0, carbs: 2 },
+    ],
+    note: "Same protein as 6 whole eggs (~50g) but cuts fat from 30g down to 20g. The whites fill the volume gap so it doesn't feel like a smaller meal.",
+  },
+  {
+    id: 'lunch',
+    time: 'After Eggs',
+    name: 'Chicken Salad Meal Prep',
+    emoji: '🥗',
+    items: [
+      {
+        name: 'Chicken salad prep (1 of 6 portions)',
+        calories: 448,
+        protein: 72,
+        fat: 8,
+        carbs: 14,
+      },
+    ],
+    note: 'Costco rotisserie breast + brussels sprout salad bag veggies (no dressing) + non-fat Greek yogurt + ACV + hot sauce + AeroFarms microgreens. 72g protein in one container.',
+  },
+  {
+    id: 'orange',
+    time: 'With Meal Prep',
+    name: 'Orange',
+    emoji: '🍊',
+    items: [{ name: 'Orange (180g)', calories: 85, protein: 1, fat: 0, carbs: 21 }],
+    note: 'This and the dates are your only real carb hits today outside of dinner. If you want to add carbs without much else, this is the easiest win — just have a second one.',
+  },
+  {
+    id: 'dinner',
+    time: 'Tonight',
+    name: 'Dinner — Meal Prep',
+    emoji: '🍝',
+    items: [
+      {
+        name: 'Turkey/pumpkin/rice bowl OR chicken salad (1 portion)',
+        calories: 646,
+        protein: 52,
+        fat: 16,
+        carbs: 58,
+      },
+    ],
+    note: 'Turkey bowl: 3.5 lbs Butterball 93/7 + canned pumpkin + cherry tomatoes + sweet peppers + onion + spinach + jasmine rice. If you go chicken salad instead, swap to ~448 cal, 72p, 8f, 14c.',
+  },
+  {
+    id: 'yogurt',
+    time: 'Night',
+    name: 'Yogurt Bowl',
+    emoji: '🍒',
+    items: [
+      { name: 'Non-fat Greek yogurt (170g)', calories: 98, protein: 17, fat: 0, carbs: 7 },
+      { name: 'Frozen cherries (150g)', calories: 75, protein: 1, fat: 0, carbs: 19 },
+      { name: 'PB powder (32g)', calories: 120, protein: 8, fat: 2, carbs: 10 },
+      { name: 'Raw honey (21g)', calories: 64, protein: 0, fat: 0, carbs: 17 },
+      {
+        name: 'Seven Sundays Rise & Shine granola (30g)',
+        calories: 170,
+        protein: 4,
+        fat: 15,
+        carbs: 9,
+      },
+    ],
+    note: "PB powder mixed into the yogurt becomes almost like a peanut butter sauce — works great in a bowl. Same protein as regular PB, 14g less fat. The granola is still nut-based (15g fat/30g) but that's the one indulgence left in this bowl.",
+  },
+];
+
+const TARGETS = { calories: 3000, protein: 200, fat: 83, carbs: 312 };
+
+const totals = meals.reduce(
+  (acc, meal) => {
+    meal.items.forEach(item => {
+      acc.calories += item.calories;
+      acc.protein += item.protein;
+      acc.fat += item.fat;
+      acc.carbs += item.carbs;
+    });
+    return acc;
+  },
+  { calories: 0, protein: 0, fat: 0, carbs: 0 }
+);
+
+function mealTotals(meal: {
+  items: { calories: number; carbs: number; fat: number; protein: number }[];
+}) {
+  return meal.items.reduce(
+    (a, i) => ({
+      calories: a.calories + i.calories,
+      protein: a.protein + i.protein,
+      fat: a.fat + i.fat,
+      carbs: a.carbs + i.carbs,
+    }),
+    { calories: 0, protein: 0, fat: 0, carbs: 0 }
+  );
+}
+---
+
+<style>
+  header {
+    border-bottom: 1px solid #1e1e1e;
+    padding: 40px 24px 32px;
+  }
+
+  .header-inner,
+  .main-inner {
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 6px;
+  }
+
+  .subtitle {
+    color: #555;
+    font-size: 13px;
+    margin-top: 12px;
+  }
+
+  main {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* Totals card */
+  .totals-card {
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 20px 20px 16px;
+    margin: 24px 0;
+  }
+
+  .totals-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    color: #444;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  .macro-bar {
+    margin-bottom: 10px;
+  }
+
+  .macro-bar-header {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    margin-bottom: 3px;
+    color: #444;
+  }
+
+  .macro-bar-header .macro-name {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .macro-bar-track {
+    height: 6px;
+    background: #1e1e1e;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .macro-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+  }
+
+  /* Meal cards */
+  .meal-card {
+    margin-bottom: 8px;
+  }
+
+  .meal-header {
+    border: 1px solid #1a1a1a;
+    border-radius: 12px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+  }
+
+  .meal-header.open {
+    border-color: #2a2a2a;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .meal-emoji {
+    font-size: 22px;
+  }
+
+  .meal-info {
+    flex: 1;
+  }
+
+  .meal-title-row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+
+  .meal-name {
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .meal-time {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: #444;
+  }
+
+  .meal-macros {
+    display: flex;
+    gap: 12px;
+    margin-top: 4px;
+  }
+
+  .meal-macros span {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+  }
+
+  .chevron {
+    color: #333;
+    font-size: 18px;
+    transition: transform 0.2s;
+  }
+
+  .chevron.open {
+    transform: rotate(180deg);
+  }
+
+  /* Meal body */
+  .meal-body {
+    display: none;
+    border: 1px solid #2a2a2a;
+    border-top: none;
+    border-radius: 0 0 12px 12px;
+    overflow: hidden;
+  }
+
+  .meal-body.open {
+    display: block;
+  }
+
+  .item-row {
+    display: flex;
+    align-items: center;
+    padding: 11px 20px;
+    border-bottom: 1px solid #181818;
+    gap: 12px;
+  }
+
+  .item-row:last-of-type {
+    border-bottom: none;
+  }
+
+  .item-name {
+    flex: 1;
+    font-size: 13px;
+    color: #444;
+  }
+
+  .item-macros {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+
+  .item-macros span {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    text-align: right;
+  }
+
+  .item-macros .cal {
+    color: #666;
+    width: 52px;
+  }
+  .item-macros .pro {
+    color: #3a8f5c;
+    width: 32px;
+  }
+  .item-macros .fat {
+    color: #e07c3a;
+    width: 28px;
+  }
+  .item-macros .carb {
+    color: #5a9fe8;
+    width: 28px;
+  }
+
+  .meal-note {
+    padding: 12px 20px;
+    font-size: 12px;
+    color: #555;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  /* Footer */
+  .footer-note {
+    margin-top: 24px;
+    padding: 16px 20px;
+    border: 1px solid #1a1a1a;
+    border-radius: 12px;
+    font-size: 12px;
+    color: #444;
+    line-height: 1.7;
+  }
+
+  .footer-note span {
+    color: #666;
+  }
+</style>
+
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <header>
+    <div class="header-inner">
+      <p class="eyebrow">Daily Meal Plan</p>
+      <h1>2,921 cal<br /><span>cut protocol</span></h1>
+      <p class="subtitle">284 lb → 200 lb goal · daily template</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-inner">
+      <!-- Daily Totals -->
+      <div class="totals-card">
+        <p class="totals-label">Daily Totals</p>
+
+        {
+          [
+            {
+              label: 'Calories',
+              value: totals.calories,
+              target: TARGETS.calories,
+              color: '#c8a527',
+            },
+            {
+              label: 'Protein (g)',
+              value: totals.protein,
+              target: TARGETS.protein,
+              color: '#3a8f5c',
+            },
+            { label: 'Fat (g)', value: totals.fat, target: TARGETS.fat, color: '#e07c3a' },
+            { label: 'Carbs (g)', value: totals.carbs, target: TARGETS.carbs, color: '#5a9fe8' },
+          ].map(({ label, value, target, color }) => {
+            const pct = Math.min((value / target) * 100, 100);
+            const atTarget = pct >= 95;
+            return (
+              <div class="macro-bar">
+                <div class="macro-bar-header">
+                  <span class="macro-name">{label}</span>
+                  <span style={atTarget ? `color: ${color}` : 'color: #444'}>
+                    {value}
+                    <span style="color: #555">/{target}</span>
+                  </span>
+                </div>
+                <div class="macro-bar-track">
+                  <div class="macro-bar-fill" style={`width: ${pct}%; background: ${color};`} />
+                </div>
+              </div>
+            );
+          })
+        }
+      </div>
+
+      <!-- Meal Cards -->
+      {
+        meals.map((meal, idx) => {
+          const mt = mealTotals(meal);
+          const isFirst = idx === 0;
+          return (
+            <div class="meal-card" data-meal-id={meal.id}>
+              <div class={`meal-header${isFirst ? ' open' : ''}`} data-toggle={meal.id}>
+                <span class="meal-emoji">{meal.emoji}</span>
+                <div class="meal-info">
+                  <div class="meal-title-row">
+                    <span class="meal-name">{meal.name}</span>
+                    <span class="meal-time">{meal.time}</span>
+                  </div>
+                  <div class="meal-macros">
+                    <span style="color: #c8a527">{mt.calories} cal</span>
+                    <span style="color: #3a8f5c">{mt.protein}p</span>
+                    <span style="color: #e07c3a">{mt.fat}f</span>
+                    <span style="color: #5a9fe8">{mt.carbs}c</span>
+                  </div>
+                </div>
+                <span class={`chevron${isFirst ? ' open' : ''}`}>▾</span>
+              </div>
+
+              <div class={`meal-body${isFirst ? ' open' : ''}`} id={`body-${meal.id}`}>
+                {meal.items.map(item => (
+                  <div class="item-row">
+                    <span class="item-name">{item.name}</span>
+                    <div class="item-macros">
+                      <span class="cal">{item.calories} cal</span>
+                      <span class="pro">{item.protein}p</span>
+                      <span class="fat">{item.fat}f</span>
+                      <span class="carb">{item.carbs}c</span>
+                    </div>
+                  </div>
+                ))}
+                <p class="meal-note">💡 {meal.note}</p>
+              </div>
+            </div>
+          );
+        })
+      }
+
+      <div class="footer-note">
+        This is a <span>template, not a prescription</span>. Swap proteins freely (turkey, tuna,
+        beef, tofu), swap carbs freely (quinoa, potatoes, rice). The macros matter more than the
+        specific foods. Track what you actually eat and adjust from there.
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<script>
+  (Array.from(document.querySelectorAll('[data-toggle]')) as HTMLElement[]).forEach(header => {
+    header.addEventListener('click', () => {
+      const id = header.dataset.toggle;
+      const body = document.getElementById(`body-${id}`);
+      const chevron = header.querySelector('.chevron');
+      const isOpen = body!.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('.meal-body').forEach(b => b.classList.remove('open'));
+      document.querySelectorAll('.meal-header').forEach(h => {
+        h.classList.remove('open');
+        h.querySelector('.chevron')!.classList.remove('open');
+      });
+
+      // Open clicked if it wasn't already open
+      if (!isOpen) {
+        body!.classList.add('open');
+        header.classList.add('open');
+        chevron!.classList.add('open');
+      }
+    });
+  });
+</script>
