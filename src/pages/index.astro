@@ -1,5 +1,6 @@
 ---
 import ProfilePhoto from '../components/ProfilePhoto.astro';
+import RecentContent from '../components/RecentContent.astro';
 import Layout from '../layouts/DefaultPageLayout.astro';
 ---
 
@@ -19,6 +20,8 @@ import Layout from '../layouts/DefaultPageLayout.astro';
       information about things that I'm interested in and working on.
     </p>
   </section>
+
+  <RecentContent limit={7} />
 
   <section>
     <h2>What I'm about</h2>
