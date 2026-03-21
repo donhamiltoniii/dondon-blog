@@ -1,3 +1,9 @@
+## [2.48.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.47.2...v2.48.0) (2026-03-21)
+
+### 🚀 Features
+
+* update types ([77c725b](https://github.com/donhamiltoniii/dondon-blog/commit/77c725bb3ac9ad7e209c58053909378b985774c9))
+
 ## [2.47.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.47.1...v2.47.2) (2026-03-21)
 
 ### 📝 Content Updates
