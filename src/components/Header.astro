@@ -2,6 +2,7 @@
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../constants';
 import SocialNavigation from './SocialNavigation.astro';
+import { undefined } from 'astro:schema';
 
 const navItems = [
   // "home",
@@ -29,15 +30,14 @@ const navItems = [
     <section class="navigation__items">
       <section class="navigation__header-links">
         {
-          navItems
-            .sort()
-            .map(ni => (
-              <HeaderLink
-                href={`/${ni === 'home' ? '' : ni === 'rss' ? 'rss.xml' : ni.replaceAll(' ', '-')}`}
-              >
-                {ni}
-              </HeaderLink>
-            ))
+          navItems.sort().map(ni => (
+            <HeaderLink
+              href={`/${ni === 'home' ? '' : ni === 'rss' ? 'rss.xml' : ni.replaceAll(' ', '-')}`}
+              {...(ni === 'rss' ? { target: '_blank' } : {})}
+            >
+              {ni}
+            </HeaderLink>
+          ))
         }
       </section>
       <SocialNavigation />
