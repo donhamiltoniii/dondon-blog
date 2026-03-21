@@ -1,3 +1,9 @@
+## [2.50.3](https://github.com/donhamiltoniii/dondon-blog/compare/v2.50.2...v2.50.3) (2026-03-21)
+
+### 📝 Content Updates
+
+* **seeds:** update Adapter Pattern seed ([7c66297](https://github.com/donhamiltoniii/dondon-blog/commit/7c66297647f318bf1b4041d4bbddb4c3303883cc))
+
 ## [2.50.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.50.1...v2.50.2) (2026-03-21)
 
 ### 📝 Content Updates
