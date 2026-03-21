@@ -35,7 +35,7 @@ updatedAt: 2026-03-21
 - MF DOOM is a fucking genius
 - Spending is a problem for me
   - I really like stuff I already have a lot of like multitools and knives
-- I remembered a blog that I used to frequent: [Themm Thangs](http://www.them-thangs.com)
+- I remembered a blog that I used to frequent: [Them Thangs](http://www.them-thangs.com)
 - There is intrinsic value in making art, even if it just makes you smile
 - Taking photos just to compose a good shot is so rewarding
 - Consume higher quality media
