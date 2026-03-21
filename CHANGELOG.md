@@ -1,3 +1,9 @@
+## [2.47.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.47.1...v2.47.2) (2026-03-21)
+
+### 📝 Content Updates
+
+* fix typo ([d566fcc](https://github.com/donhamiltoniii/dondon-blog/commit/d566fcc72f49d9c7d2af0958625437cde5899e72))
+
 ## [2.47.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.47.0...v2.47.1) (2026-03-21)
 
 ### 📝 Content Updates
