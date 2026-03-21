@@ -1,3 +1,10 @@
+## [2.50.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.49.0...v2.50.0) (2026-03-21)
+
+### 🚀 Features
+
+* add target _blank to rss nav item ([172294f](https://github.com/donhamiltoniii/dondon-blog/commit/172294f75ac0e6b8c1c2b98d17d8ea234532f621))
+* remove unused import ([056ce6b](https://github.com/donhamiltoniii/dondon-blog/commit/056ce6bb2b57a4826a4f4bb8334b1858bd1bb7bc))
+
 ## [2.49.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.48.0...v2.49.0) (2026-03-21)
 
 ### 🚀 Features
