@@ -1,3 +1,9 @@
+## [2.49.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.48.0...v2.49.0) (2026-03-21)
+
+### 🚀 Features
+
+* update navigation ([d70f7eb](https://github.com/donhamiltoniii/dondon-blog/commit/d70f7eb8bf02bc9a11355f37774ef7c9692cfc80))
+
 ## [2.48.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.47.2...v2.48.0) (2026-03-21)
 
 ### 🚀 Features
