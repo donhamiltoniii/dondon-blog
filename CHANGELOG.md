@@ -1,3 +1,9 @@
+## [2.50.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.50.1...v2.50.2) (2026-03-21)
+
+### 📝 Content Updates
+
+* **seeds:** update tmux ([a99ccbf](https://github.com/donhamiltoniii/dondon-blog/commit/a99ccbf07e6f22541f160080922c576ec5f4bde3))
+
 ## [2.50.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.50.0...v2.50.1) (2026-03-21)
 
 ### 📝 Content Updates
