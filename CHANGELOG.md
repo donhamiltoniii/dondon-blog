@@ -1,3 +1,9 @@
+## [2.47.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.47.0...v2.47.1) (2026-03-21)
+
+### 📝 Content Updates
+
+* **thoughtz:** journal review ([57bb69d](https://github.com/donhamiltoniii/dondon-blog/commit/57bb69d7ddc857113b05f3b943cc15de125e95ea))
+
 ## [2.47.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.46.1...v2.47.0) (2026-03-21)
 
 ### 🚀 Features
