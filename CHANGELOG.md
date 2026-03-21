@@ -1,3 +1,9 @@
+## [2.47.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.46.1...v2.47.0) (2026-03-21)
+
+### 🚀 Features
+
+* add RecentContent component ([a48b260](https://github.com/donhamiltoniii/dondon-blog/commit/a48b260e3d20e05912ddea88f9aa450276d32681))
+
 ## [2.46.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.46.0...v2.46.1) (2026-03-21)
 
 ### 🔧 Maintenance
