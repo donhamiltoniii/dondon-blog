@@ -1,14 +1,15 @@
 ---
-title: "Tmux: Getting Started"
+title: 'Tmux: Getting Started'
 createdAt: 2025-11-10
-updatedAt: 2025-11-10
+updatedAt: 2026-03-21
 ---
 
 ## What is a TMUX?
+
 Tmux is pretty awesome, I've heard about it for a long time, and I finally am taking an hour to learn it. If I would have known it was this quick, I would have just learned it forever ago because it is really useful. Tmux is a multiplexer which means nothing because nobody knows what a multiplexer is so it doesn't give you any reference for what it does. What is a multiplexer? The internet (AI bot) says this:
 
 > A multiplexer (often abbreviated mux) is a digital circuit that selects one of several input signals and forwards the chosen input to a single output line.
-
+>
 > In essence, it works like a multiple‑to‑single switch controlled by a set of select lines (also called address or control bits). The number of select lines determines how many inputs can be addressed:
 
 This is actually helpful with regard to Tmux since Tmux essentially allows you to work with multiple sessions, windows, and panes inside of your terminal environment. So instead of having one terminal window and a bunch of tabs that are hard to navigate around, Tmux gives you a similar performance, allowing you to manage multiple windows, with some really useful commands that make it really easy to do so. The concept of sessions is really cool too becuase you could do something like run a server, exit (close) the window, and still have access to your running server. This is cool and you should do it.
@@ -38,9 +39,9 @@ One important thing to note, Tmux relies on a "prefix" for it's keyboard shortcu
 1. Create a new window - `<prefix> + c`
 2. Cycle between previous and next windows respectively - `<prefix> + p/n`
 3. Choose a specific window - `<prefix> + [index]`
-  1. The index will be next to the name of the window in the bottom bar
-4. List all windows - `<prefix> + w`
-5. Rename a window - `<prefix> + ,`
+4. The index will be next to the name of the window in the bottom bar
+5. List all windows - `<prefix> + w`
+6. Rename a window - `<prefix> + ,`
 
 ### Panes
 
@@ -60,5 +61,3 @@ Tmux also has built in commands. These are really useful for scripting. Scriptin
 You can adda Tmux configuration file and you want to do this. Add a configuration file at `~/.config/tmux/tmux.conf`.
 
 ## Scripting
-
-
