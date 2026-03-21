@@ -12,13 +12,13 @@ Tmux is pretty awesome, I've heard about it for a long time, and I finally am ta
 >
 > In essence, it works like a multiple‑to‑single switch controlled by a set of select lines (also called address or control bits). The number of select lines determines how many inputs can be addressed:
 
-This is actually helpful with regard to Tmux since Tmux essentially allows you to work with multiple sessions, windows, and panes inside of your terminal environment. So instead of having one terminal window and a bunch of tabs that are hard to navigate around, Tmux gives you a similar performance, allowing you to manage multiple windows, with some really useful commands that make it really easy to do so. The concept of sessions is really cool too becuase you could do something like run a server, exit (close) the window, and still have access to your running server. This is cool and you should do it.
+This is actually helpful with regard to Tmux since Tmux essentially allows you to work with multiple sessions, windows, and panes inside of your terminal environment. So instead of having one terminal window and a bunch of tabs that are hard to navigate around, Tmux gives you a similar performance, allowing you to manage multiple windows, with some really useful commands that make it really easy to do so. The concept of sessions is really cool too because you could do something like run a server, exit (close) the window, and still have access to your running server. This is cool and you should do it.
 
 ## Tmux Elements
 
 ### Sessions
 
-The relationship between sessions, windows, and panes is pretty simple, but here's a general overview. Sessions are top level. Anything you do in Tmux is gonna happen in a session. These are similar to browser sessions. It's essetnailly the 5W's of whatever you're doing. Who: you, What: typing stuff: When: now (and later maybe), Where: some file system, Why: Because your life is dope and you do dope shit. Windows
+The relationship between sessions, windows, and panes is pretty simple, but here's a general overview. Sessions are top level. Anything you do in Tmux is gonna happen in a session. These are similar to browser sessions. It's essentially the 5W's of whatever you're doing. Who: you, What: typing stuff: When: now (and later maybe), Where: some file system, Why: Because your life is dope and you do dope shit. Windows
 
 ### Windows
 
@@ -58,6 +58,4 @@ Tmux also has built in commands. These are really useful for scripting. Scriptin
 
 ## Configuration
 
-You can adda Tmux configuration file and you want to do this. Add a configuration file at `~/.config/tmux/tmux.conf`.
-
-## Scripting
+You can add a Tmux configuration file and you want to do this. Add a configuration file at `~/.config/tmux/tmux.conf`.
