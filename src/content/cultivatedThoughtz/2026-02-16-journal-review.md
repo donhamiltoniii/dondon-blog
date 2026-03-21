@@ -1,0 +1,68 @@
+---
+title: 'Journal Review #1'
+description: A collection of common themes and ideas of interest from my analog journal
+createdAt: 2026-03-21
+updatedAt: 2026-03-21
+---
+
+- [ ] Start making zines
+  - [ ] Make one about Edward Bernays because that guy is terrible and relevant to current terribleness
+- [ ] draw more
+- Fuck YouTube
+- [ ] #seed Make content about being a Staff+ Software Developer/Engineer
+- [ ] Make more videos -> which is to say make ANY videos
+- [ ] #seed What exactly is TLS?
+- [ ] #project Add fake advertising to this website
+  - This seems like a fun idea and a good way to make fun/silly art
+- [ ] #seed Core Web Vitals
+- Calisthenics is awesome
+- "Bias For Action" is a term I heard that I like and I think sounds like a Street Wear brand
+- Being a Renaissance Man does not mean being a Jack of all trades
+  - Figure out what hobbies you actually enjoy and where you want to dedicate your time so that you actually make progress
+- At the end of January, I moved down 75lbs -> 60lbs on assisted dips/chin-ups
+  - I promptly moved back up when I started doing actual pull-ups instead
+- I have been using notebooks more and it's fantastic
+  - Less "polished content", more thinking on paper
+- "My home office is just an elaborate anti-productivity machine"
+  - This is a realization I had before I Marie Kondoed my office
+  - It probably still has some room to be improved but I've actually been much more productive in this space since realizing I manifested ADHD in a room
+- I am realizing that I never developed healthy work habits
+  - This sucks to realize at 38yo
+  - But better late than never
+- The Dissect Podcast is phenomenal
+  - Especially the season dedicated to MF DOOM
+  - Listen to it again whenever you see this
+- MF DOOM is a fucking genius
+- Spending is a problem for me
+  - I really like stuff I already have a lot of like multitools and knives
+- I remembered a blog that I used to frequent: [Themm Thangs](http://www.them-thangs.com)
+- There is intrinsic value in making art, even if it just makes you smile
+- Taking photos just to compose a good shot is so rewarding
+- Consume higher quality media
+  - Cheap dopamine is bullshit
+  - Fuck social media
+  - Fuck YouTube
+- I've been on a journey to make my phone dumber
+  - One area that was silently still sapping attention was having a search engine literally at my finger tips
+  - Make using the internet on your phone clunky if you also have this problem
+  - You don't need to answer every question that you have when you have it -> sometimes not at all
+- [ ] Read more books about telling stories
+- [ ] Listen to the Moth again
+- [ ] Journal when you find yourself mindlessly navigating to YT
+  - [ ] talk about the stuff you would click on and then reflect on how stupid that is
+- Peanut Butter Wolf
+- #seed binaries + spectra
+- Mndsgn is a musician I found that is v good
+- [Library of Esoterica](https://thelibraryofesoterica.com) -> SO GOOD
+  - The website is awesome too!
+- [ ] #seed write longform on my personal thoughts on religion
+- YT is a content machine
+  - it turns attention into revenue
+  - It is NOT inspiration
+  - it IS an entertainment product
+- I very much want to make stickers and t-shirts and "merch" again
+  - I used to have a screen printer and make stupid t-shirts in college
+  - I want to do this again in some capacity
+- Learn how to be a photographer again
+  - My degree is in photography and I don't do anything with it anymore
+  - I miss how I used to use a camera to understand things
