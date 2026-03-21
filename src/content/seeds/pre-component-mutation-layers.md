@@ -56,7 +56,11 @@ function ProductBanner({ product_id, display_name, base_price_cents, discount_bp
 // logic (cents → dollars, basis points → %) is also leaking into the UI.
 ```
 
-As outlined, this is bad because we have a contract in our codebase that relies on code that we don't maintain. This is a gigantic red flag. Instead, we should implement the Adapter Pattern, add a mutation layer to our code, and create a solid interface that describes our component as we expect it to be used.
+As outlined, this is bad because we have a contract in our codebase that relies on code that we don't maintain. This is a gigantic red flag.
+
+## The Solution
+
+Instead, we should implement the Adapter Pattern, add a mutation layer to our code, and create a solid interface that describes our component as we expect it to be used.
 
 ```ts
 // ✅ AFTER: Adapter pattern decouples the API from the component
@@ -115,3 +119,5 @@ async function Page() {
   return <ProductBanner {...props} />;
 }
 ```
+
+Hopefully this now makes more sense! And now you have a real world example that you can use to discuss a design pattern!
