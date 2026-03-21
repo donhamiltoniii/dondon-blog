@@ -22,6 +22,7 @@ const code = defineCollection({
 const cultivatedThoughtz = defineCollection({
   schema: z.object({
     title: z.string(),
+    description: z.string().optional(),
     createdAt: z
       .date()
       .or(z.date())

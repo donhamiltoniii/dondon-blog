@@ -9,12 +9,11 @@ import type { ArticleAssetData } from '../types';
 type Props = ArticleAssetData;
 
 const props = Astro.props;
-const hasDescription = 'description' in props && props.description;
 ---
 
 <html lang="en">
   <head>
-    <BaseHead title={props.title} description={hasDescription ? props.description! : ''} />
+    <BaseHead title={props.title} description={props.description ?? ''} />
     <style>
       hr {
         border-top: 1px solid #ddd;
@@ -56,7 +55,7 @@ const hasDescription = 'description' in props && props.description;
               </div>
             )
           }
-          {hasDescription && <p>{decodeHtml(props.description!)}</p>}
+          {props.description && <p>{decodeHtml(props.description)}</p>}
           <hr />
           <slot />
         </article>
