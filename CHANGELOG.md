@@ -1,3 +1,9 @@
+## [2.46.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.46.0...v2.46.1) (2026-03-21)
+
+### 🔧 Maintenance
+
+* **deps:** bump h3 from 1.15.4 to 1.15.9 ([08c7ed3](https://github.com/donhamiltoniii/dondon-blog/commit/08c7ed338b57223a7f40e087ada367252ad4988c))
+
 ## [2.46.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.45.1...v2.46.0) (2026-03-16)
 
 ### 🚀 Features
