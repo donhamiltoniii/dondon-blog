@@ -2,6 +2,26 @@
 import { SITE_DESCRIPTION, SITE_TITLE } from '../../../constants';
 import Layout from '../../../layouts/DefaultPageLayout.astro';
 
+// ─────────────────────────────────────────────
+// MEAL PREP TARGETS — update these each week
+// ─────────────────────────────────────────────
+const mealPrepTargets = {
+  lunch: {
+    label: 'Chicken Salad Meal Prep',
+    note: "Costco rotisserie breast + sauerkraut (Wildbrine, drained) + Cleveland Kitchen dill pickle chips (drained) + 3 svgs Kirkland non-fat Greek yogurt + Frank's RedHot (200g). Split into 7 portions. Macros are consistent week to week.",
+    target: { calories: 427, protein: 69, fat: 7, carbs: 15 },
+    // Paste this week's actual per-serving macros here (or leave null to show target only)
+    actual: null as { calories: number; protein: number; fat: number; carbs: number } | null,
+  },
+  dinner: {
+    label: 'Dinner Meal Prep',
+    note: 'Target ranges: ~450–650 cal, 45–60p, 10–20f, 28–60c per serving. Anchor on protein — aim for 45g+ regardless of recipe. This week: boneless skinless chicken thighs (Costco) + 100g jasmine rice (bone broth) + veggies/sauce.',
+    target: { calories: 490, protein: 50, fat: 14, carbs: 30 },
+    // Paste this week's actual per-serving macros here (or leave null to show target only)
+    actual: null as { calories: number; protein: number; fat: number; carbs: number } | null,
+  },
+};
+
 const meals = [
   {
     id: 'preworkout',
@@ -54,18 +74,18 @@ const meals = [
   {
     id: 'lunch',
     time: 'After Eggs',
-    name: 'Chicken Salad Meal Prep',
+    name: mealPrepTargets.lunch.label,
     emoji: '🥗',
     items: [
       {
-        name: 'Chicken salad prep (1 of 6 portions)',
-        calories: 448,
-        protein: 72,
-        fat: 8,
-        carbs: 14,
+        name: `1 of 7 portions ${mealPrepTargets.lunch.actual ? '(actual)' : '(target)'}`,
+        calories: mealPrepTargets.lunch.actual?.calories ?? mealPrepTargets.lunch.target.calories,
+        protein: mealPrepTargets.lunch.actual?.protein ?? mealPrepTargets.lunch.target.protein,
+        fat: mealPrepTargets.lunch.actual?.fat ?? mealPrepTargets.lunch.target.fat,
+        carbs: mealPrepTargets.lunch.actual?.carbs ?? mealPrepTargets.lunch.target.carbs,
       },
     ],
-    note: 'Costco rotisserie breast + brussels sprout salad bag veggies (no dressing) + non-fat Greek yogurt + ACV + hot sauce + AeroFarms microgreens. 72g protein in one container.',
+    note: mealPrepTargets.lunch.note,
   },
   {
     id: 'orange',
@@ -73,23 +93,34 @@ const meals = [
     name: 'Orange',
     emoji: '🍊',
     items: [{ name: 'Orange (180g)', calories: 85, protein: 1, fat: 0, carbs: 21 }],
-    note: 'This and the dates are your only real carb hits today outside of dinner. If you want to add carbs without much else, this is the easiest win — just have a second one.',
+    note: 'One of your main carb sources outside of dinner. Pairs well with the chicken salad.',
+  },
+  {
+    id: 'fruitsnack',
+    time: 'Flexible',
+    name: 'Fruit Snack',
+    emoji: '🍎',
+    items: [
+      { name: 'Apple, large (220g)', calories: 115, protein: 1, fat: 0, carbs: 30 },
+      { name: 'Orange (180g)', calories: 85, protein: 1, fat: 0, carbs: 21 },
+    ],
+    note: '~200 cal, mostly carbs — added to offset removing the granola and plug the carb gap. 🏋️ Gym days: eat this in addition to the pre-workout dates. 🛋️ Rest days: skip the dates and eat this instead — it replaces roughly the same calories (dates were 120 cal, this is ~200 cal, keeping you in a similar deficit either way).',
   },
   {
     id: 'dinner',
     time: 'Tonight',
-    name: 'Dinner — Meal Prep',
+    name: mealPrepTargets.dinner.label,
     emoji: '🍝',
     items: [
       {
-        name: 'Turkey/pumpkin/rice bowl OR chicken salad (1 portion)',
-        calories: 646,
-        protein: 52,
-        fat: 16,
-        carbs: 58,
+        name: `1 serving ${mealPrepTargets.dinner.actual ? '(actual)' : '(target)'}`,
+        calories: mealPrepTargets.dinner.actual?.calories ?? mealPrepTargets.dinner.target.calories,
+        protein: mealPrepTargets.dinner.actual?.protein ?? mealPrepTargets.dinner.target.protein,
+        fat: mealPrepTargets.dinner.actual?.fat ?? mealPrepTargets.dinner.target.fat,
+        carbs: mealPrepTargets.dinner.actual?.carbs ?? mealPrepTargets.dinner.target.carbs,
       },
     ],
-    note: 'Turkey bowl: 3.5 lbs Butterball 93/7 + canned pumpkin + cherry tomatoes + sweet peppers + onion + spinach + jasmine rice. If you go chicken salad instead, swap to ~448 cal, 72p, 8f, 14c.',
+    note: mealPrepTargets.dinner.note,
   },
   {
     id: 'yogurt',
@@ -101,19 +132,12 @@ const meals = [
       { name: 'Frozen cherries (150g)', calories: 75, protein: 1, fat: 0, carbs: 19 },
       { name: 'PB powder (32g)', calories: 120, protein: 8, fat: 2, carbs: 10 },
       { name: 'Raw honey (21g)', calories: 64, protein: 0, fat: 0, carbs: 17 },
-      {
-        name: 'Seven Sundays Rise & Shine granola (30g)',
-        calories: 170,
-        protein: 4,
-        fat: 15,
-        carbs: 9,
-      },
     ],
-    note: "PB powder mixed into the yogurt becomes almost like a peanut butter sauce — works great in a bowl. Same protein as regular PB, 14g less fat. The granola is still nut-based (15g fat/30g) but that's the one indulgence left in this bowl.",
+    note: 'PB powder mixed into the yogurt becomes almost like a peanut butter sauce — works great in a bowl. Granola has been removed; if you find yourself hungry at night or want to add the fat and calories back, a nut-based granola (30g) adds ~150–170 cal and rounds the bowl out nicely.',
   },
 ];
 
-const TARGETS = { calories: 3000, protein: 200, fat: 83, carbs: 312 };
+const TARGETS = { calories: 2900, protein: 200, fat: 83, carbs: 312 };
 
 const totals = meals.reduce(
   (acc, meal) => {
@@ -367,6 +391,25 @@ function mealTotals(meal: {
     line-height: 1.5;
   }
 
+  /* Target badge */
+  .target-badge {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #555;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+
+  .target-badge.actual {
+    background: #1a2e1a;
+    color: #3a8f5c;
+  }
+
   /* Footer */
   .footer-note {
     margin-top: 24px;
@@ -381,14 +424,22 @@ function mealTotals(meal: {
   .footer-note span {
     color: #666;
   }
+
+  .footer-note code {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    padding: 1px 5px;
+    border-radius: 3px;
+    color: #666;
+  }
 </style>
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
   <header>
     <div class="header-inner">
       <p class="eyebrow">Daily Meal Plan</p>
-      <h1>2,921 cal<br /><span>cut protocol</span></h1>
-      <p class="subtitle">284 lb → 200 lb goal · daily template</p>
+      <h1>{totals.calories} cal<br /><span>cut protocol</span></h1>
+      <p class="subtitle">278 lb → 200 lb goal · daily template</p>
     </div>
   </header>
 
@@ -440,6 +491,14 @@ function mealTotals(meal: {
         meals.map((meal, idx) => {
           const mt = mealTotals(meal);
           const isFirst = idx === 0;
+          const isMealPrep = meal.id === 'lunch' || meal.id === 'dinner';
+          const hasActual =
+            meal.id === 'lunch'
+              ? mealPrepTargets.lunch.actual !== null
+              : meal.id === 'dinner'
+                ? mealPrepTargets.dinner.actual !== null
+                : false;
+
           return (
             <div class="meal-card" data-meal-id={meal.id}>
               <div class={`meal-header${isFirst ? ' open' : ''}`} data-toggle={meal.id}>
@@ -448,6 +507,11 @@ function mealTotals(meal: {
                   <div class="meal-title-row">
                     <span class="meal-name">{meal.name}</span>
                     <span class="meal-time">{meal.time}</span>
+                    {isMealPrep && (
+                      <span class={`target-badge${hasActual ? ' actual' : ''}`}>
+                        {hasActual ? 'actual' : 'target'}
+                      </span>
+                    )}
                   </div>
                   <div class="meal-macros">
                     <span style="color: #c8a527">{mt.calories} cal</span>
@@ -479,9 +543,15 @@ function mealTotals(meal: {
       }
 
       <div class="footer-note">
-        This is a <span>template, not a prescription</span>. Swap proteins freely (turkey, tuna,
-        beef, tofu), swap carbs freely (quinoa, potatoes, rice). The macros matter more than the
-        specific foods. Track what you actually eat and adjust from there.
+        <strong style="color: #555;">Updating meal prep each week:</strong> Find the
+        <code>mealPrepTargets</code> object near the top of this file. Set <code>actual</code> to an
+        object with <code>calories</code>, <code>protein</code>, <code>fat</code>, <code>carbs</code
+        > once you've calculated this week's per-serving macros — or leave it <code>null</code> to display
+        the target. The daily totals and bars update automatically.
+        <br /><br />
+        <span>Dinner target ranges: 450–650 cal · 45–60p · 10–20f · 28–60c.</span> Protein is the anchor
+        — aim for 45g+ regardless of recipe. Swap proteins and carb sources freely; the macros matter
+        more than the specific foods.
       </div>
     </div>
   </main>
