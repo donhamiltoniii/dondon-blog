@@ -1,3 +1,9 @@
+## [2.51.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.50.4...v2.51.0) (2026-03-23)
+
+### 🚀 Features
+
+* **meal-plan:** update page with more flexible macros ([30f60f1](https://github.com/donhamiltoniii/dondon-blog/commit/30f60f13752dd1c379b6079360b60c7125c97c9e))
+
 ## [2.50.4](https://github.com/donhamiltoniii/dondon-blog/compare/v2.50.3...v2.50.4) (2026-03-21)
 
 ### 📝 Content Updates
