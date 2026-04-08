@@ -67,9 +67,13 @@ const dinnerOptions = Object.values(dinnerDishes);
   /* ── Week picker ── */
   .picker-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 10px;
     margin-bottom: 8px;
+
+    @media screen and (min-width: 610px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
   .picker-card {
     border: 1px solid #1a1a1a;
@@ -307,8 +311,12 @@ const dinnerOptions = Object.values(dinnerDishes);
   }
   .shopping-cols {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 10px;
+
+    @media screen and (min-width: 610px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
   .shopping-col-label {
     font-family: 'DM Mono', monospace;
@@ -333,9 +341,13 @@ const dinnerOptions = Object.values(dinnerDishes);
   }
   .pantry-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 4px 16px;
     margin-top: 4px;
+
+    @media screen and (min-width: 610px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
   .pantry-item {
     font-size: 12px;
