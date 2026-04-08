@@ -1,184 +1,35 @@
 ---
 import { SITE_DESCRIPTION, SITE_TITLE } from '../../../constants';
 import Layout from '../../../layouts/DefaultPageLayout.astro';
+import {
+  dinnerDishes,
+  fixedMeals,
+  lunchDishes,
+  mealTotals,
+  meals,
+  pantryStaples,
+  selectedDinner,
+  selectedLunch,
+  TARGETS,
+  thisWeek,
+  totals,
+} from './mealPrepTargets';
 
-// ─────────────────────────────────────────────
-// MEAL PREP TARGETS — update these each week
-// ─────────────────────────────────────────────
-const mealPrepTargets = {
-  lunch: {
-    label: 'Chicken Salad Meal Prep',
-    note: "Costco rotisserie breast + sauerkraut (Wildbrine, drained) + Cleveland Kitchen dill pickle chips (drained) + 3 svgs Kirkland non-fat Greek yogurt + Frank's RedHot (200g). Split into 7 portions. Macros are consistent week to week.",
-    target: { calories: 427, protein: 69, fat: 7, carbs: 15 },
-    // Paste this week's actual per-serving macros here (or leave null to show target only)
-    actual: null as { calories: number; protein: number; fat: number; carbs: number } | null,
-  },
-  dinner: {
-    label: 'Dinner Meal Prep',
-    note: 'Target ranges: ~450–650 cal, 45–60p, 10–20f, 28–60c per serving. Anchor on protein — aim for 45g+ regardless of recipe. This week: boneless skinless chicken thighs (Costco) + 100g jasmine rice (bone broth) + veggies/sauce.',
-    target: { calories: 490, protein: 50, fat: 14, carbs: 30 },
-    // Paste this week's actual per-serving macros here (or leave null to show target only)
-    actual: null as { calories: number; protein: number; fat: number; carbs: number } | null,
-  },
-};
-
-const meals = [
-  {
-    id: 'preworkout',
-    time: 'Pre-Workout',
-    name: 'Pre-Workout',
-    emoji: '💪',
-    items: [
-      {
-        name: 'Realsy PB-filled dates x2 (2 individually wrapped)',
-        calories: 120,
-        protein: 2,
-        fat: 4,
-        carbs: 26,
-      },
-    ],
-    note: "60 cal each, the nut butter is already stuffed inside — it's not a separate serving of PB on top. 120 cal total, mostly carbs from the date with a little fat from the PB filling. Perfect pre-workout: quick carbs without much fat to slow digestion.",
-  },
-  {
-    id: 'morning',
-    time: 'Morning',
-    name: 'Protein Shakes x3',
-    emoji: '🥤',
-    items: [
-      { name: 'Protein shakes x3 (~540g total)', calories: 540, protein: 90, fat: 0, carbs: 0 },
-    ],
-    note: "90g protein before you've eaten anything solid. This is your foundation — but notice it contributes 0 carbs. That's the main reason carbs run short every day.",
-  },
-  {
-    id: 'worksnack',
-    time: 'At Work',
-    name: 'Work Snack',
-    emoji: '🧀',
-    items: [
-      { name: 'String cheese x1 (28g)', calories: 80, protein: 7, fat: 5, carbs: 1 },
-      { name: 'Babybel Original (20g)', calories: 70, protein: 4, fat: 5, carbs: 0 },
-    ],
-    note: '150 cal, 11g protein, 10g fat, essentially zero carbs. Solid work snack — portable, no prep, keeps hunger in check. Both are just cheese so macros are nearly identical.',
-  },
-  {
-    id: 'postwork',
-    time: 'Post-Work',
-    name: 'Eggs at Home',
-    emoji: '🍳',
-    items: [
-      { name: 'Whole eggs x4 (200g)', calories: 280, protein: 24, fat: 20, carbs: 2 },
-      { name: 'Egg whites (240g / ~1 cup)', calories: 125, protein: 26, fat: 0, carbs: 2 },
-    ],
-    note: "Same protein as 6 whole eggs (~50g) but cuts fat from 30g down to 20g. The whites fill the volume gap so it doesn't feel like a smaller meal.",
-  },
-  {
-    id: 'lunch',
-    time: 'After Eggs',
-    name: mealPrepTargets.lunch.label,
-    emoji: '🥗',
-    items: [
-      {
-        name: `1 of 7 portions ${mealPrepTargets.lunch.actual ? '(actual)' : '(target)'}`,
-        calories: mealPrepTargets.lunch.actual?.calories ?? mealPrepTargets.lunch.target.calories,
-        protein: mealPrepTargets.lunch.actual?.protein ?? mealPrepTargets.lunch.target.protein,
-        fat: mealPrepTargets.lunch.actual?.fat ?? mealPrepTargets.lunch.target.fat,
-        carbs: mealPrepTargets.lunch.actual?.carbs ?? mealPrepTargets.lunch.target.carbs,
-      },
-    ],
-    note: mealPrepTargets.lunch.note,
-  },
-  {
-    id: 'orange',
-    time: 'With Meal Prep',
-    name: 'Orange',
-    emoji: '🍊',
-    items: [{ name: 'Orange (180g)', calories: 85, protein: 1, fat: 0, carbs: 21 }],
-    note: 'One of your main carb sources outside of dinner. Pairs well with the chicken salad.',
-  },
-  {
-    id: 'fruitsnack',
-    time: 'Flexible',
-    name: 'Fruit Snack',
-    emoji: '🍎',
-    items: [
-      { name: 'Apple, large (220g)', calories: 115, protein: 1, fat: 0, carbs: 30 },
-      { name: 'Orange (180g)', calories: 85, protein: 1, fat: 0, carbs: 21 },
-    ],
-    note: '~200 cal, mostly carbs — added to offset removing the granola and plug the carb gap. 🏋️ Gym days: eat this in addition to the pre-workout dates. 🛋️ Rest days: skip the dates and eat this instead — it replaces roughly the same calories (dates were 120 cal, this is ~200 cal, keeping you in a similar deficit either way).',
-  },
-  {
-    id: 'dinner',
-    time: 'Tonight',
-    name: mealPrepTargets.dinner.label,
-    emoji: '🍝',
-    items: [
-      {
-        name: `1 serving ${mealPrepTargets.dinner.actual ? '(actual)' : '(target)'}`,
-        calories: mealPrepTargets.dinner.actual?.calories ?? mealPrepTargets.dinner.target.calories,
-        protein: mealPrepTargets.dinner.actual?.protein ?? mealPrepTargets.dinner.target.protein,
-        fat: mealPrepTargets.dinner.actual?.fat ?? mealPrepTargets.dinner.target.fat,
-        carbs: mealPrepTargets.dinner.actual?.carbs ?? mealPrepTargets.dinner.target.carbs,
-      },
-    ],
-    note: mealPrepTargets.dinner.note,
-  },
-  {
-    id: 'yogurt',
-    time: 'Night',
-    name: 'Yogurt Bowl',
-    emoji: '🍒',
-    items: [
-      { name: 'Non-fat Greek yogurt (170g)', calories: 98, protein: 17, fat: 0, carbs: 7 },
-      { name: 'Frozen cherries (150g)', calories: 75, protein: 1, fat: 0, carbs: 19 },
-      { name: 'PB powder (32g)', calories: 120, protein: 8, fat: 2, carbs: 10 },
-      { name: 'Raw honey (21g)', calories: 64, protein: 0, fat: 0, carbs: 17 },
-    ],
-    note: 'PB powder mixed into the yogurt becomes almost like a peanut butter sauce — works great in a bowl. Granola has been removed; if you find yourself hungry at night or want to add the fat and calories back, a nut-based granola (30g) adds ~150–170 cal and rounds the bowl out nicely.',
-  },
-];
-
-const TARGETS = { calories: 2900, protein: 200, fat: 83, carbs: 312 };
-
-const totals = meals.reduce(
-  (acc, meal) => {
-    meal.items.forEach(item => {
-      acc.calories += item.calories;
-      acc.protein += item.protein;
-      acc.fat += item.fat;
-      acc.carbs += item.carbs;
-    });
-    return acc;
-  },
-  { calories: 0, protein: 0, fat: 0, carbs: 0 }
-);
-
-function mealTotals(meal: {
-  items: { calories: number; carbs: number; fat: number; protein: number }[];
-}) {
-  return meal.items.reduce(
-    (a, i) => ({
-      calories: a.calories + i.calories,
-      protein: a.protein + i.protein,
-      fat: a.fat + i.fat,
-      carbs: a.carbs + i.carbs,
-    }),
-    { calories: 0, protein: 0, fat: 0, carbs: 0 }
-  );
-}
+const lunchOptions = Object.values(lunchDishes);
+const dinnerOptions = Object.values(dinnerDishes);
 ---
 
 <style>
+  /* ── Base ── */
   header {
     border-bottom: 1px solid #1e1e1e;
     padding: 40px 24px 32px;
   }
-
   .header-inner,
   .main-inner {
-    max-width: 560px;
+    max-width: 600px;
     margin: 0 auto;
   }
-
   .eyebrow {
     font-family: 'DM Mono', monospace;
     font-size: 11px;
@@ -187,7 +38,6 @@ function mealTotals(meal: {
     text-transform: uppercase;
     margin-bottom: 8px;
   }
-
   h1 {
     font-family: 'Playfair Display', serif;
     font-size: 38px;
@@ -195,27 +45,97 @@ function mealTotals(meal: {
     line-height: 1.1;
     margin-bottom: 6px;
   }
-
   .subtitle {
     color: #555;
     font-size: 13px;
     margin-top: 12px;
   }
-
   main {
-    max-width: 560px;
+    max-width: 600px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 24px 48px;
+  }
+  .section-heading {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    color: #444;
+    text-transform: uppercase;
+    margin: 32px 0 12px;
   }
 
-  /* Totals card */
+  /* ── Week picker ── */
+  .picker-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  .picker-card {
+    border: 1px solid #1a1a1a;
+    border-radius: 12px;
+    padding: 14px 16px;
+    cursor: pointer;
+    transition:
+      border-color 0.15s,
+      background 0.15s;
+    user-select: none;
+  }
+  .picker-card:hover {
+    border-color: #2a2a2a;
+  }
+  .picker-card.selected {
+    border-color: #c8a527;
+    background: #fdf8e7;
+  }
+  .picker-card-cuisine {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+  .picker-card-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .picker-card-link {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: #c8a527;
+    text-decoration: none;
+    letter-spacing: 0.06em;
+    display: inline-block;
+    margin-bottom: 6px;
+  }
+  .picker-card-link:hover {
+    text-decoration: underline;
+  }
+  .picker-card-macros {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: #444;
+  }
+  .picker-card-desc {
+    font-size: 11px;
+    color: #3a3a3a;
+    margin-top: 5px;
+    line-height: 1.4;
+  }
+
+  /* ── Totals card ── */
   .totals-card {
     border: 1px solid #222;
     border-radius: 12px;
     padding: 20px 20px 16px;
     margin: 24px 0;
   }
-
   .totals-label {
     font-family: 'DM Mono', monospace;
     font-size: 10px;
@@ -224,11 +144,9 @@ function mealTotals(meal: {
     text-transform: uppercase;
     margin-bottom: 14px;
   }
-
   .macro-bar {
     margin-bottom: 10px;
   }
-
   .macro-bar-header {
     display: flex;
     justify-content: space-between;
@@ -237,29 +155,25 @@ function mealTotals(meal: {
     margin-bottom: 3px;
     color: #444;
   }
-
   .macro-bar-header .macro-name {
     text-transform: uppercase;
     letter-spacing: 0.1em;
   }
-
   .macro-bar-track {
     height: 6px;
     background: #1e1e1e;
     border-radius: 3px;
     overflow: hidden;
   }
-
   .macro-bar-fill {
     height: 100%;
     border-radius: 3px;
   }
 
-  /* Meal cards */
+  /* ── Meal cards ── */
   .meal-card {
     margin-bottom: 8px;
   }
-
   .meal-header {
     border: 1px solid #1a1a1a;
     border-radius: 12px;
@@ -271,59 +185,48 @@ function mealTotals(meal: {
     user-select: none;
     transition: background 0.2s;
   }
-
   .meal-header.open {
     border-color: #2a2a2a;
     border-radius: 12px 12px 0 0;
   }
-
   .meal-emoji {
     font-size: 22px;
   }
-
   .meal-info {
     flex: 1;
   }
-
   .meal-title-row {
     display: flex;
     align-items: baseline;
     gap: 8px;
+    flex-wrap: wrap;
   }
-
   .meal-name {
     font-weight: 600;
     font-size: 15px;
   }
-
   .meal-time {
     font-family: 'DM Mono', monospace;
     font-size: 10px;
     color: #444;
   }
-
   .meal-macros {
     display: flex;
     gap: 12px;
     margin-top: 4px;
   }
-
   .meal-macros span {
     font-family: 'DM Mono', monospace;
     font-size: 11px;
   }
-
   .chevron {
     color: #333;
     font-size: 18px;
     transition: transform 0.2s;
   }
-
   .chevron.open {
     transform: rotate(180deg);
   }
-
-  /* Meal body */
   .meal-body {
     display: none;
     border: 1px solid #2a2a2a;
@@ -331,11 +234,9 @@ function mealTotals(meal: {
     border-radius: 0 0 12px 12px;
     overflow: hidden;
   }
-
   .meal-body.open {
     display: block;
   }
-
   .item-row {
     display: flex;
     align-items: center;
@@ -343,29 +244,24 @@ function mealTotals(meal: {
     border-bottom: 1px solid #181818;
     gap: 12px;
   }
-
   .item-row:last-of-type {
     border-bottom: none;
   }
-
   .item-name {
     flex: 1;
     font-size: 13px;
     color: #444;
   }
-
   .item-macros {
     display: flex;
     gap: 10px;
     flex-shrink: 0;
   }
-
   .item-macros span {
     font-family: 'DM Mono', monospace;
     font-size: 10px;
     text-align: right;
   }
-
   .item-macros .cal {
     color: #666;
     width: 52px;
@@ -382,7 +278,6 @@ function mealTotals(meal: {
     color: #5a9fe8;
     width: 28px;
   }
-
   .meal-note {
     padding: 12px 20px;
     font-size: 12px;
@@ -390,8 +285,6 @@ function mealTotals(meal: {
     font-style: italic;
     line-height: 1.5;
   }
-
-  /* Target badge */
   .target-badge {
     display: inline-block;
     font-family: 'DM Mono', monospace;
@@ -401,16 +294,80 @@ function mealTotals(meal: {
     padding: 2px 6px;
     border-radius: 4px;
     color: #555;
-    margin-left: 6px;
-    vertical-align: middle;
+    margin-left: 4px;
   }
-
   .target-badge.actual {
     background: #1a2e1a;
     color: #3a8f5c;
   }
 
-  /* Footer */
+  /* ── Shopping list ── */
+  .shopping-section {
+    margin-top: 32px;
+  }
+  .shopping-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .shopping-col-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    color: #444;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #1a1a1a;
+  }
+  .shopping-badge {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin-left: 4px;
+    background: #1a1a00;
+    color: #666;
+    letter-spacing: 0.06em;
+  }
+  .pantry-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 16px;
+    margin-top: 4px;
+  }
+  .pantry-item {
+    font-size: 12px;
+    color: #555;
+    padding: 4px 0;
+    border-bottom: 1px solid #111;
+  }
+  .print-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 16px;
+    padding: 8px 16px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #555;
+    border: 1px solid #222;
+    border-radius: 8px;
+    cursor: pointer;
+    background: transparent;
+    transition:
+      border-color 0.15s,
+      color 0.15s;
+  }
+  .print-btn:hover {
+    border-color: #444;
+    color: #888;
+  }
+
+  /* ── Footer ── */
   .footer-note {
     margin-top: 24px;
     padding: 16px 20px;
@@ -420,11 +377,6 @@ function mealTotals(meal: {
     color: #444;
     line-height: 1.7;
   }
-
-  .footer-note span {
-    color: #666;
-  }
-
   .footer-note code {
     font-family: 'DM Mono', monospace;
     font-size: 11px;
@@ -432,53 +384,288 @@ function mealTotals(meal: {
     border-radius: 3px;
     color: #666;
   }
+
+  /* ── Print styles ── */
+  @media print {
+    * {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    header {
+      padding: 24px 0 16px;
+      border-bottom: 1px solid #333;
+    }
+    h1 {
+      font-size: 28px;
+    }
+
+    /* Hide interactive UI */
+    .picker-section,
+    .print-btn,
+    .footer-note,
+    .totals-card,
+    .meal-card,
+    header {
+      display: none !important;
+    }
+
+    /* Reset layout for print */
+    main {
+      padding: 0;
+    }
+    .main-inner {
+      max-width: 100%;
+    }
+
+    /* Totals card */
+    .totals-card {
+      border: 1px solid #333;
+      padding: 12px 14px;
+      margin: 16px 0;
+      break-inside: avoid;
+    }
+    .macro-bar-track {
+      background: #2a2a2a;
+    }
+
+    /* Meal cards — always expanded, no accordion */
+    .meal-header {
+      cursor: default;
+      border-radius: 8px 8px 0 0 !important;
+      border-color: #2a2a2a !important;
+      padding: 12px 16px;
+    }
+    .meal-body {
+      display: block !important;
+      border-color: #2a2a2a;
+      border-radius: 0 0 8px 8px;
+    }
+    .meal-card {
+      break-inside: avoid;
+      margin-bottom: 6px;
+    }
+    .chevron {
+      display: none;
+    }
+
+    /* Shopping list — full width two-col */
+    .shopping-section {
+      margin-top: 20px;
+    }
+    .shopping-cols {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .shopping-item-name {
+      color: #ccc;
+    }
+    .pantry-item {
+      color: #666;
+    }
+
+    /* Notes box for handwriting */
+    .print-notes {
+      margin-top: 24px;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      padding: 14px 16px;
+      min-height: 100px;
+    }
+    .print-notes-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 0.12em;
+      color: #444;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .print-notes-lines {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .print-notes-line {
+      border-bottom: 1px solid #222;
+      height: 1px;
+    }
+  }
+
+  /* Hide print-only elements on screen */
+  .print-notes {
+    display: none;
+  }
+  @media print {
+    .print-notes {
+      display: block;
+    }
+  }
+</style>
+
+<style is:global>
+  .shopping-item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 7px 10px;
+    margin-bottom: 4px;
+    border: 1px solid #e8e8e8;
+    border-radius: 6px;
+    gap: 8px;
+  }
+  .shopping-item.non-costco .shopping-item-name {
+    color: #666;
+  }
+  .shopping-item-name {
+    font-size: 13px;
+    color: #666;
+  }
+  .shopping-item-qty {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: #444;
+    white-space: nowrap;
+  }
 </style>
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
   <header>
     <div class="header-inner">
       <p class="eyebrow">Daily Meal Plan</p>
-      <h1>{totals.calories} cal<br /><span>cut protocol</span></h1>
+      <h1 id="header-cal">{totals.calories} cal<br /><span>cut protocol</span></h1>
       <p class="subtitle">278 lb → 200 lb goal · daily template</p>
     </div>
   </header>
 
   <main>
     <div class="main-inner">
-      <!-- Daily Totals -->
-      <div class="totals-card">
-        <p class="totals-label">Daily Totals</p>
+      <!-- ── Week picker ── -->
+      <div class="picker-section">
+        <p class="section-heading">This week — lunch</p>
+        <div class="picker-grid" id="lunch-picker">
+          {
+            lunchOptions.map(dish => (
+              <div
+                class={`picker-card${dish.id === thisWeek.lunch ? ' selected' : ''}`}
+                data-type="lunch"
+                data-id={dish.id}
+                data-cal={dish.target.calories}
+                data-pro={dish.target.protein}
+                data-fat={dish.target.fat}
+                data-carb={dish.target.carbs}
+                data-label={dish.label}
+                data-emoji={dish.emoji}
+                data-note={dish.prepNote}
+              >
+                <div class="picker-card-cuisine">{dish.cuisine}</div>
+                <div class="picker-card-name">
+                  <span>{dish.emoji}</span>
+                  <span>{dish.label}</span>
+                </div>
+                <a class="picker-card-link" href={dish.recipeUrl} target="_blank">
+                  view recipe →
+                </a>
+                <div class="picker-card-macros">
+                  {dish.target.calories} cal · {dish.target.protein}p · {dish.target.fat}f ·{' '}
+                  {dish.target.carbs}c
+                </div>
+                <div class="picker-card-desc">{dish.description}</div>
+              </div>
+            ))
+          }
+        </div>
 
+        <p class="section-heading">This week — dinner</p>
+        <div class="picker-grid" id="dinner-picker">
+          {
+            dinnerOptions.map(dish => (
+              <div
+                class={`picker-card${dish.id === thisWeek.dinner ? ' selected' : ''}`}
+                data-type="dinner"
+                data-id={dish.id}
+                data-cal={dish.target.calories}
+                data-pro={dish.target.protein}
+                data-fat={dish.target.fat}
+                data-carb={dish.target.carbs}
+                data-label={dish.label}
+                data-emoji={dish.emoji}
+                data-note={dish.prepNote}
+              >
+                <div class="picker-card-cuisine">{dish.cuisine}</div>
+                <div class="picker-card-name">
+                  <span>{dish.emoji}</span>
+                  <span>{dish.label}</span>
+                </div>
+                <a class="picker-card-link" href={dish.recipeUrl} target="_blank">
+                  view recipe →
+                </a>
+                <div class="picker-card-macros">
+                  {dish.target.calories} cal · {dish.target.protein}p · {dish.target.fat}f ·{' '}
+                  {dish.target.carbs}c
+                </div>
+                <div class="picker-card-desc">{dish.description}</div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+
+      <!-- ── Daily Totals ── -->
+      <div class="totals-card" id="totals-card">
+        <p class="totals-label">Daily Totals</p>
         {
           [
             {
               label: 'Calories',
+              key: 'calories',
               value: totals.calories,
               target: TARGETS.calories,
               color: '#c8a527',
             },
             {
               label: 'Protein (g)',
+              key: 'protein',
               value: totals.protein,
               target: TARGETS.protein,
               color: '#3a8f5c',
             },
-            { label: 'Fat (g)', value: totals.fat, target: TARGETS.fat, color: '#e07c3a' },
-            { label: 'Carbs (g)', value: totals.carbs, target: TARGETS.carbs, color: '#5a9fe8' },
-          ].map(({ label, value, target, color }) => {
+            {
+              label: 'Fat (g)',
+              key: 'fat',
+              value: totals.fat,
+              target: TARGETS.fat,
+              color: '#e07c3a',
+            },
+            {
+              label: 'Carbs (g)',
+              key: 'carbs',
+              value: totals.carbs,
+              target: TARGETS.carbs,
+              color: '#5a9fe8',
+            },
+          ].map(({ label, key, value, target, color }) => {
             const pct = Math.min((value / target) * 100, 100);
             const atTarget = pct >= 95;
             return (
-              <div class="macro-bar">
+              <div class="macro-bar" data-macro={key}>
                 <div class="macro-bar-header">
                   <span class="macro-name">{label}</span>
-                  <span style={atTarget ? `color: ${color}` : 'color: #444'}>
+                  <span
+                    class="macro-value"
+                    data-target={target}
+                    data-color={color}
+                    style={atTarget ? `color: ${color}` : 'color: #444'}
+                  >
                     {value}
                     <span style="color: #555">/{target}</span>
                   </span>
                 </div>
                 <div class="macro-bar-track">
-                  <div class="macro-bar-fill" style={`width: ${pct}%; background: ${color};`} />
+                  <div
+                    class="macro-bar-fill"
+                    data-target={target}
+                    style={`width: ${pct}%; background: ${color};`}
+                  />
                 </div>
               </div>
             );
@@ -486,18 +673,18 @@ function mealTotals(meal: {
         }
       </div>
 
-      <!-- Meal Cards -->
+      <!-- ── Meal Cards ── -->
       {
         meals.map((meal, idx) => {
           const mt = mealTotals(meal);
           const isFirst = idx === 0;
-          const isMealPrep = meal.id === 'lunch' || meal.id === 'dinner';
-          const hasActual =
-            meal.id === 'lunch'
-              ? mealPrepTargets.lunch.actual !== null
-              : meal.id === 'dinner'
-                ? mealPrepTargets.dinner.actual !== null
-                : false;
+          const isLunch = meal.id === 'lunch';
+          const isDinner = meal.id === 'dinner';
+          const hasActual = isLunch
+            ? thisWeek.lunchActual !== null
+            : isDinner
+              ? thisWeek.dinnerActual !== null
+              : false;
 
           return (
             <div class="meal-card" data-meal-id={meal.id}>
@@ -505,15 +692,17 @@ function mealTotals(meal: {
                 <span class="meal-emoji">{meal.emoji}</span>
                 <div class="meal-info">
                   <div class="meal-title-row">
-                    <span class="meal-name">{meal.name}</span>
+                    <span class="meal-name" data-meal-name={meal.id}>
+                      {meal.name}
+                    </span>
                     <span class="meal-time">{meal.time}</span>
-                    {isMealPrep && (
+                    {(isLunch || isDinner) && (
                       <span class={`target-badge${hasActual ? ' actual' : ''}`}>
                         {hasActual ? 'actual' : 'target'}
                       </span>
                     )}
                   </div>
-                  <div class="meal-macros">
+                  <div class="meal-macros" data-meal-macros={meal.id}>
                     <span style="color: #c8a527">{mt.calories} cal</span>
                     <span style="color: #3a8f5c">{mt.protein}p</span>
                     <span style="color: #e07c3a">{mt.fat}f</span>
@@ -525,7 +714,7 @@ function mealTotals(meal: {
 
               <div class={`meal-body${isFirst ? ' open' : ''}`} id={`body-${meal.id}`}>
                 {meal.items.map(item => (
-                  <div class="item-row">
+                  <div class="item-row" data-item-row={meal.id}>
                     <span class="item-name">{item.name}</span>
                     <div class="item-macros">
                       <span class="cal">{item.calories} cal</span>
@@ -535,49 +724,246 @@ function mealTotals(meal: {
                     </div>
                   </div>
                 ))}
-                <p class="meal-note">💡 {meal.note}</p>
+                <p class="meal-note" data-meal-note={meal.id}>
+                  💡 {meal.note}
+                </p>
               </div>
             </div>
           );
         })
       }
 
+      <!-- ── Shopping List ── -->
+      <div class="shopping-section">
+        <p class="section-heading">Shopping list — this week</p>
+        <button class="print-btn" onclick="window.print()">⎙ Print / save as PDF</button>
+
+        <div class="shopping-cols" style="margin-top: 16px;">
+          <div>
+            <div class="shopping-col-label">Costco</div>
+            <div id="costco-list"></div>
+          </div>
+          <div>
+            <div class="shopping-col-label">Other / specialty</div>
+            <div id="other-list"></div>
+          </div>
+        </div>
+
+        <p class="section-heading" style="margin-top: 28px;">
+          Pantry staples — check before you go
+        </p>
+        <div class="pantry-list">
+          {pantryStaples.map(item => <div class="pantry-item">{item}</div>)}
+        </div>
+      </div>
+
+      <!-- ── Print notes block (print only) ── -->
+      <div class="print-notes">
+        <div class="print-notes-label">Notes</div>
+        <div class="print-notes-lines">
+          {Array.from({ length: 6 }).map(() => <div class="print-notes-line" />)}
+        </div>
+      </div>
+
       <div class="footer-note">
-        <strong style="color: #555;">Updating meal prep each week:</strong> Find the
-        <code>mealPrepTargets</code> object near the top of this file. Set <code>actual</code> to an
-        object with <code>calories</code>, <code>protein</code>, <code>fat</code>, <code>carbs</code
-        > once you've calculated this week's per-serving macros — or leave it <code>null</code> to display
-        the target. The daily totals and bars update automatically.
-        <br /><br />
-        <span>Dinner target ranges: 450–650 cal · 45–60p · 10–20f · 28–60c.</span> Protein is the anchor
-        — aim for 45g+ regardless of recipe. Swap proteins and carb sources freely; the macros matter
-        more than the specific foods.
+        <strong style="color: #555;">Each Sunday:</strong> Pick a lunch and dinner above — the daily
+        plan, macros, and shopping list update instantly. Change <code>thisWeek.lunch</code> and{
+          ' '
+        }
+        <code>thisWeek.dinner</code> in <code>mealPrepTargets.ts</code> to persist your selection across
+        deploys. Set <code>lunchActual</code> or <code>dinnerActual</code> once you've calculated per-serving
+        macros.
       </div>
     </div>
   </main>
 </Layout>
 
-<script>
-  (Array.from(document.querySelectorAll('[data-toggle]')) as HTMLElement[]).forEach(header => {
+<script
+  define:vars={{
+    lunchDishesData: Object.values(lunchDishes),
+    dinnerDishesData: Object.values(dinnerDishes),
+    fixedMealsData: fixedMeals,
+    initialLunchId: thisWeek.lunch,
+    initialDinnerId: thisWeek.dinner,
+    TARGETS,
+  }}
+>
+  // ── State ──
+  let selectedLunchId = initialLunchId;
+  let selectedDinnerId = initialDinnerId;
+
+  const lunchMap = Object.fromEntries(lunchDishesData.map(d => [d.id, d]));
+  const dinnerMap = Object.fromEntries(dinnerDishesData.map(d => [d.id, d]));
+
+  // Fixed meal totals (breakfast + shake + yogurt)
+  function sumItems(items) {
+    return items.reduce(
+      (a, i) => ({
+        calories: a.calories + i.calories,
+        protein: a.protein + i.protein,
+        fat: a.fat + i.fat,
+        carbs: a.carbs + i.carbs,
+      }),
+      { calories: 0, protein: 0, fat: 0, carbs: 0 }
+    );
+  }
+
+  const fixedTotals = fixedMealsData.reduce(
+    (acc, meal) => {
+      const s = sumItems(meal.items);
+      return {
+        calories: acc.calories + s.calories,
+        protein: acc.protein + s.protein,
+        fat: acc.fat + s.fat,
+        carbs: acc.carbs + s.carbs,
+      };
+    },
+    { calories: 0, protein: 0, fat: 0, carbs: 0 }
+  );
+
+  // ── Rebuild shopping list ──
+  function buildShoppingList() {
+    const lunch = lunchMap[selectedLunchId];
+    const dinner = dinnerMap[selectedDinnerId];
+
+    // Merge all shopping items, dedupe by item name
+    const allItems = [
+      ...fixedMealsData.flatMap(m => m.shoppingList),
+      ...lunch.shoppingList,
+      ...dinner.shoppingList,
+    ];
+
+    const seen = new Map();
+    for (const item of allItems) {
+      if (!seen.has(item.item)) seen.set(item.item, item);
+    }
+    const unique = Array.from(seen.values());
+    const costco = unique.filter(i => i.costco);
+    const other = unique.filter(i => !i.costco);
+
+    function renderItems(items, containerId) {
+      const el = document.getElementById(containerId);
+      if (!el) return;
+      el.innerHTML = items
+        .map(
+          i => `
+        <div class="shopping-item${i.costco ? '' : ' non-costco'}">
+          <span class="shopping-item-name">${i.item}</span>
+          <span class="shopping-item-qty">${i.qty}</span>
+        </div>
+      `
+        )
+        .join('');
+    }
+
+    renderItems(costco, 'costco-list');
+    renderItems(other, 'other-list');
+  }
+
+  // ── Update meal card (lunch or dinner) ──
+  function updateMealCard(type, dish) {
+    const mealId = type; // 'lunch' or 'dinner'
+    const nameEl = document.querySelector(`[data-meal-name="${mealId}"]`);
+    const macrosEl = document.querySelector(`[data-meal-macros="${mealId}"]`);
+    const noteEl = document.querySelector(`[data-meal-note="${mealId}"]`);
+    const itemRows = document.querySelectorAll(`[data-item-row="${mealId}"]`);
+
+    if (nameEl) nameEl.textContent = dish.label;
+    if (macrosEl)
+      macrosEl.innerHTML = `
+      <span style="color: #c8a527">${dish.target.calories} cal</span>
+      <span style="color: #3a8f5c">${dish.target.protein}p</span>
+      <span style="color: #e07c3a">${dish.target.fat}f</span>
+      <span style="color: #5a9fe8">${dish.target.carbs}c</span>
+    `;
+    if (noteEl) noteEl.textContent = '💡 ' + dish.prepNote;
+
+    // Update item row
+    if (itemRows.length > 0) {
+      itemRows[0].querySelector('.item-name').textContent = '1 of 10 portions (target)';
+      const spans = itemRows[0].querySelectorAll('.item-macros span');
+      if (spans[0]) spans[0].textContent = dish.target.calories + ' cal';
+      if (spans[1]) spans[1].textContent = dish.target.protein + 'p';
+      if (spans[2]) spans[2].textContent = dish.target.fat + 'f';
+      if (spans[3]) spans[3].textContent = dish.target.carbs + 'c';
+    }
+  }
+
+  // ── Update totals bars ──
+  function updateTotals() {
+    const lunch = lunchMap[selectedLunchId].target;
+    const dinner = dinnerMap[selectedDinnerId].target;
+    const total = {
+      calories: fixedTotals.calories + lunch.calories + dinner.calories,
+      protein: fixedTotals.protein + lunch.protein + dinner.protein,
+      fat: fixedTotals.fat + lunch.fat + dinner.fat,
+      carbs: fixedTotals.carbs + lunch.carbs + dinner.carbs,
+    };
+
+    const headerCal = document.getElementById('header-cal');
+    if (headerCal) headerCal.innerHTML = `${total.calories} cal<br /><span>cut protocol</span>`;
+
+    for (const key of ['calories', 'protein', 'fat', 'carbs']) {
+      const bar = document.querySelector(`[data-macro="${key}"]`);
+      if (!bar) continue;
+      const valueEl = bar.querySelector('.macro-value');
+      const fillEl = bar.querySelector('.macro-bar-fill');
+      const target = parseInt(valueEl.dataset.target);
+      const color = valueEl.dataset.color;
+      const value = total[key];
+      const pct = Math.min((value / target) * 100, 100);
+      const atTarget = pct >= 95;
+      valueEl.innerHTML = `${value}<span style="color: #555">/${target}</span>`;
+      valueEl.style.color = atTarget ? color : '#444';
+      fillEl.style.width = pct + '%';
+    }
+  }
+
+  // ── Picker click handler ──
+  document.querySelectorAll('.picker-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const type = card.dataset.type;
+      const id = card.dataset.id;
+
+      // Update selection state
+      document
+        .querySelectorAll(`.picker-card[data-type="${type}"]`)
+        .forEach(c => c.classList.remove('selected'));
+      card.classList.add('selected');
+
+      if (type === 'lunch') {
+        selectedLunchId = id;
+        updateMealCard('lunch', lunchMap[id]);
+      } else {
+        selectedDinnerId = id;
+        updateMealCard('dinner', dinnerMap[id]);
+      }
+
+      updateTotals();
+      buildShoppingList();
+    });
+  });
+
+  // ── Accordion ──
+  Array.from(document.querySelectorAll('[data-toggle]')).forEach(header => {
     header.addEventListener('click', () => {
       const id = header.dataset.toggle;
       const body = document.getElementById(`body-${id}`);
       const chevron = header.querySelector('.chevron');
-      const isOpen = body!.classList.contains('open');
-
-      // Close all
+      const isOpen = body.classList.contains('open');
       document.querySelectorAll('.meal-body').forEach(b => b.classList.remove('open'));
       document.querySelectorAll('.meal-header').forEach(h => {
         h.classList.remove('open');
-        h.querySelector('.chevron')!.classList.remove('open');
+        h.querySelector('.chevron')?.classList.remove('open');
       });
-
-      // Open clicked if it wasn't already open
       if (!isOpen) {
-        body!.classList.add('open');
+        body.classList.add('open');
         header.classList.add('open');
-        chevron!.classList.add('open');
+        chevron?.classList.add('open');
       }
     });
   });
+
+  // ── Init shopping list on load ──
+  buildShoppingList();
 </script>
