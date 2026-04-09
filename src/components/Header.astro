@@ -74,7 +74,7 @@ const navItems = [
         width: 1rem;
       }
 
-      @media (min-width: 620px) {
+      @media (min-width: 645px) {
         display: none;
       }
     }
@@ -82,7 +82,7 @@ const navItems = [
     .navigation__items {
       display: none;
 
-      @media (min-width: 620px) {
+      @media (min-width: 645px) {
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -179,7 +179,7 @@ const navItems = [
 
   navigationItems?.addEventListener('click', (event: MouseEvent) => {
     const targetEl = event.target as HTMLAnchorElement;
-    if (targetEl?.tagName === 'A' || window.innerWidth >= 620) {
+    if (targetEl?.tagName === 'A' || window.innerWidth >= 645) {
       return;
     }
     enableScroll();
