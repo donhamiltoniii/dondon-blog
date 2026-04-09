@@ -1,3 +1,20 @@
+## [2.52.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.51.0...v2.52.0) (2026-04-09)
+
+### 🚀 Features
+
+* bump media query threshold ([74f4020](https://github.com/donhamiltoniii/dondon-blog/commit/74f4020677289e9dff4f5ea1354ade60aee9dc6b))
+* **meal-plan:** make page responsive ([d8d65ea](https://github.com/donhamiltoniii/dondon-blog/commit/d8d65ea286deb8a5c11c666d16d74a8f60007899))
+* **meal-plan:** update internal food nav to include meal plan ([4efb95b](https://github.com/donhamiltoniii/dondon-blog/commit/4efb95b0ee7489e679452f3baad86ecd9430104b))
+* **meal-plan:** update meal plan page and data ([896ee2b](https://github.com/donhamiltoniii/dondon-blog/commit/896ee2bdff189e0604dc77d388266eb7ace2468d))
+
+### 📝 Content Updates
+
+* **meal-prep:** add recipes for new meal-plan ([19ff3a9](https://github.com/donhamiltoniii/dondon-blog/commit/19ff3a9945eeb1f54a9446d36880f901263f8492))
+
+### 🔧 Maintenance
+
+* **meal-plan:** remove linting errors ([d143f1c](https://github.com/donhamiltoniii/dondon-blog/commit/d143f1c21b722af1fc46ca0e4fcf534b6d615bee))
+
 ## [2.51.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.50.4...v2.51.0) (2026-03-23)
 
 ### 🚀 Features
