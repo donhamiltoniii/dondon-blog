@@ -1,3 +1,9 @@
+## [2.53.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.52.0...v2.53.0) (2026-04-15)
+
+### 🚀 Features
+
+* **now:** update now page ([3e059ef](https://github.com/donhamiltoniii/dondon-blog/commit/3e059ef2415543e43932f073f73eef47754647cc))
+
 ## [2.52.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.51.0...v2.52.0) (2026-04-09)
 
 ### 🚀 Features
