@@ -288,18 +288,15 @@ export const fixedMeals = [
     name: 'Breakfast',
     emoji: '🍳',
     items: [
-      { name: 'Whole eggs x3 (150g)', calories: 210, protein: 18, fat: 15, carbs: 2 },
-      { name: 'Egg whites (120g)', calories: 62, protein: 13, fat: 0, carbs: 1 },
-      { name: 'Jasmine rice, cooked (200g)', calories: 260, protein: 5, fat: 1, carbs: 57 },
+      { name: 'Whole eggs x6 (300g)', calories: 420, protein: 36, fat: 30, carbs: 2 },
       { name: 'Banana, medium (120g)', calories: 107, protein: 1, fat: 0, carbs: 27 },
-      { name: 'Olive oil for eggs (10g)', calories: 88, protein: 0, fat: 10, carbs: 0 },
+      { name: 'Seasonal fruit (100–120g)', calories: 85, protein: 1, fat: 0, carbs: 21 },
     ],
-    note: 'Scramble eggs + whites in olive oil. Serve alongside rice. Banana is grab-and-go. Eggs and rice can be prepped Sunday — portion into containers and reheat.',
+    note: 'Fry or scramble 6 eggs with cooking spray — done in 5 min, no other cooking needed. Banana + seasonal fruit on the side. Swap the fruit week to week: an orange (~85 cal/21c), a medium apple (~95 cal/25c), or a cup of mixed berries (~85 cal/20c) all land in the same range.',
     shoppingList: [
-      { item: 'Kirkland large eggs', qty: '2 dozen', costco: true },
-      { item: 'Kirkland liquid egg whites', qty: '1 carton', costco: true },
-      { item: 'Jasmine rice', qty: '1.5 kg bag', costco: true },
+      { item: 'Kirkland large eggs', qty: '3 dozen', costco: true },
       { item: 'Bananas', qty: '1 bunch (10+)', costco: true },
+      { item: 'Seasonal fruit (oranges, apples, or berries)', qty: 'Weekly', costco: false },
     ],
   },
   {
