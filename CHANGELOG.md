@@ -1,3 +1,9 @@
+## [2.54.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.53.0...v2.54.0) (2026-04-20)
+
+### 🚀 Features
+
+* **meal-plan:** update targets ([e7df968](https://github.com/donhamiltoniii/dondon-blog/commit/e7df9688d66251bf314105a473bed02f6a25f984))
+
 ## [2.53.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.52.0...v2.53.0) (2026-04-15)
 
 ### 🚀 Features
