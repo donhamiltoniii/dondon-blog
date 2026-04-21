@@ -501,6 +501,247 @@ const dinnerOptions = Object.values(dinnerDishes);
     }
   }
 
+  /* ── Daily checklist (hidden on screen, shown only when printing checklist) ── */
+  .daily-checklist {
+    display: none;
+  }
+
+  /* ── Checklist print styles (body.print-checklist @media print) ── */
+  @media print {
+    body.print-checklist * {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* Hide everything except the checklist */
+    body.print-checklist header,
+    body.print-checklist .picker-section,
+    body.print-checklist .totals-card,
+    body.print-checklist .meal-card,
+    body.print-checklist .shopping-section,
+    body.print-checklist .print-notes,
+    body.print-checklist .footer-note,
+    body.print-checklist .print-btn {
+      display: none !important;
+    }
+
+    body.print-checklist main {
+      padding: 0;
+    }
+    body.print-checklist .main-inner {
+      max-width: 100%;
+    }
+
+    body.print-checklist .daily-checklist {
+      display: block;
+      font-family: 'DM Mono', monospace;
+      color: #222;
+    }
+
+    /* Header */
+    body.print-checklist .checklist-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 2px solid #222;
+      padding-bottom: 14px;
+      margin-bottom: 20px;
+    }
+    body.print-checklist .checklist-eyebrow {
+      font-size: 9px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 4px;
+    }
+    body.print-checklist .checklist-h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 900;
+      margin: 0 0 4px;
+      color: #111;
+    }
+    body.print-checklist .checklist-sub {
+      font-size: 9px;
+      color: #666;
+      letter-spacing: 0.06em;
+    }
+    body.print-checklist .checklist-date-box {
+      text-align: right;
+      min-width: 120px;
+    }
+    body.print-checklist .checklist-date-label {
+      font-size: 9px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 8px;
+    }
+    body.print-checklist .checklist-date-line {
+      border-bottom: 1px solid #333;
+      width: 120px;
+      height: 1px;
+    }
+
+    /* Meal rows */
+    body.print-checklist .checklist-meals {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    body.print-checklist .checklist-row {
+      display: flex;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid #ddd;
+      break-inside: avoid;
+    }
+    body.print-checklist .checklist-bubble-wrap {
+      flex-shrink: 0;
+      padding-top: 2px;
+    }
+    body.print-checklist .checklist-bubble {
+      width: 28px;
+      height: 28px;
+      border: 2px solid #333;
+      border-radius: 50%;
+    }
+    body.print-checklist .checklist-meal-body {
+      flex: 1;
+    }
+    body.print-checklist .checklist-meal-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+    body.print-checklist .checklist-meal-emoji {
+      font-size: 20px;
+      line-height: 1.1;
+    }
+    body.print-checklist .checklist-meal-info {
+      flex: 1;
+    }
+    body.print-checklist .checklist-meal-name-row {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 3px;
+    }
+    body.print-checklist .checklist-meal-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: #111;
+      letter-spacing: 0;
+    }
+    body.print-checklist .checklist-meal-time {
+      font-size: 9px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #777;
+    }
+    body.print-checklist .checklist-macros {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 9px;
+    }
+    body.print-checklist .cm-cal {
+      color: #a07e10;
+      font-weight: 600;
+    }
+    body.print-checklist .cm-pro {
+      color: #2a6e45;
+      font-weight: 600;
+    }
+    body.print-checklist .cm-fat {
+      color: #b05e22;
+      font-weight: 600;
+    }
+    body.print-checklist .cm-carb {
+      color: #3a6fb5;
+      font-weight: 600;
+    }
+    body.print-checklist .cm-sep {
+      color: #bbb;
+    }
+    body.print-checklist .checklist-note {
+      font-size: 9px;
+      color: #666;
+      line-height: 1.5;
+      font-style: italic;
+      margin: 0;
+      padding-left: 30px;
+    }
+
+    /* Daily totals bar */
+    body.print-checklist .checklist-daily-totals {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 14px;
+      padding: 10px 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 9px;
+      flex-wrap: wrap;
+    }
+    body.print-checklist .cdt-label {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #555;
+      font-weight: 700;
+      margin-right: 4px;
+    }
+    body.print-checklist .cdt-cal {
+      color: #a07e10;
+      font-weight: 600;
+    }
+    body.print-checklist .cdt-pro {
+      color: #2a6e45;
+      font-weight: 600;
+    }
+    body.print-checklist .cdt-fat {
+      color: #b05e22;
+      font-weight: 600;
+    }
+    body.print-checklist .cdt-carb {
+      color: #3a6fb5;
+      font-weight: 600;
+    }
+    body.print-checklist .cdt-sep {
+      color: #bbb;
+    }
+    body.print-checklist .cdt-target {
+      color: #aaa;
+      margin-left: 4px;
+    }
+
+    /* Notes box */
+    body.print-checklist .checklist-notes-box {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 12px 14px;
+    }
+    body.print-checklist .checklist-notes-label {
+      font-size: 9px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 12px;
+    }
+    body.print-checklist .checklist-notes-lines {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    body.print-checklist .checklist-notes-line {
+      border-bottom: 1px solid #ddd;
+      height: 1px;
+    }
+  }
+
   /* Hide print-only elements on screen */
   .print-notes {
     display: none;
@@ -746,7 +987,10 @@ const dinnerOptions = Object.values(dinnerDishes);
       <!-- ── Shopping List ── -->
       <div class="shopping-section">
         <p class="section-heading">Shopping list — this week</p>
-        <button class="print-btn" onclick="window.print()">⎙ Print / save as PDF</button>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px;">
+          <button class="print-btn" id="print-checklist-btn">☑ Print daily checklist</button>
+          <button class="print-btn" onclick="window.print()">⎙ Print shopping list</button>
+        </div>
 
         <div class="shopping-cols" style="margin-top: 16px;">
           <div>
@@ -764,6 +1008,80 @@ const dinnerOptions = Object.values(dinnerDishes);
         </p>
         <div class="pantry-list">
           {pantryStaples.map(item => <div class="pantry-item">{item}</div>)}
+        </div>
+      </div>
+
+      <!-- ── Daily checklist (print only, shown when body.print-checklist) ── -->
+      <div class="daily-checklist">
+        <div class="checklist-header">
+          <div class="checklist-title-block">
+            <p class="checklist-eyebrow">Daily Meal Tracker</p>
+            <h2 class="checklist-h2">{totals.calories} cal · cut protocol</h2>
+            <p class="checklist-sub">278 lb → 200 lb goal · check each meal as you eat it</p>
+          </div>
+          <div class="checklist-date-box">
+            <p class="checklist-date-label">Date</p>
+            <div class="checklist-date-line"></div>
+          </div>
+        </div>
+
+        <div class="checklist-meals">
+          {
+            meals.map(meal => {
+              const mt = mealTotals(meal);
+              return (
+                <div class="checklist-row">
+                  <div class="checklist-bubble-wrap">
+                    <div class="checklist-bubble" />
+                  </div>
+                  <div class="checklist-meal-body">
+                    <div class="checklist-meal-top">
+                      <span class="checklist-meal-emoji">{meal.emoji}</span>
+                      <div class="checklist-meal-info">
+                        <div class="checklist-meal-name-row">
+                          <span class="checklist-meal-name">{meal.name}</span>
+                          <span class="checklist-meal-time">{meal.time}</span>
+                        </div>
+                        <div class="checklist-macros">
+                          <span class="cm-cal">{mt.calories} cal</span>
+                          <span class="cm-sep">·</span>
+                          <span class="cm-pro">{mt.protein}g protein</span>
+                          <span class="cm-sep">·</span>
+                          <span class="cm-fat">{mt.fat}g fat</span>
+                          <span class="cm-sep">·</span>
+                          <span class="cm-carb">{mt.carbs}g carbs</span>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="checklist-note">💡 {meal.note}</p>
+                  </div>
+                </div>
+              );
+            })
+          }
+        </div>
+
+        <div class="checklist-daily-totals">
+          <span class="cdt-label">Daily totals</span>
+          <span class="cdt-cal">{totals.calories} cal</span>
+          <span class="cdt-sep">·</span>
+          <span class="cdt-pro">{totals.protein}g P</span>
+          <span class="cdt-sep">·</span>
+          <span class="cdt-fat">{totals.fat}g F</span>
+          <span class="cdt-sep">·</span>
+          <span class="cdt-carb">{totals.carbs}g C</span>
+          <span class="cdt-target"
+            >(target: {TARGETS.calories} cal / {TARGETS.protein}p / {TARGETS.fat}f / {
+              TARGETS.carbs
+            }c)</span
+          >
+        </div>
+
+        <div class="checklist-notes-box">
+          <p class="checklist-notes-label">Notes</p>
+          <div class="checklist-notes-lines">
+            {Array.from({ length: 5 }).map(() => <div class="checklist-notes-line" />)}
+          </div>
         </div>
       </div>
 
@@ -975,4 +1293,18 @@ const dinnerOptions = Object.values(dinnerDishes);
 
   // ── Init shopping list on load ──
   buildShoppingList();
+
+  // ── Checklist print button ──
+  document.getElementById('print-checklist-btn')?.addEventListener('click', () => {
+    document.body.classList.add('print-checklist');
+    window.print();
+    // Remove class after print dialog closes so normal print still works
+    window.addEventListener(
+      'afterprint',
+      () => {
+        document.body.classList.remove('print-checklist');
+      },
+      { once: true }
+    );
+  });
 </script>
