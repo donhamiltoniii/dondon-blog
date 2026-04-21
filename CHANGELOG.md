@@ -1,3 +1,9 @@
+## [2.55.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.54.0...v2.55.0) (2026-04-21)
+
+### 🚀 Features
+
+* **nav:** update breakpoint for nav ([7902fa3](https://github.com/donhamiltoniii/dondon-blog/commit/7902fa3d40d9032eec0936c7c08aeac27cd62093))
+
 ## [2.54.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.53.0...v2.54.0) (2026-04-20)
 
 ### 🚀 Features
