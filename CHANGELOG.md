@@ -1,3 +1,9 @@
+## [2.56.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.55.0...v2.56.0) (2026-04-21)
+
+### 🚀 Features
+
+* **meal-plan:** add print button for daily ([6b98a00](https://github.com/donhamiltoniii/dondon-blog/commit/6b98a003c117f0fb2a36c6ede8cbc5d2b8545c46))
+
 ## [2.55.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.54.0...v2.55.0) (2026-04-21)
 
 ### 🚀 Features
