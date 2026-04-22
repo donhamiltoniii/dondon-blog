@@ -1,3 +1,9 @@
+## [2.57.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.56.0...v2.57.0) (2026-04-22)
+
+### 🚀 Features
+
+* **meal-plan:** update print styles ([bc4c06e](https://github.com/donhamiltoniii/dondon-blog/commit/bc4c06e4fca3041fb69725df81d2029bff1a4a6d))
+
 ## [2.56.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.55.0...v2.56.0) (2026-04-21)
 
 ### 🚀 Features
