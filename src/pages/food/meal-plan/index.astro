@@ -396,185 +396,6 @@ const dinnerOptions = Object.values(dinnerDishes);
     border-radius: 3px;
     color: #666;
   }
-
-  /* ── Print styles ── */
-  @media print {
-    * {
-      -webkit-print-color-adjust: exact;
-      print-color-adjust: exact;
-    }
-
-    header {
-      padding: 24px 0 16px;
-      border-bottom: 1px solid #333;
-    }
-    h1 {
-      font-size: 28px;
-    }
-
-    /* Hide interactive UI */
-    .picker-section,
-    .print-btn,
-    .footer-note,
-    .totals-card,
-    header {
-      display: none !important;
-    }
-
-    /* Reset layout for print */
-    main {
-      padding: 0;
-    }
-    .main-inner {
-      max-width: 100%;
-    }
-
-    /* Meal cards — always expanded, checklist layout */
-    .meal-card {
-      break-inside: avoid;
-      margin-bottom: 10px;
-    }
-    .meal-header {
-      cursor: default;
-      border-radius: 8px 8px 0 0 !important;
-      border-color: #2a2a2a !important;
-      padding: 10px 14px;
-    }
-    .meal-body {
-      display: block !important;
-      border-color: #2a2a2a;
-      border-radius: 0 0 8px 8px;
-    }
-    .chevron {
-      display: none;
-    }
-    /* Hide the aggregated single-portion row on print */
-    .item-row:not(.print-component) {
-      display: none !important;
-    }
-    /* Show and style the per-component checklist rows */
-    .item-row.print-component {
-      display: flex !important;
-      align-items: center;
-      padding: 9px 14px;
-      gap: 10px;
-      border-bottom: 1px solid #1a1a1a;
-    }
-    .item-row.print-component:last-of-type {
-      border-bottom: none;
-    }
-    /* Checkbox */
-    .print-checkbox {
-      display: block !important;
-      width: 13px;
-      height: 13px;
-      min-width: 13px;
-      border: 1px solid #3a3a3a;
-      border-radius: 2px;
-      flex-shrink: 0;
-    }
-    /* Role badge (Protein / Carbs / Finish) */
-    .print-role {
-      display: block !important;
-      font-family: 'DM Mono', monospace;
-      font-size: 8px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #444;
-      width: 44px;
-      min-width: 44px;
-      flex-shrink: 0;
-    }
-    .item-name {
-      font-size: 12px;
-      color: #ccc;
-      flex: 1;
-    }
-    /* Hide macro columns on lunch/dinner component rows — description is enough */
-    .item-row.print-component.no-macros .item-macros {
-      display: none;
-    }
-    /* Show cal + protein on fixed-meal rows, muted */
-    .item-row.print-component .item-macros {
-      display: flex;
-      gap: 8px;
-    }
-    .item-row.print-component .item-macros .fat,
-    .item-row.print-component .item-macros .carb {
-      display: none;
-    }
-    .item-row.print-component .item-macros .cal,
-    .item-row.print-component .item-macros .pro {
-      font-size: 9px;
-      color: #555;
-      width: auto;
-    }
-    /* Suppress prep note in print */
-    .meal-note {
-      display: none !important;
-    }
-    /* Meal header macros — smaller, muted */
-    .meal-macros span {
-      font-size: 10px;
-    }
-    .meal-emoji {
-      font-size: 18px;
-    }
-
-    /* Shopping list — full width two-col */
-    .shopping-section {
-      margin-top: 20px;
-    }
-    .shopping-cols {
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-    .shopping-item-name {
-      color: #ccc;
-    }
-    .pantry-item {
-      color: #666;
-    }
-
-    /* Notes box for handwriting */
-    .print-notes {
-      margin-top: 24px;
-      border: 1px solid #2a2a2a;
-      border-radius: 8px;
-      padding: 14px 16px;
-      min-height: 100px;
-    }
-    .print-notes-label {
-      font-family: 'DM Mono', monospace;
-      font-size: 9px;
-      letter-spacing: 0.12em;
-      color: #444;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-    }
-    .print-notes-lines {
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-    }
-    .print-notes-line {
-      border-bottom: 1px solid #222;
-      height: 1px;
-    }
-  }
-
-  /* Hide print-only elements on screen */
-  .print-notes,
-  .print-checkbox,
-  .print-role,
-  .item-row.print-component {
-    display: none;
-  }
-  @media print {
-    .print-notes {
-      display: block;
-    }
-  }
 </style>
 
 <style is:global>
@@ -600,6 +421,233 @@ const dinnerOptions = Object.values(dinnerDishes);
     font-size: 10px;
     color: #444;
     white-space: nowrap;
+  }
+
+  /* Hide print-only elements on screen */
+  .print-notes,
+  .print-checkbox,
+  .print-role,
+  .item-row.print-component {
+    display: none;
+  }
+
+  /* ── Print styles ── */
+  @media print {
+    @page {
+      margin: 0.45in;
+    }
+
+    * {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* Shared: hide interactive chrome */
+    .picker-section,
+    .print-btn,
+    .footer-note,
+    .totals-card,
+    header {
+      display: none !important;
+    }
+
+    /* Shared: layout reset */
+    main {
+      padding: 0;
+    }
+    .main-inner {
+      max-width: 100%;
+    }
+
+    /* ── Shopping list print (body.print-shopping) ── */
+    body.print-shopping .meal-card,
+    body.print-shopping .print-notes,
+    body.print-shopping .daily-checklist {
+      display: none !important;
+    }
+    body.print-shopping .shopping-section {
+      margin-top: 0;
+    }
+    body.print-shopping .footer-note {
+      display: none !important;
+    }
+    body.print-shopping footer {
+      display: none !important;
+    }
+    body.print-shopping nav {
+      display: none !important;
+    }
+    body.print-shopping .section-heading {
+      margin: 8px 0 6px;
+      font-size: 8px;
+    }
+    body.print-shopping .shopping-cols {
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 8px !important;
+    }
+    body.print-shopping .shopping-col-label {
+      font-size: 8px;
+      margin-bottom: 4px;
+      padding-bottom: 3px;
+    }
+    body.print-shopping .shopping-item {
+      padding: 3px 7px;
+      margin-bottom: 2px;
+      border-color: #e0e0e0;
+    }
+    body.print-shopping .shopping-item-name {
+      font-size: 10px;
+    }
+    body.print-shopping .shopping-item-qty {
+      font-size: 9px;
+    }
+    body.print-shopping .pantry-list {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px 12px;
+    }
+    body.print-shopping .pantry-item {
+      font-size: 9px;
+      color: #666;
+      padding: 2px 0;
+    }
+
+    /* ── Daily checklist print (body.print-checklist) ── */
+    body.print-checklist .shopping-section {
+      display: none !important;
+    }
+    body.print-checklist .footer-note {
+      display: none !important;
+    }
+    body.print-checklist footer {
+      display: none !important;
+    }
+    body.print-checklist nav {
+      display: none !important;
+    }
+
+    body.print-checklist .print-notes {
+      display: block !important;
+      margin-top: 10px;
+      border: 1px solid #2a2a2a;
+      border-radius: 6px;
+      padding: 8px 12px;
+    }
+    body.print-checklist .print-notes-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 8px;
+      letter-spacing: 0.12em;
+      color: #444;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    body.print-checklist .print-notes-lines {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    body.print-checklist .print-notes-line {
+      border-bottom: 1px solid #222;
+      height: 1px;
+    }
+
+    body.print-checklist .meal-card {
+      break-inside: avoid;
+      margin-bottom: 4px;
+    }
+    body.print-checklist .meal-header {
+      cursor: default;
+      border-radius: 6px 6px 0 0 !important;
+      border-color: #2a2a2a !important;
+      padding: 6px 10px;
+      gap: 8px;
+    }
+    body.print-checklist .meal-body {
+      display: block !important;
+      border-color: #2a2a2a;
+      border-radius: 0 0 6px 6px;
+    }
+    body.print-checklist .meal-emoji {
+      font-size: 14px;
+    }
+    body.print-checklist .meal-name {
+      font-size: 12px;
+    }
+    body.print-checklist .meal-time {
+      font-size: 9px;
+    }
+    body.print-checklist .meal-macros {
+      margin-top: 1px;
+      gap: 8px;
+    }
+    body.print-checklist .meal-macros span {
+      font-size: 9px;
+    }
+    body.print-checklist .chevron {
+      display: none;
+    }
+
+    body.print-checklist .item-row:not(.print-component) {
+      display: none !important;
+    }
+
+    body.print-checklist .item-row.print-component {
+      display: flex !important;
+      align-items: center;
+      padding: 5px 10px;
+      gap: 8px;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    body.print-checklist .item-row.print-component:last-of-type {
+      border-bottom: none;
+    }
+
+    body.print-checklist .print-checkbox {
+      display: block !important;
+      width: 11px;
+      height: 11px;
+      min-width: 11px;
+      border: 1px solid #3a3a3a;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+    body.print-checklist .print-role {
+      display: block !important;
+      font-family: 'DM Mono', monospace;
+      font-size: 7px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #555;
+      width: 38px;
+      min-width: 38px;
+      flex-shrink: 0;
+    }
+    body.print-checklist .item-name {
+      font-size: 10px;
+      color: #ccc;
+      flex: 1;
+    }
+
+    body.print-checklist .item-row.print-component.no-macros .item-macros {
+      display: none;
+    }
+    body.print-checklist .item-row.print-component .item-macros {
+      display: flex;
+      gap: 6px;
+    }
+    body.print-checklist .item-row.print-component .item-macros .fat,
+    body.print-checklist .item-row.print-component .item-macros .carb {
+      display: none;
+    }
+    body.print-checklist .item-row.print-component .item-macros .cal,
+    body.print-checklist .item-row.print-component .item-macros .pro {
+      font-size: 8px;
+      color: #555;
+      width: auto;
+    }
+    body.print-checklist .meal-note {
+      display: none !important;
+    }
   }
 </style>
 
@@ -840,7 +888,10 @@ const dinnerOptions = Object.values(dinnerDishes);
       <!-- ── Shopping List ── -->
       <div class="shopping-section">
         <p class="section-heading">Shopping list — this week</p>
-        <button class="print-btn" onclick="window.print()">⎙ Print / save as PDF</button>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px;">
+          <button class="print-btn" id="print-checklist-btn">☑ Print daily checklist</button>
+          <button class="print-btn" id="print-shopping-btn">⎙ Print shopping list</button>
+        </div>
 
         <div class="shopping-cols" style="margin-top: 16px;">
           <div>
@@ -1069,4 +1120,20 @@ const dinnerOptions = Object.values(dinnerDishes);
 
   // ── Init shopping list on load ──
   buildShoppingList();
+
+  // ── Print buttons ──
+  function printWith(cls) {
+    document.body.classList.add(cls);
+    window.print();
+    window.addEventListener('afterprint', () => document.body.classList.remove(cls), {
+      once: true,
+    });
+  }
+
+  document
+    .getElementById('print-checklist-btn')
+    ?.addEventListener('click', () => printWith('print-checklist'));
+  document
+    .getElementById('print-shopping-btn')
+    ?.addEventListener('click', () => printWith('print-shopping'));
 </script>
