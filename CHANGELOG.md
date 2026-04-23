@@ -1,3 +1,9 @@
+## [2.59.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.58.0...v2.59.0) (2026-04-23)
+
+### 🚀 Features
+
+* **meal-prep:** update basics page ([44df3c6](https://github.com/donhamiltoniii/dondon-blog/commit/44df3c6dff68ad5cfe153f3939be91b762d2a2d0))
+
 ## [2.58.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.57.0...v2.58.0) (2026-04-22)
 
 ### 🚀 Features
