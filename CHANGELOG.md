@@ -1,3 +1,9 @@
+## [2.60.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.59.0...v2.60.0) (2026-04-23)
+
+### 🚀 Features
+
+* **meal-prep:** add salmon salad to basics ([c1bbe16](https://github.com/donhamiltoniii/dondon-blog/commit/c1bbe166208c2490c63ea5c096cbab08c571752e))
+
 ## [2.59.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.58.0...v2.59.0) (2026-04-23)
 
 ### 🚀 Features
