@@ -1,3 +1,9 @@
+## [2.60.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.60.0...v2.60.1) (2026-05-05)
+
+### 📝 Content Updates
+
+* **food:** add gochujang chicken ([16e0033](https://github.com/donhamiltoniii/dondon-blog/commit/16e00337825c330344003373bf6037d9c0d067e3))
+
 ## [2.60.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.59.0...v2.60.0) (2026-04-23)
 
 ### 🚀 Features
