@@ -1,3 +1,9 @@
+## [2.61.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.60.1...v2.61.0) (2026-05-06)
+
+### 🚀 Features
+
+* **meal-plan:** update page with tuna salad lunch ([4a9b33a](https://github.com/donhamiltoniii/dondon-blog/commit/4a9b33ac42e497ca3c89a8738d2c36ffd801be56))
+
 ## [2.60.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.60.0...v2.60.1) (2026-05-05)
 
 ### 📝 Content Updates
