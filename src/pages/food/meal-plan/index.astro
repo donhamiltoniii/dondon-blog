@@ -4,18 +4,15 @@ import Layout from '../../../layouts/DefaultPageLayout.astro';
 import {
   dinnerDishes,
   fixedMeals,
-  lunchDishes,
   meals,
   mealTotals,
   pantryStaples,
   selectedDinner,
-  selectedLunch,
   TARGETS,
   thisWeek,
   totals,
 } from './mealPrepTargets';
 
-const lunchOptions = Object.values(lunchDishes);
 const dinnerOptions = Object.values(dinnerDishes);
 ---
 
@@ -305,6 +302,14 @@ const dinnerOptions = Object.values(dinnerDishes);
     color: #3a8f5c;
   }
 
+  /* Hide print-only elements on screen */
+  .print-notes,
+  .print-checkbox,
+  .print-role,
+  .item-row.print-component {
+    display: none;
+  }
+
   /* ── Shopping list ── */
   .shopping-section {
     margin-top: 32px;
@@ -421,14 +426,6 @@ const dinnerOptions = Object.values(dinnerDishes);
     font-size: 10px;
     color: #444;
     white-space: nowrap;
-  }
-
-  /* Hide print-only elements on screen */
-  .print-notes,
-  .print-checkbox,
-  .print-role,
-  .item-row.print-component {
-    display: none;
   }
 
   /* ── Print styles ── */
@@ -664,40 +661,6 @@ const dinnerOptions = Object.values(dinnerDishes);
     <div class="main-inner">
       <!-- ── Week picker ── -->
       <div class="picker-section">
-        <p class="section-heading">This week — lunch</p>
-        <div class="picker-grid" id="lunch-picker">
-          {
-            lunchOptions.map(dish => (
-              <div
-                class={`picker-card${dish.id === thisWeek.lunch ? ' selected' : ''}`}
-                data-type="lunch"
-                data-id={dish.id}
-                data-cal={dish.target.calories}
-                data-pro={dish.target.protein}
-                data-fat={dish.target.fat}
-                data-carb={dish.target.carbs}
-                data-label={dish.label}
-                data-emoji={dish.emoji}
-                data-note={dish.prepNote}
-              >
-                <div class="picker-card-cuisine">{dish.cuisine}</div>
-                <div class="picker-card-name">
-                  <span>{dish.emoji}</span>
-                  <span>{dish.label}</span>
-                </div>
-                <a class="picker-card-link" href={dish.recipeUrl} target="_blank">
-                  view recipe →
-                </a>
-                <div class="picker-card-macros">
-                  {dish.target.calories} cal · {dish.target.protein}p · {dish.target.fat}f ·{' '}
-                  {dish.target.carbs}c
-                </div>
-                <div class="picker-card-desc">{dish.description}</div>
-              </div>
-            ))
-          }
-        </div>
-
         <p class="section-heading">This week — dinner</p>
         <div class="picker-grid" id="dinner-picker">
           {
@@ -801,13 +764,8 @@ const dinnerOptions = Object.values(dinnerDishes);
         meals.map((meal, idx) => {
           const mt = mealTotals(meal);
           const isFirst = idx === 0;
-          const isLunch = meal.id === 'lunch';
           const isDinner = meal.id === 'dinner';
-          const hasActual = isLunch
-            ? thisWeek.lunchActual !== null
-            : isDinner
-              ? thisWeek.dinnerActual !== null
-              : false;
+          const hasActual = isDinner ? thisWeek.dinnerActual !== null : false;
 
           return (
             <div class="meal-card" data-meal-id={meal.id}>
@@ -819,7 +777,7 @@ const dinnerOptions = Object.values(dinnerDishes);
                       {meal.name}
                     </span>
                     <span class="meal-time">{meal.time}</span>
-                    {(isLunch || isDinner) && (
+                    {isDinner && (
                       <span class={`target-badge${hasActual ? ' actual' : ''}`}>
                         {hasActual ? 'actual' : 'target'}
                       </span>
@@ -847,14 +805,6 @@ const dinnerOptions = Object.values(dinnerDishes);
                     </div>
                   </div>
                 ))}
-                {isLunch &&
-                  selectedLunch.components.map(c => (
-                    <div class="item-row print-component no-macros">
-                      <span class="print-checkbox" />
-                      <span class="print-role">{c.role}</span>
-                      <span class="item-name">{c.description}</span>
-                    </div>
-                  ))}
                 {isDinner &&
                   selectedDinner.components.map(c => (
                     <div class="item-row print-component no-macros">
@@ -863,8 +813,7 @@ const dinnerOptions = Object.values(dinnerDishes);
                       <span class="item-name">{c.description}</span>
                     </div>
                   ))}
-                {!isLunch &&
-                  !isDinner &&
+                {!isDinner &&
                   meal.items.map(item => (
                     <div class="item-row print-component">
                       <span class="print-checkbox" />
@@ -921,13 +870,10 @@ const dinnerOptions = Object.values(dinnerDishes);
       </div>
 
       <div class="footer-note">
-        <strong style="color: #555;">Each Sunday:</strong> Pick a lunch and dinner above — the daily
-        plan, macros, and shopping list update instantly. Change <code>thisWeek.lunch</code> and{
-          ' '
-        }
-        <code>thisWeek.dinner</code> in <code>mealPrepTargets.ts</code> to persist your selection across
-        deploys. Set <code>lunchActual</code> or <code>dinnerActual</code> once you've calculated per-serving
-        macros.
+        <strong style="color: #555;">Each Sunday:</strong> Pick a dinner above — the daily
+        plan, macros, and shopping list update instantly. Change <code>thisWeek.dinner</code> in{' '}
+        <code>mealPrepTargets.ts</code> to persist your selection across deploys. Set{' '}
+        <code>dinnerActual</code> once you've calculated per-serving macros.
       </div>
     </div>
   </main>
@@ -935,21 +881,17 @@ const dinnerOptions = Object.values(dinnerDishes);
 
 <script
   define:vars={{
-    lunchDishesData: Object.values(lunchDishes),
     dinnerDishesData: Object.values(dinnerDishes),
     fixedMealsData: fixedMeals,
-    initialLunchId: thisWeek.lunch,
     initialDinnerId: thisWeek.dinner,
   }}
 >
   // ── State ──
-  let selectedLunchId = initialLunchId;
   let selectedDinnerId = initialDinnerId;
 
-  const lunchMap = Object.fromEntries(lunchDishesData.map(d => [d.id, d]));
   const dinnerMap = Object.fromEntries(dinnerDishesData.map(d => [d.id, d]));
 
-  // Fixed meal totals (breakfast + shake + yogurt)
+  // Fixed meal totals (breakfast + salmon salad + shake + yogurt)
   function sumItems(items) {
     return items.reduce(
       (a, i) => ({
@@ -977,13 +919,10 @@ const dinnerOptions = Object.values(dinnerDishes);
 
   // ── Rebuild shopping list ──
   function buildShoppingList() {
-    const lunch = lunchMap[selectedLunchId];
     const dinner = dinnerMap[selectedDinnerId];
 
-    // Merge all shopping items, dedupe by item name
     const allItems = [
       ...fixedMealsData.flatMap(m => m.shoppingList),
-      ...lunch.shoppingList,
       ...dinner.shoppingList,
     ];
 
@@ -1015,12 +954,11 @@ const dinnerOptions = Object.values(dinnerDishes);
   }
 
   // ── Update meal card (lunch or dinner) ──
-  function updateMealCard(type, dish) {
-    const mealId = type; // 'lunch' or 'dinner'
-    const nameEl = document.querySelector(`[data-meal-name="${mealId}"]`);
-    const macrosEl = document.querySelector(`[data-meal-macros="${mealId}"]`);
-    const noteEl = document.querySelector(`[data-meal-note="${mealId}"]`);
-    const itemRows = document.querySelectorAll(`[data-item-row="${mealId}"]`);
+  function updateMealCard(dish) {
+    const nameEl = document.querySelector(`[data-meal-name="dinner"]`);
+    const macrosEl = document.querySelector(`[data-meal-macros="dinner"]`);
+    const noteEl = document.querySelector(`[data-meal-note="dinner"]`);
+    const itemRows = document.querySelectorAll(`[data-item-row="dinner"]`);
 
     if (nameEl) nameEl.textContent = dish.label;
     if (macrosEl)
@@ -1045,13 +983,12 @@ const dinnerOptions = Object.values(dinnerDishes);
 
   // ── Update totals bars ──
   function updateTotals() {
-    const lunch = lunchMap[selectedLunchId].target;
     const dinner = dinnerMap[selectedDinnerId].target;
     const total = {
-      calories: fixedTotals.calories + lunch.calories + dinner.calories,
-      protein: fixedTotals.protein + lunch.protein + dinner.protein,
-      fat: fixedTotals.fat + lunch.fat + dinner.fat,
-      carbs: fixedTotals.carbs + lunch.carbs + dinner.carbs,
+      calories: fixedTotals.calories + dinner.calories,
+      protein: fixedTotals.protein + dinner.protein,
+      fat: fixedTotals.fat + dinner.fat,
+      carbs: fixedTotals.carbs + dinner.carbs,
     };
 
     const headerCal = document.getElementById('header-cal');
@@ -1076,22 +1013,15 @@ const dinnerOptions = Object.values(dinnerDishes);
   // ── Picker click handler ──
   document.querySelectorAll('.picker-card').forEach(card => {
     card.addEventListener('click', () => {
-      const type = card.dataset.type;
       const id = card.dataset.id;
 
-      // Update selection state
       document
-        .querySelectorAll(`.picker-card[data-type="${type}"]`)
+        .querySelectorAll(`.picker-card[data-type="dinner"]`)
         .forEach(c => c.classList.remove('selected'));
       card.classList.add('selected');
 
-      if (type === 'lunch') {
-        selectedLunchId = id;
-        updateMealCard('lunch', lunchMap[id]);
-      } else {
-        selectedDinnerId = id;
-        updateMealCard('dinner', dinnerMap[id]);
-      }
+      selectedDinnerId = id;
+      updateMealCard(dinnerMap[id]);
 
       updateTotals();
       buildShoppingList();
