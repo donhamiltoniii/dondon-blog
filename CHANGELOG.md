@@ -1,3 +1,9 @@
+## [2.61.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.61.0...v2.61.1) (2026-05-07)
+
+### 📝 Content Updates
+
+* **food:** add baby food recipes ([804c625](https://github.com/donhamiltoniii/dondon-blog/commit/804c62594fcfa19a3b75827326e18613fc81cc54))
+
 ## [2.61.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.60.1...v2.61.0) (2026-05-06)
 
 ### 🚀 Features
