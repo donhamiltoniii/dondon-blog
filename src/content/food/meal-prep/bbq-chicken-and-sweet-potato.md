@@ -1,59 +1,64 @@
 ---
-title: BBQ Chicken & Sweet Potato
-prepTime: 10 minutes
-cookTime: 30 minutes
-servings: 10
-servingSize: 420 g
+title: Honey BBQ Chicken & Roasted Sweet Potatoes
+prepTime: 15 min
+cookTime: 35 min
+servings: 8
+servingSize: ~10oz chicken + ~6oz sweet potato
 imgUrl:
-description: Smoky BBQ-glazed chicken breast with roasted sweet potato wedges and corn. A crowd-pleaser with no exotic ingredients — great for the whole family.
-notes: Everything roasts at the same temperature so you can run one oven with two trays simultaneously. Baste the chicken with a second layer of BBQ sauce in the last 5 minutes for a stickier glaze.
-tags: [American, Chicken, Sweet Potato, Meal Prep, main]
+description: Sticky honey BBQ chicken tenderloins with roasted sweet potatoes. High protein, sheet-pan friendly meal prep.
+notes:
+  - Cut sweet potatoes around 3/4-inch cubes so they finish in the same timeframe as the chicken.
+  - Most sugar-free BBQ sauces are a little thin/tart — the honey balances it. Skip if you want it strictly sugar-free.
+  - If your tenderloins are thick, give them an extra 3-5 min. Internal temp 165°F.
+  - Broiling at the end is what gives you those caramelized sticky edges — don't skip it.
+  - Two sheet pans is mandatory — crowding = steaming.
+tags: [meal-prep, high-protein, chicken, sheet-pan, bbq]
 ---
 
 ### Ingredients
 
-#### Chicken
+**Chicken**
 
-- 2 kg (4.4 lb) boneless skinless chicken breasts
-- 300 g (1¼ cups) BBQ sauce, divided
-- 1 tsp (4 g) smoked paprika
-- 1 tsp (4 g) garlic powder
-- Salt and pepper, to taste
+- 5 lb chicken tenderloins
+- 1 cup sugar-free BBQ sauce
+- 3 tbsp honey
+- 1 tbsp smoked paprika
+- 2 tsp garlic powder
+- 2 tsp onion powder
+- 2 tsp kosher salt
+- 1 tsp black pepper
+- 1 tbsp olive oil
 
-#### Sweet Potatoes
+**Sweet Potatoes**
 
-- 2 kg (4.4 lb) sweet potatoes, peeled and cut into wedges
-- 2 Tbsp (30 ml) olive oil
-- 1 tsp (4 g) smoked paprika
-- 1 tsp (6 g) salt
-- ½ tsp (1 g) black pepper
-
-#### Corn
-
-- 800 g (about 5 cups) frozen corn
-- 1 Tbsp (15 ml) olive oil
-- ½ tsp (2 g) salt
+- 3.3 lb (~1.5kg) sweet potatoes, cubed
+- 3 tbsp olive oil
+- 1.5 tsp kosher salt
+- 1 tsp smoked paprika
 
 ### Instructions
 
-1. Preheat oven to **200 °C / 400 °F**. Line two large baking sheets with parchment paper.
-2. Season chicken with smoked paprika, garlic powder, salt, and pepper. Brush generously with **200 g** of the BBQ sauce. Place on the first baking sheet.
-3. Toss sweet potato wedges with olive oil, paprika, salt, and pepper. Spread on the second baking sheet in a single layer.
-4. Place both trays in the oven. Roast **20 min**, then add corn to any empty space on the sweet potato tray, drizzle with olive oil and salt. Brush chicken with remaining **100 g** BBQ sauce. Roast a further **8–10 min** until chicken reaches **74 °C / 165 °F** internally and sweet potatoes are tender and caramelized at the edges.
-5. Rest chicken **5 min** then slice. Portion into **10 containers**: chicken (~200 g), sweet potato wedges (~200 g), and corn (~80 g). Refrigerate up to 5 days.
+1. Preheat oven to 425°F. Line two sheet pans with parchment or foil.
+2. Toss sweet potatoes with olive oil, salt, and paprika on one sheet pan. Spread in a single layer. Roast for 15 minutes.
+3. While potatoes roast, whisk together BBQ sauce, honey, paprika, garlic powder, onion powder, salt, pepper, and olive oil. Reserve about 1/3 of the sauce in a separate bowl for glazing later. Toss chicken in the remaining sauce.
+4. Pull the sweet potatoes out, flip/toss them, and push to one side. Lay the chicken on the second sheet pan in a single layer. Put both pans back in the oven and roast for 15 minutes.
+5. Brush or spoon the reserved sauce over the chicken. Switch oven to broil (high) and broil 3-5 minutes until the sauce is caramelized and sticky. Watch closely — sugar-free sauces can still burn.
+6. Let chicken rest 5 minutes. Divide chicken and sweet potatoes into 8 containers. Cool uncovered 10-15 min before sealing. Keeps 4-5 days.
 
 ### Macros
 
 #### Whole Dish
 
-| Field        | Amount     |
-| ------------ | ---------- |
-| **Calories** | 6 250 kcal |
-| **Protein**  | 600 g      |
-| **Fat**      | 120 g      |
-| **Carbs**    | 680 g      |
-| **Volume**   | 4 200 g    |
+| Field        | Amount |
+| ------------ | ------ |
+| **Calories** | 4,180  |
+| **Protein**  | 540g   |
+| **Fat**      | 95g    |
+| **Carbs**    | 320g   |
+| **Fiber**    | 42g    |
+| **Sugar**    | 95g    |
+| **Volume**   | 3,675g |
 
 #### Per Serving
 
-_625 kcal, 60 g protein, 12 g fat, 68 g carbs, 420 g volume_
+_523 calories, 68g protein, 12g fat, 40g carbs, 5g fiber, 12g sugar_
