@@ -1,3 +1,14 @@
+## [2.62.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.61.1...v2.62.0) (2026-05-12)
+
+### 🚀 Features
+
+* **food:** update type of notes ([aa23df9](https://github.com/donhamiltoniii/dondon-blog/commit/aa23df908a0e9bad9dc5231e610ea6f0f84c9b3c))
+
+### 📝 Content Updates
+
+* **meal-prep:** honey bbq chicken and sweet potatoes ([5e8b588](https://github.com/donhamiltoniii/dondon-blog/commit/5e8b5881fb381628ff6ee0229cee5a46dd9e56a4))
+* **meal-prep:** honey bbq chicken and sweet potatoes ([0713573](https://github.com/donhamiltoniii/dondon-blog/commit/0713573ea6ff0d92f6d8ed3a63496278cbe0d49f))
+
 ## [2.61.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.61.0...v2.61.1) (2026-05-07)
 
 ### 📝 Content Updates
