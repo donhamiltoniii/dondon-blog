@@ -42,7 +42,10 @@ const food = defineCollection({
     servings: z.number().or(z.string()),
     imgUrl: z.string().optional().nullable(),
     description: z.string(),
-    notes: z.string().optional().nullable(),
+    notes: z
+      .union([z.string(), z.array(z.string())])
+      .nullable()
+      .optional(),
     tags: z.array(z.string()),
     heroImage: z.string().optional(),
     published: z.boolean().optional(),

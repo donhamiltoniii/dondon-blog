@@ -6,11 +6,7 @@ servings: 8
 servingSize: ~10oz chicken + ~6oz sweet potato
 imgUrl:
 description: Sticky honey BBQ chicken tenderloins with roasted sweet potatoes. High protein, sheet-pan friendly meal prep.
-<<<<<<< HEAD
 notes:
-=======
-notes: |
->>>>>>> 46cb26d (content(meal-prep): honey bbq chicken and sweet potatoes)
   - Cut sweet potatoes around 3/4-inch cubes so they finish in the same timeframe as the chicken.
   - Most sugar-free BBQ sauces are a little thin/tart — the honey balances it. Skip if you want it strictly sugar-free.
   - If your tenderloins are thick, give them an extra 3-5 min. Internal temp 165°F.

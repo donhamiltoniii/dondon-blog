@@ -45,13 +45,19 @@ const { Content } = await recipe.render();
         {recipe.data.description}
       </blockquote>
       {
-        recipe.data.notes && (
+        recipe.data.notes && typeof recipe.data.notes === 'string' && (
           <p>
             <strong>NOTES: </strong>
             {recipe.data.notes}
           </p>
         )
       }
+      {recipe.data.notes && typeof recipe.data.notes !== 'string' && (
+        <h3>NOTES:</h3>
+        <ul>
+          {recipe.data.notes.map(n => <li>{n}</li>)}
+        </ul>
+      )}
     </div>
   </header>
   <Content />
