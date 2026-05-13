@@ -1,23 +1,35 @@
 ---
 import { SITE_DESCRIPTION, SITE_TITLE } from '../../../constants';
 import Layout from '../../../layouts/DefaultPageLayout.astro';
-import {
-  dinnerDishes,
-  fixedMeals,
-  meals,
-  mealTotals,
-  pantryStaples,
-  selectedDinner,
-  TARGETS,
-  thisWeek,
-  totals,
-} from './mealPrepTargets';
+import { dayTimeline, flexBackfill, TARGETS, trackedTotals } from './mealPrepTargets';
 
-const dinnerOptions = Object.values(dinnerDishes);
+const macros = [
+  {
+    label: 'Calories',
+    value: trackedTotals.calories,
+    target: TARGETS.calories,
+    unit: '',
+    color: '#c8a527',
+  },
+  {
+    label: 'Protein',
+    value: trackedTotals.protein,
+    target: TARGETS.protein,
+    unit: 'g',
+    color: '#3a8f5c',
+  },
+  { label: 'Fat', value: trackedTotals.fat, target: TARGETS.fat, unit: 'g', color: '#e07c3a' },
+  {
+    label: 'Carbs',
+    value: trackedTotals.carbs,
+    target: TARGETS.carbs,
+    unit: 'g',
+    color: '#5a9fe8',
+  },
+];
 ---
 
 <style>
-  /* ── Base ── */
   header {
     border-bottom: 1px solid #1e1e1e;
     padding: 40px 24px 32px;
@@ -42,10 +54,19 @@ const dinnerOptions = Object.values(dinnerDishes);
     line-height: 1.1;
     margin-bottom: 6px;
   }
+  h1 span {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    color: #666;
+    text-transform: uppercase;
+  }
   .subtitle {
     color: #555;
     font-size: 13px;
     margin-top: 12px;
+    line-height: 1.6;
   }
   main {
     max-width: 600px;
@@ -58,700 +79,246 @@ const dinnerOptions = Object.values(dinnerDishes);
     letter-spacing: 0.14em;
     color: #444;
     text-transform: uppercase;
-    margin: 32px 0 12px;
+    margin: 36px 0 14px;
   }
 
-  /* ── Week picker ── */
-  .picker-grid {
+  /* ── Macro grid ── */
+  .macro-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    margin-bottom: 8px;
-
-    @media screen and (min-width: 648px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 32px 0 8px;
   }
-  .picker-card {
-    border: 1px solid #1a1a1a;
-    border-radius: 12px;
-    padding: 14px 16px;
-    cursor: pointer;
-    transition:
-      border-color 0.15s,
-      background 0.15s;
-    user-select: none;
-  }
-  .picker-card:hover {
-    border-color: #2a2a2a;
-  }
-  .picker-card.selected {
-    border-color: #c8a527;
-    background: #fdf8e7;
-  }
-  .picker-card-cuisine {
-    font-family: 'DM Mono', monospace;
-    font-size: 9px;
-    letter-spacing: 0.1em;
-    color: #555;
-    text-transform: uppercase;
-    margin-bottom: 3px;
-  }
-  .picker-card-name {
-    font-size: 13px;
-    font-weight: 600;
-    color: #222;
-    margin-bottom: 6px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-  .picker-card-link {
-    font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    color: #c8a527;
-    text-decoration: none;
-    letter-spacing: 0.06em;
-    display: inline-block;
-    margin-bottom: 6px;
-  }
-  .picker-card-link:hover {
-    text-decoration: underline;
-  }
-  .picker-card-macros {
-    font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    color: #444;
-  }
-  .picker-card-desc {
-    font-size: 11px;
-    color: #3a3a3a;
-    margin-top: 5px;
-    line-height: 1.4;
-  }
-
-  /* ── Totals card ── */
-  .totals-card {
+  .macro-card {
     border: 1px solid #222;
     border-radius: 12px;
-    padding: 20px 20px 16px;
-    margin: 24px 0;
+    padding: 18px 18px 16px;
+    position: relative;
+    overflow: hidden;
   }
-  .totals-label {
+  .macro-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--accent);
+    opacity: 0.75;
+  }
+  .macro-card-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .macro-card-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1;
+    color: var(--accent);
+  }
+  .macro-card-target {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: #555;
+    font-weight: 400;
+    margin-left: 4px;
+  }
+  .macro-card-unit {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    font-weight: 400;
+    color: #666;
+    letter-spacing: 0.06em;
+  }
+  .macro-card-bar {
+    height: 4px;
+    background: #161616;
+    border-radius: 2px;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+  .macro-card-bar-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 2px;
+    opacity: 0.8;
+  }
+
+  /* ── Timeline ── */
+  .timeline {
+    position: relative;
+    margin: 12px 0 0;
+    padding-left: 28px;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 8px;
+    bottom: 28px;
+    width: 1px;
+    background: linear-gradient(to bottom, #2a2a2a, #2a2a2a 70%, #1a1a1a);
+  }
+  .stop {
+    position: relative;
+    margin-bottom: 24px;
+  }
+  .stop:last-of-type {
+    margin-bottom: 12px;
+  }
+  .stop-dot {
+    position: absolute;
+    left: -28px;
+    top: 4px;
+    width: 23px;
+    height: 23px;
+    background: #0a0a0a;
+    border: 1px solid #2a2a2a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 1;
+  }
+  .stop-time {
     font-family: 'DM Mono', monospace;
     font-size: 10px;
     letter-spacing: 0.12em;
-    color: #444;
+    color: #888;
     text-transform: uppercase;
-    margin-bottom: 14px;
+    margin-bottom: 4px;
   }
-  .macro-bar {
-    margin-bottom: 10px;
+  .stop-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: #d8d8d8;
+    margin-bottom: 6px;
+    line-height: 1.2;
   }
-  .macro-bar-header {
-    display: flex;
-    justify-content: space-between;
+  .stop-title a {
+    color: #d8d8d8;
+    text-decoration: none;
+    border-bottom: 1px solid #5a4416;
+    transition: border-color 0.15s;
+  }
+  .stop-title a:hover {
+    border-bottom-color: #c8a527;
+  }
+  .stop-title .recipe-arrow {
     font-family: 'DM Mono', monospace;
     font-size: 11px;
-    margin-bottom: 3px;
-    color: #444;
-  }
-  .macro-bar-header .macro-name {
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-  }
-  .macro-bar-track {
-    height: 6px;
-    background: #1e1e1e;
-    border-radius: 3px;
-    overflow: hidden;
-  }
-  .macro-bar-fill {
-    height: 100%;
-    border-radius: 3px;
-  }
-
-  /* ── Meal cards ── */
-  .meal-card {
-    margin-bottom: 8px;
-  }
-  .meal-header {
-    border: 1px solid #1a1a1a;
-    border-radius: 12px;
-    padding: 16px 20px;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    cursor: pointer;
-    user-select: none;
-    transition: background 0.2s;
-  }
-  .meal-header.open {
-    border-color: #2a2a2a;
-    border-radius: 12px 12px 0 0;
-  }
-  .meal-emoji {
-    font-size: 22px;
-  }
-  .meal-info {
-    flex: 1;
-  }
-  .meal-title-row {
-    display: flex;
-    align-items: baseline;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-  .meal-name {
-    font-weight: 600;
-    font-size: 15px;
-  }
-  .meal-time {
-    font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    color: #444;
-  }
-  .meal-macros {
-    display: flex;
-    gap: 12px;
-    margin-top: 4px;
-  }
-  .meal-macros span {
-    font-family: 'DM Mono', monospace;
-    font-size: 11px;
-  }
-  .chevron {
-    color: #333;
-    font-size: 18px;
-    transition: transform 0.2s;
-  }
-  .chevron.open {
-    transform: rotate(180deg);
-  }
-  .meal-body {
-    display: none;
-    border: 1px solid #2a2a2a;
-    border-top: none;
-    border-radius: 0 0 12px 12px;
-    overflow: hidden;
-  }
-  .meal-body.open {
-    display: block;
-  }
-  .item-row {
-    display: flex;
-    align-items: center;
-    padding: 11px 20px;
-    border-bottom: 1px solid #181818;
-    gap: 12px;
-  }
-  .item-row:last-of-type {
+    color: #c8a527;
+    margin-left: 6px;
+    letter-spacing: 0.06em;
     border-bottom: none;
   }
-  .item-name {
-    flex: 1;
+  .stop-detail {
     font-size: 13px;
-    color: #444;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
   }
-  .item-macros {
+  .stop-macros {
     display: flex;
-    gap: 10px;
-    flex-shrink: 0;
-  }
-  .item-macros span {
-    font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    text-align: right;
-  }
-  .item-macros .cal {
-    color: #666;
-    width: 52px;
-  }
-  .item-macros .pro {
-    color: #3a8f5c;
-    width: 32px;
-  }
-  .item-macros .fat {
-    color: #e07c3a;
-    width: 28px;
-  }
-  .item-macros .carb {
-    color: #5a9fe8;
-    width: 28px;
-  }
-  .meal-note {
-    padding: 12px 20px;
-    font-size: 12px;
-    color: #555;
-    font-style: italic;
-    line-height: 1.5;
-  }
-  .target-badge {
-    display: inline-block;
-    font-family: 'DM Mono', monospace;
-    font-size: 9px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 2px 6px;
-    border-radius: 4px;
-    color: #555;
-    margin-left: 4px;
-  }
-  .target-badge.actual {
-    background: #1a2e1a;
-    color: #3a8f5c;
-  }
-
-  /* Hide print-only elements on screen */
-  .print-notes,
-  .print-checkbox,
-  .print-role,
-  .item-row.print-component {
-    display: none;
-  }
-
-  /* ── Shopping list ── */
-  .shopping-section {
-    margin-top: 32px;
-  }
-  .shopping-cols {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-
-    @media screen and (min-width: 648px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  .shopping-col-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 9px;
-    letter-spacing: 0.1em;
-    color: #444;
-    text-transform: uppercase;
-    margin-bottom: 8px;
-    padding-bottom: 6px;
-    border-bottom: 1px solid #1a1a1a;
-  }
-  .shopping-badge {
-    display: inline-block;
-    font-family: 'DM Mono', monospace;
-    font-size: 8px;
-    padding: 1px 5px;
-    border-radius: 3px;
-    margin-left: 4px;
-    background: #1a1a00;
-    color: #666;
-    letter-spacing: 0.06em;
-  }
-  .pantry-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 4px 16px;
-    margin-top: 4px;
-
-    @media screen and (min-width: 648px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  .pantry-item {
-    font-size: 12px;
-    color: #555;
-    padding: 4px 0;
-    border-bottom: 1px solid #111;
-  }
-  .print-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    margin-top: 16px;
-    padding: 8px 16px;
+    flex-wrap: wrap;
+    gap: 14px;
     font-family: 'DM Mono', monospace;
     font-size: 11px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #555;
-    border: 1px solid #222;
-    border-radius: 8px;
-    cursor: pointer;
-    background: transparent;
-    transition:
-      border-color 0.15s,
-      color 0.15s;
+    letter-spacing: 0.04em;
   }
-  .print-btn:hover {
-    border-color: #444;
-    color: #888;
+  .stop-macros span.cal {
+    color: #c8a527;
+  }
+  .stop-macros span.pro {
+    color: #3a8f5c;
+  }
+  .stop-macros span.fat {
+    color: #e07c3a;
+  }
+  .stop-macros span.carb {
+    color: #5a9fe8;
   }
 
-  /* ── Footer ── */
-  .footer-note {
+  /* ── Flex stop (dashed) ── */
+  .stop.flex .stop-dot {
+    border-style: dashed;
+    opacity: 0.7;
+  }
+  .stop.flex .stop-title {
+    color: #888;
+    font-style: italic;
+    font-size: 17px;
+  }
+
+  /* ── Notes ── */
+  .notes {
     margin-top: 24px;
     padding: 16px 20px;
     border: 1px solid #1a1a1a;
     border-radius: 12px;
     font-size: 12px;
-    color: #444;
+    color: #666;
     line-height: 1.7;
   }
-  .footer-note code {
-    font-family: 'DM Mono', monospace;
-    font-size: 11px;
-    padding: 1px 5px;
-    border-radius: 3px;
-    color: #666;
-  }
-</style>
-
-<style is:global>
-  .shopping-item {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    padding: 7px 10px;
-    margin-bottom: 4px;
-    border: 1px solid #e8e8e8;
-    border-radius: 6px;
-    gap: 8px;
-  }
-  .shopping-item.non-costco .shopping-item-name {
-    color: #666;
-  }
-  .shopping-item-name {
-    font-size: 13px;
-    color: #666;
-  }
-  .shopping-item-qty {
+  .notes-label {
     font-family: 'DM Mono', monospace;
     font-size: 10px;
+    letter-spacing: 0.14em;
     color: #444;
-    white-space: nowrap;
+    text-transform: uppercase;
+    margin-bottom: 8px;
   }
-
-  /* ── Print styles ── */
-  @media print {
-    @page {
-      margin: 0.45in;
-    }
-
-    * {
-      -webkit-print-color-adjust: exact;
-      print-color-adjust: exact;
-    }
-
-    /* Shared: hide interactive chrome */
-    .picker-section,
-    .print-btn,
-    .footer-note,
-    .totals-card,
-    header {
-      display: none !important;
-    }
-
-    /* Shared: layout reset */
-    main {
-      padding: 0;
-    }
-    .main-inner {
-      max-width: 100%;
-    }
-
-    /* ── Shopping list print (body.print-shopping) ── */
-    body.print-shopping .meal-card,
-    body.print-shopping .print-notes,
-    body.print-shopping .daily-checklist {
-      display: none !important;
-    }
-    body.print-shopping .shopping-section {
-      margin-top: 0;
-    }
-    body.print-shopping .footer-note {
-      display: none !important;
-    }
-    body.print-shopping footer {
-      display: none !important;
-    }
-    body.print-shopping nav {
-      display: none !important;
-    }
-    body.print-shopping .section-heading {
-      margin: 8px 0 6px;
-      font-size: 8px;
-    }
-    body.print-shopping .shopping-cols {
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      margin-top: 8px !important;
-    }
-    body.print-shopping .shopping-col-label {
-      font-size: 8px;
-      margin-bottom: 4px;
-      padding-bottom: 3px;
-    }
-    body.print-shopping .shopping-item {
-      padding: 3px 7px;
-      margin-bottom: 2px;
-      border-color: #e0e0e0;
-    }
-    body.print-shopping .shopping-item-name {
-      font-size: 10px;
-    }
-    body.print-shopping .shopping-item-qty {
-      font-size: 9px;
-    }
-    body.print-shopping .pantry-list {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2px 12px;
-    }
-    body.print-shopping .pantry-item {
-      font-size: 9px;
-      color: #666;
-      padding: 2px 0;
-    }
-
-    /* ── Daily checklist print (body.print-checklist) ── */
-    body.print-checklist .shopping-section {
-      display: none !important;
-    }
-    body.print-checklist .footer-note {
-      display: none !important;
-    }
-    body.print-checklist footer {
-      display: none !important;
-    }
-    body.print-checklist nav {
-      display: none !important;
-    }
-
-    body.print-checklist .print-notes {
-      display: block !important;
-      margin-top: 10px;
-      border: 1px solid #2a2a2a;
-      border-radius: 6px;
-      padding: 8px 12px;
-    }
-    body.print-checklist .print-notes-label {
-      font-family: 'DM Mono', monospace;
-      font-size: 8px;
-      letter-spacing: 0.12em;
-      color: #444;
-      text-transform: uppercase;
-      margin-bottom: 6px;
-    }
-    body.print-checklist .print-notes-lines {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-    body.print-checklist .print-notes-line {
-      border-bottom: 1px solid #222;
-      height: 1px;
-    }
-
-    body.print-checklist .meal-card {
-      break-inside: avoid;
-      margin-bottom: 4px;
-    }
-    body.print-checklist .meal-header {
-      cursor: default;
-      border-radius: 6px 6px 0 0 !important;
-      border-color: #2a2a2a !important;
-      padding: 6px 10px;
-      gap: 8px;
-    }
-    body.print-checklist .meal-body {
-      display: block !important;
-      border-color: #2a2a2a;
-      border-radius: 0 0 6px 6px;
-    }
-    body.print-checklist .meal-emoji {
-      font-size: 14px;
-    }
-    body.print-checklist .meal-name {
-      font-size: 12px;
-    }
-    body.print-checklist .meal-time {
-      font-size: 9px;
-    }
-    body.print-checklist .meal-macros {
-      margin-top: 1px;
-      gap: 8px;
-    }
-    body.print-checklist .meal-macros span {
-      font-size: 9px;
-    }
-    body.print-checklist .chevron {
-      display: none;
-    }
-
-    body.print-checklist .item-row:not(.print-component) {
-      display: none !important;
-    }
-
-    body.print-checklist .item-row.print-component {
-      display: flex !important;
-      align-items: center;
-      padding: 5px 10px;
-      gap: 8px;
-      border-bottom: 1px solid #1a1a1a;
-    }
-    body.print-checklist .item-row.print-component:last-of-type {
-      border-bottom: none;
-    }
-
-    body.print-checklist .print-checkbox {
-      display: block !important;
-      width: 11px;
-      height: 11px;
-      min-width: 11px;
-      border: 1px solid #3a3a3a;
-      border-radius: 2px;
-      flex-shrink: 0;
-    }
-    body.print-checklist .print-role {
-      display: block !important;
-      font-family: 'DM Mono', monospace;
-      font-size: 7px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #555;
-      width: 38px;
-      min-width: 38px;
-      flex-shrink: 0;
-    }
-    body.print-checklist .item-name {
-      font-size: 10px;
-      color: #ccc;
-      flex: 1;
-    }
-
-    body.print-checklist .item-row.print-component.no-macros .item-macros {
-      display: none;
-    }
-    body.print-checklist .item-row.print-component .item-macros {
-      display: flex;
-      gap: 6px;
-    }
-    body.print-checklist .item-row.print-component .item-macros .fat,
-    body.print-checklist .item-row.print-component .item-macros .carb {
-      display: none;
-    }
-    body.print-checklist .item-row.print-component .item-macros .cal,
-    body.print-checklist .item-row.print-component .item-macros .pro {
-      font-size: 8px;
-      color: #555;
-      width: auto;
-    }
-    body.print-checklist .meal-note {
-      display: none !important;
-    }
+  .notes p {
+    margin: 0 0 8px;
+  }
+  .notes p:last-child {
+    margin-bottom: 0;
+  }
+  .notes strong {
+    color: #c8a527;
+    font-weight: 500;
   }
 </style>
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
   <header>
     <div class="header-inner">
-      <p class="eyebrow">Daily Meal Plan</p>
-      <h1 id="header-cal">{totals.calories} cal<br /><span>cut protocol</span></h1>
-      <p class="subtitle">278 lb → 200 lb goal · daily template</p>
+      <p class="eyebrow">Daily Macros</p>
+      <h1>{TARGETS.calories} cal<br /><span>cut protocol</span></h1>
+      <p class="subtitle">
+        A typical day. Dinner rotates weekly — recipes live on the meal prep page.
+      </p>
     </div>
   </header>
 
   <main>
     <div class="main-inner">
-      <!-- ── Week picker ── -->
-      <div class="picker-section">
-        <p class="section-heading">This week — dinner</p>
-        <div class="picker-grid" id="dinner-picker">
-          {
-            dinnerOptions.map(dish => (
-              <div
-                class={`picker-card${dish.id === thisWeek.dinner ? ' selected' : ''}`}
-                data-type="dinner"
-                data-id={dish.id}
-                data-cal={dish.target.calories}
-                data-pro={dish.target.protein}
-                data-fat={dish.target.fat}
-                data-carb={dish.target.carbs}
-                data-label={dish.label}
-                data-emoji={dish.emoji}
-                data-note={dish.prepNote}
-              >
-                <div class="picker-card-cuisine">{dish.cuisine}</div>
-                <div class="picker-card-name">
-                  <span>{dish.emoji}</span>
-                  <span>{dish.label}</span>
-                </div>
-                <a class="picker-card-link" href={dish.recipeUrl} target="_blank">
-                  view recipe →
-                </a>
-                <div class="picker-card-macros">
-                  {dish.target.calories} cal · {dish.target.protein}p · {dish.target.fat}f ·{' '}
-                  {dish.target.carbs}c
-                </div>
-                <div class="picker-card-desc">{dish.description}</div>
-              </div>
-            ))
-          }
-        </div>
-      </div>
-
-      <!-- ── Daily Totals ── -->
-      <div class="totals-card" id="totals-card">
-        <p class="totals-label">Daily Totals</p>
+      <!-- ── Targets vs tracked ── -->
+      <p class="section-heading">Tracked meals vs targets</p>
+      <div class="macro-grid">
         {
-          [
-            {
-              label: 'Calories',
-              key: 'calories',
-              value: totals.calories,
-              target: TARGETS.calories,
-              color: '#c8a527',
-            },
-            {
-              label: 'Protein (g)',
-              key: 'protein',
-              value: totals.protein,
-              target: TARGETS.protein,
-              color: '#3a8f5c',
-            },
-            {
-              label: 'Fat (g)',
-              key: 'fat',
-              value: totals.fat,
-              target: TARGETS.fat,
-              color: '#e07c3a',
-            },
-            {
-              label: 'Carbs (g)',
-              key: 'carbs',
-              value: totals.carbs,
-              target: TARGETS.carbs,
-              color: '#5a9fe8',
-            },
-          ].map(({ label, key, value, target, color }) => {
-            const pct = Math.min((value / target) * 100, 100);
-            const atTarget = pct >= 95;
+          macros.map(m => {
+            const pct = Math.min((m.value / m.target) * 100, 100);
             return (
-              <div class="macro-bar" data-macro={key}>
-                <div class="macro-bar-header">
-                  <span class="macro-name">{label}</span>
-                  <span
-                    class="macro-value"
-                    data-target={target}
-                    data-color={color}
-                    style={atTarget ? `color: ${color}` : 'color: #444'}
-                  >
-                    {value}
-                    <span style="color: #555">/{target}</span>
+              <div class="macro-card" style={`--accent: ${m.color}`}>
+                <div class="macro-card-label">{m.label}</div>
+                <div class="macro-card-value">
+                  {m.value}
+                  <span class="macro-card-unit">{m.unit}</span>
+                  <span class="macro-card-target">
+                    / {m.target}
+                    {m.unit}
                   </span>
                 </div>
-                <div class="macro-bar-track">
-                  <div
-                    class="macro-bar-fill"
-                    data-target={target}
-                    style={`width: ${pct}%; background: ${color};`}
-                  />
+                <div class="macro-card-bar">
+                  <div class="macro-card-bar-fill" style={`width: ${pct}%`} />
                 </div>
               </div>
             );
@@ -759,311 +326,62 @@ const dinnerOptions = Object.values(dinnerDishes);
         }
       </div>
 
-      <!-- ── Meal Cards ── -->
-      {
-        meals.map((meal, idx) => {
-          const mt = mealTotals(meal);
-          const isFirst = idx === 0;
-          const isDinner = meal.id === 'dinner';
-          const hasActual = isDinner ? thisWeek.dinnerActual !== null : false;
-
-          return (
-            <div class="meal-card" data-meal-id={meal.id}>
-              <div class={`meal-header${isFirst ? ' open' : ''}`} data-toggle={meal.id}>
-                <span class="meal-emoji">{meal.emoji}</span>
-                <div class="meal-info">
-                  <div class="meal-title-row">
-                    <span class="meal-name" data-meal-name={meal.id}>
-                      {meal.name}
-                    </span>
-                    <span class="meal-time">{meal.time}</span>
-                    {isDinner && (
-                      <span class={`target-badge${hasActual ? ' actual' : ''}`}>
-                        {hasActual ? 'actual' : 'target'}
-                      </span>
-                    )}
-                  </div>
-                  <div class="meal-macros" data-meal-macros={meal.id}>
-                    <span style="color: #c8a527">{mt.calories} cal</span>
-                    <span style="color: #3a8f5c">{mt.protein}p</span>
-                    <span style="color: #e07c3a">{mt.fat}f</span>
-                    <span style="color: #5a9fe8">{mt.carbs}c</span>
-                  </div>
-                </div>
-                <span class={`chevron${isFirst ? ' open' : ''}`}>▾</span>
+      <!-- ── Day timeline ── -->
+      <p class="section-heading">How the day unfolds</p>
+      <div class="timeline">
+        {
+          dayTimeline.map(stop => (
+            <div class="stop">
+              <span class="stop-dot">{stop.emoji}</span>
+              <div class="stop-time">{stop.time}</div>
+              <div class="stop-title">
+                {stop.href ? (
+                  <a href={stop.href}>
+                    {stop.label}
+                    <span class="recipe-arrow">recipe →</span>
+                  </a>
+                ) : (
+                  stop.label
+                )}
               </div>
-
-              <div class={`meal-body${isFirst ? ' open' : ''}`} id={`body-${meal.id}`}>
-                {meal.items.map(item => (
-                  <div class="item-row" data-item-row={meal.id}>
-                    <span class="item-name">{item.name}</span>
-                    <div class="item-macros">
-                      <span class="cal">{item.calories} cal</span>
-                      <span class="pro">{item.protein}p</span>
-                      <span class="fat">{item.fat}f</span>
-                      <span class="carb">{item.carbs}c</span>
-                    </div>
-                  </div>
-                ))}
-                {isDinner &&
-                  selectedDinner.components.map(c => (
-                    <div class="item-row print-component no-macros">
-                      <span class="print-checkbox" />
-                      <span class="print-role">{c.role}</span>
-                      <span class="item-name">{c.description}</span>
-                    </div>
-                  ))}
-                {!isDinner &&
-                  meal.items.map(item => (
-                    <div class="item-row print-component">
-                      <span class="print-checkbox" />
-                      <span class="print-role" />
-                      <span class="item-name">{item.name}</span>
-                      <div class="item-macros">
-                        <span class="cal">{item.calories} cal</span>
-                        <span class="pro">{item.protein}p</span>
-                      </div>
-                    </div>
-                  ))}
-                <p class="meal-note" data-meal-note={meal.id}>
-                  💡 {meal.note}
-                </p>
+              <div class="stop-detail">{stop.detail}</div>
+              <div class="stop-macros">
+                <span class="cal">{stop.macros.calories} cal</span>
+                <span class="pro">{stop.macros.protein}p</span>
+                <span class="fat">{stop.macros.fat}f</span>
+                <span class="carb">{stop.macros.carbs}c</span>
               </div>
             </div>
-          );
-        })
-      }
+          ))
+        }
 
-      <!-- ── Shopping List ── -->
-      <div class="shopping-section">
-        <p class="section-heading">Shopping list — this week</p>
-        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px;">
-          <button class="print-btn" id="print-checklist-btn">☑ Print daily checklist</button>
-          <button class="print-btn" id="print-shopping-btn">⎙ Print shopping list</button>
-        </div>
-
-        <div class="shopping-cols" style="margin-top: 16px;">
-          <div>
-            <div class="shopping-col-label">Costco</div>
-            <div id="costco-list"></div>
-          </div>
-          <div>
-            <div class="shopping-col-label">Other / specialty</div>
-            <div id="other-list"></div>
+        <!-- Flex backfill as a dashed timeline stop -->
+        <div class="stop flex">
+          <span class="stop-dot">🍎</span>
+          <div class="stop-time">Throughout</div>
+          <div class="stop-title">Flex backfill</div>
+          <div class="stop-detail">{flexBackfill.detail}</div>
+          <div class="stop-macros">
+            <span class="cal">~{flexBackfill.calories} cal</span>
           </div>
         </div>
+      </div>
 
-        <p class="section-heading" style="margin-top: 28px;">
-          Pantry staples — check before you go
+      <!-- ── Reference notes ── -->
+      <div class="notes">
+        <div class="notes-label">Reference</div>
+        <p>
+          <strong>Fruit rotation</strong>: medium apple ≈ 95 cal / 25c · medium banana ≈ 105 cal /
+          27c · medium pear ≈ 100 cal / 27c · cara cara orange ≈ 80 cal / 20c · plum ≈ 30 cal / 8c.
         </p>
-        <div class="pantry-list">
-          {pantryStaples.map(item => <div class="pantry-item">{item}</div>)}
-        </div>
-      </div>
-
-      <!-- ── Print notes block (print only) ── -->
-      <div class="print-notes">
-        <div class="print-notes-label">Notes</div>
-        <div class="print-notes-lines">
-          {Array.from({ length: 6 }).map(() => <div class="print-notes-line" />)}
-        </div>
-      </div>
-
-      <div class="footer-note">
-        <strong style="color: #555;">Each Sunday:</strong> Pick a dinner above — the daily
-        plan, macros, and shopping list update instantly. Change <code>thisWeek.dinner</code> in{' '}
-        <code>mealPrepTargets.ts</code> to persist your selection across deploys. Set{' '}
-        <code>dinnerActual</code> once you've calculated per-serving macros.
+        <p>
+          <strong>Cheese stick</strong> ≈ 80 cal / 6p / 6f.
+        </p>
+        <p>
+          <strong>Gym days</strong> (Tue/Fri): add a protein shake post-workout (~180 cal / 30p). Uncounted
+          on purpose.
+        </p>
       </div>
     </div>
   </main>
 </Layout>
-
-<script
-  define:vars={{
-    dinnerDishesData: Object.values(dinnerDishes),
-    fixedMealsData: fixedMeals,
-    initialDinnerId: thisWeek.dinner,
-  }}
->
-  // ── State ──
-  let selectedDinnerId = initialDinnerId;
-
-  const dinnerMap = Object.fromEntries(dinnerDishesData.map(d => [d.id, d]));
-
-  // Fixed meal totals (breakfast + salmon salad + shake + yogurt)
-  function sumItems(items) {
-    return items.reduce(
-      (a, i) => ({
-        calories: a.calories + i.calories,
-        protein: a.protein + i.protein,
-        fat: a.fat + i.fat,
-        carbs: a.carbs + i.carbs,
-      }),
-      { calories: 0, protein: 0, fat: 0, carbs: 0 }
-    );
-  }
-
-  const fixedTotals = fixedMealsData.reduce(
-    (acc, meal) => {
-      const s = sumItems(meal.items);
-      return {
-        calories: acc.calories + s.calories,
-        protein: acc.protein + s.protein,
-        fat: acc.fat + s.fat,
-        carbs: acc.carbs + s.carbs,
-      };
-    },
-    { calories: 0, protein: 0, fat: 0, carbs: 0 }
-  );
-
-  // ── Rebuild shopping list ──
-  function buildShoppingList() {
-    const dinner = dinnerMap[selectedDinnerId];
-
-    const allItems = [
-      ...fixedMealsData.flatMap(m => m.shoppingList),
-      ...dinner.shoppingList,
-    ];
-
-    const seen = new Map();
-    for (const item of allItems) {
-      if (!seen.has(item.item)) seen.set(item.item, item);
-    }
-    const unique = Array.from(seen.values());
-    const costco = unique.filter(i => i.costco);
-    const other = unique.filter(i => !i.costco);
-
-    function renderItems(items, containerId) {
-      const el = document.getElementById(containerId);
-      if (!el) return;
-      el.innerHTML = items
-        .map(
-          i => `
-        <div class="shopping-item${i.costco ? '' : ' non-costco'}">
-          <span class="shopping-item-name">${i.item}</span>
-          <span class="shopping-item-qty">${i.qty}</span>
-        </div>
-      `
-        )
-        .join('');
-    }
-
-    renderItems(costco, 'costco-list');
-    renderItems(other, 'other-list');
-  }
-
-  // ── Update meal card (lunch or dinner) ──
-  function updateMealCard(dish) {
-    const nameEl = document.querySelector(`[data-meal-name="dinner"]`);
-    const macrosEl = document.querySelector(`[data-meal-macros="dinner"]`);
-    const noteEl = document.querySelector(`[data-meal-note="dinner"]`);
-    const itemRows = document.querySelectorAll(`[data-item-row="dinner"]`);
-
-    if (nameEl) nameEl.textContent = dish.label;
-    if (macrosEl)
-      macrosEl.innerHTML = `
-      <span style="color: #c8a527">${dish.target.calories} cal</span>
-      <span style="color: #3a8f5c">${dish.target.protein}p</span>
-      <span style="color: #e07c3a">${dish.target.fat}f</span>
-      <span style="color: #5a9fe8">${dish.target.carbs}c</span>
-    `;
-    if (noteEl) noteEl.textContent = '💡 ' + dish.prepNote;
-
-    // Update item row
-    if (itemRows.length > 0) {
-      itemRows[0].querySelector('.item-name').textContent = '1 of 10 portions (target)';
-      const spans = itemRows[0].querySelectorAll('.item-macros span');
-      if (spans[0]) spans[0].textContent = dish.target.calories + ' cal';
-      if (spans[1]) spans[1].textContent = dish.target.protein + 'p';
-      if (spans[2]) spans[2].textContent = dish.target.fat + 'f';
-      if (spans[3]) spans[3].textContent = dish.target.carbs + 'c';
-    }
-  }
-
-  // ── Update totals bars ──
-  function updateTotals() {
-    const dinner = dinnerMap[selectedDinnerId].target;
-    const total = {
-      calories: fixedTotals.calories + dinner.calories,
-      protein: fixedTotals.protein + dinner.protein,
-      fat: fixedTotals.fat + dinner.fat,
-      carbs: fixedTotals.carbs + dinner.carbs,
-    };
-
-    const headerCal = document.getElementById('header-cal');
-    if (headerCal) headerCal.innerHTML = `${total.calories} cal<br /><span>cut protocol</span>`;
-
-    for (const key of ['calories', 'protein', 'fat', 'carbs']) {
-      const bar = document.querySelector(`[data-macro="${key}"]`);
-      if (!bar) continue;
-      const valueEl = bar.querySelector('.macro-value');
-      const fillEl = bar.querySelector('.macro-bar-fill');
-      const target = parseInt(valueEl.dataset.target);
-      const color = valueEl.dataset.color;
-      const value = total[key];
-      const pct = Math.min((value / target) * 100, 100);
-      const atTarget = pct >= 95;
-      valueEl.innerHTML = `${value}<span style="color: #555">/${target}</span>`;
-      valueEl.style.color = atTarget ? color : '#444';
-      fillEl.style.width = pct + '%';
-    }
-  }
-
-  // ── Picker click handler ──
-  document.querySelectorAll('.picker-card').forEach(card => {
-    card.addEventListener('click', () => {
-      const id = card.dataset.id;
-
-      document
-        .querySelectorAll(`.picker-card[data-type="dinner"]`)
-        .forEach(c => c.classList.remove('selected'));
-      card.classList.add('selected');
-
-      selectedDinnerId = id;
-      updateMealCard(dinnerMap[id]);
-
-      updateTotals();
-      buildShoppingList();
-    });
-  });
-
-  // ── Accordion ──
-  Array.from(document.querySelectorAll('[data-toggle]')).forEach(header => {
-    header.addEventListener('click', () => {
-      const id = header.dataset.toggle;
-      const body = document.getElementById(`body-${id}`);
-      const chevron = header.querySelector('.chevron');
-      const isOpen = body.classList.contains('open');
-      document.querySelectorAll('.meal-body').forEach(b => b.classList.remove('open'));
-      document.querySelectorAll('.meal-header').forEach(h => {
-        h.classList.remove('open');
-        h.querySelector('.chevron')?.classList.remove('open');
-      });
-      if (!isOpen) {
-        body.classList.add('open');
-        header.classList.add('open');
-        chevron?.classList.add('open');
-      }
-    });
-  });
-
-  // ── Init shopping list on load ──
-  buildShoppingList();
-
-  // ── Print buttons ──
-  function printWith(cls) {
-    document.body.classList.add(cls);
-    window.print();
-    window.addEventListener('afterprint', () => document.body.classList.remove(cls), {
-      once: true,
-    });
-  }
-
-  document
-    .getElementById('print-checklist-btn')
-    ?.addEventListener('click', () => printWith('print-checklist'));
-  document
-    .getElementById('print-shopping-btn')
-    ?.addEventListener('click', () => printWith('print-shopping'));
-</script>
