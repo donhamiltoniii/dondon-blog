@@ -8,6 +8,11 @@ export const readingList = [
         url: 'https://en.wikipedia.org/wiki/Ficciones',
       },
       {
+        desc: 'A comic novel about a man handed a "secret" manuscript of the lost wisdom of Atlantis, who builds a whole occult society around it that slowly dwindles into absurdity. Secret societies and esoterica played as deadpan comedy — short, funny, and a real on-ramp.',
+        name: 'Masters of Atlantis — Charles Portis',
+        url: 'https://en.wikipedia.org/wiki/Masters_of_Atlantis',
+      },
+      {
         desc: 'Short anecdotes; literal chapters on safe-cracking and lockpicking. An esoterica-and-mischief memoir wearing a physicist\u2019s coat.',
         name: "Surely You're Joking, Mr. Feynman! — Richard Feynman",
         url: 'https://en.wikipedia.org/wiki/Surely_You%27re_Joking,_Mr._Feynman!',
@@ -27,6 +32,21 @@ export const readingList = [
   {
     name: 'Tier 2 — Momentum',
     stuff: [
+      {
+        desc: 'Accessible narrative history tracing the legendary figure of Hermes Trismegistus from ancient Egypt through the Renaissance to now. A good spine for the whole hermeticism interest — and the one already on its way to me.',
+        name: 'The Quest for Hermes Trismegistus — Gary Lachman',
+        url: 'https://en.wikipedia.org/wiki/Gary_Lachman',
+      },
+      {
+        desc: 'A clear, scholarly-but-readable map of the whole field — Hermeticism, alchemy, Kabbalah, Rosicrucianism, and more. The closest thing to a guide for what the podcast is walking me through.',
+        name: 'The Western Esoteric Traditions — Nicholas Goodrick-Clarke',
+        url: 'https://en.wikipedia.org/wiki/Nicholas_Goodrick-Clarke',
+      },
+      {
+        desc: 'The clinical-research account that launched the modern DMT conversation. Real research that wanders into metaphysics — altered states, gnosis, the "contact" experience. Connects to the esoteric thread more than it first looks.',
+        name: 'DMT: The Spirit Molecule — Rick Strassman',
+        url: 'https://en.wikipedia.org/wiki/DMT:_The_Spirit_Molecule',
+      },
       {
         desc: 'Real Cold War espionage that reads like a thriller.',
         name: 'The Spy and the Traitor — Ben Macintyre',
@@ -148,6 +168,11 @@ export const readingList = [
         url: 'https://en.wikipedia.org/wiki/The_Sufis',
       },
       {
+        desc: 'Lachman\u2019s broad survey of the Western esoteric current — wider than the Hermes book. Optional, but a natural next step if his writing clicks for me.',
+        name: 'The Secret Teachers of the Western World — Gary Lachman',
+        url: 'https://en.wikipedia.org/wiki/Gary_Lachman',
+      },
+      {
         desc: 'Genuinely a workbook — read it with a pencil, not in bed.',
         name: 'The Art of Problem Solving — Richard Rusczyk',
         url: 'https://artofproblemsolving.com/store/book/aops-vol1',
@@ -166,6 +191,11 @@ export const readingList = [
         desc: 'Occultism, conspiracy, semiotics — three editors invent a conspiracy and it eats them. Dense, and deeply my kind of book.',
         name: "Foucault's Pendulum — Umberto Eco",
         url: 'https://en.wikipedia.org/wiki/Foucault%27s_Pendulum',
+      },
+      {
+        desc: 'The primary source — the actual ancient texts attributed to Hermes Trismegistus, Copenhaver\u2019s standard translation. Ranked late on purpose: short and foundational, but it rewards having the context from the histories first.',
+        name: 'The Hermetica (Corpus Hermeticum) — trans. Brian Copenhaver',
+        url: 'https://en.wikipedia.org/wiki/Hermetica',
       },
       {
         desc: 'Nested identities, typographic insanity, a book about a documentary that doesn\u2019t exist. An experience-object.',
