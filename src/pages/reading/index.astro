@@ -1,0 +1,29 @@
+---
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../constants';
+import Layout from '../../layouts/DefaultPageLayout.astro';
+import { readingList } from './readingList';
+---
+
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <h1>Reading List</h1>
+  <p>
+    A single ranked path, built for traction rather than prestige: propulsive, interest-matched
+    books first, big-idea nonfiction in the middle, and the dense bricks last. The order isn't
+    sacred — I'll deviate — but the point is to never be without a "next." One rule baked in: if a
+    book ever feels like a slog, quit it and drop to the next line without guilt.
+  </p>
+  {
+    readingList.map(({ name, stuff }) => (
+      <section>
+        <h2>{name}</h2>
+        <ul>
+          {stuff.map(({ desc, name, url }) => (
+            <li>
+              <a href={url}>{name}</a> - <em>{desc}</em>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</Layout>
