@@ -1,3 +1,9 @@
+## [2.64.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.63.0...v2.64.0) (2026-05-14)
+
+### 🚀 Features
+
+* **reading:** add page ([ab0bd3a](https://github.com/donhamiltoniii/dondon-blog/commit/ab0bd3aa03eacbcd49831a2c2ff51e86300ca171))
+
 ## [2.63.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.62.0...v2.63.0) (2026-05-13)
 
 ### 🚀 Features
