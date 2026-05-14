@@ -1,3 +1,9 @@
+## [2.65.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.64.0...v2.65.0) (2026-05-14)
+
+### 🚀 Features
+
+* **reading:** update reading list ([0b05702](https://github.com/donhamiltoniii/dondon-blog/commit/0b05702040ad3445fb251ea8639aae001746806c))
+
 ## [2.64.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.63.0...v2.64.0) (2026-05-14)
 
 ### 🚀 Features
