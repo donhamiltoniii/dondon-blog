@@ -1,3 +1,9 @@
+## [2.65.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.65.1...v2.65.2) (2026-05-20)
+
+### 📝 Content Updates
+
+* **food:** one pot turkey meatballs and cabbage ([59cc3da](https://github.com/donhamiltoniii/dondon-blog/commit/59cc3dad583aaa80987c85752e4c792ef1118c89))
+
 ## [2.65.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.65.0...v2.65.1) (2026-05-15)
 
 ### 📝 Content Updates
