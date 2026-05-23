@@ -1,3 +1,9 @@
+## [2.65.3](https://github.com/donhamiltoniii/dondon-blog/compare/v2.65.2...v2.65.3) (2026-05-23)
+
+### 📝 Content Updates
+
+* **food:** lean burger and fries ([c1993af](https://github.com/donhamiltoniii/dondon-blog/commit/c1993afd49ea566e0493e054af40afb548163605))
+
 ## [2.65.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.65.1...v2.65.2) (2026-05-20)
 
 ### 📝 Content Updates
