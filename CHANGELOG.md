@@ -1,3 +1,9 @@
+## [2.65.4](https://github.com/donhamiltoniii/dondon-blog/compare/v2.65.3...v2.65.4) (2026-05-28)
+
+### 📝 Content Updates
+
+* **food:** carrot cake protein bake ([895d8b5](https://github.com/donhamiltoniii/dondon-blog/commit/895d8b57ab0f1bf120ce6165c8c41bd3472bb097))
+
 ## [2.65.3](https://github.com/donhamiltoniii/dondon-blog/compare/v2.65.2...v2.65.3) (2026-05-23)
 
 ### 📝 Content Updates
