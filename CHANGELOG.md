@@ -1,3 +1,9 @@
+## [2.65.6](https://github.com/donhamiltoniii/dondon-blog/compare/v2.65.5...v2.65.6) (2026-06-15)
+
+### 📝 Content Updates
+
+* **food:** update burrito bowl macros ([dc2e871](https://github.com/donhamiltoniii/dondon-blog/commit/dc2e8712470c5cad00907cccbe7a5e7fd308cedf))
+
 ## [2.65.5](https://github.com/donhamiltoniii/dondon-blog/compare/v2.65.4...v2.65.5) (2026-06-15)
 
 ### 📝 Content Updates
