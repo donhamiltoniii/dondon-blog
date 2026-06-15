@@ -1,3 +1,9 @@
+## [2.65.5](https://github.com/donhamiltoniii/dondon-blog/compare/v2.65.4...v2.65.5) (2026-06-15)
+
+### 📝 Content Updates
+
+* **food:** add meal prep burrito bowls ([181ea82](https://github.com/donhamiltoniii/dondon-blog/commit/181ea8226a665bdac5a5744d08cc90207463dbd9))
+
 ## [2.65.4](https://github.com/donhamiltoniii/dondon-blog/compare/v2.65.3...v2.65.4) (2026-05-28)
 
 ### 📝 Content Updates
