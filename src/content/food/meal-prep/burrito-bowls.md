@@ -3,20 +3,31 @@ title: High-Protein Burrito Bowl (Costco Build)
 prepTime: 15 minutes
 cookTime: 20 minutes
 servings: 5
-servingSize: ~1.5 cups
-imgUrl: ''
-description: A meal-prep burrito bowl spec'd to hit ~57g protein and 15g fiber in under 600 calories, sourced entirely from Costco/Kirkland staples. Lean chicken does the protein lifting, black beans handle the fiber, and the whole thing reheats clean all week.
+servingSize: 1 bowl
+imgUrl: https://dondon.dev/placeholder-social.jpg
+description: A meal-prep burrito bowl spec'd to hit ~56g protein and ~13g fiber around 650 calories, sourced entirely from Costco/Kirkland staples. Lean chicken does the protein lifting, black beans handle the fiber, and the whole thing reheats clean all week.
 notes: Chicken breast is the protein anchor — poach or air-fry a batch and shred or cube. Black beans are the fiber engine; don't skimp. Rinse the beans well to cut sodium. Keep rice light — it's there for texture and a little carb, not bulk. Assemble cold for the week and microwave per serving; add the cheese fresh when reheating so it melts. Hot sauce, lime, and extra salsa at serving keep it from getting boring. Built around full-fat Kirkland shredded cheddar since Costco doesn't reliably stock reduced-fat — the extra fat is welcome here. Costco quantities far exceed one batch; most items (corn, beans, cheese, rice, salsa) carry over to future prep.
-tags: [high-protein, high-fiber, meal-prep, burrito-bowl, costco]
+tags:
+  - high-protein
+  - high-fiber
+  - meal-prep
+  - burrito-bowl
+  - costco
 ---
+
+# High-Protein Burrito Bowl (Costco Build)
+
+A meal-prep burrito bowl spec'd to hit ~56g protein and ~13g fiber around 650 calories, sourced entirely from Costco/Kirkland staples. Lean chicken does the protein lifting, black beans handle the fiber, and the whole thing reheats clean all week.
+
+## Macros
 
 |          | Whole Dish | Per Serving |
 | -------- | ---------- | ----------- |
-| Calories | ~2,875     | ~575        |
-| Protein  | ~285g      | ~57g        |
-| Fat      | ~73g       | ~14.5g      |
-| Carbs    | ~325g      | ~65g        |
-| Fiber    | ~75g       | ~15g        |
+| Calories | ~3,275     | ~655        |
+| Protein  | ~282g      | ~56.5g      |
+| Fat      | ~77g       | ~15.5g      |
+| Carbs    | ~370g      | ~74g        |
+| Fiber    | ~65g       | ~13g        |
 
 ## Ingredients
 
@@ -45,13 +56,13 @@ tags: [high-protein, high-fiber, meal-prep, burrito-bowl, costco]
 
 ## Per-Ingredient Macros (Per Serving)
 
-| Ingredient                 | Cal      | P      | F        | C      | Fiber   |
-| -------------------------- | -------- | ------ | -------- | ------ | ------- |
-| 113g cooked chicken breast | 140      | 35     | 3        | 0      | 0       |
-| 150g black beans           | 165      | 10     | 0.5      | 30     | 10      |
-| 80g corn                   | 70       | 3      | 1        | 16     | 2       |
-| 60g salsa roja             | 18       | 1      | 0        | 4      | 1       |
-| 30g full-fat cheddar       | 120      | 7      | 10       | 1      | 0       |
-| ~1/2 cup cooked rice       | 50       | 1      | 0        | 11     | 0.5     |
-| ~50g bell pepper           | 12       | 0      | 0        | 3      | 1       |
-| **Total**                  | **~575** | **57** | **14.5** | **65** | **~15** |
+| Ingredient                 | Cal      | P        | F        | C      | Fiber     |
+| -------------------------- | -------- | -------- | -------- | ------ | --------- |
+| 113g cooked chicken breast | 185      | 35       | 4        | 0      | 0         |
+| 150g black beans           | 130      | 8.5      | 0.5      | 24     | 9         |
+| 80g corn                   | 70       | 3        | 1        | 16     | 2         |
+| 60g salsa roja             | 18       | 1        | 0        | 4      | 1         |
+| 30g full-fat cheddar       | 120      | 7        | 10       | 1      | 0         |
+| ~1/2 cup cooked rice       | 120      | 2        | 0        | 26     | 0.5       |
+| ~50g bell pepper           | 12       | 0        | 0        | 3      | 1         |
+| **Total**                  | **~655** | **56.5** | **15.5** | **74** | **~13.5** |
