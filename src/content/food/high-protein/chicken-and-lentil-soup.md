@@ -2,29 +2,53 @@
 title: Chicken and Lentil Soup
 prepTime: 20 minutes
 cookTime: 50 minutes
-servings: A soup
-imgUrl:
-description: A simple, high protein, soup for cold days when you still want to be a muscly boi.
-tags: [chicken, lentils, carrot, celery]
+servings: 4
+servingSize: ~2 cups
+imgUrl: ''
+description: A simple, high-protein, high-fiber soup for cold days when you still want to be a muscly boi. Lentils crush the fiber target, lean chicken anchors the protein, and it stays low-fat so you've got budget left for dessert.
+notes: Green or brown lentils hold their shape better than red — use those. Carrots and celery are optional but add fiber, volume, and flavor for almost no calories, so keep them in. Don't fully cook the chicken when browning; it finishes in the simmer and shreds easily. Salt to taste at the end since broth sodium varies. Reheats great all week and thickens as the lentils absorb liquid — add a splash of broth or water when reheating.
+tags: [high-protein, high-fiber, chicken, lentils, soup, low-fat, meal-prep]
 ---
 
-### Ingredients
+|          | Whole Dish | Per Serving |
+| -------- | ---------- | ----------- |
+| Calories | ~1,485     | ~370        |
+| Protein  | ~168g      | ~42g        |
+| Fat      | ~23g       | ~6g         |
+| Carbs    | ~151g      | ~38g        |
+| Fiber    | ~62g       | ~15g        |
 
-- Chicken breasts (skinless, boneless) - about 1 pound (450g)
-- Dried green or brown lentils - 1 cup (rinsed and drained)
-- Onion - 1 large (chopped)
-- Garlic - 3 cloves (minced)
-- Chicken or vegetable broth - 6 cups
-- Olive oil - 1 tablespoon
-- Salt and pepper - to taste
-- Optional: Carrots and celery - 2 of each (chopped) for added flavor and nutrition.
+## Ingredients
 
-### Instructions
+- 1 lb (450g) boneless skinless chicken breast
+- 1 cup dried green or brown lentils, rinsed and drained
+- 1 large onion, chopped
+- 3 garlic cloves, minced
+- 6 cups chicken or vegetable broth
+- 2 carrots, chopped
+- 2 celery stalks, chopped
+- 1 tbsp olive oil
+- Salt and pepper to taste
+- Optional: fresh rosemary, thyme, or parsley
 
-1. Sauté Vegetables: In a large pot, heat the olive oil over medium heat. Add the chopped onion (and carrots and celery if you're using them). Sauté until the vegetables are soft and translucent, about 5 minutes. Add the minced garlic and sauté for another minute.
-1. Add Chicken: Add the chicken breasts to the pot and brown them slightly on each side. You don't need to fully cook them yet, just get a little color on them.
-1. Add Lentils and Broth: Add the lentils to the pot and stir to combine. Pour in the chicken or vegetable broth. Increase the heat to bring the mixture to a boil.
-1. Simmer: Once boiling, reduce the heat to low, cover the pot, and let it simmer for about 30 minutes, or until the lentils are soft and the chicken is fully cooked.
-1. Shred the Chicken: Remove the chicken breasts from the pot and shred them using two forks. Return the shredded chicken to the pot.
-1. Season: Add salt and pepper to taste. If you have fresh herbs like rosemary, thyme, or parsley on hand, they can be added for extra flavor.
-1. Serve: Ladle the soup into bowls and enjoy hot.
+## Instructions
+
+1. **Sauté vegetables:** Heat olive oil in a large pot over medium. Add onion, carrots, and celery. Sauté until soft and translucent, ~5 min. Add garlic and cook 1 more minute.
+2. **Brown chicken:** Add chicken breasts and brown slightly on each side. They don't need to cook through — just get some color.
+3. **Add lentils and broth:** Stir in lentils, then pour in broth. Bring to a boil.
+4. **Simmer:** Reduce to low, cover, and simmer ~30 min until lentils are soft and chicken is cooked through.
+5. **Shred:** Pull the chicken out, shred with two forks, and return it to the pot.
+6. **Season:** Salt and pepper to taste. Add fresh herbs if using.
+7. **Serve:** Ladle into bowls and eat hot.
+
+## Per-Ingredient Macros (Whole Dish)
+
+| Ingredient           | Cal        | P       | F      | C       | Fiber   |
+| -------------------- | ---------- | ------- | ------ | ------- | ------- |
+| 1 lb chicken breast  | 500        | 110     | 6      | 0       | 0       |
+| 1 cup dried lentils  | 680        | 49      | 2      | 116     | 60      |
+| 1 onion              | 45         | 1       | 0      | 11      | 2       |
+| 2 carrots + 2 celery | 80         | 2       | 0      | 18      | 5       |
+| 1 tbsp olive oil     | 120        | 0       | 14     | 0       | 0       |
+| 6 cups broth         | 60         | 6       | 1      | 6       | 0       |
+| **Total**            | **~1,485** | **168** | **23** | **151** | **~62** |
