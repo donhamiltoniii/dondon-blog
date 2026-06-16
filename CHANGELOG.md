@@ -1,3 +1,9 @@
+## [2.65.7](https://github.com/donhamiltoniii/dondon-blog/compare/v2.65.6...v2.65.7) (2026-06-16)
+
+### 📝 Content Updates
+
+* **food:** update chicken and lentil soup ([406c504](https://github.com/donhamiltoniii/dondon-blog/commit/406c5047169183aefffbea0759fb8fc5c2492f1e))
+
 ## [2.65.6](https://github.com/donhamiltoniii/dondon-blog/compare/v2.65.5...v2.65.6) (2026-06-15)
 
 ### 📝 Content Updates
