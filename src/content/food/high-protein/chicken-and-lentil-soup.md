@@ -4,7 +4,7 @@ prepTime: 20 minutes
 cookTime: 50 minutes
 servings: 4
 servingSize: ~2 cups
-imgUrl: ''
+imgUrl:
 description: A simple, high-protein, high-fiber soup for cold days when you still want to be a muscly boi. Lentils crush the fiber target, lean chicken anchors the protein, and it stays low-fat so you've got budget left for dessert.
 notes: Green or brown lentils hold their shape better than red — use those. Carrots and celery are optional but add fiber, volume, and flavor for almost no calories, so keep them in. Don't fully cook the chicken when browning; it finishes in the simmer and shreds easily. Salt to taste at the end since broth sodium varies. Reheats great all week and thickens as the lentils absorb liquid — add a splash of broth or water when reheating.
 tags: [high-protein, high-fiber, chicken, lentils, soup, low-fat, meal-prep]
@@ -43,12 +43,10 @@ tags: [high-protein, high-fiber, chicken, lentils, soup, low-fat, meal-prep]
 
 ## Per-Ingredient Macros (Whole Dish)
 
-| Ingredient           | Cal        | P       | F      | C       | Fiber   |
-| -------------------- | ---------- | ------- | ------ | ------- | ------- |
-| 1 lb chicken breast  | 500        | 110     | 6      | 0       | 0       |
-| 1 cup dried lentils  | 680        | 49      | 2      | 116     | 60      |
-| 1 onion              | 45         | 1       | 0      | 11      | 2       |
-| 2 carrots + 2 celery | 80         | 2       | 0      | 18      | 5       |
-| 1 tbsp olive oil     | 120        | 0       | 14     | 0       | 0       |
-| 6 cups broth         | 60         | 6       | 1      | 6       | 0       |
-| **Total**            | **~1,485** | **168** | **23** | **151** | **~62** |
+**1 lb chicken breast** — 500 cal · 110p · 6f · 0c · 0 fiber
+**1 cup dried lentils** — 680 cal · 49p · 2f · 116c · 60 fiber
+**1 onion** — 45 cal · 1p · 0f · 11c · 2 fiber
+**2 carrots + 2 celery** — 80 cal · 2p · 0f · 18c · 5 fiber
+**1 tbsp olive oil** — 120 cal · 0p · 14f · 0c · 0 fiber
+**6 cups broth** — 60 cal · 6p · 1f · 6c · 0 fiber
+**Total** — ~1,485 cal · 168p · 23f · 151c · ~62 fiber
