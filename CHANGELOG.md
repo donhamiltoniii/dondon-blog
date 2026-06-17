@@ -1,3 +1,9 @@
+## [2.66.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.65.7...v2.66.0) (2026-06-17)
+
+### 🚀 Features
+
+* **food:** update mishapen recipes + template ([1c8bef3](https://github.com/donhamiltoniii/dondon-blog/commit/1c8bef3fc8c890e3d4f4185a52220f710d0b31bf))
+
 ## [2.65.7](https://github.com/donhamiltoniii/dondon-blog/compare/v2.65.6...v2.65.7) (2026-06-16)
 
 ### 📝 Content Updates
