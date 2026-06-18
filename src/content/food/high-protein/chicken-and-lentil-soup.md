@@ -43,10 +43,11 @@ tags: [high-protein, high-fiber, chicken, lentils, soup, low-fat, meal-prep]
 
 ## Per-Ingredient Macros (Whole Dish)
 
-**1 lb chicken breast** — 500 cal · 110p · 6f · 0c · 0 fiber
-**1 cup dried lentils** — 680 cal · 49p · 2f · 116c · 60 fiber
-**1 onion** — 45 cal · 1p · 0f · 11c · 2 fiber
-**2 carrots + 2 celery** — 80 cal · 2p · 0f · 18c · 5 fiber
-**1 tbsp olive oil** — 120 cal · 0p · 14f · 0c · 0 fiber
-**6 cups broth** — 60 cal · 6p · 1f · 6c · 0 fiber
+- **1 lb chicken breast** — 500 cal · 110p · 6f · 0c · 0 fiber
+- **1 cup dried lentils** — 680 cal · 49p · 2f · 116c · 60 fiber
+- **1 onion** — 45 cal · 1p · 0f · 11c · 2 fiber
+- **2 carrots + 2 celery** — 80 cal · 2p · 0f · 18c · 5 fiber
+- **1 tbsp olive oil** — 120 cal · 0p · 14f · 0c · 0 fiber
+- **6 cups broth** — 60 cal · 6p · 1f · 6c · 0 fiber
+
 **Total** — ~1,485 cal · 168p · 23f · 151c · ~62 fiber

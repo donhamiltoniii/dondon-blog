@@ -58,11 +58,12 @@ _~655 calories, ~56.5g protein, ~15.5g fat, ~74g carbs, ~13g fiber_
 
 #### Per Ingredient (Per Serving)
 
-**113g cooked chicken breast** — 185 cal · 35p · 4f · 0c · 0 fiber
-**150g black beans** — 130 cal · 8.5p · 0.5f · 24c · 9 fiber
-**80g corn** — 70 cal · 3p · 1f · 16c · 2 fiber
-**60g salsa roja** — 18 cal · 1p · 0f · 4c · 1 fiber
-**30g full-fat cheddar** — 120 cal · 7p · 10f · 1c · 0 fiber
-**~1/2 cup cooked rice** — 120 cal · 2p · 0f · 26c · 0.5 fiber
-**~50g bell pepper** — 12 cal · 0p · 0f · 3c · 1 fiber
+- **113g cooked chicken breast** — 185 cal · 35p · 4f · 0c · 0 fiber
+- **150g black beans** — 130 cal · 8.5p · 0.5f · 24c · 9 fiber
+- **80g corn** — 70 cal · 3p · 1f · 16c · 2 fiber
+- **60g salsa roja** — 18 cal · 1p · 0f · 4c · 1 fiber
+- **30g full-fat cheddar** — 120 cal · 7p · 10f · 1c · 0 fiber
+- **~1/2 cup cooked rice** — 120 cal · 2p · 0f · 26c · 0.5 fiber
+- **~50g bell pepper** — 12 cal · 0p · 0f · 3c · 1 fiber
+
 **Total** — ~655 cal · 56.5p · 15.5f · 74c · ~13.5 fiber
