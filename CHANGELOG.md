@@ -1,3 +1,9 @@
+## [2.67.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.66.0...v2.67.0) (2026-06-18)
+
+### 🚀 Features
+
+* **food:** update recipes for new template ([b231837](https://github.com/donhamiltoniii/dondon-blog/commit/b2318373487ff78152da7f425f04c1425cf1f65f))
+
 ## [2.66.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.65.7...v2.66.0) (2026-06-17)
 
 ### 🚀 Features
