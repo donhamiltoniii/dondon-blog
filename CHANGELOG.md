@@ -1,3 +1,9 @@
+## [2.67.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.67.1...v2.67.2) (2026-06-19)
+
+### 📝 Content Updates
+
+* **food:** animal fries ([52a7d65](https://github.com/donhamiltoniii/dondon-blog/commit/52a7d65760a58748b95242f14beb80181b8efbe2))
+
 ## [2.67.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.67.0...v2.67.1) (2026-06-19)
 
 ### 📝 Content Updates
