@@ -1,3 +1,9 @@
+## [2.67.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.67.0...v2.67.1) (2026-06-19)
+
+### 📝 Content Updates
+
+* **meal-prep:** pollo guisado ([211e9e5](https://github.com/donhamiltoniii/dondon-blog/commit/211e9e56996edfe8a88804efcba50af1026405aa))
+
 ## [2.67.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.66.0...v2.67.0) (2026-06-18)
 
 ### 🚀 Features
