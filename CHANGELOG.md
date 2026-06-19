@@ -1,3 +1,9 @@
+## [2.67.3](https://github.com/donhamiltoniii/dondon-blog/compare/v2.67.2...v2.67.3) (2026-06-19)
+
+### 📝 Content Updates
+
+* **food:** update turket and sweet potato skillet ([5e3d616](https://github.com/donhamiltoniii/dondon-blog/commit/5e3d616d38d31494c3575642b6f9eb3f6b3baad9))
+
 ## [2.67.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.67.1...v2.67.2) (2026-06-19)
 
 ### 📝 Content Updates
