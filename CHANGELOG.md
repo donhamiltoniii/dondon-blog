@@ -1,3 +1,9 @@
+## [2.67.4](https://github.com/donhamiltoniii/dondon-blog/compare/v2.67.3...v2.67.4) (2026-06-26)
+
+### 📝 Content Updates
+
+* **food:** add buffalo chicken mac n cheese ([cfd2c9e](https://github.com/donhamiltoniii/dondon-blog/commit/cfd2c9e590be080a2c4d48baa9a61df5aaa7f0e0))
+
 ## [2.67.3](https://github.com/donhamiltoniii/dondon-blog/compare/v2.67.2...v2.67.3) (2026-06-19)
 
 ### 📝 Content Updates
