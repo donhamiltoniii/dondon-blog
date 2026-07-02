@@ -45,26 +45,26 @@ tags: [turkey, chili, beans, kale, meal-prep, high-protein, low-cal]
 
 | Field       | Amount |
 | ----------- | ------ |
-| Calories    | 1875   |
-| Protein (g) | 216    |
-| Fat (g)     | 60     |
-| Carbs (g)   | 144    |
-| Fiber (g)   | 43     |
-| Sugar (g)   | ~14    |
+| Calories    | 2126   |
+| Protein (g) | 222    |
+| Fat (g)     | 74     |
+| Carbs (g)   | 146    |
+| Fiber (g)   | 41     |
+| Sugar (g)   | ~15    |
 | Volume (g)  | ~2100  |
 
 #### Per Serving
 
-_375 calories, 43g protein, 12g fat, 29g carbs, 9g fiber, ~3g sugar_
+_425 calories, 44g protein, 15g fat, 29g carbs, 8g fiber, ~3g sugar_
 
 #### Per Ingredient (Whole Dish)
 
-- **Ground turkey 794g** — 1064 cal · 156p · 57f · 0c · 0 fiber
-- **Cannellini beans 480g drained** — 552 cal · 42p · 2f · 96c · 32 fiber
-- **Kale 150g** — 74 cal · 6p · 1f · 13c · 5 fiber
-- **Diced tomatoes 400g** — 80 cal · 4p · 0f · 16c · 3 fiber
-- **Green chiles 113g** — 25 cal · 1p · 0f · 5c · 1 fiber
-- **Onion 150g** — 60 cal · 2p · 0f · 14c · 2 fiber
-- **Bone broth 3 cups** — 20 cal · 5p · 0f · 0c · 0 fiber
+- **Ground turkey 794g (93/7 raw)** — 1191 cal · 148.7p · 66.2f · 0c · 0 fiber
+- **Cannellini beans 480g drained** — 552 cal · 35.5p · 5.8f · 90.2c · 32.6 fiber
+- **Kale 150g** — 74 cal · 6.4p · 1.4f · 13.2c · 5.4 fiber
+- **Diced tomatoes 400g** — 96 cal · 3.2p · 0f · 19.2c · 0 fiber
+- **Green chiles 113g** — 33 cal · 0p · 0f · 3.4c · 0 fiber
+- **Onion 150g** — 60 cal · 1.5p · 0f · 13.5c · 2.5 fiber
+- **Bone broth 3 cups** — 120 cal · 27p · 0.9f · 6c · 0 fiber
 
-**Total** — 1875 cal · 216p · 60f · 144c · 43 fiber
+**Total** — 2126 cal · 222.3p · 74.3f · 145.5c · 40.5 fiber
