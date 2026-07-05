@@ -2,8 +2,8 @@
 title: One-Pot Kimchi Turkey Rice
 prepTime: 10 minutes
 cookTime: 30 minutes
-servings: 6
-servingSize: ~440g (1.75c)
+servings: 5
+servingSize: ~525g (2c)
 imgUrl:
 description: A one-pot Dutch oven dish where jammy kimchi and browned turkey cook down together, then jasmine rice simmers right in beef bone broth until fluffy. Canned corn stirred in at the end cuts the kimchi tang with a little sweetness. High protein, big flavor, and everything happens in one pot.
 notes:
@@ -12,7 +12,7 @@ tags: [turkey, kimchi, rice, one-pot, dutch-oven, dinner, main, high-protein]
 
 ### Ingredients
 
-- 2 lbs ground turkey (Costco Butterball)
+- 2 lbs ground turkey (Costco Butterball 93/7)
 - 1 medium onion, diced
 - 4 cloves garlic, minced
 - 2 cups kimchi, roughly chopped (with a splash of its juice)
@@ -25,7 +25,7 @@ tags: [turkey, kimchi, rice, one-pot, dutch-oven, dinner, main, high-protein]
 
 ### Instructions
 
-1. Heat the Dutch oven over medium-high. Add the ground turkey and brown, breaking it up, until no longer pink (~6–8 min). If it renders a lot of liquid, let it cook off.
+1. Heat the Dutch oven over medium-high. Add the ground turkey and brown, breaking it up, until no longer pink (~6–8 min).
 2. Push turkey to the side, add the onion and garlic, and cook until softened (~3 min).
 3. Add the chopped kimchi (and a splash of its juice) and cook down until jammy and slightly caramelized, ~4–5 min. Stir in the sesame oil.
 4. Add the uncooked jasmine rice and stir 1 min to toast lightly and coat.
@@ -39,28 +39,28 @@ tags: [turkey, kimchi, rice, one-pot, dutch-oven, dinner, main, high-protein]
 
 | Field        | Amount |
 | ------------ | ------ |
-| **Calories** | 3,267  |
-| **Protein**  | 244g   |
-| **Fat**      | 90g    |
-| **Carbs**    | 358g   |
-| **Fiber**    | 16g    |
-| **Sugar**    | 23g    |
+| **Calories** | 2,992  |
+| **Protein**  | 239g   |
+| **Fat**      | 82g    |
+| **Carbs**    | 342g   |
+| **Fiber**    | 12g    |
+| **Sugar**    | 20g    |
 | **Volume**   | 2,628g |
 
 #### Per Serving
 
-_544 calories, 41g protein, 15g fat, 60g carbs, 3g fiber, 4g sugar_
+_598 calories, 48g protein, 16g fat, 68g carbs, 2g fiber, 4g sugar_
 
 #### Per Ingredient (Whole Dish)
 
-- **ground turkey (2 lb)** — 1360 cal · 176p · 68f · 0c · 0 fiber
+- **ground turkey (2 lb, 93/7)** — 1200 cal · 176p · 64f · 0c · 0 fiber
 - **onion** — 44 cal · 1p · 0f · 10c · 2 fiber
 - **garlic** — 18 cal · 1p · 0f · 4c · 0 fiber
-- **kimchi (2c)** — 90 cal · 6p · 1f · 15c · 6 fiber
-- **jasmine rice (2c dry)** — 1350 cal · 26p · 2f · 296c · 4 fiber
+- **kimchi (2c)** — 50 cal · 3p · 0f · 10c · 4 fiber
+- **jasmine rice (2c dry)** — 1280 cal · 24p · 0f · 288c · 2 fiber
 - **beef bone broth (3c)** — 135 cal · 27p · 3f · 0c · 0 fiber
-- **corn (1 can)** — 130 cal · 4p · 2f · 30c · 4 fiber
+- **corn (1 can)** — 125 cal · 4p · 2f · 27c · 4 fiber
 - **soy sauce (2 tbsp)** — 20 cal · 3p · 0f · 3c · 0 fiber
 - **sesame oil (1 tbsp)** — 120 cal · 0p · 14f · 0c · 0 fiber
 
-**Total** — 3267 cal · 244p · 90f · 358c · 16 fiber
+**Total** — 2992 cal · 239p · 82f · 342c · 12 fiber
