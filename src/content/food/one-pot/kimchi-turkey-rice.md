@@ -17,7 +17,7 @@ tags: [turkey, kimchi, rice, one-pot, dutch-oven, dinner, main, high-protein]
 - 4 cloves garlic, minced
 - 2 cups kimchi, roughly chopped (with a splash of its juice)
 - 2 cups jasmine rice, uncooked
-- 3 cups beef bone broth
+- 2 cups beef bone broth (Kettle & Fire) + 1 cup water
 - 1 can corn (~15 oz), drained
 - 2 tbsp soy sauce
 - 1 tbsp sesame oil
@@ -29,7 +29,7 @@ tags: [turkey, kimchi, rice, one-pot, dutch-oven, dinner, main, high-protein]
 2. Push turkey to the side, add the onion and garlic, and cook until softened (~3 min).
 3. Add the chopped kimchi (and a splash of its juice) and cook down until jammy and slightly caramelized, ~4–5 min. Stir in the sesame oil.
 4. Add the uncooked jasmine rice and stir 1 min to toast lightly and coat.
-5. Pour in the beef bone broth and soy sauce, scrape up any browned bits, and bring to a boil.
+5. Pour in the beef bone broth, water, and soy sauce, scrape up any browned bits, and bring to a boil.
 6. Cover, reduce to low, and simmer 15 min until the rice absorbs the liquid and is tender. Don't lift the lid early.
 7. Kill the heat, stir in the drained corn, cover again, and let sit 5 min. Fluff and serve.
 
@@ -39,9 +39,9 @@ tags: [turkey, kimchi, rice, one-pot, dutch-oven, dinner, main, high-protein]
 
 | Field        | Amount |
 | ------------ | ------ |
-| **Calories** | 2,842  |
-| **Protein**  | 217g   |
-| **Fat**      | 74g    |
+| **Calories** | 2,787  |
+| **Protein**  | 210g   |
+| **Fat**      | 72g    |
 | **Carbs**    | 342g   |
 | **Fiber**    | 12g    |
 | **Sugar**    | 20g    |
@@ -49,7 +49,7 @@ tags: [turkey, kimchi, rice, one-pot, dutch-oven, dinner, main, high-protein]
 
 #### Per Serving
 
-_568 calories, 43g protein, 15g fat, 68g carbs, 2g fiber, 4g sugar_
+_557 calories, 42g protein, 14g fat, 68g carbs, 2g fiber, 4g sugar_
 
 #### Per Ingredient (Whole Dish)
 
@@ -58,9 +58,9 @@ _568 calories, 43g protein, 15g fat, 68g carbs, 2g fiber, 4g sugar_
 - **garlic** — 18 cal · 1p · 0f · 4c · 0 fiber
 - **kimchi (2c)** — 50 cal · 3p · 0f · 10c · 4 fiber
 - **jasmine rice (2c dry)** — 1280 cal · 24p · 0f · 288c · 2 fiber
-- **beef bone broth (3c)** — 135 cal · 27p · 3f · 0c · 0 fiber
+- **beef bone broth (K&F, 2c)** — 80 cal · 20p · 0f · 0c · 0 fiber
 - **corn (1 can)** — 125 cal · 4p · 2f · 27c · 4 fiber
 - **soy sauce (2 tbsp)** — 20 cal · 3p · 0f · 3c · 0 fiber
 - **sesame oil (1 tbsp)** — 120 cal · 0p · 14f · 0c · 0 fiber
 
-**Total** — 2842 cal · 217p · 74f · 342c · 12 fiber
+**Total** — 2787 cal · 210p · 72f · 342c · 12 fiber
