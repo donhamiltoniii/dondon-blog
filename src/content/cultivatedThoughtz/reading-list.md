@@ -34,6 +34,9 @@ I'm a fucking dolt and I want to read more. I love books and I always have. But 
 - **[The Western Esoteric Traditions](https://en.wikipedia.org/wiki/Nicholas_Goodrick-Clarke)** — Nicholas Goodrick-Clarke
   A clear, scholarly-but-readable map of the whole field — Hermeticism, alchemy, Kabbalah, Rosicrucianism, and more. The closest thing to a guide for what the podcast is walking me through.
 
+- **[The Gnostic Gospels](https://en.wikipedia.org/wiki/The_Gnostic_Gospels)** — Elaine Pagels
+  The accessible classic on Gnosticism — short, scholarly, readable. Uses the Nag Hammadi finds to show how contested early Christianity really was. The entry point for the _gnosis_ thread, and a sharp contrast-case for Hermetism's sunnier take on the cosmos.
+
 - **[Galileo's Error](https://en.wikipedia.org/wiki/Galileo%27s_Error)** — Philip Goff
   The most accessible entry into why "consciousness is fundamental" is taken seriously in academic philosophy again. Not the transmission theory specifically, but the metaphysical soil it grows in — and it feeds the same thread the hermeticism reading circles.
 
@@ -111,6 +114,9 @@ I'm a fucking dolt and I want to read more. I love books and I always have. But 
 - **[The Denial of Death](https://en.wikipedia.org/wiki/The_Denial_of_Death)** — Ernest Becker
   On mortality as the hidden engine behind a lot of human behavior.
 
+- **[The Gnostic Religion](https://en.wikipedia.org/wiki/Hans_Jonas)** — Hans Jonas
+  The 20th-century classic that shaped how the whole field gets read — Jonas frames Gnosticism through existentialism (the spark "thrown" into a hostile world). Denser and more philosophical than Pagels; the fiber version of the Gnostic thread.
+
 - **[The Sufis](https://en.wikipedia.org/wiki/The_Sufis)** — Idries Shah
   Esoteric tradition, teaching-stories, the absurd used as a tool. Genuinely strange.
 
@@ -133,6 +139,12 @@ I'm a fucking dolt and I want to read more. I love books and I always have. But 
 
 - **[The Hermetica (Corpus Hermeticum)](https://en.wikipedia.org/wiki/Hermetica)** — trans. Brian Copenhaver
   The primary source — the actual ancient texts attributed to Hermes Trismegistus, Copenhaver's standard translation. Ranked late on purpose: short and foundational, but it rewards having the context from the histories first.
+
+- **[The Nag Hammadi Scriptures](https://en.wikipedia.org/wiki/Nag_Hammadi_library)** — ed. Marvin Meyer
+  The Gnostic primary sources themselves — the Coptic texts unearthed in 1945, including the Gospel of Thomas and the Apocryphon of John, in a modern scholarly translation. The _gnosis_-thread counterpart to the Hermetica: read it after Pagels and Jonas have set the context.
+
+- **[The Red Book (Liber Novus)](<https://en.wikipedia.org/wiki/The_Red_Book_(Jung)>)** — C. G. Jung
+  Jung's private illuminated record of his own confrontation with the unconscious — hand-lettered, painted, and openly Gnostic in imagery. An experience-object as much as a book. The _Seven Sermons to the Dead_ (his explicitly Gnostic text, attributed to Basilides) appears in its appendix, so this one entry covers the whole Gnostic-Jung rabbit hole.
 
 - **[House of Leaves](https://en.wikipedia.org/wiki/House_of_Leaves)** — Mark Z. Danielewski
   Nested identities, typographic insanity, a book about a documentary that doesn't exist. An experience-object.
