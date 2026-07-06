@@ -1,7 +1,7 @@
 ---
 title: Reading List
 createdAt: 2026-07-03
-updatedAt: 2026-07-03
+updatedAt: 2026-07-06
 ---
 
 I'm a fucking dolt and I want to read more. I love books and I always have. But I am bad at making time to sit and read them. In an effort to change that, I've compiled a list based on another list from, I honestly don't remember where now. But I have made some additions and cultivated a path to get me reading more physical books. This is that path:
@@ -20,6 +20,9 @@ I'm a fucking dolt and I want to read more. I love books and I always have. But 
 - **[Prometheus Rising](https://en.wikipedia.org/wiki/Prometheus_Rising)** — Robert Anton Wilson
   Occult, absurd, funny; chunked into sections with exercises, so the two-pages-at-a-time thing works naturally.
 
+- **[The Doors of Perception](https://en.wikipedia.org/wiki/The_Doors_of_Perception)** — Aldous Huxley
+  ~60 pages. The "reducing valve" idea — the brain as a filter that narrows a vast consciousness down to a survival-useful trickle. Borrowed from Bergson, vivid, and a natural esoterica-adjacent on-ramp.
+
 - **[The Code Book](https://en.wikipedia.org/wiki/The_Code_Book)** — Simon Singh
   Cryptography history from Mary Queen of Scots to quantum, worked ciphers, and unsolved puzzles in the back.
 
@@ -30,6 +33,9 @@ I'm a fucking dolt and I want to read more. I love books and I always have. But 
 
 - **[The Western Esoteric Traditions](https://en.wikipedia.org/wiki/Nicholas_Goodrick-Clarke)** — Nicholas Goodrick-Clarke
   A clear, scholarly-but-readable map of the whole field — Hermeticism, alchemy, Kabbalah, Rosicrucianism, and more. The closest thing to a guide for what the podcast is walking me through.
+
+- **[Galileo's Error](https://en.wikipedia.org/wiki/Galileo%27s_Error)** — Philip Goff
+  The most accessible entry into why "consciousness is fundamental" is taken seriously in academic philosophy again. Not the transmission theory specifically, but the metaphysical soil it grows in — and it feeds the same thread the hermeticism reading circles.
 
 - **[DMT: The Spirit Molecule](https://en.wikipedia.org/wiki/DMT:_The_Spirit_Molecule)** — Rick Strassman
   The clinical-research account that launched the modern DMT conversation. Real research that wanders into metaphysics — altered states, gnosis, the "contact" experience. Connects to the esoteric thread more than it first looks.
@@ -53,6 +59,9 @@ I'm a fucking dolt and I want to read more. I love books and I always have. But 
   Fantasy footnoted like a history book; dry, funny, immersive.
 
 ## Tier 3 — The fiber
+
+- **[Human Immortality](https://en.wikipedia.org/wiki/Human_Immortality:_Two_Supposed_Objections_to_the_Doctrine)** — William James
+  The 1898 lecture that founds the transmission theory — the brain's "permissive/transmissive" function vs. its "productive" one. Short and free (public domain), but a dense turn-of-the-century philosophy text, so it earns its place here rather than the on-ramp.
 
 - **[Factfulness](https://en.wikipedia.org/wiki/Factfulness)** — Hans Rosling
   Gentlest entry in this tier.
@@ -115,6 +124,9 @@ I'm a fucking dolt and I want to read more. I love books and I always have. But 
 
 - **[Gödel, Escher, Bach](https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach)** — Douglas Hofstadter
   Playful but huge — dialogues, paradox, self-reference. A savor-over-months book.
+
+- **[Irreducible Mind](https://en.wikipedia.org/wiki/Irreducible_Mind)** — Edward F. Kelly, Emily Williams Kelly, et al.
+  The serious modern defense of James's transmission model — ~800 pages from the UVA group, marshaling the anomalous data (terminal lucidity, NDEs, mind-body effects) against a pure production theory. Reference-grade brick, for when the habit is real. Pairs with the James lecture in Tier 3.
 
 - **[Foucault's Pendulum](https://en.wikipedia.org/wiki/Foucault%27s_Pendulum)** — Umberto Eco
   Occultism, conspiracy, semiotics — three editors invent a conspiracy and it eats them. Dense, and deeply my kind of book.
