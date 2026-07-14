@@ -23,6 +23,7 @@ describe('cultivated thoughts utilities', () => {
       data: {
         title: title || `Thought ${id}`,
         createdAt,
+        updatedAt: createdAt,
       },
       slug: id,
     }) as CollectionEntry<'cultivatedThoughtz'>;

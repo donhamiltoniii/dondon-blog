@@ -1,5 +1,7 @@
-import { getCollection } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 import type { SeedAssets } from '../types';
+
+export type Seed = CollectionEntry<'seeds'>;
 
 type Options = {
   numberOfAssets: number | 'all';

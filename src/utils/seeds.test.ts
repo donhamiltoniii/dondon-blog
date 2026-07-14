@@ -19,6 +19,7 @@ describe('seed assets utilities', () => {
       data: {
         title: `Seed ${id}`,
         createdAt,
+        updatedAt: createdAt,
       },
       slug: id,
     }) as CollectionEntry<'seeds'>;

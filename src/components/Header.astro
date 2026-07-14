@@ -176,7 +176,7 @@ const navItems = [
     disableScroll();
   });
 
-  navigationItems?.addEventListener('click', (event: MouseEvent) => {
+  navigationItems?.addEventListener('click', (event) => {
     const targetEl = event.target as HTMLAnchorElement;
     if (targetEl?.tagName === 'A' || window.innerWidth >= 648) {
       return;

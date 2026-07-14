@@ -6,9 +6,8 @@ import { getAllSeedAssets, type Seed } from '../../../utils/seeds';
 export async function getStaticPaths() {
   const seeds = await getAllSeedAssets();
   return seeds.map((seed: Seed) => {
-    const slugArr = seed.id.split('/');
-    const paraSection = slugArr.unshift();
-    const slug = slugArr.join('/');
+    const [paraSection, ...rest] = seed.id.split('/');
+    const slug = rest.length > 0 ? rest.join('/') : paraSection;
 
     return {
       params: { paraSection, slug },

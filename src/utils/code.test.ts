@@ -23,6 +23,7 @@ describe('code assets utilities', () => {
       data: {
         title: title || `Code ${id}`,
         createdAt,
+        updatedAt: createdAt,
       },
       slug: id,
     }) as CollectionEntry<'code'>;

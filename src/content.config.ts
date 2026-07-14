@@ -10,11 +10,11 @@ const timestampedGlob = (dir: string, pattern = '**/*.md') =>
   glob({
     pattern,
     base: `./src/content/${dir}`,
-    transform: ({ data, filePath }) => ({
+    transform: ({ data, filePath }: { data: Record<string, unknown>; filePath: string }) => ({
       ...data,
       updatedAt: data.updatedAt ?? gitLastModified(filePath),
     }),
-  });
+  } as object as Parameters<typeof glob>[0]);
 
 /** Shared timestamp fields. */
 const timestamps = {
@@ -78,6 +78,7 @@ const seeds = defineCollection({
   loader: timestampedGlob('seeds'),
   schema: z.object({
     title: z.string(),
+    description: z.string().optional(),
     ...timestamps,
   }),
 });

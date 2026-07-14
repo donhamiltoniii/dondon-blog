@@ -46,6 +46,7 @@
     "sanitize-html": "^2.15.0"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.9",
     "@eslint/js": "^9.36.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
@@ -65,6 +66,7 @@
     "prettier": "^3.6.2",
     "prettier-plugin-astro": "^0.14.1",
     "semantic-release": "^24.2.7",
+    "typescript": "^5.9.3",
     "vitest": "^3.2.4"
   }
 }
