@@ -1,36 +1,44 @@
 import { defineCollection, z } from 'astro:content';
+import { glob } from 'astro/loaders';
+import { gitLastModified } from './utils/git-dates';
+
+/**
+ * Glob loader with automatic updatedAt derivation.
+ * Frontmatter updatedAt always wins if present.
+ */
+const timestampedGlob = (dir: string, pattern = '**/*.md') =>
+  glob({
+    pattern,
+    base: `./src/content/${dir}`,
+    transform: ({ data, filePath }) => ({
+      ...data,
+      updatedAt: data.updatedAt ?? gitLastModified(filePath),
+    }),
+  });
+
+/** Shared timestamp fields. */
+const timestamps = {
+  createdAt: z.coerce.date(),
+  updatedAt: z.coerce.date(),
+};
 
 const code = defineCollection({
-  // Type-check frontmatter using a schema
+  loader: timestampedGlob('code'),
   schema: z.object({
     title: z.string(),
     description: z.string().optional(),
-    // Transform string to Date object
-    createdAt: z
-      .date()
-      .or(z.date())
-      .transform(val => new Date(val)),
-    updatedAt: z
-      .date()
-      .optional()
-      .transform(str => (str ? new Date(str) : undefined)),
     heroImage: z.string().optional(),
     published: z.boolean().optional(),
+    ...timestamps,
   }),
 });
 
 const cultivatedThoughtz = defineCollection({
+  loader: timestampedGlob('cultivatedThoughtz'),
   schema: z.object({
     title: z.string(),
     description: z.string().optional(),
-    createdAt: z
-      .date()
-      .or(z.date())
-      .transform(val => new Date(val)),
-    updatedAt: z
-      .date()
-      .optional()
-      .transform(str => (str ? new Date(str) : undefined)),
+    ...timestamps,
   }),
 });
 
@@ -53,27 +61,24 @@ const food = defineCollection({
 });
 
 const photos = defineCollection({
-  type: 'data',
+  loader: glob({
+    pattern: '**/*.{json,yaml,yml}',
+    base: './src/content/photos',
+  }),
   schema: ({ image }) =>
     z.object({
       cover: image(),
-      created: z.date(),
+      created: z.coerce.date(),
       description: z.string().optional(),
       title: z.string(),
     }),
 });
 
 const seeds = defineCollection({
+  loader: timestampedGlob('seeds'),
   schema: z.object({
     title: z.string(),
-    createdAt: z
-      .date()
-      .or(z.date())
-      .transform(val => new Date(val)),
-    updatedAt: z
-      .date()
-      .optional()
-      .transform(str => (str ? new Date(str) : undefined)),
+    ...timestamps,
   }),
 });
 

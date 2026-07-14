@@ -72,7 +72,7 @@ const sortedGroups: ArticleAssetGroup[] = Object.values(groupedAssets).sort(
           {group.assets.map(a => (
             <li>
               <FormattedDate date={a.data.createdAt} />
-              <a href={`/${slugPrefix}/${a.slug}/`}>{a.data.title}</a>
+              <a href={`/${slugPrefix}/${a.id}/`}>{a.data.title}</a>
             </li>
           ))}
         </ul>

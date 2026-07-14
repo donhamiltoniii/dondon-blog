@@ -12,7 +12,7 @@ const { recipeList } = Astro.props;
   {
     recipeList.map((recipe: FoodAsset) => (
       <li>
-        <a href={`/food/${recipe.slug}`}>{recipe.data.title}</a>
+        <a href={`/food/${recipe.id}`}>{recipe.data.title}</a>
       </li>
     ))
   }

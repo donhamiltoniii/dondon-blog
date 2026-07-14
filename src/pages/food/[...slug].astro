@@ -1,4 +1,5 @@
 ---
+import { render } from 'astro:content';
 import InternalFoodNav from '../../components/InternalFoodNav.astro';
 import Layout from '../../layouts/DefaultPageLayout.astro';
 import type { FoodAsset } from '../../types';
@@ -6,15 +7,15 @@ import { getFoodAssets } from '../../utils/food';
 
 export async function getStaticPaths() {
   const recipes = await getFoodAssets();
-  return recipes.map((recipe: { slug: any }) => ({
-    params: { slug: recipe.slug },
+  return recipes.map(recipe => ({
+    params: { slug: recipe.id },
     props: recipe,
   }));
 }
 type Props = FoodAsset;
 
 const recipe = Astro.props;
-const { Content } = await recipe.render();
+const { Content } = await render(recipe);
 ---
 
 <Layout title={recipe.data.title} description={recipe.data.description}>
@@ -52,12 +53,18 @@ const { Content } = await recipe.render();
           </p>
         )
       }
-      {recipe.data.notes && typeof recipe.data.notes !== 'string' && (
-        <h3>NOTES:</h3>
-        <ul>
-          {recipe.data.notes.map(n => <li>{n}</li>)}
-        </ul>
-      )}
+      {
+        recipe.data.notes && typeof recipe.data.notes !== 'string' && (
+          <>
+            <h3>NOTES:</h3>
+            <ul>
+              {recipe.data.notes.map(n => (
+                <li>{n}</li>
+              ))}
+            </ul>
+          </>
+        )
+      }
     </div>
   </header>
   <Content />

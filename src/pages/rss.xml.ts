@@ -9,27 +9,29 @@ import { getAllSeedAssets } from '../utils/seeds';
 
 const parser = new MarkdownIt();
 
+const renderBody = (body: string | undefined) => sanitize(parser.render(body ?? ''));
+
 export async function GET(context: APIContext) {
   const codeAssets = await getAllCodeAssets();
   const codeAssetsFilteredArr = codeAssets
     .filter(ca => ca.data.published)
     .map(ca => ({
-      link: `/code/${ca.slug}/`,
-      content: sanitize(parser.render(ca.body)),
+      link: `/code/${ca.id}/`,
+      content: renderBody(ca.body),
       ...ca.data,
     }));
 
   const cultivatedThoughtz = await getAllCultivatedThoughtz();
   const cultivatedThoughtzFilteredArr = cultivatedThoughtz.map(ct => ({
-    link: `/cultivated-thoughtz/${ct.slug}/`,
-    content: sanitize(parser.render(ct.body)),
+    link: `/cultivated-thoughtz/${ct.id}/`,
+    content: renderBody(ct.body),
     ...ct.data,
   }));
 
   const seeds = await getAllSeedAssets();
   const seedsFilteredArr = seeds.map(s => ({
-    link: `/seeds/${s.slug}/`,
-    content: sanitize(parser.render(s.body)),
+    link: `/seeds/${s.id}/`,
+    content: renderBody(s.body),
     ...s.data,
   }));
 
@@ -38,22 +40,9 @@ export async function GET(context: APIContext) {
     ...cultivatedThoughtzFilteredArr,
     ...seedsFilteredArr,
   ].sort((a, b) => {
-    // Logic is for descending order - newest posts first
-    if (a.updatedAt && b.updatedAt && a.updatedAt > b.updatedAt) {
-      return -1;
-    }
-    if (a.updatedAt && b.updatedAt && a.updatedAt < b.updatedAt) {
-      return 1;
-    }
-    // If for some reason there aren't updatedAt values
-    if (a.createdAt > b.createdAt) {
-      return -1;
-    }
-    if (a.createdAt < b.createdAt) {
-      return 1;
-    }
-    // If dates are equal
-    return 0;
+    const aDate = a.updatedAt ?? a.createdAt;
+    const bDate = b.updatedAt ?? b.createdAt;
+    return bDate.getTime() - aDate.getTime();
   });
 
   return rss({

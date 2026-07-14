@@ -1,0 +1,10 @@
+08:56:40 [ERROR] [build] Failed to call getStaticPaths for src/pages/seeds/[...slug]/index.astro
+Cannot read properties of undefined (reading 'split')
+  Location:
+    /home/dondon/dev/dondon-blog/node_modules/astro/dist/core/render/route-cache.js:29:17
+  Stack trace:
+    at file:///home/dondon/dev/dondon-blog/dist/pages/seeds/_---slug_.astro.mjs?time=1784033800317:22:31
+    at Module.getStaticPaths (file:///home/dondon/dev/dondon-blog/dist/pages/seeds/_---slug_.astro.mjs?time=1784033800317:21:16)
+    at async getPathsForRoute (file:///home/dondon/dev/dondon-blog/node_modules/astro/dist/core/build/generate.js:185:25)
+    at async generatePages (file:///home/dondon/dev/dondon-blog/node_modules/astro/dist/core/build/generate.js:85:7)
+    at async AstroBuilder.build (file:///home/dondon/dev/dondon-blog/node_modules/astro/dist/core/build/index.js:155:5)

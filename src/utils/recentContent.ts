@@ -30,12 +30,12 @@ export async function getRecentContent(limit = 10): Promise<ContentItem[]> {
 
       return {
         id: item.id,
-        slug: item.slug,
+        slug: item.id,
         collection,
         title: item.data.title,
         sortDate,
         isUpdate: !!(updated && updated > published),
-        url: `/${urlPrefix}/${item.slug}`,
+        url: `/${urlPrefix}/${item.id}`,
       };
     });
 

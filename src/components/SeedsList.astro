@@ -16,7 +16,7 @@ const { seeds } = Astro.props;
       <ul>
         {seeds.map(seed => (
           <li>
-            <a href={`/seeds/${seed.slug}`}>{kebabToTitle(getTitleFromSlug(seed.slug))}</a>
+            <a href={`/seeds/${seed.id}`}>{kebabToTitle(getTitleFromSlug(seed.id))}</a>
           </li>
         ))}
       </ul>
