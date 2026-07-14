@@ -39,16 +39,16 @@ tags: [ground turkey, high protein, high fiber, meal prep, nursing mother]
 
 #### Whole Dish
 
-| Field | Amount |
-| - | - |
+| Field    | Amount     |
+| -------- | ---------- |
 | Calories | 3 240 kcal |
-| Protein | 270 g |
-| Fat | 108 g |
-| Carbs | 300 g |
-| Fiber | 84 g |
-| Sugar | 42 g |
-| Volume | ≈ 2.4 kg |
+| Protein  | 270 g      |
+| Fat      | 108 g      |
+| Carbs    | 300 g      |
+| Fiber    | 84 g       |
+| Sugar    | 42 g       |
+| Volume   | ≈ 2.4 kg   |
 
 #### Per Serving
 
-*540 calories, 45 g protein, 18 g fat, 50 g carbs, 14 g fiber, 7 g sugar*
+_540 calories, 45 g protein, 18 g fat, 50 g carbs, 14 g fiber, 7 g sugar_

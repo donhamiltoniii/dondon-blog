@@ -50,6 +50,6 @@ tags: [vegetarian, gluten‑free, potluck, salad, high‑protein]
 | **Sugar**    | ~35 g                                          |
 | **Volume**   | ~2.5 kg (approx.)                              |
 
-#### Per Serving *(≈ ½ cup, 8 servings)*
+#### Per Serving _(≈ ½ cup, 8 servings)_
 
-*~265 kcal, 7 g protein, 5 g fat, 39 g carbs, 6 g fiber, 4 g sugar*
+_~265 kcal, 7 g protein, 5 g fat, 39 g carbs, 6 g fiber, 4 g sugar_

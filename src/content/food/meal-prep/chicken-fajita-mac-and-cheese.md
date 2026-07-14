@@ -62,14 +62,14 @@ tags: [Chicken, Fajita, Mac and Cheese, Comfort Food]
 
 #### Whole Dish
 
-| Field      | Amount |
-|------------|--------|
-| **Calories** | 3 199.5 |
-| **Protein**  | 305 g |
-| **Fat**      | 109 g |
-| **Carbs**    | 285 g |
-| **Fiber**    | 35 g |
-| **Sugar**    | 17.5 g |
+| Field        | Amount                |
+| ------------ | --------------------- |
+| **Calories** | 3 199.5               |
+| **Protein**  | 305 g                 |
+| **Fat**      | 109 g                 |
+| **Carbs**    | 285 g                 |
+| **Fiber**    | 35 g                  |
+| **Sugar**    | 17.5 g                |
 | **Volume**   | 2 250 g (≈ 5 × 450 g) |
 
 #### Per Serving

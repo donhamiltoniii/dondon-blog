@@ -44,367 +44,367 @@
 
 ### 📝 Content Updates
 
-* **food:** add buffalo chicken mac n cheese ([cfd2c9e](https://github.com/donhamiltoniii/dondon-blog/commit/cfd2c9e590be080a2c4d48baa9a61df5aaa7f0e0))
+- **food:** add buffalo chicken mac n cheese ([cfd2c9e](https://github.com/donhamiltoniii/dondon-blog/commit/cfd2c9e590be080a2c4d48baa9a61df5aaa7f0e0))
 
 ## [2.67.3](https://github.com/donhamiltoniii/dondon-blog/compare/v2.67.2...v2.67.3) (2026-06-19)
 
 ### 📝 Content Updates
 
-* **food:** update turket and sweet potato skillet ([5e3d616](https://github.com/donhamiltoniii/dondon-blog/commit/5e3d616d38d31494c3575642b6f9eb3f6b3baad9))
+- **food:** update turket and sweet potato skillet ([5e3d616](https://github.com/donhamiltoniii/dondon-blog/commit/5e3d616d38d31494c3575642b6f9eb3f6b3baad9))
 
 ## [2.67.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.67.1...v2.67.2) (2026-06-19)
 
 ### 📝 Content Updates
 
-* **food:** animal fries ([52a7d65](https://github.com/donhamiltoniii/dondon-blog/commit/52a7d65760a58748b95242f14beb80181b8efbe2))
+- **food:** animal fries ([52a7d65](https://github.com/donhamiltoniii/dondon-blog/commit/52a7d65760a58748b95242f14beb80181b8efbe2))
 
 ## [2.67.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.67.0...v2.67.1) (2026-06-19)
 
 ### 📝 Content Updates
 
-* **meal-prep:** pollo guisado ([211e9e5](https://github.com/donhamiltoniii/dondon-blog/commit/211e9e56996edfe8a88804efcba50af1026405aa))
+- **meal-prep:** pollo guisado ([211e9e5](https://github.com/donhamiltoniii/dondon-blog/commit/211e9e56996edfe8a88804efcba50af1026405aa))
 
 ## [2.67.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.66.0...v2.67.0) (2026-06-18)
 
 ### 🚀 Features
 
-* **food:** update recipes for new template ([b231837](https://github.com/donhamiltoniii/dondon-blog/commit/b2318373487ff78152da7f425f04c1425cf1f65f))
+- **food:** update recipes for new template ([b231837](https://github.com/donhamiltoniii/dondon-blog/commit/b2318373487ff78152da7f425f04c1425cf1f65f))
 
 ## [2.66.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.65.7...v2.66.0) (2026-06-17)
 
 ### 🚀 Features
 
-* **food:** update mishapen recipes + template ([1c8bef3](https://github.com/donhamiltoniii/dondon-blog/commit/1c8bef3fc8c890e3d4f4185a52220f710d0b31bf))
+- **food:** update mishapen recipes + template ([1c8bef3](https://github.com/donhamiltoniii/dondon-blog/commit/1c8bef3fc8c890e3d4f4185a52220f710d0b31bf))
 
 ## [2.65.7](https://github.com/donhamiltoniii/dondon-blog/compare/v2.65.6...v2.65.7) (2026-06-16)
 
 ### 📝 Content Updates
 
-* **food:** update chicken and lentil soup ([406c504](https://github.com/donhamiltoniii/dondon-blog/commit/406c5047169183aefffbea0759fb8fc5c2492f1e))
+- **food:** update chicken and lentil soup ([406c504](https://github.com/donhamiltoniii/dondon-blog/commit/406c5047169183aefffbea0759fb8fc5c2492f1e))
 
 ## [2.65.6](https://github.com/donhamiltoniii/dondon-blog/compare/v2.65.5...v2.65.6) (2026-06-15)
 
 ### 📝 Content Updates
 
-* **food:** update burrito bowl macros ([dc2e871](https://github.com/donhamiltoniii/dondon-blog/commit/dc2e8712470c5cad00907cccbe7a5e7fd308cedf))
+- **food:** update burrito bowl macros ([dc2e871](https://github.com/donhamiltoniii/dondon-blog/commit/dc2e8712470c5cad00907cccbe7a5e7fd308cedf))
 
 ## [2.65.5](https://github.com/donhamiltoniii/dondon-blog/compare/v2.65.4...v2.65.5) (2026-06-15)
 
 ### 📝 Content Updates
 
-* **food:** add meal prep burrito bowls ([181ea82](https://github.com/donhamiltoniii/dondon-blog/commit/181ea8226a665bdac5a5744d08cc90207463dbd9))
+- **food:** add meal prep burrito bowls ([181ea82](https://github.com/donhamiltoniii/dondon-blog/commit/181ea8226a665bdac5a5744d08cc90207463dbd9))
 
 ## [2.65.4](https://github.com/donhamiltoniii/dondon-blog/compare/v2.65.3...v2.65.4) (2026-05-28)
 
 ### 📝 Content Updates
 
-* **food:** carrot cake protein bake ([895d8b5](https://github.com/donhamiltoniii/dondon-blog/commit/895d8b57ab0f1bf120ce6165c8c41bd3472bb097))
+- **food:** carrot cake protein bake ([895d8b5](https://github.com/donhamiltoniii/dondon-blog/commit/895d8b57ab0f1bf120ce6165c8c41bd3472bb097))
 
 ## [2.65.3](https://github.com/donhamiltoniii/dondon-blog/compare/v2.65.2...v2.65.3) (2026-05-23)
 
 ### 📝 Content Updates
 
-* **food:** lean burger and fries ([c1993af](https://github.com/donhamiltoniii/dondon-blog/commit/c1993afd49ea566e0493e054af40afb548163605))
+- **food:** lean burger and fries ([c1993af](https://github.com/donhamiltoniii/dondon-blog/commit/c1993afd49ea566e0493e054af40afb548163605))
 
 ## [2.65.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.65.1...v2.65.2) (2026-05-20)
 
 ### 📝 Content Updates
 
-* **food:** one pot turkey meatballs and cabbage ([59cc3da](https://github.com/donhamiltoniii/dondon-blog/commit/59cc3dad583aaa80987c85752e4c792ef1118c89))
+- **food:** one pot turkey meatballs and cabbage ([59cc3da](https://github.com/donhamiltoniii/dondon-blog/commit/59cc3dad583aaa80987c85752e4c792ef1118c89))
 
 ## [2.65.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.65.0...v2.65.1) (2026-05-15)
 
 ### 📝 Content Updates
 
-* **food:** cheesey unstuffed cabbage turkey skillet ([a45fa68](https://github.com/donhamiltoniii/dondon-blog/commit/a45fa681850cbfb0479cadb3829b8d142b59a59f))
+- **food:** cheesey unstuffed cabbage turkey skillet ([a45fa68](https://github.com/donhamiltoniii/dondon-blog/commit/a45fa681850cbfb0479cadb3829b8d142b59a59f))
 
 ## [2.65.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.64.0...v2.65.0) (2026-05-14)
 
 ### 🚀 Features
 
-* **reading:** update reading list ([0b05702](https://github.com/donhamiltoniii/dondon-blog/commit/0b05702040ad3445fb251ea8639aae001746806c))
+- **reading:** update reading list ([0b05702](https://github.com/donhamiltoniii/dondon-blog/commit/0b05702040ad3445fb251ea8639aae001746806c))
 
 ## [2.64.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.63.0...v2.64.0) (2026-05-14)
 
 ### 🚀 Features
 
-* **reading:** add page ([ab0bd3a](https://github.com/donhamiltoniii/dondon-blog/commit/ab0bd3aa03eacbcd49831a2c2ff51e86300ca171))
+- **reading:** add page ([ab0bd3a](https://github.com/donhamiltoniii/dondon-blog/commit/ab0bd3aa03eacbcd49831a2c2ff51e86300ca171))
 
 ## [2.63.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.62.0...v2.63.0) (2026-05-13)
 
 ### 🚀 Features
 
-* **meal-plan:** Update page to reflect what I am actually eating ([2809601](https://github.com/donhamiltoniii/dondon-blog/commit/2809601e1bf12df52d0726b79ec59b0b06bb2a16))
+- **meal-plan:** Update page to reflect what I am actually eating ([2809601](https://github.com/donhamiltoniii/dondon-blog/commit/2809601e1bf12df52d0726b79ec59b0b06bb2a16))
 
 ## [2.62.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.61.1...v2.62.0) (2026-05-12)
 
 ### 🚀 Features
 
-* **food:** update type of notes ([aa23df9](https://github.com/donhamiltoniii/dondon-blog/commit/aa23df908a0e9bad9dc5231e610ea6f0f84c9b3c))
+- **food:** update type of notes ([aa23df9](https://github.com/donhamiltoniii/dondon-blog/commit/aa23df908a0e9bad9dc5231e610ea6f0f84c9b3c))
 
 ### 📝 Content Updates
 
-* **meal-prep:** honey bbq chicken and sweet potatoes ([5e8b588](https://github.com/donhamiltoniii/dondon-blog/commit/5e8b5881fb381628ff6ee0229cee5a46dd9e56a4))
-* **meal-prep:** honey bbq chicken and sweet potatoes ([0713573](https://github.com/donhamiltoniii/dondon-blog/commit/0713573ea6ff0d92f6d8ed3a63496278cbe0d49f))
+- **meal-prep:** honey bbq chicken and sweet potatoes ([5e8b588](https://github.com/donhamiltoniii/dondon-blog/commit/5e8b5881fb381628ff6ee0229cee5a46dd9e56a4))
+- **meal-prep:** honey bbq chicken and sweet potatoes ([0713573](https://github.com/donhamiltoniii/dondon-blog/commit/0713573ea6ff0d92f6d8ed3a63496278cbe0d49f))
 
 ## [2.61.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.61.0...v2.61.1) (2026-05-07)
 
 ### 📝 Content Updates
 
-* **food:** add baby food recipes ([804c625](https://github.com/donhamiltoniii/dondon-blog/commit/804c62594fcfa19a3b75827326e18613fc81cc54))
+- **food:** add baby food recipes ([804c625](https://github.com/donhamiltoniii/dondon-blog/commit/804c62594fcfa19a3b75827326e18613fc81cc54))
 
 ## [2.61.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.60.1...v2.61.0) (2026-05-06)
 
 ### 🚀 Features
 
-* **meal-plan:** update page with tuna salad lunch ([4a9b33a](https://github.com/donhamiltoniii/dondon-blog/commit/4a9b33ac42e497ca3c89a8738d2c36ffd801be56))
+- **meal-plan:** update page with tuna salad lunch ([4a9b33a](https://github.com/donhamiltoniii/dondon-blog/commit/4a9b33ac42e497ca3c89a8738d2c36ffd801be56))
 
 ## [2.60.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.60.0...v2.60.1) (2026-05-05)
 
 ### 📝 Content Updates
 
-* **food:** add gochujang chicken ([16e0033](https://github.com/donhamiltoniii/dondon-blog/commit/16e00337825c330344003373bf6037d9c0d067e3))
+- **food:** add gochujang chicken ([16e0033](https://github.com/donhamiltoniii/dondon-blog/commit/16e00337825c330344003373bf6037d9c0d067e3))
 
 ## [2.60.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.59.0...v2.60.0) (2026-04-23)
 
 ### 🚀 Features
 
-* **meal-prep:** add salmon salad to basics ([c1bbe16](https://github.com/donhamiltoniii/dondon-blog/commit/c1bbe166208c2490c63ea5c096cbab08c571752e))
+- **meal-prep:** add salmon salad to basics ([c1bbe16](https://github.com/donhamiltoniii/dondon-blog/commit/c1bbe166208c2490c63ea5c096cbab08c571752e))
 
 ## [2.59.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.58.0...v2.59.0) (2026-04-23)
 
 ### 🚀 Features
 
-* **meal-prep:** update basics page ([44df3c6](https://github.com/donhamiltoniii/dondon-blog/commit/44df3c6dff68ad5cfe153f3939be91b762d2a2d0))
+- **meal-prep:** update basics page ([44df3c6](https://github.com/donhamiltoniii/dondon-blog/commit/44df3c6dff68ad5cfe153f3939be91b762d2a2d0))
 
 ## [2.58.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.57.0...v2.58.0) (2026-04-22)
 
 ### 🚀 Features
 
-* **meal-plan:** update print styles ([a0b12c8](https://github.com/donhamiltoniii/dondon-blog/commit/a0b12c83c5f2bd5280b183d7de62d3454827b290))
+- **meal-plan:** update print styles ([a0b12c8](https://github.com/donhamiltoniii/dondon-blog/commit/a0b12c83c5f2bd5280b183d7de62d3454827b290))
 
 ## [2.57.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.56.0...v2.57.0) (2026-04-22)
 
 ### 🚀 Features
 
-* **meal-plan:** update print styles ([bc4c06e](https://github.com/donhamiltoniii/dondon-blog/commit/bc4c06e4fca3041fb69725df81d2029bff1a4a6d))
+- **meal-plan:** update print styles ([bc4c06e](https://github.com/donhamiltoniii/dondon-blog/commit/bc4c06e4fca3041fb69725df81d2029bff1a4a6d))
 
 ## [2.56.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.55.0...v2.56.0) (2026-04-21)
 
 ### 🚀 Features
 
-* **meal-plan:** add print button for daily ([6b98a00](https://github.com/donhamiltoniii/dondon-blog/commit/6b98a003c117f0fb2a36c6ede8cbc5d2b8545c46))
+- **meal-plan:** add print button for daily ([6b98a00](https://github.com/donhamiltoniii/dondon-blog/commit/6b98a003c117f0fb2a36c6ede8cbc5d2b8545c46))
 
 ## [2.55.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.54.0...v2.55.0) (2026-04-21)
 
 ### 🚀 Features
 
-* **nav:** update breakpoint for nav ([7902fa3](https://github.com/donhamiltoniii/dondon-blog/commit/7902fa3d40d9032eec0936c7c08aeac27cd62093))
+- **nav:** update breakpoint for nav ([7902fa3](https://github.com/donhamiltoniii/dondon-blog/commit/7902fa3d40d9032eec0936c7c08aeac27cd62093))
 
 ## [2.54.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.53.0...v2.54.0) (2026-04-20)
 
 ### 🚀 Features
 
-* **meal-plan:** update targets ([e7df968](https://github.com/donhamiltoniii/dondon-blog/commit/e7df9688d66251bf314105a473bed02f6a25f984))
+- **meal-plan:** update targets ([e7df968](https://github.com/donhamiltoniii/dondon-blog/commit/e7df9688d66251bf314105a473bed02f6a25f984))
 
 ## [2.53.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.52.0...v2.53.0) (2026-04-15)
 
 ### 🚀 Features
 
-* **now:** update now page ([3e059ef](https://github.com/donhamiltoniii/dondon-blog/commit/3e059ef2415543e43932f073f73eef47754647cc))
+- **now:** update now page ([3e059ef](https://github.com/donhamiltoniii/dondon-blog/commit/3e059ef2415543e43932f073f73eef47754647cc))
 
 ## [2.52.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.51.0...v2.52.0) (2026-04-09)
 
 ### 🚀 Features
 
-* bump media query threshold ([74f4020](https://github.com/donhamiltoniii/dondon-blog/commit/74f4020677289e9dff4f5ea1354ade60aee9dc6b))
-* **meal-plan:** make page responsive ([d8d65ea](https://github.com/donhamiltoniii/dondon-blog/commit/d8d65ea286deb8a5c11c666d16d74a8f60007899))
-* **meal-plan:** update internal food nav to include meal plan ([4efb95b](https://github.com/donhamiltoniii/dondon-blog/commit/4efb95b0ee7489e679452f3baad86ecd9430104b))
-* **meal-plan:** update meal plan page and data ([896ee2b](https://github.com/donhamiltoniii/dondon-blog/commit/896ee2bdff189e0604dc77d388266eb7ace2468d))
+- bump media query threshold ([74f4020](https://github.com/donhamiltoniii/dondon-blog/commit/74f4020677289e9dff4f5ea1354ade60aee9dc6b))
+- **meal-plan:** make page responsive ([d8d65ea](https://github.com/donhamiltoniii/dondon-blog/commit/d8d65ea286deb8a5c11c666d16d74a8f60007899))
+- **meal-plan:** update internal food nav to include meal plan ([4efb95b](https://github.com/donhamiltoniii/dondon-blog/commit/4efb95b0ee7489e679452f3baad86ecd9430104b))
+- **meal-plan:** update meal plan page and data ([896ee2b](https://github.com/donhamiltoniii/dondon-blog/commit/896ee2bdff189e0604dc77d388266eb7ace2468d))
 
 ### 📝 Content Updates
 
-* **meal-prep:** add recipes for new meal-plan ([19ff3a9](https://github.com/donhamiltoniii/dondon-blog/commit/19ff3a9945eeb1f54a9446d36880f901263f8492))
+- **meal-prep:** add recipes for new meal-plan ([19ff3a9](https://github.com/donhamiltoniii/dondon-blog/commit/19ff3a9945eeb1f54a9446d36880f901263f8492))
 
 ### 🔧 Maintenance
 
-* **meal-plan:** remove linting errors ([d143f1c](https://github.com/donhamiltoniii/dondon-blog/commit/d143f1c21b722af1fc46ca0e4fcf534b6d615bee))
+- **meal-plan:** remove linting errors ([d143f1c](https://github.com/donhamiltoniii/dondon-blog/commit/d143f1c21b722af1fc46ca0e4fcf534b6d615bee))
 
 ## [2.51.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.50.4...v2.51.0) (2026-03-23)
 
 ### 🚀 Features
 
-* **meal-plan:** update page with more flexible macros ([30f60f1](https://github.com/donhamiltoniii/dondon-blog/commit/30f60f13752dd1c379b6079360b60c7125c97c9e))
+- **meal-plan:** update page with more flexible macros ([30f60f1](https://github.com/donhamiltoniii/dondon-blog/commit/30f60f13752dd1c379b6079360b60c7125c97c9e))
 
 ## [2.50.4](https://github.com/donhamiltoniii/dondon-blog/compare/v2.50.3...v2.50.4) (2026-03-21)
 
 ### 📝 Content Updates
 
-* **seeds:** update Adapter Pattern again ([74e9a5b](https://github.com/donhamiltoniii/dondon-blog/commit/74e9a5beac067290e43c5fef4e40c76a0fb83664))
+- **seeds:** update Adapter Pattern again ([74e9a5b](https://github.com/donhamiltoniii/dondon-blog/commit/74e9a5beac067290e43c5fef4e40c76a0fb83664))
 
 ## [2.50.3](https://github.com/donhamiltoniii/dondon-blog/compare/v2.50.2...v2.50.3) (2026-03-21)
 
 ### 📝 Content Updates
 
-* **seeds:** update Adapter Pattern seed ([7c66297](https://github.com/donhamiltoniii/dondon-blog/commit/7c66297647f318bf1b4041d4bbddb4c3303883cc))
+- **seeds:** update Adapter Pattern seed ([7c66297](https://github.com/donhamiltoniii/dondon-blog/commit/7c66297647f318bf1b4041d4bbddb4c3303883cc))
 
 ## [2.50.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.50.1...v2.50.2) (2026-03-21)
 
 ### 📝 Content Updates
 
-* **seeds:** update tmux ([a99ccbf](https://github.com/donhamiltoniii/dondon-blog/commit/a99ccbf07e6f22541f160080922c576ec5f4bde3))
+- **seeds:** update tmux ([a99ccbf](https://github.com/donhamiltoniii/dondon-blog/commit/a99ccbf07e6f22541f160080922c576ec5f4bde3))
 
 ## [2.50.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.50.0...v2.50.1) (2026-03-21)
 
 ### 📝 Content Updates
 
-* **seeds:** update tmux ([6874272](https://github.com/donhamiltoniii/dondon-blog/commit/68742723dcc8241fbc67cc343afa7dae1299bf9e))
+- **seeds:** update tmux ([6874272](https://github.com/donhamiltoniii/dondon-blog/commit/68742723dcc8241fbc67cc343afa7dae1299bf9e))
 
 ## [2.50.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.49.0...v2.50.0) (2026-03-21)
 
 ### 🚀 Features
 
-* add target _blank to rss nav item ([172294f](https://github.com/donhamiltoniii/dondon-blog/commit/172294f75ac0e6b8c1c2b98d17d8ea234532f621))
-* remove unused import ([056ce6b](https://github.com/donhamiltoniii/dondon-blog/commit/056ce6bb2b57a4826a4f4bb8334b1858bd1bb7bc))
+- add target _blank to rss nav item ([172294f](https://github.com/donhamiltoniii/dondon-blog/commit/172294f75ac0e6b8c1c2b98d17d8ea234532f621))
+- remove unused import ([056ce6b](https://github.com/donhamiltoniii/dondon-blog/commit/056ce6bb2b57a4826a4f4bb8334b1858bd1bb7bc))
 
 ## [2.49.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.48.0...v2.49.0) (2026-03-21)
 
 ### 🚀 Features
 
-* update navigation ([d70f7eb](https://github.com/donhamiltoniii/dondon-blog/commit/d70f7eb8bf02bc9a11355f37774ef7c9692cfc80))
+- update navigation ([d70f7eb](https://github.com/donhamiltoniii/dondon-blog/commit/d70f7eb8bf02bc9a11355f37774ef7c9692cfc80))
 
 ## [2.48.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.47.2...v2.48.0) (2026-03-21)
 
 ### 🚀 Features
 
-* update types ([77c725b](https://github.com/donhamiltoniii/dondon-blog/commit/77c725bb3ac9ad7e209c58053909378b985774c9))
+- update types ([77c725b](https://github.com/donhamiltoniii/dondon-blog/commit/77c725bb3ac9ad7e209c58053909378b985774c9))
 
 ## [2.47.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.47.1...v2.47.2) (2026-03-21)
 
 ### 📝 Content Updates
 
-* fix typo ([d566fcc](https://github.com/donhamiltoniii/dondon-blog/commit/d566fcc72f49d9c7d2af0958625437cde5899e72))
+- fix typo ([d566fcc](https://github.com/donhamiltoniii/dondon-blog/commit/d566fcc72f49d9c7d2af0958625437cde5899e72))
 
 ## [2.47.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.47.0...v2.47.1) (2026-03-21)
 
 ### 📝 Content Updates
 
-* **thoughtz:** journal review ([57bb69d](https://github.com/donhamiltoniii/dondon-blog/commit/57bb69d7ddc857113b05f3b943cc15de125e95ea))
+- **thoughtz:** journal review ([57bb69d](https://github.com/donhamiltoniii/dondon-blog/commit/57bb69d7ddc857113b05f3b943cc15de125e95ea))
 
 ## [2.47.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.46.1...v2.47.0) (2026-03-21)
 
 ### 🚀 Features
 
-* add RecentContent component ([a48b260](https://github.com/donhamiltoniii/dondon-blog/commit/a48b260e3d20e05912ddea88f9aa450276d32681))
+- add RecentContent component ([a48b260](https://github.com/donhamiltoniii/dondon-blog/commit/a48b260e3d20e05912ddea88f9aa450276d32681))
 
 ## [2.46.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.46.0...v2.46.1) (2026-03-21)
 
 ### 🔧 Maintenance
 
-* **deps:** bump h3 from 1.15.4 to 1.15.9 ([08c7ed3](https://github.com/donhamiltoniii/dondon-blog/commit/08c7ed338b57223a7f40e087ada367252ad4988c))
+- **deps:** bump h3 from 1.15.4 to 1.15.9 ([08c7ed3](https://github.com/donhamiltoniii/dondon-blog/commit/08c7ed338b57223a7f40e087ada367252ad4988c))
 
 ## [2.46.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.45.1...v2.46.0) (2026-03-16)
 
 ### 🚀 Features
 
-* **food:** add meal plan page ([6f9eb3d](https://github.com/donhamiltoniii/dondon-blog/commit/6f9eb3deefa7a3c950ab97042ed3dc230286fca3))
+- **food:** add meal plan page ([6f9eb3d](https://github.com/donhamiltoniii/dondon-blog/commit/6f9eb3deefa7a3c950ab97042ed3dc230286fca3))
 
 ## [2.45.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.45.0...v2.45.1) (2026-02-23)
 
 ### 📝 Content Updates
 
-* **food:** marry me chicken ([ef1e59b](https://github.com/donhamiltoniii/dondon-blog/commit/ef1e59bf5a21e3c890a2075c7dd453f41849b72a))
+- **food:** marry me chicken ([ef1e59b](https://github.com/donhamiltoniii/dondon-blog/commit/ef1e59bf5a21e3c890a2075c7dd453f41849b72a))
 
 ## [2.45.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.44.0...v2.45.0) (2026-02-22)
 
 ### 🚀 Features
 
-* **stuffILike:** add sameoldstory.co ([1a80a3f](https://github.com/donhamiltoniii/dondon-blog/commit/1a80a3f58824189ba32735c8b3651cc48d58b7d8))
+- **stuffILike:** add sameoldstory.co ([1a80a3f](https://github.com/donhamiltoniii/dondon-blog/commit/1a80a3f58824189ba32735c8b3651cc48d58b7d8))
 
 ## [2.44.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.11...v2.44.0) (2026-02-22)
 
 ### 🚀 Features
 
-* **page:** add stuff I like page ([39c0696](https://github.com/donhamiltoniii/dondon-blog/commit/39c06967bd4068a238c693f774e71d28c32124c0))
+- **page:** add stuff I like page ([39c0696](https://github.com/donhamiltoniii/dondon-blog/commit/39c06967bd4068a238c693f774e71d28c32124c0))
 
 ## [2.43.11](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.10...v2.43.11) (2026-02-22)
 
 ### 📝 Content Updates
 
-* **food:** add 2 recipes ([44e9070](https://github.com/donhamiltoniii/dondon-blog/commit/44e90702f631a333db9ae6ef44fd8e882796bdc3))
-* **seed:** add to dad thoughtz ([22a8360](https://github.com/donhamiltoniii/dondon-blog/commit/22a83609d283baea0b4f479afc60c322562ce688))
+- **food:** add 2 recipes ([44e9070](https://github.com/donhamiltoniii/dondon-blog/commit/44e90702f631a333db9ae6ef44fd8e882796bdc3))
+- **seed:** add to dad thoughtz ([22a8360](https://github.com/donhamiltoniii/dondon-blog/commit/22a83609d283baea0b4f479afc60c322562ce688))
 
 ## [2.43.10](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.9...v2.43.10) (2026-02-03)
 
 ### 📝 Content Updates
 
-* **food:** chicken and potato meal prep ([79095ea](https://github.com/donhamiltoniii/dondon-blog/commit/79095ea8e6b60b93f72ba177b1b7a3cf74a85e20))
+- **food:** chicken and potato meal prep ([79095ea](https://github.com/donhamiltoniii/dondon-blog/commit/79095ea8e6b60b93f72ba177b1b7a3cf74a85e20))
 
 ## [2.43.9](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.8...v2.43.9) (2026-01-30)
 
 ### 📝 Content Updates
 
-* **food:** fix typo ([ae27c75](https://github.com/donhamiltoniii/dondon-blog/commit/ae27c75a2e5f4a92628645c41d4237e6c01a2256))
-* **food:** meatloaf dinner meal prep ([5c72392](https://github.com/donhamiltoniii/dondon-blog/commit/5c7239241bac3c08901c2a04c6e5a160a5c9b5c2))
+- **food:** fix typo ([ae27c75](https://github.com/donhamiltoniii/dondon-blog/commit/ae27c75a2e5f4a92628645c41d4237e6c01a2256))
+- **food:** meatloaf dinner meal prep ([5c72392](https://github.com/donhamiltoniii/dondon-blog/commit/5c7239241bac3c08901c2a04c6e5a160a5c9b5c2))
 
 ## [2.43.8](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.7...v2.43.8) (2025-12-31)
 
 ### 📝 Content Updates
 
-* remove ampersands from copy ([ed24d3f](https://github.com/donhamiltoniii/dondon-blog/commit/ed24d3f74a864fecc2b5375e78c9cf792e86eb85))
+- remove ampersands from copy ([ed24d3f](https://github.com/donhamiltoniii/dondon-blog/commit/ed24d3f74a864fecc2b5375e78c9cf792e86eb85))
 
 ## [2.43.7](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.6...v2.43.7) (2025-12-31)
 
 ### 📝 Content Updates
 
-* **food:** chicken fajita mac and cheese ([5807835](https://github.com/donhamiltoniii/dondon-blog/commit/5807835ad3db9e036763e988bc61acc717482051))
+- **food:** chicken fajita mac and cheese ([5807835](https://github.com/donhamiltoniii/dondon-blog/commit/5807835ad3db9e036763e988bc61acc717482051))
 
 ### 🔧 Maintenance
 
-* update recipe plop template ([f11c218](https://github.com/donhamiltoniii/dondon-blog/commit/f11c218c710ec5fd0a8f695a73bc8bb01a6a46b3))
+- update recipe plop template ([f11c218](https://github.com/donhamiltoniii/dondon-blog/commit/f11c218c710ec5fd0a8f695a73bc8bb01a6a46b3))
 
 ## [2.43.6](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.5...v2.43.6) (2025-12-20)
 
 ### 📝 Content Updates
 
-* **food:** swweet potato black bean quinoa salad ([c57284b](https://github.com/donhamiltoniii/dondon-blog/commit/c57284b8da62597fde6aebd77e4213e68282392e))
-* **food:** update typo ([ad14015](https://github.com/donhamiltoniii/dondon-blog/commit/ad140151589c28d76147d9395a505a47534b4a65))
+- **food:** swweet potato black bean quinoa salad ([c57284b](https://github.com/donhamiltoniii/dondon-blog/commit/c57284b8da62597fde6aebd77e4213e68282392e))
+- **food:** update typo ([ad14015](https://github.com/donhamiltoniii/dondon-blog/commit/ad140151589c28d76147d9395a505a47534b4a65))
 
 ## [2.43.5](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.4...v2.43.5) (2025-12-10)
 
 ### 📝 Content Updates
 
-* **food:** add bbq chicken loaded potatoes ([46def75](https://github.com/donhamiltoniii/dondon-blog/commit/46def754257393dbff25505772f2bdb63ca1b306))
+- **food:** add bbq chicken loaded potatoes ([46def75](https://github.com/donhamiltoniii/dondon-blog/commit/46def754257393dbff25505772f2bdb63ca1b306))
 
 ## [2.43.4](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.3...v2.43.4) (2025-12-09)
 
 ### 📝 Content Updates
 
-* **food:** add seven beans salad ([bfa8e89](https://github.com/donhamiltoniii/dondon-blog/commit/bfa8e89dc41adf962bd7daeb3a9f257b219fb91f))
-* **food:** update frontmatter for seven bean salad ([d1e1441](https://github.com/donhamiltoniii/dondon-blog/commit/d1e1441646c7499d2606a0464ed3f477bb335909))
+- **food:** add seven beans salad ([bfa8e89](https://github.com/donhamiltoniii/dondon-blog/commit/bfa8e89dc41adf962bd7daeb3a9f257b219fb91f))
+- **food:** update frontmatter for seven bean salad ([d1e1441](https://github.com/donhamiltoniii/dondon-blog/commit/d1e1441646c7499d2606a0464ed3f477bb335909))
 
 ## [2.43.3](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.2...v2.43.3) (2025-11-29)
 
 ### 🔧 Maintenance
 
-* **deps:** bump astro from 5.8.0 to 5.16.2 ([a3e1072](https://github.com/donhamiltoniii/dondon-blog/commit/a3e10728786231f9ae6554994f61ff898b235051))
-* **deps:** bump devalue from 5.1.1 to 5.5.0 ([0903c9f](https://github.com/donhamiltoniii/dondon-blog/commit/0903c9f11f0da039c6824e109520b717f91e9729))
-* **deps:** bump js-yaml ([0a68d79](https://github.com/donhamiltoniii/dondon-blog/commit/0a68d796f2372f5149b5b9a8047c28caac813247))
-* **deps:** bump tmp and inquirer ([c91c43a](https://github.com/donhamiltoniii/dondon-blog/commit/c91c43a113e629ecc9bc0f552a974e4bdafb5aa5))
-* **deps:** bump vite from 6.3.5 to 6.4.1 ([ef24dc8](https://github.com/donhamiltoniii/dondon-blog/commit/ef24dc8875d8ed11775f783564a3f9691a3a63fa))
+- **deps:** bump astro from 5.8.0 to 5.16.2 ([a3e1072](https://github.com/donhamiltoniii/dondon-blog/commit/a3e10728786231f9ae6554994f61ff898b235051))
+- **deps:** bump devalue from 5.1.1 to 5.5.0 ([0903c9f](https://github.com/donhamiltoniii/dondon-blog/commit/0903c9f11f0da039c6824e109520b717f91e9729))
+- **deps:** bump js-yaml ([0a68d79](https://github.com/donhamiltoniii/dondon-blog/commit/0a68d796f2372f5149b5b9a8047c28caac813247))
+- **deps:** bump tmp and inquirer ([c91c43a](https://github.com/donhamiltoniii/dondon-blog/commit/c91c43a113e629ecc9bc0f552a974e4bdafb5aa5))
+- **deps:** bump vite from 6.3.5 to 6.4.1 ([ef24dc8](https://github.com/donhamiltoniii/dondon-blog/commit/ef24dc8875d8ed11775f783564a3f9691a3a63fa))
 
 ## [2.43.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.1...v2.43.2) (2025-11-29)
 
 ### 📝 Content Updates
 
-* add nvim seed ([18f4f87](https://github.com/donhamiltoniii/dondon-blog/commit/18f4f87d8784b7ab81faac57e2cb92b72b12e6ec))
-* add seeds ([f83f681](https://github.com/donhamiltoniii/dondon-blog/commit/f83f68177209c37ffac9588f19864be6c6a46375))
-* add tmux, ts patterns seeds ([a566c16](https://github.com/donhamiltoniii/dondon-blog/commit/a566c16e038db9d7c8cb5438e9ce78f40786ee1b))
+- add nvim seed ([18f4f87](https://github.com/donhamiltoniii/dondon-blog/commit/18f4f87d8784b7ab81faac57e2cb92b72b12e6ec))
+- add seeds ([f83f681](https://github.com/donhamiltoniii/dondon-blog/commit/f83f68177209c37ffac9588f19864be6c6a46375))
+- add tmux, ts patterns seeds ([a566c16](https://github.com/donhamiltoniii/dondon-blog/commit/a566c16e038db9d7c8cb5438e9ce78f40786ee1b))
 
 ### 🔧 Maintenance
 
-* replace content fields ([1b166eb](https://github.com/donhamiltoniii/dondon-blog/commit/1b166eb145972e636e395f42781a3eead16d350a))
-* update frontmatter to use createdAt ([b01114d](https://github.com/donhamiltoniii/dondon-blog/commit/b01114d7a410c81c2b94453ce0f864745399c3b2))
+- replace content fields ([1b166eb](https://github.com/donhamiltoniii/dondon-blog/commit/1b166eb145972e636e395f42781a3eead16d350a))
+- update frontmatter to use createdAt ([b01114d](https://github.com/donhamiltoniii/dondon-blog/commit/b01114d7a410c81c2b94453ce0f864745399c3b2))
 
 ## [2.43.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.43.0...v2.43.1) (2025-10-29)
 

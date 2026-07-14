@@ -31,27 +31,27 @@ tags: [ground turkey, high protein, high fiber, meal prep, nursing mother]
 
 ### Instructions
 
-1. Set Instant Pot to *Sauté*. Heat oil, add ground turkey, season with salt and pepper, and crumble until browned (≈ 5‑6 min). Cancel sauté mode.
+1. Set Instant Pot to _Sauté_. Heat oil, add ground turkey, season with salt and pepper, and crumble until browned (≈ 5‑6 min). Cancel sauté mode.
 2. Add bell pepper, carrots, zucchini, cumin, smoked paprika, oregano, and chipotle powder; stir briefly to coat.
 3. Stir in quinoa, diced tomatoes, tomato‑paste, vegetable broth, and water.
-4. Secure the lid, set to *Manual/High Pressure* for 8 minutes. When the timer ends, perform a quick pressure release.
-5. Switch to *Sauté* again and simmer uncovered for 3‑5 min if you prefer a thicker stew. Adjust seasoning.
+4. Secure the lid, set to _Manual/High Pressure_ for 8 minutes. When the timer ends, perform a quick pressure release.
+5. Switch to _Sauté_ again and simmer uncovered for 3‑5 min if you prefer a thicker stew. Adjust seasoning.
 6. Ladle into bowls, sprinkle each with pumpkin seeds, and serve.
 
 ### Macros
 
 #### Whole Dish
 
-| Field | Amount |
-| - | - |
+| Field    | Amount     |
+| -------- | ---------- |
 | Calories | 3 120 kcal |
-| Protein | 264 g |
-| Fat | 96 g |
-| Carbs | 300 g |
-| Fiber | 84 g |
-| Sugar | 36 g |
-| Volume | ≈ 2.5 kg |
+| Protein  | 264 g      |
+| Fat      | 96 g       |
+| Carbs    | 300 g      |
+| Fiber    | 84 g       |
+| Sugar    | 36 g       |
+| Volume   | ≈ 2.5 kg   |
 
 #### Per Serving
 
-*520 calories, 44 g protein, 16 g fat, 50 g carbs, 14 g fiber, 6 g sugar*
+_520 calories, 44 g protein, 16 g fat, 50 g carbs, 14 g fiber, 6 g sugar_
