@@ -1,50 +1,39 @@
 ---
-title: High-Protein Banana Bread
-prepTime: 15 minutes
-cookTime: 55-60 minutes
-servings: 12
+title: Banana Bread
+prepTime: 10 min
+cookTime: 30 min
+servings: 5
 servingSize: 1 slice
 imgUrl:
-description: A moist, naturally sweet banana bread packed with protein powder and Greek yogurt for a healthier twist on the classic treat.
-notes: For best results, use very ripe bananas with brown spots. Can substitute vanilla protein powder with unflavored if preferred.
-tags: [high-protein, healthy-baking, banana-bread, breakfast, snack]
+description: High-protein banana bread with casein, Greek yogurt, and dark chocolate chunks.
+notes:
+tags: [baking, high-protein, snack]
 ---
 
 ### Ingredients
 
-- 3 large very ripe bananas, mashed (about 1½ cups)
-- ½ cup plain Greek yogurt
-- 2 large eggs
-- ¼ cup honey or maple syrup
-- 2 tablespoons melted coconut oil or butter
-- 1 teaspoon vanilla extract
-- ¾ cup whole wheat flour
-- ¾ cup vanilla protein powder
-- 1 teaspoon baking soda
-- ½ teaspoon salt
-- 1 teaspoon cinnamon
-- ¼ teaspoon nutmeg
-- ⅓ cup chopped walnuts (optional)
+- 3 medium bananas
+- 2 eggs
+- 50g plain Greek yogurt
+- ½ cup unsweetened applesauce
+- ¼ cup all-purpose flour
+- 2 scoops Legion Casein+
+- 10g brown sugar blend
+- 50g 0-cal sweetener
+- 20g 70% dark chocolate chunks
+- 1 tbsp baking powder
+- 1 tsp vanilla extract
+- Pinch of salt
+- 10g Becel Light
 
 ### Instructions
 
-1. Preheat oven to 350°F (175°C). Grease a 9x5 inch loaf pan or line with parchment paper.
-
-2. In a large bowl, mash bananas until mostly smooth with some small chunks remaining.
-
-3. Whisk in Greek yogurt, eggs, honey, melted coconut oil, and vanilla extract until well combined.
-
-4. In a separate bowl, whisk together flour, protein powder, baking soda, salt, cinnamon, and nutmeg.
-
-5. Add dry ingredients to wet ingredients and gently fold together until just combined. Don't overmix.
-
-6. Fold in walnuts if using.
-
-7. Pour batter into prepared loaf pan and smooth the top.
-
-8. Bake for 55-60 minutes, or until a toothpick inserted in center comes out with just a few moist crumbs.
-
-9. Cool in pan for 10 minutes, then turn out onto a wire rack to cool completely before slicing.
+1. In a large bowl, mash the bananas until mostly smooth.
+2. Add all remaining ingredients except the chocolate chunks and mix until fully combined.
+3. Fold in the chocolate chunks.
+4. Pour the batter into a lined loaf pan.
+5. Bake at 375°F (190°C) for 30 minutes, or until a toothpick inserted into the center comes out mostly clean.
+6. Let cool, slice into 5 servings, and enjoy.
 
 ### Macros
 
@@ -52,14 +41,31 @@ tags: [high-protein, healthy-baking, banana-bread, breakfast, snack]
 
 | Field        | Amount |
 | ------------ | ------ |
-| **Calories** | 1,620  |
-| **Protein**  | 84g    |
-| **Fat**      | 32g    |
-| **Carbs**    | 248g   |
-| **Fiber**    | 28g    |
-| **Sugar**    | 168g   |
-| **Volume**   | 1,200g |
+| **Calories** | 1005   |
+| **Protein**  | 76g    |
+| **Fat**      | 20g    |
+| **Carbs**    | 140g   |
+| **Fiber**    | 12g    |
+| **Sugar**    | 62g    |
+| **Volume**   | 855g   |
 
 #### Per Serving
 
-_135 calories, 7g protein, 3g fat, 21g carbs, 2g fiber, 14g sugar_
+_201 calories, 15g protein, 4g fat, 28g carbs, 2g fiber, 12g sugar_
+
+#### Per Ingredient (Whole Dish)
+
+- **3 medium bananas (~354g)** — 315 cal · 4p · 1f · 81c · 9 fiber
+- **2 eggs** — 143 cal · 13p · 10f · 1c · 0 fiber
+- **50g plain Greek yogurt** — 30 cal · 5p · 1f · 2c · 0 fiber
+- **½ cup unsweetened applesauce (~122g)** — 51 cal · 0p · 0f · 14c · 1 fiber
+- **¼ cup all-purpose flour (~31g)** — 114 cal · 3p · 0f · 24c · 1 fiber
+- **2 scoops Legion Casein+ (~66g)** — 240 cal · 50p · 2f · 6c · 0 fiber
+- **10g brown sugar blend** — 20 cal · 0p · 0f · 5c · 0 fiber
+- **50g 0-cal sweetener** — 0 cal · 0p · 0f · 0c · 0 fiber
+- **20g 70% dark chocolate chunks** — 120 cal · 2p · 9f · 9c · 2 fiber
+- **1 tbsp baking powder** — 6 cal · 0p · 0f · 3c · 0 fiber
+- **1 tsp vanilla extract** — 12 cal · 0p · 0f · 1c · 0 fiber
+- **Pinch of salt** — 0 cal · 0p · 0f · 0c · 0 fiber
+- **10g Becel Light** — 35 cal · 0p · 4f · 0c · 0 fiber
+- **Total** — 1086 cal · 77p · 27f · 146c · 13 fiber
