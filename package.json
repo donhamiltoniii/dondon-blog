@@ -30,7 +30,7 @@
   "author": "Don Hamilton III",
   "license": "MIT",
   "engines": {
-    "node": ">=23.5.0"
+    "node": "22.x"
   },
   "dependencies": {
     "@astrojs/mdx": "^7.0.3",
