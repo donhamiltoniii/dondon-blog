@@ -29,6 +29,9 @@
   ],
   "author": "Don Hamilton III",
   "license": "MIT",
+  "engines": {
+    "node": ">=23.5.0"
+  },
   "dependencies": {
     "@astrojs/mdx": "^7.0.3",
     "@astrojs/rss": "^4.0.11",
@@ -42,7 +45,6 @@
     "dayjs": "^1.11.13",
     "he": "^1.2.0",
     "markdown-it": "^14.1.0",
-    "node": "^23.5.0",
     "sanitize-html": "^2.15.0"
   },
   "devDependencies": {
