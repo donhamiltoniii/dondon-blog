@@ -31,6 +31,10 @@ describe('food assets utilities', () => {
       collection: 'food',
       data: {
         title,
+        prepTime: '0m',
+        cookTime: '0m',
+        servings: 1,
+        description: '',
         tags,
       },
       slug: id,

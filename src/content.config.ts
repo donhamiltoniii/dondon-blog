@@ -43,6 +43,7 @@ const cultivatedThoughtz = defineCollection({
 });
 
 const food = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/food' }),
   schema: z.object({
     title: z.string(),
     prepTime: z.string(),
