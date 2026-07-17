@@ -6,8 +6,11 @@ WORKDIR /app
 
 # Copy package files first for better layer caching
 COPY package*.json ./
-# Install all dependencies (including dev dependencies for build)
-RUN npm ci --only=production --omit=dev && npm cache clean --force
+# Install all dependencies (including dev dependencies for build).
+# --legacy-peer-deps required: eslint-plugin-jsx-a11y@6.10.2 (latest)
+# pins eslint ^9 in its peer range; project runs eslint 10. Mirrors
+# the fix in .github/workflows/release-and-build.yml and vercel.json.
+RUN npm ci --legacy-peer-deps --only=production --omit=dev && npm cache clean --force
 
 # Copy source code
 COPY . .
