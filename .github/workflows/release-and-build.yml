@@ -88,12 +88,11 @@ jobs:
           npm install --legacy-peer-deps --save-dev @semantic-release/changelog@6.0.3 @semantic-release/git@10.0.1 @semantic-release/github conventional-changelog-conventionalcommits
       - name: Semantic Release
         id: semantic-release
-        uses: cycjimmy/semantic-release-action@v4
+        uses: cycjimmy/semantic-release-action@v6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         with:
-          semantic_version: 24.2.7
           extra_plugins: |
             @semantic-release/changelog@6.0.3
             @semantic-release/git@10.0.1
