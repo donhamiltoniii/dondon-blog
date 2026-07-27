@@ -1,3 +1,5 @@
+## [2.76.3](https://github.com/donhamiltoniii/dondon-blog/compare/v2.76.2...v2.76.3) (2026-07-27)
+
 ## [2.76.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.76.1...v2.76.2) (2026-07-27)
 
 ## [2.76.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.76.0...v2.76.1) (2026-07-20)
