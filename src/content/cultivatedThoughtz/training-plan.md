@@ -1,8 +1,7 @@
 ---
 title: My Training Plan
 description: A five-day week of barbell strength, kettlebell work, steel mace, and easy cardio — built to run indefinitely.
-createdAt: 2026-08-10
-updatedAt: 2026-08-10
+tags: [fitness, kettlebell, mace, strength, barbell]
 ---
 
 ## Overview
@@ -70,14 +69,30 @@ lifting. The only rule: keep it easy enough that it never becomes a hard effort.
 
 ## Kettlebell Days (S&S)
 
-**Warmup:** goblet squats, hip hinges, halos — a few sets to loosen up.
+**Warmup** — one round of each, using a 25 lb bell:
+
+- **Goblet squats** — 1×10. Hold the bell at your chest, elbows inside your
+  knees at the bottom, sit straight down between your hips. Pause a beat at the
+  bottom; this is opening the hips more than building strength.
+- **Hip hinges** — 1×10. Bell held at the chest or hanging in both hands. Push
+  the hips _back_ (not down), soft knees, feel the hamstrings load, stand tall
+  by squeezing the glutes. This grooves the swing pattern — do it deliberately.
+- **Halos** — 5 each direction. Bell held by the horns, upside-down, circled
+  slowly around the head. Keep the ribs down and core tight so it's the
+  shoulders moving, not the low back arching.
 
 **Work:**
 
-- **One-hand swings** — 10×10, alternating hands each set (100 total). Rest as
-  needed early; long-term goal is all 100 in ~5 min.
-- **Turkish get-ups** — 10 total, 1 rep/set alternating sides (5 each). Slow,
-  deliberate, skill-first.
+- **One-hand swings** — 10×10, alternating hands each set (100 total). Hinge and
+  snap the hips to float the bell to chest height — it's a hip drive, not a
+  front raise, so the arm stays relaxed. Bell floats up, gravity brings it back,
+  you hinge to catch it. Set the bell down and switch hands between sets. Rest
+  as needed early; the long-term goal is all 100 in ~5 min.
+- **Turkish get-ups** — 10 total, 1 rep per set alternating sides (5 each). One
+  full rep = floor all the way to standing and back down, one bell pressed
+  overhead the whole time. Move through each position slowly and pause — this is
+  a skill lift, not a burner. Take as long as you need per rep; there's no tempo
+  to chase. A full get-up runs ~30–45 sec each side when done right.
 
 That's the whole session on Mon and Wed. Saturday adds carries and the mace
 finisher below.
