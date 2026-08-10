@@ -1,7 +1,8 @@
 ---
 title: My Training Plan
 description: A five-day week of barbell strength, kettlebell work, steel mace, and easy cardio — built to run indefinitely.
-tags: [fitness, kettlebell, mace, strength, barbell]
+createdAt: 2026-08-10
+updatedAt: 2026-08-10
 ---
 
 ## Overview
