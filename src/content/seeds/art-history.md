@@ -1,6 +1,7 @@
 ---
 title: 'Getting back into art history'
 createdAt: 2026-08-13
+updatedAt: 2026-08-13
 ---
 
 Deciding to start studying art history again. The plan: a solid survey refresher first, then push into contemporary — the part I actually keep bouncing off of.
