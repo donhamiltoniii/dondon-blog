@@ -2,7 +2,7 @@
 title: My Training Plan
 description: A five-day week of barbell strength, kettlebell work, steel mace, and easy cardio — built to run indefinitely.
 createdAt: 2026-08-10
-updatedAt: 2026-08-10
+updatedAt: 2026-08-13
 ---
 
 ## Overview
@@ -27,15 +27,13 @@ progressions just keep going.
 
 ## Weekly Schedule
 
-| Day | Session                |
-| --- | ---------------------- |
-| Mon | S&S                    |
-| Tue | Barbell A              |
-| Wed | S&S                    |
-| Thu | Off / walk / easy ride |
-| Fri | Barbell B              |
-| Sat | S&S + carries          |
-| Sun | Off / easy ride        |
+- **Mon** — S&S
+- **Tue** — Barbell A
+- **Wed** — S&S
+- **Thu** — Off / walk / easy ride
+- **Fri** — Barbell B
+- **Sat** — S&S + carries
+- **Sun** — Off / easy ride
 
 **Fatigue notes:**
 
@@ -122,11 +120,26 @@ Swing/get-up loads don't map to barbell numbers — start conservative. The
 _stimulus is the 100-swing volume, not the weight._ Ramp the bell over weeks,
 not days.
 
-| Lift      | Start         | Next  | "Simple" standard (men) | Long-game |
-| --------- | ------------- | ----- | ----------------------- | --------- |
-| Swings    | 20 kg         | 24 kg | 32 kg                   | 32 kg+    |
-| Get-ups   | 25 lb / 11 kg | 20 kg | —                       | 32 kg     |
-| Mace 360s | 15 lb         | —     | —                       | 20–25 lb  |
+### Swings
+
+- **Start:** 20 kg
+- **Next:** 24 kg
+- **Simple standard (men):** 32 kg
+- **Long-game:** 32 kg+
+
+### Get-ups
+
+- **Start:** 25 lb / 11 kg
+- **Next:** 20 kg
+- **Simple standard (men):** —
+- **Long-game:** 32 kg
+
+### Mace 360s
+
+- **Start:** 15 lb
+- **Next:** —
+- **Simple standard (men):** —
+- **Long-game:** 20–25 lb
 
 > **Swings:** 20 kg is the only bell in range — use it, but if 10×10 one-hand
 > feels ragged, do _two-hand_ swings at 20 kg until the hinge is clean, then
@@ -151,13 +164,66 @@ Log the load used per session. Bump swing weight only when 10×10 feels crisp;
 bump get-up weight only when reps are controlled on both sides; bump the mace
 only when 360s are strict and smooth.
 
-| Week | Swing | Get-up | Mace  | Swing 100 time | Notes                                     |
-| ---- | ----- | ------ | ----- | -------------- | ----------------------------------------- |
-| 1    | 20 kg | 25 lb  | 15 lb | —              | groove the hinge; 2-hand swings if ragged |
-| 2    |       |        |       |                |                                           |
-| 3    |       |        |       |                |                                           |
-| 4    |       |        |       |                |                                           |
-| 5    |       |        |       |                |                                           |
-| 6    |       |        |       |                |                                           |
-| 7    |       |        |       |                |                                           |
-| 8    |       |        |       |                |                                           |
+### Week 1
+
+- **Swing:** 20 kg
+- **Get-up:** 25 lb
+- **Mace:** 15 lb
+- **100-swing time:** —
+- **Notes:** groove the hinge; 2-hand swings if ragged
+
+### Week 2
+
+- **Swing:** —
+- **Get-up:** —
+- **Mace:** —
+- **100-swing time:** —
+- **Notes:** —
+
+### Week 3
+
+- **Swing:** —
+- **Get-up:** —
+- **Mace:** —
+- **100-swing time:** —
+- **Notes:** —
+
+### Week 4
+
+- **Swing:** —
+- **Get-up:** —
+- **Mace:** —
+- **100-swing time:** —
+- **Notes:** —
+
+### Week 5
+
+- **Swing:** —
+- **Get-up:** —
+- **Mace:** —
+- **100-swing time:** —
+- **Notes:** —
+
+### Week 6
+
+- **Swing:** —
+- **Get-up:** —
+- **Mace:** —
+- **100-swing time:** —
+- **Notes:** —
+
+### Week 7
+
+- **Swing:** —
+- **Get-up:** —
+- **Mace:** —
+- **100-swing time:** —
+- **Notes:** —
+
+### Week 8
+
+- **Swing:** —
+- **Get-up:** —
+- **Mace:** —
+- **100-swing time:** —
+- **Notes:** —
