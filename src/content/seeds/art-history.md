@@ -8,7 +8,7 @@ Deciding to start studying art history again. The plan: a solid survey refresher
 
 ## The survey refresher
 
-Two textbooks own the intro-survey space and are direct competitors: [**Gardner's Art Through the Ages**](https://www.cengage.com/c/gardner-s-art-through-the-ages-a-global-history-16e-kleiner/) (Kleiner, 16th ed.) and [**Stokstad & Cothren's Art History**](https://www.pearson.com/en-us/subject-catalog/p/art-history/P200000006027) (6th ed.). Both are ~1,000-page global surveys, comparable in quality. Stokstad leans a bit more into cultural context; Gardner is slightly more traditional.
+Two textbooks own the intro-survey space and are direct competitors: [**Gardner's Art Through the Ages**](https://www.abebooks.com/products/isbn/9781337630702?ref_=search-1_rvi_v2) (Kleiner, 16th ed.) and [**Stokstad & Cothren's Art History**](https://www.abebooks.com/products/isbn/9780205744213?ref_=search-1_rvi_v2) (6th ed.). Both are ~1,000-page global surveys, comparable in quality. Stokstad leans a bit more into cultural context; Gardner is slightly more traditional.
 
 For a refresher rather than a doorstop, **Stokstad's _Art: A Brief History_** is the smarter buy — the condensed version, same authors. Grabbing an edition or two behind new saves real money; the content barely moves.
 
@@ -18,7 +18,7 @@ Wildcard: [**Gombrich, _The Story of Art_**](https://www.phaidon.com/store/art/t
 
 The standard upper-level text is [**Foster / Krauss / Bois / Buchloh / Joselit, _Art Since 1900_**](https://wwnorton.com/books/9780500239537) (2 vols). Definitive but demanding — 120+ short essays in a year-by-year structure, heavy on theory. Its glossary defines "aporia" but not "Pop," which tells you the vibe. Excellent, not a gentle door.
 
-Gentler on-ramps: **Terry Smith, _Contemporary Art: World Currents_** and [**Michael Wilson, _How to Read Contemporary Art_**](https://www.abramsbooks.com/product/how-to-read-contemporary-art_9781419705373/) (object-by-object).
+Gentler on-ramps: **Terry Smith, _Contemporary Art: World Currents_** and [**Michael Wilson, _How to Read Contemporary Art_**](https://www.abebooks.com/Read-Contemporary-Art-Michael-Wilson-Harry/32153316032/bd) (object-by-object).
 
 ## Online
 
