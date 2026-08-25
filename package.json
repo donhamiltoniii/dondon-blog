@@ -1,75 +1,81 @@
 {
-  "name": "dondon-blog",
-  "type": "module",
-  "version": "2.77.4",
-  "description": "Personal blog built with Astro",
-  "scripts": {
-    "astro": "astro",
-    "build": "astro build",
-    "dev": "astro dev",
-    "format": "prettier --write .",
-    "lint": "eslint .",
-    "plop": "plop",
-    "preview": "astro preview",
-    "semantic-release": "semantic-release",
-    "start": "astro dev",
-    "test": "vitest",
-    "test:ui": "vitest --ui",
-    "test:run": "vitest run"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/donhamiltoniii/dondon-blog.git"
-  },
-  "keywords": [
-    "blog",
-    "astro",
-    "personal",
-    "website"
-  ],
-  "author": "Don Hamilton III",
-  "license": "MIT",
-  "engines": {
-    "node": "22.x"
-  },
-  "dependencies": {
-    "@astrojs/mdx": "^7.0.3",
-    "@astrojs/rss": "^4.0.11",
-    "@astrojs/sitemap": "^3.7.3",
-    "@fortawesome/fontawesome-svg-core": "^6.7.2",
-    "@fortawesome/free-brands-svg-icons": "^6.7.2",
-    "@fortawesome/free-regular-svg-icons": "^6.7.2",
-    "@fortawesome/free-solid-svg-icons": "^6.7.2",
-    "@fortawesome/react-fontawesome": "^0.2.2",
-    "astro": "^7.2.1",
-    "dayjs": "^1.11.13",
-    "he": "^1.2.0",
-    "markdown-it": "^14.1.0",
-    "sanitize-html": "^2.15.0"
-  },
-  "devDependencies": {
-    "@astrojs/check": "^0.9.9",
-    "@eslint/js": "^10.0.1",
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^11.0.6",
-    "@semantic-release/npm": "^13.1.5",
-    "@types/he": "^1.2.3",
-    "@types/markdown-it": "^14.1.2",
-    "@types/sanitize-html": "^2.16.0",
-    "@typescript-eslint/eslint-plugin": "^8.64.0",
-    "@typescript-eslint/parser": "^8.64.0",
-    "@vitest/ui": "^3.2.7",
-    "conventional-changelog-conventionalcommits": "^9.3.1",
-    "eslint": "^10.7.0",
-    "eslint-plugin-astro": "^3.0.0",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "gray-matter": "^4.0.3",
-    "plop": "^4.0.1",
-    "prettier": "^3.6.2",
-    "prettier-plugin-astro": "^0.14.1",
-    "semantic-release": "^25.0.7",
-    "typescript": "^5.9.3",
-    "vitest": "^3.2.7"
-  }
+    "name": "dondon-blog",
+    "type": "module",
+    "version": "2.77.4",
+    "description": "Personal blog built with Astro",
+    "scripts": {
+        "astro": "astro",
+        "build": "astro build",
+        "dev": "astro dev",
+        "format": "prettier --write .",
+        "lint": "eslint .",
+        "plop": "plop",
+        "preview": "astro preview",
+        "semantic-release": "semantic-release",
+        "start": "astro dev",
+        "test": "vitest",
+        "test:ui": "vitest --ui",
+        "test:run": "vitest run"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/donhamiltoniii/dondon-blog.git"
+    },
+    "keywords": [
+        "blog",
+        "astro",
+        "personal",
+        "website"
+    ],
+    "author": "Don Hamilton III",
+    "license": "MIT",
+    "engines": {
+        "node": "22.x"
+    },
+    "dependencies": {
+        "@astrojs/mdx": "^7.0.3",
+        "@astrojs/rss": "^4.0.11",
+        "@astrojs/sitemap": "^3.7.3",
+        "@fortawesome/fontawesome-svg-core": "^6.7.2",
+        "@fortawesome/free-brands-svg-icons": "^6.7.2",
+        "@fortawesome/free-regular-svg-icons": "^6.7.2",
+        "@fortawesome/free-solid-svg-icons": "^6.7.2",
+        "@fortawesome/react-fontawesome": "^0.2.2",
+        "astro": "^7.2.1",
+        "dayjs": "^1.11.13",
+        "he": "^1.2.0",
+        "markdown-it": "^14.1.0",
+        "sanitize-html": "^2.15.0"
+    },
+    "devDependencies": {
+        "@astrojs/check": "^0.9.9",
+        "@eslint/js": "^10.0.1",
+        "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/git": "^10.0.1",
+        "@semantic-release/github": "^11.0.6",
+        "@semantic-release/npm": "^13.1.5",
+        "@types/he": "^1.2.3",
+        "@types/markdown-it": "^14.1.2",
+        "@types/sanitize-html": "^2.16.0",
+        "@typescript-eslint/eslint-plugin": "^8.64.0",
+        "@typescript-eslint/parser": "^8.64.0",
+        "@vitest/ui": "^3.2.7",
+        "conventional-changelog-conventionalcommits": "^9.3.1",
+        "eslint": "^10.7.0",
+        "eslint-plugin-astro": "^3.0.0",
+        "eslint-plugin-jsx-a11y": "^6.10.2",
+        "gray-matter": "^4.0.3",
+        "plop": "^4.0.1",
+        "prettier": "^3.6.2",
+        "prettier-plugin-astro": "^0.14.1",
+        "semantic-release": "^25.0.7",
+        "typescript": "^5.9.3",
+        "vitest": "^3.2.7"
+    },
+    "overrides": {
+        "eslint-plugin-jsx-a11y": {
+            "eslint": "$eslint"
+        },
+        "conventional-changelog-writer": "^9.1.1"
+    }
 }
