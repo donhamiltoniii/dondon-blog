@@ -1,3 +1,20 @@
+## [2.77.5](https://github.com/donhamiltoniii/dondon-blog/compare/v2.77.4...v2.77.5) (2026-08-31)
+
+### 📝 Content Updates
+
+* **baby-food:** add toddler warm meal prep ([2121051](https://github.com/donhamiltoniii/dondon-blog/commit/2121051e9f791c8e9d29c2d03a53e6f2d3a73142))
+* **baby-food:** toddler cold hold meal prep ([98d4137](https://github.com/donhamiltoniii/dondon-blog/commit/98d4137b35fcdbc86e426f80bcfe5bcebb5cd48c))
+* **cultivatedThoughtz:** week 34 summary ([9352136](https://github.com/donhamiltoniii/dondon-blog/commit/93521368d81b8101ce9e6eacb59b5b3194d637cb))
+* **meal-prep:** turkey potato taco bake ([a8c53d0](https://github.com/donhamiltoniii/dondon-blog/commit/a8c53d0a800863d38c3ef04ca185ed8b489d152a))
+* **poultry:** bbq pulled chicken plate ([c651635](https://github.com/donhamiltoniii/dondon-blog/commit/c651635b3c93429e3ab62dbcfc75de2be16d855f))
+
+### 🔧 Maintenance
+
+* fix versions for build ([db60752](https://github.com/donhamiltoniii/dondon-blog/commit/db607529f3990594b36fde5b7c028a7f8eed5908))
+* update gh workflow ([a0b0f66](https://github.com/donhamiltoniii/dondon-blog/commit/a0b0f66bfd4f82cd01e1260e788eb7ef8b8b64de))
+* update package json ([2cd6006](https://github.com/donhamiltoniii/dondon-blog/commit/2cd6006320d52ae9dc997e9f869e95a5987935e0))
+* update workflow infra ([97f6bfd](https://github.com/donhamiltoniii/dondon-blog/commit/97f6bfd815f04a182a9be17cb56bdda2f773bce2))
+
 ## [2.77.4](https://github.com/donhamiltoniii/dondon-blog/compare/v2.77.3...v2.77.4) (2026-08-18)
 
 ## [2.77.3](https://github.com/donhamiltoniii/dondon-blog/compare/v2.77.2...v2.77.3) (2026-08-18)
