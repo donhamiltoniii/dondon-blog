@@ -1,3 +1,9 @@
+## [2.78.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.77.7...v2.78.0) (2026-09-02)
+
+### 🚀 Features
+
+* **cuttings:** add infra for cuttings ([8046f31](https://github.com/donhamiltoniii/dondon-blog/commit/8046f316b4b9ea121c0d22b94f1b7a0276252bfe))
+
 ## [2.77.7](https://github.com/donhamiltoniii/dondon-blog/compare/v2.77.6...v2.77.7) (2026-08-31)
 
 ### 📝 Content Updates
