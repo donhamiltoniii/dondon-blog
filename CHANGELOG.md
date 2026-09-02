@@ -1,3 +1,9 @@
+## [2.79.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.78.0...v2.79.0) (2026-09-02)
+
+### 🐛 Bug Fixes
+
+* **cuttings:** fix title logic ([47f3b4b](https://github.com/donhamiltoniii/dondon-blog/commit/47f3b4bf93754b316e3914b1c505ac646e747363))
+
 ## [2.78.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.77.7...v2.78.0) (2026-09-02)
 
 ### 🚀 Features
