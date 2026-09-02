@@ -33,7 +33,7 @@ export async function getRecentContent(limit = 10): Promise<ContentItem[]> {
         id: item.id,
         slug: item.id,
         collection,
-        title: item.data.title ?? 'no title',
+        title: item.data.title ?? item.data.createdAt.toISOString().slice(0, 10),
         sortDate,
         isUpdate: !!(updated && updated > published),
         url: `/${urlPrefix}/${item.id}`,
