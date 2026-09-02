@@ -51,7 +51,7 @@
     "@astrojs/check": "^0.9.9",
     "@eslint/js": "^10.0.1",
     "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/git": "^11.0.1",
     "@semantic-release/github": "^11.0.6",
     "@semantic-release/npm": "^13.1.5",
     "@types/he": "^1.2.3",
