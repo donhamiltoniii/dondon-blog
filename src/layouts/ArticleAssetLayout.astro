@@ -46,7 +46,7 @@ const props = Astro.props;
       <Header />
       <main>
         <article>
-          <h1 class="title">{props.title}</h1>
+          <h1 class="title">{props.title ?? props.createdAt.toISOString().slice(0, 10)}</h1>
           <FormattedDate date={props.createdAt} />
           {
             props.updatedAt && (

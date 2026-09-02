@@ -1,0 +1,23 @@
+---
+import { render } from 'astro:content';
+import ArticleAssetLayout from '../../../layouts/ArticleAssetLayout.astro';
+import type { CodeAsset } from '../../../types';
+import { getAllCuttings } from '../../../utils/cuttings';
+
+export async function getStaticPaths() {
+  const cuttings = await getAllCuttings();
+  return cuttings.map(c => ({
+    params: { slug: c.id },
+    props: c,
+  }));
+}
+
+type Props = CodeAsset;
+
+const cutting = Astro.props;
+const { Content } = await render(cutting);
+---
+
+<ArticleAssetLayout {...cutting.data}>
+  <Content />
+</ArticleAssetLayout>

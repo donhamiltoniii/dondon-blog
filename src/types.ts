@@ -1,6 +1,6 @@
 import type { CollectionEntry } from 'astro:content';
 
-export type ArticleAsset = CodeAsset | CultivatedThought | SeedAsset;
+export type ArticleAsset = CodeAsset | CultivatedThought | SeedAsset | Cutting;
 export type ArticleAssetData = ArticleAsset['data'];
 export type ArticleAssets = ArticleAsset[];
 
@@ -9,6 +9,9 @@ export type CodeAssets = CodeAsset[];
 
 export type CultivatedThought = CollectionEntry<'cultivatedThoughtz'>;
 export type CultivatedThoughtz = CultivatedThought[];
+
+export type Cutting = CollectionEntry<'cuttings'>;
+export type Cuttings = Cutting[];
 
 export type FoodAsset = CollectionEntry<'food'>;
 export type FoodAssets = FoodAsset[];

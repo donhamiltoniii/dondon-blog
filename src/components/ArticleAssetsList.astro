@@ -71,8 +71,10 @@ const sortedGroups: ArticleAssetGroup[] = Object.values(groupedAssets).sort(
         <ul>
           {group.assets.map(a => (
             <li>
-              <FormattedDate date={a.data.createdAt} />
-              <a href={`/${slugPrefix}/${a.id}/`}>{a.data.title}</a>
+              {a.data.title && <FormattedDate date={a.data.createdAt} />}
+              <a href={`/${slugPrefix}/${a.id}/`}>
+                {a.data.title ?? `${new Date(a.data.createdAt).toISOString().slice(0, 10)}`}
+              </a>
             </li>
           ))}
         </ul>

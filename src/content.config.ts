@@ -43,6 +43,11 @@ const cultivatedThoughtz = defineCollection({
   }),
 });
 
+const cuttings = defineCollection({
+  loader: timestampedGlob('cuttings'),
+  schema: z.object({ createdAt: z.coerce.date() }),
+});
+
 const food = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/food' }),
   schema: z.object({
@@ -85,4 +90,4 @@ const seeds = defineCollection({
   }),
 });
 
-export const collections = { code, cultivatedThoughtz, food, photos, seeds };
+export const collections = { code, cultivatedThoughtz, cuttings, food, photos, seeds };

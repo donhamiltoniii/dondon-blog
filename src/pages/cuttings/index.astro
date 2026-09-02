@@ -1,0 +1,12 @@
+---
+import ArticleAssetsList from '../../components/ArticleAssetsList.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../constants';
+import Layout from '../../layouts/DefaultPageLayout.astro';
+import { getAllCuttings } from '../../utils/cuttings';
+
+const cuttings = await getAllCuttings();
+---
+
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <ArticleAssetsList assets={cuttings} slugPrefix="cuttings" />
+</Layout>
