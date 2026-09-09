@@ -1,3 +1,9 @@
+## [2.79.3](https://github.com/donhamiltoniii/dondon-blog/compare/v2.79.2...v2.79.3) (2026-09-09)
+
+### 📝 Content Updates
+
+* **food:** update chicken and rice bowls ([540cb9a](https://github.com/donhamiltoniii/dondon-blog/commit/540cb9a4322da0e7eab68747474d31b3d4009f2d))
+
 ## [2.79.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.79.1...v2.79.2) (2026-09-08)
 
 ### 📝 Content Updates
