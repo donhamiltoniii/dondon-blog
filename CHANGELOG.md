@@ -1,3 +1,9 @@
+## [2.79.8](https://github.com/donhamiltoniii/dondon-blog/compare/v2.79.7...v2.79.8) (2026-09-11)
+
+### 📝 Content Updates
+
+* **meal-prep:** remove "high-protein" prefixes ([be7a236](https://github.com/donhamiltoniii/dondon-blog/commit/be7a2363df7b70c8da2b76a841682bd6f05f0419))
+
 ## [2.79.7](https://github.com/donhamiltoniii/dondon-blog/compare/v2.79.6...v2.79.7) (2026-09-11)
 
 ### 📝 Content Updates
