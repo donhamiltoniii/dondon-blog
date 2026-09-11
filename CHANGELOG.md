@@ -1,3 +1,14 @@
+## [2.79.4](https://github.com/donhamiltoniii/dondon-blog/compare/v2.79.3...v2.79.4) (2026-09-11)
+
+### 📝 Content Updates
+
+* **cuttings:** add updated field and add today ([94c33dc](https://github.com/donhamiltoniii/dondon-blog/commit/94c33dc7c49990cbdd40d722d75f837715d21301))
+* **food:** agrega arroz con gandules ([c1ff451](https://github.com/donhamiltoniii/dondon-blog/commit/c1ff4515a942450ea0526f1a0f8af74ee2b159ab))
+
+### 🔧 Maintenance
+
+* update cuttings config ([077a54f](https://github.com/donhamiltoniii/dondon-blog/commit/077a54f002930967a235194b6a20c490c6a9befb))
+
 ## [2.79.3](https://github.com/donhamiltoniii/dondon-blog/compare/v2.79.2...v2.79.3) (2026-09-09)
 
 ### 📝 Content Updates
