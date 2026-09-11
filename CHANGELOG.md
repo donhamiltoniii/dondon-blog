@@ -1,3 +1,9 @@
+## [2.79.9](https://github.com/donhamiltoniii/dondon-blog/compare/v2.79.8...v2.79.9) (2026-09-11)
+
+### 📝 Content Updates
+
+* **one pot:** remove "one-pot" prefixes ([ba642cc](https://github.com/donhamiltoniii/dondon-blog/commit/ba642cc9fed81ff0da7185c537ecd7da2f1400d3))
+
 ## [2.79.8](https://github.com/donhamiltoniii/dondon-blog/compare/v2.79.7...v2.79.8) (2026-09-11)
 
 ### 📝 Content Updates
