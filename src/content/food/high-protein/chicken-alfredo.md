@@ -1,5 +1,5 @@
 ---
-title: High-Protein Chicken Alfredo
+title: Chicken Alfredo
 prepTime: 20 minutes
 cookTime: 30 minutes
 servings: 6

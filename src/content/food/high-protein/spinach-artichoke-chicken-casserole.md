@@ -1,5 +1,5 @@
 ---
-title: High-Protein Spinach Artichoke Chicken Casserole
+title: Spinach Artichoke Chicken Casserole
 prepTime: 10 minutes
 cookTime: 40 minutes
 servings: 4

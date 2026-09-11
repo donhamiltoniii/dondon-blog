@@ -1,5 +1,5 @@
 ---
-title: High Protein Chicken Enchiladas
+title: Chicken Enchiladas
 prepTime: 10 minutes
 cookTime: 20 minutes
 servings: 4

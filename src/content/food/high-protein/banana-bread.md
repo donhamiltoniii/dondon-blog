@@ -1,5 +1,5 @@
 ---
-title: High-Protein Low-Cal Banana Bread
+title: Banana Bread
 prepTime: 10 min
 cookTime: 40 min
 servings: 8

@@ -1,5 +1,5 @@
 ---
-title: High-Protein Sweet Potato and Turkey Bowl with Leafy Greens
+title: Sweet Potato and Turkey Bowl with Leafy Greens
 prepTime: 10 minutes
 cookTime: 25 minutes
 servings: 4

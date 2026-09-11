@@ -1,5 +1,5 @@
 ---
-title: High Protein Animal Style Loaded Fries
+title: Animal Style Loaded Fries
 prepTime: 15 min
 cookTime: 30 min
 servings: 2
