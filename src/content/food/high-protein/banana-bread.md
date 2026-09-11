@@ -1,39 +1,37 @@
 ---
-title: Banana Bread
+title: High-Protein Low-Cal Banana Bread
 prepTime: 10 min
-cookTime: 30 min
-servings: 5
+cookTime: 40 min
+servings: 8
 servingSize: 1 slice
 imgUrl:
-description: High-protein banana bread with casein, Greek yogurt, and dark chocolate chunks.
-notes:
-tags: [baking, high-protein, snack]
+description: High-protein, low-calorie banana bread. Protein powder and egg whites carry the protein; applesauce keeps it moist without added fat.
+notes: Ripe bananas do the sweetening. Add 0-cal sweetener to taste if you want it sweeter. Don't overbake — protein powder dries fast.
+tags: [baking, high-protein, low-cal, snack]
 ---
 
 ### Ingredients
 
-- 3 medium bananas
-- 2 eggs
-- 50g plain Greek yogurt
-- ½ cup unsweetened applesauce
-- ¼ cup all-purpose flour
-- 2 scoops Legion Casein+
-- 10g brown sugar blend
-- 50g 0-cal sweetener
-- 20g 70% dark chocolate chunks
-- 1 tbsp baking powder
+- 2 very ripe bananas
+- 1 whole egg + 3 egg whites
+- 1/2 cup nonfat plain Greek yogurt
+- 1/2 cup unsweetened applesauce
 - 1 tsp vanilla extract
+- 3/4 cup oat flour
+- 2 scoops (~60g) vanilla whey/casein protein powder
+- 1 tsp baking soda
+- 1 tsp cinnamon
 - Pinch of salt
-- 10g Becel Light
 
 ### Instructions
 
-1. In a large bowl, mash the bananas until mostly smooth.
-2. Add all remaining ingredients except the chocolate chunks and mix until fully combined.
-3. Fold in the chocolate chunks.
-4. Pour the batter into a lined loaf pan.
-5. Bake at 375°F (190°C) for 30 minutes, or until a toothpick inserted into the center comes out mostly clean.
-6. Let cool, slice into 5 servings, and enjoy.
+1. Preheat oven to 350°F (175°C). Line or grease a loaf pan.
+2. Mash the bananas until smooth.
+3. Whisk in the egg, egg whites, yogurt, applesauce, and vanilla.
+4. Add oat flour, protein powder, baking soda, cinnamon, and salt. Stir until just combined.
+5. Pour into loaf pan.
+6. Bake 40 minutes, or until a toothpick comes out mostly clean — don't overbake.
+7. Cool before slicing into 8.
 
 ### Macros
 
@@ -41,31 +39,29 @@ tags: [baking, high-protein, snack]
 
 | Field        | Amount |
 | ------------ | ------ |
-| **Calories** | 1005   |
-| **Protein**  | 76g    |
-| **Fat**      | 20g    |
+| **Calories** | 1078   |
+| **Protein**  | 94g    |
+| **Fat**      | 18g    |
 | **Carbs**    | 140g   |
-| **Fiber**    | 12g    |
-| **Sugar**    | 62g    |
-| **Volume**   | 855g   |
+| **Fiber**    | 16g    |
+| **Sugar**    | 48g    |
+| **Volume**   | 790g   |
 
 #### Per Serving
 
-_201 calories, 15g protein, 4g fat, 28g carbs, 2g fiber, 12g sugar_
+_135 calories, 12g protein, 2g fat, 18g carbs, 2g fiber, 6g sugar_
 
 #### Per Ingredient (Whole Dish)
 
-- **3 medium bananas (~354g)** — 315 cal · 4p · 1f · 81c · 9 fiber
-- **2 eggs** — 143 cal · 13p · 10f · 1c · 0 fiber
-- **50g plain Greek yogurt** — 30 cal · 5p · 1f · 2c · 0 fiber
-- **½ cup unsweetened applesauce (~122g)** — 51 cal · 0p · 0f · 14c · 1 fiber
-- **¼ cup all-purpose flour (~31g)** — 114 cal · 3p · 0f · 24c · 1 fiber
-- **2 scoops Legion Casein+ (~66g)** — 240 cal · 50p · 2f · 6c · 0 fiber
-- **10g brown sugar blend** — 20 cal · 0p · 0f · 5c · 0 fiber
-- **50g 0-cal sweetener** — 0 cal · 0p · 0f · 0c · 0 fiber
-- **20g 70% dark chocolate chunks** — 120 cal · 2p · 9f · 9c · 2 fiber
-- **1 tbsp baking powder** — 6 cal · 0p · 0f · 3c · 0 fiber
-- **1 tsp vanilla extract** — 12 cal · 0p · 0f · 1c · 0 fiber
-- **Pinch of salt** — 0 cal · 0p · 0f · 0c · 0 fiber
-- **10g Becel Light** — 35 cal · 0p · 4f · 0c · 0 fiber
-- **Total** — 1086 cal · 77p · 27f · 146c · 13 fiber
+- **2 ripe bananas (~236g)** — 210 cal · 3p · 1f · 54c · 6 fiber
+- **1 whole egg (~50g)** — 71 cal · 6p · 5f · 0c · 0 fiber
+- **3 egg whites (~99g)** — 51 cal · 11p · 0f · 1c · 0 fiber
+- **1/2 cup nonfat Greek yogurt (~122g)** — 72 cal · 12p · 0f · 4c · 0 fiber
+- **1/2 cup unsweetened applesauce (~122g)** — 51 cal · 0p · 0f · 14c · 1 fiber
+- **1 tsp vanilla (~4g)** — 12 cal · 0p · 0f · 0c · 0 fiber
+- **3/4 cup oat flour (~90g)** — 363 cal · 13p · 8f · 59c · 6 fiber
+- **2 scoops protein powder (~60g)** — 240 cal · 48p · 3f · 5c · 2 fiber
+- **1 tsp baking soda (~4g)** — 0 cal · 0p · 0f · 0c · 0 fiber
+- **1 tsp cinnamon (~2g)** — 6 cal · 0p · 0f · 2c · 1 fiber
+- **pinch salt (~0g)** — 0 cal · 0p · 0f · 0c · 0 fiber
+  **Total** — 1078 cal · 94p · 18f · 140c · 16 fiber
