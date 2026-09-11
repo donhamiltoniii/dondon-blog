@@ -1,3 +1,10 @@
+## [2.79.6](https://github.com/donhamiltoniii/dondon-blog/compare/v2.79.5...v2.79.6) (2026-09-11)
+
+### 📝 Content Updates
+
+* **cuttings:** add stuff to today ([ec9c22c](https://github.com/donhamiltoniii/dondon-blog/commit/ec9c22c7f2095fb9a58b89491f73a9c963b11b84))
+* update baby banana bread file name ([beb239e](https://github.com/donhamiltoniii/dondon-blog/commit/beb239ed60b06e0bcd81c8620d6acd635df636f2))
+
 ## [2.79.5](https://github.com/donhamiltoniii/dondon-blog/compare/v2.79.4...v2.79.5) (2026-09-11)
 
 ### 📝 Content Updates
