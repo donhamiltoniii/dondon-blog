@@ -1,3 +1,9 @@
+## [2.79.7](https://github.com/donhamiltoniii/dondon-blog/compare/v2.79.6...v2.79.7) (2026-09-11)
+
+### 📝 Content Updates
+
+* **high-preotin:** remove high-protein prefixes ([105136c](https://github.com/donhamiltoniii/dondon-blog/commit/105136c4fcaf78d16205b2f081a8429ae2638729))
+
 ## [2.79.6](https://github.com/donhamiltoniii/dondon-blog/compare/v2.79.5...v2.79.6) (2026-09-11)
 
 ### 📝 Content Updates
