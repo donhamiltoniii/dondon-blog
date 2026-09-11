@@ -45,7 +45,7 @@ const cultivatedThoughtz = defineCollection({
 
 const cuttings = defineCollection({
   loader: timestampedGlob('cuttings'),
-  schema: z.object({ createdAt: z.coerce.date() }),
+  schema: z.object({ ...timestamps }),
 });
 
 const food = defineCollection({
