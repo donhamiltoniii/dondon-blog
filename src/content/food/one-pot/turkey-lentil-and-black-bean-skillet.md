@@ -1,5 +1,5 @@
 ---
-title: One-Pot Turkey, Lentil & Black Bean Skillet
+title: Turkey, Lentil & Black Bean Skillet
 prepTime: 10 min
 cookTime: 30 min
 servings: 5

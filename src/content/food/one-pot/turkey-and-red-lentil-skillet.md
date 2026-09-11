@@ -1,5 +1,5 @@
 ---
-title: 'One-Pot Turkey & Red Lentil Skillet'
+title: Turkey & Red Lentil Skillet
 prepTime: '15 min'
 cookTime: '40 min'
 servings: 5

@@ -1,5 +1,5 @@
 ---
-title: One-Pot Turkey & Golden Potato Skillet
+title: Turkey & Golden Potato Skillet
 prepTime: 15 minutes
 cookTime: 40 minutes
 servings: 4

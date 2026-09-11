@@ -1,5 +1,5 @@
 ---
-title: One-Pot Kimchi Turkey Rice
+title: Kimchi Turkey Rice
 prepTime: 10 minutes
 cookTime: 30 minutes
 servings: 5

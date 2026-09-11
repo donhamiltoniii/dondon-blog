@@ -1,5 +1,5 @@
 ---
-title: One-Pot Turkey, Lentil & Vegetable Skillet
+title: Turkey, Lentil & Vegetable Skillet
 prepTime: 10 min
 cookTime: 50 min
 servings: 5

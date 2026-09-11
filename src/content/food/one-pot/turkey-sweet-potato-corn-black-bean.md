@@ -1,5 +1,5 @@
 ---
-title: One-Pot Turkey, Sweet Potato, Corn & Black Bean Skillet
+title: Turkey, Sweet Potato, Corn & Black Bean Skillet
 prepTime: 10 min
 cookTime: 30 min
 servings: 5

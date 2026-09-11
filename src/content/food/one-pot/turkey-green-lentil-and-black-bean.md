@@ -1,5 +1,5 @@
 ---
-title: One-Pot Turkey, Green Lentil & Black Bean Skillet
+title: Turkey, Green Lentil & Black Bean Skillet
 prepTime: 10 minutes
 cookTime: 35 minutes
 servings: 5

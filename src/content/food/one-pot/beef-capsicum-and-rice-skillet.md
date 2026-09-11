@@ -1,5 +1,5 @@
 ---
-title: One-Pot Beef, Capsicum & Rice Skillet
+title: Beef, Capsicum & Rice Skillet
 prepTime: 10 min
 cookTime: 30 min
 servings: 5

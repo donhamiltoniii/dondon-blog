@@ -1,5 +1,5 @@
 ---
-title: One-Pot Turkey, Tomato & Corn Rice Skillet
+title: Turkey, Tomato & Corn Rice Skillet
 prepTime: 10 min
 cookTime: 25 min
 servings: 4
