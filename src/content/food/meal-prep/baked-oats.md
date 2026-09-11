@@ -1,5 +1,5 @@
 ---
-title: High Protein Baked Oats
+title: Baked Oats
 prepTime: 10 minutes
 cookTime: 30 minutes
 servings: 6

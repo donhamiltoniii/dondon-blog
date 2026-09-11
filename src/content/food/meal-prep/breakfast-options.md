@@ -1,5 +1,5 @@
 ---
-title: High-Protein, High-Fiber Breakfast Meal Prep Recipes
+title: Breakfast Meal Prep Recipes
 prepTime: various
 cookTime: various
 servings: various

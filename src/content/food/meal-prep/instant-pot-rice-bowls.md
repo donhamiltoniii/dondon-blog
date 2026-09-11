@@ -1,5 +1,5 @@
 ---
-title: High-Protein Basmati Rice and Veggie Instant Pot Recipes
+title: Basmati Rice and Veggie Instant Pot Recipes
 prepTime: various
 cookTime: various
 servings: various

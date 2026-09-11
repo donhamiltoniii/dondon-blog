@@ -1,5 +1,5 @@
 ---
-title: High Protein Marry Me Chicken
+title: Marry Me Chicken
 prepTime: 10 min
 cookTime: 20 min
 servings: 5

@@ -1,5 +1,5 @@
 ---
-title: High Protein Egg Meal Prep Recipes
+title: Egg Meal Prep Recipes
 prepTime: 10-20 minutes
 cookTime: 20-45 minutes
 servings: 6-8 servings per recipe

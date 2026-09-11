@@ -1,5 +1,5 @@
 ---
-title: High-Protein, High-Fiber Instant Pot Meal Prep Recipes
+title: Instant Pot Meal Prep Recipes
 prepTime: various
 cookTime: various
 servings: various

@@ -1,5 +1,5 @@
 ---
-title: High-Protein Pollo Guisado con Arroz
+title: Pollo Guisado con Arroz
 prepTime: 20 min
 cookTime: 45 min
 servings: 5

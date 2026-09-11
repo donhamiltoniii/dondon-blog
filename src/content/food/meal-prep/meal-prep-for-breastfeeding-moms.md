@@ -1,5 +1,5 @@
 ---
-title: High-Protein, High-Fiber Meal Prep Recipes for Breastfeeding Moms
+title: Meal Prep Recipes for Breastfeeding Moms
 prepTime: various
 cookTime: various
 servings: various
