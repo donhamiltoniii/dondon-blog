@@ -1,3 +1,13 @@
+## [2.79.13](https://github.com/donhamiltoniii/dondon-blog/compare/v2.79.12...v2.79.13) (2026-09-16)
+
+### 📝 Content Updates
+
+* **cultivatedThoughtz:** add oot post ([ef50533](https://github.com/donhamiltoniii/dondon-blog/commit/ef5053326ca388d42d2738f4a76f7a389d6af244))
+
+### 🔧 Maintenance
+
+* add new plop infra for cultivatedThoughtz ([5fe6208](https://github.com/donhamiltoniii/dondon-blog/commit/5fe62087b7d94987a31990d5e3c75f0a17c6bd73))
+
 ## [2.79.12](https://github.com/donhamiltoniii/dondon-blog/compare/v2.79.11...v2.79.12) (2026-09-16)
 
 ### 📝 Content Updates
