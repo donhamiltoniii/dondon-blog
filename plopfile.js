@@ -31,4 +31,21 @@ export default function (plop) {
       },
     ],
   });
+  plop.setGenerator('cultivatedThought', {
+    description: 'generates a new cultivated thought file',
+    prompts: [
+      {
+        type: 'input',
+        name: 'title',
+        message: 'What are you calling this monster?: ',
+      },
+    ],
+    actions: [
+      {
+        type: 'add',
+        path: 'src/content/cultivatedThoughtz/{{kebabCase title}}.md',
+        templateFile: 'src/plop-templates/new-cultivated-thought.hbs',
+      },
+    ],
+  });
 }
