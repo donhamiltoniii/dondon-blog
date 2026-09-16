@@ -1,3 +1,9 @@
+## [2.79.12](https://github.com/donhamiltoniii/dondon-blog/compare/v2.79.11...v2.79.12) (2026-09-16)
+
+### 📝 Content Updates
+
+* **training-plan:** add daily stretches ([3c084c8](https://github.com/donhamiltoniii/dondon-blog/commit/3c084c8c87fb43d083c429c4c4899e8583ef82dc))
+
 ## [2.79.11](https://github.com/donhamiltoniii/dondon-blog/compare/v2.79.10...v2.79.11) (2026-09-15)
 
 ### 📝 Content Updates
