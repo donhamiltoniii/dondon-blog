@@ -1,3 +1,9 @@
+## [2.79.14](https://github.com/donhamiltoniii/dondon-blog/compare/v2.79.13...v2.79.14) (2026-09-17)
+
+### 📝 Content Updates
+
+* **training-plan:** remove weekly list ([72b0cb0](https://github.com/donhamiltoniii/dondon-blog/commit/72b0cb01ffa56275f7cc7ad9b422d88f0c9d0c32))
+
 ## [2.79.13](https://github.com/donhamiltoniii/dondon-blog/compare/v2.79.12...v2.79.13) (2026-09-16)
 
 ### 📝 Content Updates
