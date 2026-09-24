@@ -1,7 +1,25 @@
 ---
 title: Working With AI Tools
 createdAt: 2025-08-22
-updatedAt: 2025-08-23
+updatedAt: 2026-09-24
+---
+
+_2026-09-24_
+
+I'm gonna start adding stuff to the top of these so it's easier to find. I have an update on my thoughtz on AI and I feel like sharing. I want to be clear that I have found use in AI tools. SOME LEGITIMATE USE. Most of it is fucking garbage. Most of the worst of it comes from the usual suspect, the intersection of technology, innovation, and ~~capitalism~~ greed. Some points:
+
+- The tech is interesting
+- It IS essentially a REALLY good search engine
+- It is not INTELLIGENT
+- "Rogue agents" is fucking hilarious and, to be extremely generous, a misnomer
+- AI IS software like all other software which is to say IT DOES WHAT IT IS TOLD TO DO
+
+The narrative being sold by big AI companies is that it is becoming unwieldy. I agree with the word "unwieldy", but not in regard to the tech. The systems that create and manage these tools are unwieldy and they are all only concerned with shareholder value. I would say they are only worried about money but they don't make any money.
+
+I saw [a recent video from PrimeTime that I guess inspired me to share these thoughts](https://www.youtube.com/watch?v=iuccfEQgIeY). The TOOLS in and of themselves are pretty cool. The infrastructure, as is always the case, is terrible. I'm trying to figure out where AI fits into my local development. It still operates mostly as a search engine for me in my free time. I have experimented with a couple of agentic tools. I do not plan to give Claude agentic access to my system in it's current form. There are some cool open source tools (OpenCode, Hermes, probably some others that I don't know about yet). OpenCode bricked my homelab. I'm still cleaning up from that. The experience taught me to start doing backups...
+
+Anyway, I guess this opinion is more AI adjacent than _about_ AI. I like the tech, I hate the companies, and it should be illegal to have $1B.
+
 ---
 
 I've recently been working a lot more with Claude Sonnet 4. I have a lot of conflicting feelings about AI. But I have been working with this tool in an effort to understand exactly what it does well and see if there is anything beneficial that I can incorporate into my workflow. It turns out, I have definitely found useful applications. I'm going to list anything I find useful here.
