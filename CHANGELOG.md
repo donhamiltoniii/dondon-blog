@@ -1,3 +1,14 @@
+## [2.80.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.79.16...v2.80.0) (2026-09-30)
+
+### 🚀 Features
+
+* **base layer system:** add page ([99b07bc](https://github.com/donhamiltoniii/dondon-blog/commit/99b07bca2d4c71360a9eee65657ba1cd5fbfc422))
+
+### 📝 Content Updates
+
+* **food:** add base layer system ([afab22c](https://github.com/donhamiltoniii/dondon-blog/commit/afab22c4f059da67579770971f09057bf27314a4))
+* **week 39:** add summary ([4164031](https://github.com/donhamiltoniii/dondon-blog/commit/4164031eb6024873c2f1f45302a200837f93ea54))
+
 ## [2.79.16](https://github.com/donhamiltoniii/dondon-blog/compare/v2.79.15...v2.79.16) (2026-09-24)
 
 ### 📝 Content Updates
