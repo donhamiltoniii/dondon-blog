@@ -1,3 +1,9 @@
+## [2.81.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.80.0...v2.81.0) (2026-09-30)
+
+### 🚀 Features
+
+* **base layer system:** update page format and nav ([9d0824c](https://github.com/donhamiltoniii/dondon-blog/commit/9d0824cd9959becb755254bb65f45fa9e57fbed2))
+
 ## [2.80.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.79.16...v2.80.0) (2026-09-30)
 
 ### 🚀 Features
