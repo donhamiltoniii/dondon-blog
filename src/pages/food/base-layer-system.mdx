@@ -1,3 +1,8 @@
+import Layout from '../../layouts/DefaultPageLayout.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../constants';
+
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+
 # The Base Layer System
 
 A cheap, whole-food way to eat on autopilot. It has three parts, each prepped in bulk on its own schedule, and you put them together at every meal. On top of that, seasonal vegetables from the market get one or two simple treatments. Change the parts when you get bored. The structure stays the same.
@@ -245,3 +250,5 @@ Whole-food and seasonal cooking mostly ignores macros. Macro-driven eating is mo
 ## Where this could go
 
 Live it for a few months and document it in the digital garden as you go: this doc, market hauls, what you did with them, what worked and what didn't. If people show up and it's still fun to write, that material becomes the cookbook.
+
+</Layout>
