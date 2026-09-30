@@ -1,3 +1,9 @@
+## [2.82.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.0...v2.82.1) (2026-09-30)
+
+### 📝 Content Updates
+
+* **stuff-i-like:** add entry ([4551004](https://github.com/donhamiltoniii/dondon-blog/commit/45510048583b44cf0987ba424be422b42425bb2e))
+
 ## [2.82.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.81.0...v2.82.0) (2026-09-30)
 
 ### 🚀 Features
