@@ -1,3 +1,9 @@
+## [2.82.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.81.0...v2.82.0) (2026-09-30)
+
+### 🚀 Features
+
+* **base layer system:** update parts ([cc262bd](https://github.com/donhamiltoniii/dondon-blog/commit/cc262bd2d19b695b6660db1c830fa1e67583e9da))
+
 ## [2.81.0](https://github.com/donhamiltoniii/dondon-blog/compare/v2.80.0...v2.81.0) (2026-09-30)
 
 ### 🚀 Features
