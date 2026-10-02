@@ -1,3 +1,9 @@
+## [2.82.3](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.2...v2.82.3) (2026-10-02)
+
+### 📝 Content Updates
+
+* **stuff i like:** add elastic mag ([864f3af](https://github.com/donhamiltoniii/dondon-blog/commit/864f3af72880012b5b54a86281bd74f1c17358c4))
+
 ## [2.82.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.1...v2.82.2) (2026-10-02)
 
 ### 📝 Content Updates
