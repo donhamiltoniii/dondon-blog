@@ -1,3 +1,9 @@
+## [2.82.2](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.1...v2.82.2) (2026-10-02)
+
+### 📝 Content Updates
+
+* **stuff i like:** add tractor beam ([1431570](https://github.com/donhamiltoniii/dondon-blog/commit/1431570bd043c0f2d871117382944bd5307ffca0))
+
 ## [2.82.1](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.0...v2.82.1) (2026-09-30)
 
 ### 📝 Content Updates
