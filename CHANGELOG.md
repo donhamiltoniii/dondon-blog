@@ -1,3 +1,9 @@
+## [2.82.4](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.3...v2.82.4) (2026-10-03)
+
+### 📝 Content Updates
+
+* **food:** 3 recipes ([b4944ea](https://github.com/donhamiltoniii/dondon-blog/commit/b4944eaa156bbb379aecc631929bdb371273ead5))
+
 ## [2.82.3](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.2...v2.82.3) (2026-10-02)
 
 ### 📝 Content Updates
