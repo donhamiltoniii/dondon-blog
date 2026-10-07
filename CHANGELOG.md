@@ -1,3 +1,9 @@
+## [2.82.6](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.5...v2.82.6) (2026-10-07)
+
+### 📝 Content Updates
+
+* **dessert:** healthy dessert options ([d9b3850](https://github.com/donhamiltoniii/dondon-blog/commit/d9b3850a9621c2e071b7f016c08aa641c5e1120c))
+
 ## [2.82.5](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.4...v2.82.5) (2026-10-05)
 
 ### 📝 Content Updates
