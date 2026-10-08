@@ -1,3 +1,9 @@
+## [2.82.7](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.6...v2.82.7) (2026-10-08)
+
+### 📝 Content Updates
+
+* **cuttings:** 2026-10-08 ([726b5ec](https://github.com/donhamiltoniii/dondon-blog/commit/726b5ec316fc0cb0be1f2222f5d7967b4003d432))
+
 ## [2.82.6](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.5...v2.82.6) (2026-10-07)
 
 ### 📝 Content Updates
