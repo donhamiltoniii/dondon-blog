@@ -38,7 +38,7 @@ export async function getImagesForPhotoAssetFromGlob(
  */
 export async function getImagesForPhotoAsset(assetId: string): Promise<ImageMetadata[]> {
   const allImages = import.meta.glob<{ default: ImageMetadata }>(
-    '/src/content/photos/**/*.{jpeg,jpg,webp}'
+    '/src/content/photos/**/*.{jpeg,jpg,webp,JPG}'
   );
 
   return getImagesForPhotoAssetFromGlob(assetId, allImages);
