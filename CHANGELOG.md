@@ -1,3 +1,10 @@
+## [2.82.9](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.8...v2.82.9) (2026-10-18)
+
+### 📝 Content Updates
+
+* **photos:** add today ([a3991ab](https://github.com/donhamiltoniii/dondon-blog/commit/a3991abecb23c3b3ef8536013ca67849bc26980d))
+* **photos:** update file names ([f3f3355](https://github.com/donhamiltoniii/dondon-blog/commit/f3f3355d18648882fb23f6ec175b6086c4ea7aa3))
+
 ## [2.82.8](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.7...v2.82.8) (2026-10-12)
 
 ### 📝 Content Updates
