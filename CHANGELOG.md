@@ -1,3 +1,9 @@
+## [2.82.11](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.10...v2.82.11) (2026-10-18)
+
+### 📝 Content Updates
+
+* **photos:** update title ([eb1dfd2](https://github.com/donhamiltoniii/dondon-blog/commit/eb1dfd2ce7a4f5c7aa25c7e64c6b9b19738e9f02))
+
 ## [2.82.10](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.9...v2.82.10) (2026-10-18)
 
 ### 📝 Content Updates
