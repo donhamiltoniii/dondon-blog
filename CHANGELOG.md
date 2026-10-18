@@ -1,3 +1,9 @@
+## [2.82.10](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.9...v2.82.10) (2026-10-18)
+
+### 📝 Content Updates
+
+* **photos:** update config to accept JPG ext ([8c1c070](https://github.com/donhamiltoniii/dondon-blog/commit/8c1c07017032f98e6d3b2d1f2797735be807fba8))
+
 ## [2.82.9](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.8...v2.82.9) (2026-10-18)
 
 ### 📝 Content Updates
