@@ -1,29 +1,34 @@
 ---
-title: Peanut Butter Overnight Oats
-prepTime: 5 min
+title: Peanut Butter Overnight Oats (Bulk Prep, Whey)
+prepTime: 15 min
 cookTime: 0 min
-servings: 1
-servingSize: 1 jar
+servings: 6
+servingSize: 522g
 imgUrl:
-description: High-protein overnight oats with quick oats, Greek yogurt, whole milk, and peanut butter powder.
-notes: Needs at least 2 hours in the fridge, ideally overnight. Sets thick, so loosen with a splash of milk before eating. For more protein, add a scoop of whey and an extra 60ml of milk.
+description: Six servings of high-protein peanut butter overnight oats with sprouted rolled oats, Greek yogurt, whole milk, peanut butter powder, vanilla whey, honey, and frozen blueberries.
+notes: Mixed in one big bowl and portioned by weight. The single-serving recipe scaled 5x, plus 5 scoops of Ascent vanilla whey, 5 tbsp of honey, and 700g of frozen blueberries, split into 6 servings. Made with One Degree sprouted rolled oats, which stay a bit chewier than quick oats. The berries thaw in the fridge and bleed a little juice into the oats. Needs at least 2 hours in the fridge, ideally overnight. Sets thick, so loosen with a splash of milk before eating. Best eaten within 4 days.
 tags: [high-protein, breakfast, meal-prep, oats, no-cook]
 ---
 
 ### Ingredients
 
-- Quick oats (60g)
-- Whole milk (180ml)
-- Greek yogurt, 2% fat (170g)
-- Peanut butter powder (24g)
-- Salt (pinch)
+- One Degree sprouted rolled oats (300g)
+- Whole milk (900ml)
+- Greek yogurt, 2% fat (850g)
+- Peanut butter powder (120g)
+- Ascent 100% Whey, Vanilla Bean (5 rounded scoops, 155g)
+- Honey (5 tbsp, 105g)
+- Frozen blueberries (700g)
+- Salt (5 pinches)
 
 ### Instructions
 
-1. Combine the oats, peanut butter powder, and salt in a jar or container.
-2. Add the milk and Greek yogurt and stir until no dry pockets of powder remain.
-3. Cover and refrigerate for at least 2 hours, or overnight.
-4. Stir before eating, adding a splash of milk if it's too thick.
+1. Weigh your empty large bowl and write down the number. In it, combine the oats, peanut butter powder, whey, and salt.
+2. Add the milk, Greek yogurt, and honey and stir until no dry pockets of powder remain.
+3. Fold in the frozen blueberries.
+4. Weigh the full bowl. Subtract the bowl's weight; the batch should be about 3,130g. Divide by 6 to get your portion (about 522g).
+5. Weigh out each portion into 6 containers, cover, and refrigerate for at least 2 hours, or overnight.
+6. Stir before eating, adding a splash of milk if it's too thick.
 
 ### Macros
 
@@ -31,23 +36,27 @@ tags: [high-protein, breakfast, meal-prep, oats, no-cook]
 
 | Field        | Amount |
 | ------------ | ------ |
-| **Calories** | 557    |
-| **Protein**  | 42.5g  |
-| **Fat**      | 17g    |
-| **Carbs**    | 62g    |
-| **Fiber**    | 8g     |
-| **Sugar**    | 17.5g  |
-| **Volume**   | 440g   |
+| **Calories** | 4091   |
+| **Protein**  | 343.2g |
+| **Fat**      | 91.9g  |
+| **Carbs**    | 486.6g |
+| **Fiber**    | 68.5g  |
+| **Sugar**    | 236.3g |
+| **Volume**   | 3130g  |
 
 #### Per Serving
 
-_557 calories, 42.5g protein, 17g fat, 62g carbs, 8g fiber, 17.5g sugar_
+_682 calories, 57.2g protein, 15.3g fat, 81.1g carbs, 11.4g fiber, 39.4g sugar_
 
 #### Per Ingredient (Whole Dish)
 
-**Quick oats** — 225 cal · 7.5p · 4.5f · 40c · 6 fiber
-**Whole milk** — 112 cal · 6p · 6f · 9c · 0 fiber
-**Greek yogurt, 2% fat** — 120 cal · 17p · 3.5f · 5c · 0 fiber
-**Peanut butter powder** — 100 cal · 12p · 3f · 8c · 2 fiber
-**Salt** — 0 cal · 0p · 0f · 0c · 0 fiber
-**Total** — 557 cal · 42.5p · 17f · 62c
+- **One Degree sprouted rolled oats** — 1154 cal · 40.4p · 20.2f · 196.2c · 34.6 fiber
+- **Whole milk** — 560 cal · 30p · 30f · 45c · 0 fiber
+- **Greek yogurt, 2% fat** — 600 cal · 85p · 17.5f · 25c · 0 fiber
+- **Peanut butter powder** — 500 cal · 60p · 15f · 40c · 10 fiber
+- **Ascent whey, vanilla bean** — 600 cal · 125p · 5f · 10c · 5 fiber
+- **Honey** — 320 cal · 0p · 0f · 85c · 0 fiber
+- **Frozen blueberries** — 357 cal · 2.8p · 4.2f · 85.4c · 18.9 fiber
+- **Salt** — 0 cal · 0p · 0f · 0c · 0 fiber
+
+**Total** — 4091 cal · 343.2p · 91.9f · 486.6c · 68.5 fiber
