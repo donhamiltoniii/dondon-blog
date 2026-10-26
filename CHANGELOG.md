@@ -1,3 +1,10 @@
+## [2.82.12](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.11...v2.82.12) (2026-10-26)
+
+### 📝 Content Updates
+
+* **blocks:** add thought ([7b34c29](https://github.com/donhamiltoniii/dondon-blog/commit/7b34c29a8b05a8d99baad644293d0abfca27334c))
+* **food:** update peanut butter oats ([fced0d3](https://github.com/donhamiltoniii/dondon-blog/commit/fced0d350a2bf9d37c501f3f286721c57a2b123f))
+
 ## [2.82.11](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.10...v2.82.11) (2026-10-18)
 
 ### 📝 Content Updates
