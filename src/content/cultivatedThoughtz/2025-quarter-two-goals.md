@@ -27,7 +27,7 @@ I crushed this shit. I'm so fucking passionate about this part. Learning to self
 
 ## Scope
 
-Week 14 to Week 26 of 2025. So from [[2025-03-30]] - [[2025-06-28]].
+Week 14 to Week 26 of 2025. So from 2025-03-30 - 2025-06-28.
 
 ## Areas of Focus
 
