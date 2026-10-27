@@ -17,8 +17,7 @@ underlay:
   run alongside the barbell work without interfering.
 - **Steel mace** (Sat finisher) — rotational / anti-rotation work the bells and
   barbell don't cover.
-- **Easy cardio** (off days) — casual biking for heart and endurance, kept easy
-  enough to aid recovery rather than compete with it.
+- **Easy cardio** (everyday you can): skip training. Not miss it. Practice skipping. Go for a walk. 20-30m. Walk for 30s, skip for 30s. Start skipping for longer as you get better. Work up to a couple of minute but the ceiling is 3m. Then jog after if you want. But the whole session can just be 30m. Do it everyday you feel up for it. Maybe skip the days that you lift or if you feel like you need the recovery. But you should be able to do just about anything the same day that you do this. It should not gas you out ever. You are over-training if it does.
 - **Daily prehab** (feet & hips) — plantar-fascia/calf loading for the plantar
   fasciitis, plus hip-flexor mobility and glute/core work for the anterior
   pelvic tilt. A low-fatigue daily layer, not a training day of its own.
