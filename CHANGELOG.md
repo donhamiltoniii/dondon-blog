@@ -1,3 +1,9 @@
+## [2.82.15](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.14...v2.82.15) (2026-10-27)
+
+### 📝 Content Updates
+
+* **training-plan:** add skip training ([111a950](https://github.com/donhamiltoniii/dondon-blog/commit/111a950320ec8dbb9edd36ed634ff2dfd847272b))
+
 ## [2.82.14](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.13...v2.82.14) (2026-10-27)
 
 ### 📝 Content Updates
