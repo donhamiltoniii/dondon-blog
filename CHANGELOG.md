@@ -1,3 +1,9 @@
+## [2.82.14](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.13...v2.82.14) (2026-10-27)
+
+### 📝 Content Updates
+
+* **2025-q2:** remove minor md error ([0ac0b16](https://github.com/donhamiltoniii/dondon-blog/commit/0ac0b164db6e4a01155794bd1a1fbb5492dee438))
+
 ## [2.82.13](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.12...v2.82.13) (2026-10-27)
 
 ### 📝 Content Updates
