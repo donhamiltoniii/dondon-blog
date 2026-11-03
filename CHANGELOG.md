@@ -1,3 +1,9 @@
+## [2.82.17](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.16...v2.82.17) (2026-11-03)
+
+### 📝 Content Updates
+
+* **exercise-videos:** add seed ([07dc96b](https://github.com/donhamiltoniii/dondon-blog/commit/07dc96b0491944a227ff1e613c434e36afe012c7))
+
 ## [2.82.16](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.15...v2.82.16) (2026-11-02)
 
 ### 📝 Content Updates
