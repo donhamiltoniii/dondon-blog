@@ -1,3 +1,9 @@
+## [2.82.18](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.17...v2.82.18) (2026-11-03)
+
+### 📝 Content Updates
+
+* **exercise-videos:** add mobility section + vid ([5ecb4e9](https://github.com/donhamiltoniii/dondon-blog/commit/5ecb4e9400c41bdf27dd291bc7e072a2466c3cde))
+
 ## [2.82.17](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.16...v2.82.17) (2026-11-03)
 
 ### 📝 Content Updates
