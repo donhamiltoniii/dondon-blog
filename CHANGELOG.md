@@ -1,3 +1,9 @@
+## [2.82.19](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.18...v2.82.19) (2026-11-07)
+
+### 📝 Content Updates
+
+* **seed:** add woodworking ([0dbbf0c](https://github.com/donhamiltoniii/dondon-blog/commit/0dbbf0cefae61f3064602795aa47abb81c460a43))
+
 ## [2.82.18](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.17...v2.82.18) (2026-11-03)
 
 ### 📝 Content Updates
