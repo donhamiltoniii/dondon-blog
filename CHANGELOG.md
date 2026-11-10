@@ -1,3 +1,9 @@
+## [2.82.20](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.19...v2.82.20) (2026-11-10)
+
+### 📝 Content Updates
+
+* **w44+w45:** add summary ([c0001c0](https://github.com/donhamiltoniii/dondon-blog/commit/c0001c07070bb26cd33301a9966e0f3255d52bbd))
+
 ## [2.82.19](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.18...v2.82.19) (2026-11-07)
 
 ### 📝 Content Updates
