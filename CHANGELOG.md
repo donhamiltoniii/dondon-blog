@@ -1,3 +1,13 @@
+## [2.82.21](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.20...v2.82.21) (2026-11-17)
+
+### 📝 Content Updates
+
+* **w46:** add summary ([ada950a](https://github.com/donhamiltoniii/dondon-blog/commit/ada950a72429c1a0bff4f1a8e54a02853a150186))
+
+### 🔧 Maintenance
+
+* **plop:** add generator ([ad6985b](https://github.com/donhamiltoniii/dondon-blog/commit/ad6985b6a1fc1ec1e13d6e5bd6eafed26d9acfb8))
+
 ## [2.82.20](https://github.com/donhamiltoniii/dondon-blog/compare/v2.82.19...v2.82.20) (2026-11-10)
 
 ### 📝 Content Updates
