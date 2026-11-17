@@ -48,4 +48,26 @@ export default function (plop) {
       },
     ],
   });
+  plop.setGenerator('weeklySummary', {
+    description: 'makes a new weekly summary file',
+    prompts: [
+      {
+        type: 'input',
+        name: 'week',
+        message: 'What week of the year?: ',
+      },
+      {
+        type: 'input',
+        name: 'year',
+        message: 'What year?: ',
+      },
+    ],
+    actions: [
+      {
+        type: 'add',
+        path: 'src/content/cultivatedThoughtz/{{kebabCase year}}-W{{kebabCase week}}.md',
+        templateFile: 'src/plop-templates/new-weekly-summary.hbs',
+      },
+    ],
+  });
 }
